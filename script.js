@@ -91,6 +91,10 @@ function normalizeText(t){
   return (t||'').trim().toLowerCase().replace(/[.,!?;:()\"'`]/g,'').replace(/\s+/g,' ');
 }
 function escapeHtml(s){return (s+'').replace(/[&<>\"]/g,c=>({"&":"&","<":"<",">":">","\"":"""}[c]));}
+}
+)
+)
+}
 
 // ========== Firestore operations ==========
 async function loadListsFromFirestore(){

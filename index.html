@@ -178,6 +178,7 @@
   const btnTestVoice = document.getElementById('btnTestVoice');
   const btnLoadDemo = document.getElementById('btnLoadDemo');
   const btnShowHideSidebar = document.getElementById('btnShowHideSidebar');
+  
   // Data model
   let lists = {}; // {listId: {name, sentences: [{text, correctCount}]}}
   let currentListId = null;
@@ -186,24 +187,23 @@
   // Local storage keys
   const LS_KEY = 'english_practice_data_v1';
   const LS_CONFIG = 'english_practice_cfg_v1';
+  const LS_LAST_LIST = 'english_practice_last_list'; // New key for last opened list
   let isShowSidebar = 0;
-  //
-  btnShowHideSidebar.addEventListener('click', ()=> {
-console.log('sss');
+  
+  // Sidebar toggle
+  btnShowHideSidebar.addEventListener('click', () => {
     const sidebar = document.querySelector('#sidebar');
-    if( isShowSidebar ) {
-sidebar.style.left = '-320px';
-btnShowHideSidebar.style.left = '0px';
-isShowSidebar = 0;
-    }
-    else {
+    if (isShowSidebar) {
+      sidebar.style.left = '-320px';
+      btnShowHideSidebar.style.left = '0px';
+      isShowSidebar = 0;
+    } else {
       sidebar.style.left = '0px';
       btnShowHideSidebar.style.left = '320px';
       isShowSidebar = 1;
     }
-     
-
   });
+
   // ========== Auth ==========
   btnSignIn.addEventListener('click', async () => {
     const provider = new firebase.auth.GoogleAuthProvider();
@@ -247,6 +247,16 @@ isShowSidebar = 0;
         lists[id].sentences = [];
       }
       renderListsUI();
+      // Load last opened list after UI is rendered
+      const lastListId = localStorage.getItem(LS_LAST_LIST);
+      if (lastListId && lists[lastListId]) {
+          selectListById(lastListId);
+      } else {
+          const keys = Object.keys(lists);
+          if (keys.length > 0) {
+              selectListById(keys[0]);
+          }
+      }
     }catch(e){console.error(e); alert('Load lists error: '+e.message);}
   }
   async function saveListToFirestore(listId){
@@ -266,12 +276,11 @@ isShowSidebar = 0;
     await db.collection('users').doc(currentUser.uid).collection('lists').doc(listId).delete();
     delete lists[listId];
     if(currentListId === listId) currentListId = null;
+    localStorage.removeItem(LS_LAST_LIST); // Clear last list when deleted
     renderListsUI();
   }
   
-  // =================================================================
   // THÊM CHỨC NĂNG SỬA TÊN DANH SÁCH
-  // =================================================================
   async function renameList(listId) {
     const listName = lists[listId].name;
     const newName = prompt("Nhập tên mới cho danh sách:", listName);
@@ -285,7 +294,6 @@ isShowSidebar = 0;
         renderListsUI(); // Cập nhật lại giao diện để hiển thị tên mới
     }
   }
-
 
   // ========== Local fallback ==========
   function saveListsToLocal(){ localStorage.setItem(LS_KEY, JSON.stringify(lists)); }
@@ -308,25 +316,27 @@ isShowSidebar = 0;
     // sidebar list
     listsEl.innerHTML = '';
     selectList.innerHTML = '';
-    for(const id of Object.keys(lists)){
+    const keys = Object.keys(lists);
+    if(keys.length === 0) {
+        sentencesEl.innerHTML = '<div class="small">Chưa có danh sách. Tạo danh sách mới ở bên trái.</div>';
+    }
+    
+    for(const id of keys){
       const li = document.createElement('div'); li.className='list-item';
       const left = document.createElement('div'); left.innerHTML = `<strong>${escapeHtml(lists[id].name)}</strong><div class="small">${(lists[id].sentences||[]).length} câu</div>`;
       const right = document.createElement('div'); right.style.display='flex'; right.style.gap='6px';
       
-      // Nút Mở
       const openBtn = document.createElement('button'); openBtn.className='btn secondary'; openBtn.textContent='Mở'; openBtn.onclick=()=>selectListById(id);
       
-      // THÊM NÚT SỬA MỚI VÀO ĐÂY
       const editBtn = document.createElement('button');
       editBtn.className = 'btn ghost';
       editBtn.textContent = 'Sửa';
       editBtn.onclick = () => renameList(id);
       
-      // Nút Xóa
       const delBtn = document.createElement('button'); delBtn.className='btn ghost'; delBtn.textContent='Xóa'; delBtn.onclick=async ()=>{ if(confirm('Xoá danh sách này?')){ if(currentUser) await deleteListFirestore(id); else { delete lists[id]; saveListsToLocal(); } if(currentListId===id) currentListId=null; renderListsUI(); } };
 
       right.appendChild(openBtn); 
-      right.appendChild(editBtn); // Thêm nút Sửa vào
+      right.appendChild(editBtn);
       right.appendChild(delBtn);
       
       li.appendChild(left); li.appendChild(right);
@@ -334,25 +344,33 @@ isShowSidebar = 0;
 
       const opt = document.createElement('option'); opt.value=id; opt.textContent=lists[id].name; selectList.appendChild(opt);
     }
-    if(!currentListId){
-      const keys = Object.keys(lists);
-      if(keys.length) selectListById(keys[0]);
-      else sentencesEl.innerHTML = '<div class="small">Chưa có danh sách. Tạo danh sách mới ở bên trái.</div>';
-    } else {
-      selectList.value = currentListId;
+    
+    // Check if currentListId is still valid, if not, reset it
+    if(currentListId && !lists[currentListId]) {
+        currentListId = null;
+        localStorage.removeItem(LS_LAST_LIST);
+    }
+    
+    if (currentListId) {
+        selectList.value = currentListId;
+        renderSentences();
     }
   }
 
   function selectListById(id){
     currentListId = id;
     selectList.value = id;
+    localStorage.setItem(LS_LAST_LIST, id); // Save the last opened list ID
     renderSentences();
   }
 
   btnCreateList.addEventListener('click', async ()=>{
     const name = newListName.value.trim(); if(!name) return alert('Nhập tên danh sách');
-    if(currentUser) await createListFirestore(name); else { const id='local_'+Date.now(); lists[id]={name, sentences:[]}; saveListsToLocal(); renderListsUI(); }
+    if(currentUser) await createListFirestore(name); else { const id='local_'+Date.now(); lists[id]={name, sentences:[]}; saveListsToLocal(); }
     newListName.value='';
+    renderListsUI();
+    const newId = Object.keys(lists).find(key => lists[key].name === name);
+    if(newId) selectListById(newId);
   });
 
   btnDeleteList.addEventListener('click', async ()=>{
@@ -524,7 +542,24 @@ isShowSidebar = 0;
   window.addEventListener('beforeunload', ()=>{ if(!currentUser) saveListsToLocal(); saveConfig({voice: voiceSelect.value, rate: rateEl.value}); });
 
   // ========== Init: load local lists (if any) ==========
-  function loadListsFromLocal(){ try{ lists = JSON.parse(localStorage.getItem(LS_KEY) || '{}') || {}; renderListsUI(); }catch(e){ lists = {}; } }
+  function loadListsFromLocal(){
+    try{
+      lists = JSON.parse(localStorage.getItem(LS_KEY) || '{}') || {};
+      renderListsUI();
+      // Load last opened list after UI is rendered
+      const lastListId = localStorage.getItem(LS_LAST_LIST);
+      if (lastListId && lists[lastListId]) {
+          selectListById(lastListId);
+      } else {
+          const keys = Object.keys(lists);
+          if (keys.length > 0) {
+              selectListById(keys[0]);
+          }
+      }
+    }catch(e){
+      lists={};
+    }
+  }
   loadListsFromLocal();
 
   // ========== Config save ==========

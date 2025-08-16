@@ -268,6 +268,24 @@ isShowSidebar = 0;
     if(currentListId === listId) currentListId = null;
     renderListsUI();
   }
+  
+  // =================================================================
+  // THÊM CHỨC NĂNG SỬA TÊN DANH SÁCH
+  // =================================================================
+  async function renameList(listId) {
+    const listName = lists[listId].name;
+    const newName = prompt("Nhập tên mới cho danh sách:", listName);
+    if (newName !== null && newName.trim() !== "" && newName.trim() !== listName) {
+        lists[listId].name = newName.trim();
+        if (currentUser) {
+            await saveListToFirestore(listId);
+        } else {
+            saveListsToLocal();
+        }
+        renderListsUI(); // Cập nhật lại giao diện để hiển thị tên mới
+    }
+  }
+
 
   // ========== Local fallback ==========
   function saveListsToLocal(){ localStorage.setItem(LS_KEY, JSON.stringify(lists)); }
@@ -294,9 +312,23 @@ isShowSidebar = 0;
       const li = document.createElement('div'); li.className='list-item';
       const left = document.createElement('div'); left.innerHTML = `<strong>${escapeHtml(lists[id].name)}</strong><div class="small">${(lists[id].sentences||[]).length} câu</div>`;
       const right = document.createElement('div'); right.style.display='flex'; right.style.gap='6px';
+      
+      // Nút Mở
       const openBtn = document.createElement('button'); openBtn.className='btn secondary'; openBtn.textContent='Mở'; openBtn.onclick=()=>selectListById(id);
+      
+      // THÊM NÚT SỬA MỚI VÀO ĐÂY
+      const editBtn = document.createElement('button');
+      editBtn.className = 'btn ghost';
+      editBtn.textContent = 'Sửa';
+      editBtn.onclick = () => renameList(id);
+      
+      // Nút Xóa
       const delBtn = document.createElement('button'); delBtn.className='btn ghost'; delBtn.textContent='Xóa'; delBtn.onclick=async ()=>{ if(confirm('Xoá danh sách này?')){ if(currentUser) await deleteListFirestore(id); else { delete lists[id]; saveListsToLocal(); } if(currentListId===id) currentListId=null; renderListsUI(); } };
-      right.appendChild(openBtn); right.appendChild(delBtn);
+
+      right.appendChild(openBtn); 
+      right.appendChild(editBtn); // Thêm nút Sửa vào
+      right.appendChild(delBtn);
+      
       li.appendChild(left); li.appendChild(right);
       listsEl.appendChild(li);
 

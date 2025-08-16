@@ -437,14 +437,25 @@ isShowSidebar = 0;
   // ========== Speech Synthesis (TTS) ==========
   let voices = [];
   function populateVoices(){
-    voices = speechSynthesis.getVoices();
+    // Lọc chỉ lấy giọng tiếng Anh
+    voices = speechSynthesis.getVoices().filter(voice => voice.lang.startsWith('en'));
     voiceSelect.innerHTML = '';
+    
     voices.forEach((v,i)=>{
       const label = `${v.name} (${v.lang})`;
-      const opt = document.createElement('option'); opt.value = i; opt.textContent = label; voiceSelect.appendChild(opt);
+      const opt = document.createElement('option');
+      opt.value = v.name; // Sử dụng tên giọng nói làm giá trị
+      opt.textContent = label;
+      voiceSelect.appendChild(opt);
     });
-    // restore cfg if present
-    const cfg = JSON.parse(localStorage.getItem(LS_CONFIG)||'{}'); if(cfg.voice) voiceSelect.value = cfg.voice;
+    
+    // Khôi phục config nếu có
+    const cfg = JSON.parse(localStorage.getItem(LS_CONFIG)||'{}');
+    if(cfg.voice) {
+      voiceSelect.value = cfg.voice;
+    } else if (voiceSelect.options.length > 0) {
+      voiceSelect.value = voiceSelect.options[0].value;
+    }
   }
   populateVoices();
   if(typeof speechSynthesis !== 'undefined') speechSynthesis.onvoiceschanged = populateVoices;
@@ -452,12 +463,13 @@ isShowSidebar = 0;
   function speak(text){
     if(!('speechSynthesis' in window)) return alert('Trình duyệt không hỗ trợ speechSynthesis');
     const u = new SpeechSynthesisUtterance(text);
-    const idx = parseInt(voiceSelect.value||0,10);
-    if(voices[idx]) u.voice = voices[idx];
+    // Tìm giọng nói từ tên đã lưu
+    const selectedVoice = voices.find(v => v.name === voiceSelect.value);
+    if(selectedVoice) u.voice = selectedVoice;
     u.rate = parseFloat(rateEl.value||1);
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
-    // save config
+    // Lưu tên giọng nói vào config
     saveConfig({voice: voiceSelect.value, rate: rateEl.value});
   }
   btnTestVoice.addEventListener('click', ()=>speak('This is a test. Hello!'));

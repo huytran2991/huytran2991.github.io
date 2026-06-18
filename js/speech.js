@@ -125,6 +125,10 @@ function playRecordedAudio(idx) {
 }
 
 function startRecognition(item, row, idx) {
+  if (window.isSecureContext === false) {
+    return alert('SpeechRecognition và Microphone yêu cầu kết nối bảo mật (HTTPS) để hoạt động trên thiết bị di động. Vui lòng sử dụng HTTPS hoặc truy cập qua localhost.');
+  }
+
   if (!SpeechRecognition) return alert('Trình duyệt không hỗ trợ SpeechRecognition (ASR). Dùng Chrome trên desktop để có trải nghiệm tốt nhất.');
   
   const recogDiv = row.querySelector('.recognized');
@@ -173,7 +177,7 @@ function startRecognition(item, row, idx) {
     const rec = new SpeechRecognition();
     rec.lang = 'en-US';
     rec.interimResults = true;
-    rec.continuous = true;
+    rec.continuous = !isMobile;
     rec.maxAlternatives = 1;
     recogDiv.textContent = 'Listening...';
     let hasProcessed = false;

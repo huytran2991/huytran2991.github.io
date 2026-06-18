@@ -60,6 +60,15 @@ function speak(text) {
 // ========== Speech Recognition (ASR) and comparison ==========
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 
+window.lastRecordedAudios = {};
+
+function playRecordedAudio(idx) {
+  const audioUrl = window.lastRecordedAudios[idx];
+  if (!audioUrl) return;
+  const audio = new Audio(audioUrl);
+  audio.play().catch(err => console.error("Error playing recorded audio:", err));
+}
+
 function startRecognition(item, row, idx) {
   if (!SpeechRecognition) return alert('Trình duyệt không hỗ trợ SpeechRecognition (ASR). Dùng Chrome trên desktop để có trải nghiệm tốt nhất.');
   
@@ -71,44 +80,89 @@ function startRecognition(item, row, idx) {
     el.classList.remove('correct', 'wrong');
   });
 
-  const rec = new SpeechRecognition();
-  rec.lang = 'en-US';
-  rec.interimResults = false;
-  rec.maxAlternatives = 1;
-  recogDiv.textContent = 'Listening...';
-  let hasProcessed = false;
-  rec.start();
+  navigator.mediaDevices.getUserMedia({ audio: true })
+    .then(stream => {
+      const rec = new SpeechRecognition();
+      rec.lang = 'en-US';
+      rec.interimResults = false;
+      rec.maxAlternatives = 1;
+      recogDiv.textContent = 'Listening...';
+      let hasProcessed = false;
 
-  rec.onresult = async (e) => {
-    const transcript = e.results[0][0].transcript;
-    recogDiv.textContent = transcript;
-    highlightComparison(item.text, transcript, wordEls);
+      const mediaRecorder = new MediaRecorder(stream);
+      let chunks = [];
 
-    const normExp = normalizeText(item.text);
-    const normRec = normalizeText(transcript);
-    
-    if (normExp === normRec && !hasProcessed) {
-      hasProcessed = true;
-      item.correctCount = (item.correctCount || 0) + 1;
-      
-      if (currentUser) {
-        if (typeof saveListToFirestore === 'function') {
-          await saveListToFirestore(currentListId);
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data.size > 0) {
+          chunks.push(e.data);
         }
-      } else {
-        if (typeof saveListsToLocal === 'function') {
-          saveListsToLocal();
+      };
+
+      mediaRecorder.onstop = () => {
+        const blob = new Blob(chunks, { type: 'audio/webm' });
+        if (window.lastRecordedAudios[idx]) {
+          URL.revokeObjectURL(window.lastRecordedAudios[idx]);
         }
-      }
+        window.lastRecordedAudios[idx] = URL.createObjectURL(blob);
+        
+        const replayBtn = row.querySelector('.replay-btn');
+        if (replayBtn) {
+          replayBtn.classList.remove('invisible');
+        }
+
+        stream.getTracks().forEach(track => track.stop());
+      };
+
+      rec.onstart = () => {
+        mediaRecorder.start();
+      };
+
+      rec.onresult = async (e) => {
+        const transcript = e.results[0][0].transcript;
+        recogDiv.textContent = transcript;
+        highlightComparison(item.text, transcript, wordEls);
+
+        const normExp = normalizeText(item.text);
+        const normRec = normalizeText(transcript);
+        
+        if (normExp === normRec && !hasProcessed) {
+          hasProcessed = true;
+          item.correctCount = (item.correctCount || 0) + 1;
+          
+          if (currentUser) {
+            if (typeof saveListToFirestore === 'function') {
+              await saveListToFirestore(currentListId);
+            }
+          } else {
+            if (typeof saveListsToLocal === 'function') {
+              saveListsToLocal();
+            }
+          }
+          
+          const scoreEl = row.querySelector('.meta strong');
+          if (scoreEl) scoreEl.textContent = item.correctCount;
+        }
+      };
       
-      const scoreEl = row.querySelector('.meta strong');
-      if (scoreEl) scoreEl.textContent = item.correctCount;
-    }
-  };
-  
-  rec.onerror = (err) => {
-    recogDiv.textContent = 'Error: ' + (err.error || err.message || 'unknown');
-  };
+      rec.onerror = (err) => {
+        recogDiv.textContent = 'Error: ' + (err.error || err.message || 'unknown');
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+      };
+
+      rec.onend = () => {
+        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+          mediaRecorder.stop();
+        }
+      };
+
+      rec.start();
+    })
+    .catch(err => {
+      console.error('Error accessing microphone:', err);
+      alert('Không thể truy cập microphone. Vui lòng cấp quyền truy cập micro.');
+    });
 }
 
 // Naive comparison & highlight

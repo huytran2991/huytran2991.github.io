@@ -265,6 +265,16 @@ function renderSentences() {
     micBtn.title = 'Record and compare';
     micBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v1a7 7 0 0 1-14 0v-1"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>`;
     micBtn.onclick = () => startRecognition(item, row, idx);
+
+    const replayBtn = document.createElement('button');
+    replayBtn.className = `icon-btn replay-btn ${window.lastRecordedAudios && window.lastRecordedAudios[idx] ? '' : 'invisible'}`;
+    replayBtn.title = 'Nghe lại giọng nói của bạn';
+    replayBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>`;
+    replayBtn.onclick = () => {
+      if (typeof playRecordedAudio === 'function') {
+        playRecordedAudio(idx);
+      }
+    };
     
     const resetBtn = document.createElement('button');
     resetBtn.className = 'icon-btn';
@@ -297,7 +307,8 @@ function renderSentences() {
       renderSentences();
       renderListsUI();
     };
-
+ 
+    icons.appendChild(replayBtn);
     icons.appendChild(playBtn);
     icons.appendChild(micBtn);
     icons.appendChild(resetBtn);

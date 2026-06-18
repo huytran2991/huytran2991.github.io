@@ -384,6 +384,10 @@ footer {
   display: none !important;
 }
 
+.invisible {
+  visibility: hidden !important;
+}
+
 #btnShowHideSidebar {
   display: none;
 }

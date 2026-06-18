@@ -19,19 +19,16 @@ const btnTestVoice = document.getElementById('btnTestVoice');
 const btnLoadDemo = document.getElementById('btnLoadDemo');
 const btnShowHideSidebar = document.getElementById('btnShowHideSidebar');
 
-let isShowSidebar = 0;
-
 // Sidebar toggle
 btnShowHideSidebar.addEventListener('click', () => {
   const sidebar = document.querySelector('#sidebar');
-  if (isShowSidebar) {
-    sidebar.style.left = '-320px';
-    btnShowHideSidebar.style.left = '0px';
-    isShowSidebar = 0;
-  } else {
-    sidebar.style.left = '0px';
+  sidebar.classList.toggle('active');
+  if (sidebar.classList.contains('active')) {
     btnShowHideSidebar.style.left = '320px';
-    isShowSidebar = 1;
+    btnShowHideSidebar.textContent = '‹';
+  } else {
+    btnShowHideSidebar.style.left = '';
+    btnShowHideSidebar.textContent = '›';
   }
 });
 
@@ -83,8 +80,7 @@ function renderListsUI() {
     left.innerHTML = `<strong>${escapeHtml(window.lists[id].name)}</strong><div class="small">${(window.lists[id].sentences || []).length} câu</div>`;
     
     const right = document.createElement('div');
-    right.style.display = 'flex';
-    right.style.gap = '6px';
+    right.className = 'list-item-actions';
 
     const openBtn = document.createElement('button');
     openBtn.className = 'btn secondary';
@@ -261,19 +257,19 @@ function renderSentences() {
     const playBtn = document.createElement('button');
     playBtn.className = 'icon-btn';
     playBtn.title = 'Play sentence';
-    playBtn.innerHTML = '🔊';
+    playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-2"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>`;
     playBtn.onclick = () => speak(item.text);
     
     const micBtn = document.createElement('button');
     micBtn.className = 'icon-btn';
     micBtn.title = 'Record and compare';
-    micBtn.innerHTML = '🎤';
+    micBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v1a7 7 0 0 1-14 0v-1"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>`;
     micBtn.onclick = () => startRecognition(item, row, idx);
     
     const resetBtn = document.createElement('button');
     resetBtn.className = 'icon-btn';
     resetBtn.title = 'Reset count';
-    resetBtn.innerHTML = '↺';
+    resetBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>`;
     resetBtn.onclick = async () => {
       if (confirm('Reset số lần đúng về 0?')) {
         item.correctCount = 0;
@@ -289,7 +285,7 @@ function renderSentences() {
     const delBtn = document.createElement('button');
     delBtn.className = 'icon-btn';
     delBtn.title = 'Delete sentence';
-    delBtn.innerHTML = '🗑️';
+    delBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash-2"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg>`;
     delBtn.onclick = async () => {
       if (!confirm('Bạn có chắc muốn xoá câu này?')) return;
       window.lists[window.currentListId].sentences.splice(idx, 1);

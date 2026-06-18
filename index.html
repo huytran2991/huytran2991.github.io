@@ -6,6 +6,9 @@
   <title>English Speaking Practice — Full</title>
   <link rel="manifest" href="manifest.json" />
   <link rel="icon" href="android-chrome-512x512.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -19,9 +22,9 @@
         <button id="btnSignOut" class="btn secondary hidden">Sign out</button>
       </div>
 
-      <div style="margin-bottom:10px;">
-        <input id="newListName" placeholder="Tên danh sách / chủ đề" style="width:100%;margin-bottom:8px;" />
-        <div style="display:flex;gap:8px">
+      <div class="sidebar-action-group">
+        <input id="newListName" placeholder="Tên danh sách / chủ đề" class="w-full mb-8" />
+        <div class="flex-gap-8">
           <button id="btnCreateList" class="btn">Tạo</button>
           <button id="btnDeleteList" class="btn ghost" title="Xoá danh sách hiện tại">Xóa hiện tại</button>
         </div>
@@ -29,7 +32,7 @@
 
       <div class="lists" id="lists"></div>
 
-      <div style="margin-top:8px;display:flex;gap:8px">
+      <div class="flex-gap-8 mt-8">
         <button id="btnImport" class="btn secondary">Import từ text</button>
         <button id="btnExport" class="btn secondary">Export</button>
       </div>
@@ -41,13 +44,13 @@
 
     <div class="main">
       <div class="topbar">
-        <div style="display:flex;gap:8px;align-items:center;flex-direction: row;flex-wrap: wrap;">
+        <div class="topbar-group">
           <label class="small">Danh sách</label>
           <select id="selectList"></select>
           <button id="btnLoadDemo" class="btn secondary">Tải demo</button>
         </div>
 
-        <div style="display:flex;align-items:center;gap:8px;flex-direction: row;flex-wrap: wrap;">
+        <div class="topbar-group">
           <label class="small">Giọng:</label>
           <select id="voiceSelect"></select>
           <label class="small">Tốc độ</label>
@@ -56,9 +59,9 @@
         </div>
       </div>
 
-      <div style="margin-bottom:12px;">
-        <textarea id="inputSentences" rows="4" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6eefc" placeholder="Nhập mỗi câu tiếng Anh trên 1 dòng"></textarea>
-        <div style="display:flex;gap:8px;margin-top:8px">
+      <div class="sentence-input-group">
+        <textarea id="inputSentences" rows="4" class="w-full input-textarea" placeholder="Nhập mỗi câu tiếng Anh trên 1 dòng"></textarea>
+        <div class="flex-gap-8 mt-8">
           <button id="btnAddSentences" class="btn">Thêm câu vào danh sách</button>
           <button id="btnClearSentences" class="btn secondary">Clear</button>
         </div>

@@ -69,7 +69,7 @@ function renderListsUI() {
   listsEl.innerHTML = '';
   selectList.innerHTML = '';
   const keys = Object.keys(window.lists || {});
-  
+
   if (keys.length === 0) {
     sentencesEl.innerHTML = '<div class="small">Chưa có danh sách. Tạo danh sách mới ở bên trái.</div>';
   }
@@ -77,10 +77,10 @@ function renderListsUI() {
   for (const id of keys) {
     const li = document.createElement('div');
     li.className = 'list-item';
-    
+
     const left = document.createElement('div');
     left.innerHTML = `<strong>${escapeHtml(window.lists[id].name)}</strong><div class="small">${(window.lists[id].sentences || []).length} câu</div>`;
-    
+
     const right = document.createElement('div');
     right.className = 'list-item-actions';
 
@@ -238,7 +238,7 @@ function renderSentences() {
   if (!window.currentListId || !window.lists[window.currentListId]) {
     return sentencesEl.innerHTML = '<div class="small">Chọn hoặc tạo danh sách để bắt đầu</div>';
   }
-  
+
   const arr = window.lists[window.currentListId].sentences || [];
   arr.forEach((item, idx) => {
     const row = document.createElement('div');
@@ -251,26 +251,24 @@ function renderSentences() {
       document.querySelectorAll('.sentence-row').forEach(r => r.classList.remove('selected-row'));
       row.classList.add('selected-row');
     };
-    
-    const top = document.createElement('div');
-    top.className = 'sentence-top';
-    
+
+
     const textWrap = document.createElement('div');
     textWrap.className = 'sentence-text';
     textWrap.innerHTML = item.text.split(/(\s+)/).map((tok) => {
       if (tok.trim() === '') return tok;
       return `<span class="word" data-word="${encodeURIComponent(tok)}">${escapeHtml(tok)}</span>`;
     }).join('');
-    
+
     const icons = document.createElement('div');
     icons.className = 'icons';
-    
+
     const playBtn = document.createElement('button');
     playBtn.className = 'icon-btn';
     playBtn.title = 'Play sentence';
     playBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-2"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>`;
     playBtn.onclick = () => speak(item.text);
-    
+
     const micBtn = document.createElement('button');
     micBtn.className = 'icon-btn';
     micBtn.title = 'Record and compare';
@@ -286,7 +284,7 @@ function renderSentences() {
         playRecordedAudio(idx);
       }
     };
-    
+
     const resetBtn = document.createElement('button');
     resetBtn.className = 'icon-btn';
     resetBtn.title = 'Reset count';
@@ -302,7 +300,7 @@ function renderSentences() {
         renderSentences();
       }
     };
-    
+
     const delBtn = document.createElement('button');
     delBtn.className = 'icon-btn';
     delBtn.title = 'Delete sentence';
@@ -318,21 +316,24 @@ function renderSentences() {
       renderSentences();
       renderListsUI();
     };
- 
+
     icons.appendChild(replayBtn);
     icons.appendChild(micBtn);
     icons.appendChild(playBtn);
     icons.appendChild(resetBtn);
     icons.appendChild(delBtn);
-    
-    top.appendChild(textWrap);
-    top.appendChild(icons);
-    row.appendChild(top);
+
+    row.appendChild(textWrap);
 
     const meta = document.createElement('div');
     meta.className = 'meta';
     meta.innerHTML = `Đúng toàn câu: <strong>${item.correctCount || 0}</strong> <span style="margin-left:8px" class="small recognized">(Bạn chưa nói)</span>`;
-    row.appendChild(meta);
+
+    const controls = document.createElement('div');
+    controls.className = 'sentence-controls';
+    controls.appendChild(meta);
+    controls.appendChild(icons);
+    row.appendChild(controls);
 
     sentencesEl.appendChild(row);
 
@@ -369,7 +370,7 @@ document.addEventListener('keydown', (e) => {
   if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT')) {
     return;
   }
-  
+
   if (window.selectedSentenceIdx !== null && window.selectedSentenceIdx !== undefined) {
     const rows = document.querySelectorAll('.sentence-row');
     const row = rows[window.selectedSentenceIdx];

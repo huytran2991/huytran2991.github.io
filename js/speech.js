@@ -66,11 +66,17 @@ function startRecognition(item, row, idx) {
   const recogDiv = row.querySelector('.recognized');
   const wordEls = row.querySelectorAll('.word');
 
+  // Reset word colors to initial state
+  wordEls.forEach(el => {
+    el.classList.remove('correct', 'wrong');
+  });
+
   const rec = new SpeechRecognition();
   rec.lang = 'en-US';
   rec.interimResults = false;
   rec.maxAlternatives = 1;
   recogDiv.textContent = 'Listening...';
+  let hasProcessed = false;
   rec.start();
 
   rec.onresult = async (e) => {
@@ -81,7 +87,8 @@ function startRecognition(item, row, idx) {
     const normExp = normalizeText(item.text);
     const normRec = normalizeText(transcript);
     
-    if (normExp === normRec) {
+    if (normExp === normRec && !hasProcessed) {
+      hasProcessed = true;
       item.correctCount = (item.correctCount || 0) + 1;
       
       if (currentUser) {

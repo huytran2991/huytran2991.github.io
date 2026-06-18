@@ -295,8 +295,8 @@ function startRecognition(item, row, idx) {
     rec.start();
   };
 
-  if (isIOS) {
-    // Hide replay button on iOS since we don't record audio to prevent WebKit resource locks
+  if (isMobile) {
+    // Hide replay button on mobile since we don't record audio to prevent WebKit/Android resource locks
     const replayBtn = row.querySelector('.replay-btn');
     if (replayBtn) {
       replayBtn.classList.add('invisible');

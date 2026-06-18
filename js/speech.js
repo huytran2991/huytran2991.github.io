@@ -164,27 +164,27 @@ function startRecognition(item, row, idx) {
     micBtn: micBtn
   };
 
-  navigator.mediaDevices.getUserMedia({ audio: true })
-    .then(stream => {
-      // Check if user cancelled while we were waiting for mic permission
-      if (!window.activeRecognition || window.activeRecognition.idx !== idx) {
-        stream.getTracks().forEach(track => track.stop());
-        return;
-      }
+  // Helper to detect mobile device (Android, iOS) to avoid getUserMedia conflict
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+                   (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
-      const rec = new SpeechRecognition();
-      rec.lang = 'en-US';
-      rec.interimResults = true;
-      rec.continuous = true;
-      rec.maxAlternatives = 1;
-      recogDiv.textContent = 'Listening...';
-      let hasProcessed = false;
+  // Core recognition setup function
+  const runRecognition = (stream = null) => {
+    const rec = new SpeechRecognition();
+    rec.lang = 'en-US';
+    rec.interimResults = true;
+    rec.continuous = true;
+    rec.maxAlternatives = 1;
+    recogDiv.textContent = 'Listening...';
+    let hasProcessed = false;
 
-      window.activeRecognition.rec = rec;
+    window.activeRecognition.rec = rec;
 
-      const mediaRecorder = new MediaRecorder(stream);
-      let chunks = [];
+    let mediaRecorder = null;
+    let chunks = [];
 
+    if (stream) {
+      mediaRecorder = new MediaRecorder(stream);
       mediaRecorder.ondataavailable = (e) => {
         if (e.data.size > 0) {
           chunks.push(e.data);
@@ -205,94 +205,116 @@ function startRecognition(item, row, idx) {
 
         stream.getTracks().forEach(track => track.stop());
       };
+    }
 
-      rec.onstart = () => {
+    rec.onstart = () => {
+      if (mediaRecorder) {
         mediaRecorder.start();
-      };
+      }
+    };
 
-      rec.onresult = async (e) => {
-        let finalTranscript = '';
-        let interimTranscript = '';
+    rec.onresult = async (e) => {
+      let finalTranscript = '';
+      let interimTranscript = '';
 
-        for (let i = e.resultIndex; i < e.results.length; ++i) {
-          if (e.results[i].isFinal) {
-            finalTranscript += e.results[i][0].transcript + ' ';
-          } else {
-            interimTranscript += e.results[i][0].transcript;
-          }
+      for (let i = e.resultIndex; i < e.results.length; ++i) {
+        if (e.results[i].isFinal) {
+          finalTranscript += e.results[i][0].transcript + ' ';
+        } else {
+          interimTranscript += e.results[i][0].transcript;
         }
+      }
 
-        const transcript = (finalTranscript + interimTranscript).trim();
-        if (!transcript) return;
+      const transcript = (finalTranscript + interimTranscript).trim();
+      if (!transcript) return;
 
-        recogDiv.textContent = transcript;
-        highlightComparison(item.text, transcript, wordEls);
+      recogDiv.textContent = transcript;
+      highlightComparison(item.text, transcript, wordEls);
 
-        const normExp = normalizeText(item.text);
-        const normRec = normalizeText(transcript);
-        
-        if (normExp === normRec && !hasProcessed) {
-          hasProcessed = true;
-          item.correctCount = (item.correctCount || 0) + 1;
-          
-          playSuccessSound();
-
-          if (currentUser) {
-            if (typeof saveListToFirestore === 'function') {
-              await saveListToFirestore(currentListId);
-            }
-          } else {
-            if (typeof saveListsToLocal === 'function') {
-              saveListsToLocal();
-            }
-          }
-          
-          const scoreEl = row.querySelector('.meta strong');
-          if (scoreEl) scoreEl.textContent = item.correctCount;
-          
-          rec.stop();
-        }
-      };
+      const normExp = normalizeText(item.text);
+      const normRec = normalizeText(transcript);
       
-      rec.onerror = (err) => {
-        console.error('Speech recognition error:', err);
-        recogDiv.textContent = 'Error: ' + (err.error || err.message || 'unknown');
-        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
-          mediaRecorder.stop();
-        }
-      };
+      if (normExp === normRec && !hasProcessed) {
+        hasProcessed = true;
+        item.correctCount = (item.correctCount || 0) + 1;
+        
+        playSuccessSound();
 
-      rec.onend = () => {
-        if (mediaRecorder && mediaRecorder.state !== 'inactive') {
-          mediaRecorder.stop();
+        if (currentUser) {
+          if (typeof saveListToFirestore === 'function') {
+            await saveListToFirestore(currentListId);
+          }
+        } else {
+          if (typeof saveListsToLocal === 'function') {
+            saveListsToLocal();
+          }
         }
+        
+        const scoreEl = row.querySelector('.meta strong');
+        if (scoreEl) scoreEl.textContent = item.correctCount;
+        
+        rec.stop();
+      }
+    };
+    
+    rec.onerror = (err) => {
+      console.error('Speech recognition error:', err);
+      recogDiv.textContent = 'Error: ' + (err.error || err.message || 'unknown');
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+      }
+    };
 
-        if (!hasProcessed) {
-          hasProcessed = true;
-          playErrorSound();
-        }
+    rec.onend = () => {
+      if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+        mediaRecorder.stop();
+      }
 
-        if (micBtn) {
-          micBtn.classList.remove('recording');
-          micBtn.innerHTML = MIC_ICON;
-        }
+      if (!hasProcessed) {
+        hasProcessed = true;
+        playErrorSound();
+      }
 
-        if (window.activeRecognition && window.activeRecognition.rec === rec) {
-          window.activeRecognition = null;
-        }
-      };
-
-      rec.start();
-    })
-    .catch(err => {
-      console.error('Error accessing microphone:', err);
-      alert('Không thể truy cập microphone. Vui lòng cấp quyền truy cập micro.');
       if (micBtn) {
         micBtn.classList.remove('recording');
         micBtn.innerHTML = MIC_ICON;
       }
-      window.activeRecognition = null;
-    });
+
+      if (window.activeRecognition && window.activeRecognition.rec === rec) {
+        window.activeRecognition = null;
+      }
+    };
+
+    rec.start();
+  };
+
+  if (isMobile) {
+    // Hide replay button on mobile since we don't record audio to prevent resource locks
+    const replayBtn = row.querySelector('.replay-btn');
+    if (replayBtn) {
+      replayBtn.classList.add('invisible');
+    }
+    runRecognition();
+  } else {
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(stream => {
+        // Check if user cancelled while we were waiting for mic permission
+        if (!window.activeRecognition || window.activeRecognition.idx !== idx) {
+          stream.getTracks().forEach(track => track.stop());
+          return;
+        }
+        runRecognition(stream);
+      })
+      .catch(err => {
+        console.error('Error accessing microphone:', err);
+        alert('Không thể truy cập microphone. Vui lòng cấp quyền truy cập micro.');
+        if (micBtn) {
+          micBtn.classList.remove('recording');
+          micBtn.innerHTML = MIC_ICON;
+        }
+        window.activeRecognition = null;
+      });
+  }
 }
 
 // Naive comparison & highlight

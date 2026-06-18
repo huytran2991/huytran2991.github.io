@@ -62,6 +62,61 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 window.lastRecordedAudios = {};
 
+function playSuccessSound() {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContext) return;
+  const ctx = new AudioContext();
+  const now = ctx.currentTime;
+  
+  const osc1 = ctx.createOscillator();
+  const gain1 = ctx.createGain();
+  osc1.type = 'sine';
+  osc1.frequency.setValueAtTime(523.25, now); // C5
+  gain1.gain.setValueAtTime(0.1, now);
+  gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+  osc1.connect(gain1);
+  gain1.connect(ctx.destination);
+  osc1.start(now);
+  osc1.stop(now + 0.15);
+  
+  const osc2 = ctx.createOscillator();
+  const gain2 = ctx.createGain();
+  osc2.type = 'sine';
+  osc2.frequency.setValueAtTime(659.25, now + 0.08); // E5
+  gain2.gain.setValueAtTime(0.1, now + 0.08);
+  gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+  osc2.connect(gain2);
+  gain2.connect(ctx.destination);
+  osc2.start(now + 0.08);
+  osc2.stop(now + 0.25);
+}
+
+function playErrorSound() {
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  if (!AudioContext) return;
+  const ctx = new AudioContext();
+  const now = ctx.currentTime;
+  
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  osc.type = 'triangle'; // triangle is softer than sawtooth/square but more buzz-like than sine
+  osc.frequency.setValueAtTime(180, now); // Low pitch
+  osc.frequency.linearRampToValueAtTime(120, now + 0.25); // Slide down
+  
+  gain.gain.setValueAtTime(0.12, now);
+  gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+  
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.start(now);
+  osc.stop(now + 0.25);
+}
+
+const MIC_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mic"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v1a7 7 0 0 1-14 0v-1"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>`;
+const STOP_ICON = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square"><rect width="18" height="18" x="3" y="3" rx="2"></rect></svg>`;
+
+window.activeRecognition = null;
+
 function playRecordedAudio(idx) {
   const audioUrl = window.lastRecordedAudios[idx];
   if (!audioUrl) return;
@@ -74,20 +129,58 @@ function startRecognition(item, row, idx) {
   
   const recogDiv = row.querySelector('.recognized');
   const wordEls = row.querySelectorAll('.word');
+  const micBtn = row.querySelector('[title="Record and compare"]');
+
+  // Handle active recognition toggling
+  if (window.activeRecognition) {
+    const isSame = window.activeRecognition.idx === idx;
+    const oldRec = window.activeRecognition.rec;
+    
+    // Stop the running recognition
+    if (oldRec) {
+      oldRec.stop();
+    }
+    window.activeRecognition = null;
+    
+    if (isSame) {
+      return; // Just stop the current recording
+    }
+  }
 
   // Reset word colors to initial state
   wordEls.forEach(el => {
     el.classList.remove('correct', 'wrong');
   });
 
+  // Visually enter recording state
+  if (micBtn) {
+    micBtn.classList.add('recording');
+    micBtn.innerHTML = STOP_ICON;
+  }
+
+  window.activeRecognition = {
+    rec: null,
+    idx: idx,
+    micBtn: micBtn
+  };
+
   navigator.mediaDevices.getUserMedia({ audio: true })
     .then(stream => {
+      // Check if user cancelled while we were waiting for mic permission
+      if (!window.activeRecognition || window.activeRecognition.idx !== idx) {
+        stream.getTracks().forEach(track => track.stop());
+        return;
+      }
+
       const rec = new SpeechRecognition();
       rec.lang = 'en-US';
-      rec.interimResults = false;
+      rec.interimResults = true;
+      rec.continuous = true;
       rec.maxAlternatives = 1;
       recogDiv.textContent = 'Listening...';
       let hasProcessed = false;
+
+      window.activeRecognition.rec = rec;
 
       const mediaRecorder = new MediaRecorder(stream);
       let chunks = [];
@@ -118,7 +211,20 @@ function startRecognition(item, row, idx) {
       };
 
       rec.onresult = async (e) => {
-        const transcript = e.results[0][0].transcript;
+        let finalTranscript = '';
+        let interimTranscript = '';
+
+        for (let i = e.resultIndex; i < e.results.length; ++i) {
+          if (e.results[i].isFinal) {
+            finalTranscript += e.results[i][0].transcript + ' ';
+          } else {
+            interimTranscript += e.results[i][0].transcript;
+          }
+        }
+
+        const transcript = (finalTranscript + interimTranscript).trim();
+        if (!transcript) return;
+
         recogDiv.textContent = transcript;
         highlightComparison(item.text, transcript, wordEls);
 
@@ -129,6 +235,8 @@ function startRecognition(item, row, idx) {
           hasProcessed = true;
           item.correctCount = (item.correctCount || 0) + 1;
           
+          playSuccessSound();
+
           if (currentUser) {
             if (typeof saveListToFirestore === 'function') {
               await saveListToFirestore(currentListId);
@@ -141,10 +249,13 @@ function startRecognition(item, row, idx) {
           
           const scoreEl = row.querySelector('.meta strong');
           if (scoreEl) scoreEl.textContent = item.correctCount;
+          
+          rec.stop();
         }
       };
       
       rec.onerror = (err) => {
+        console.error('Speech recognition error:', err);
         recogDiv.textContent = 'Error: ' + (err.error || err.message || 'unknown');
         if (mediaRecorder && mediaRecorder.state !== 'inactive') {
           mediaRecorder.stop();
@@ -155,6 +266,20 @@ function startRecognition(item, row, idx) {
         if (mediaRecorder && mediaRecorder.state !== 'inactive') {
           mediaRecorder.stop();
         }
+
+        if (!hasProcessed) {
+          hasProcessed = true;
+          playErrorSound();
+        }
+
+        if (micBtn) {
+          micBtn.classList.remove('recording');
+          micBtn.innerHTML = MIC_ICON;
+        }
+
+        if (window.activeRecognition && window.activeRecognition.rec === rec) {
+          window.activeRecognition = null;
+        }
       };
 
       rec.start();
@@ -162,6 +287,11 @@ function startRecognition(item, row, idx) {
     .catch(err => {
       console.error('Error accessing microphone:', err);
       alert('Không thể truy cập microphone. Vui lòng cấp quyền truy cập micro.');
+      if (micBtn) {
+        micBtn.classList.remove('recording');
+        micBtn.innerHTML = MIC_ICON;
+      }
+      window.activeRecognition = null;
     });
 }
 

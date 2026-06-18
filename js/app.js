@@ -1,3 +1,5 @@
+window.selectedSentenceIdx = null;
+
 // UI elements
 const btnSignIn = document.getElementById('btnSignIn');
 const btnSignOut = document.getElementById('btnSignOut');
@@ -137,6 +139,7 @@ function selectListById(id) {
   window.currentListId = id;
   selectList.value = id;
   localStorage.setItem('english_practice_last_list', id);
+  window.selectedSentenceIdx = null;
   renderSentences();
 }
 
@@ -240,6 +243,14 @@ function renderSentences() {
   arr.forEach((item, idx) => {
     const row = document.createElement('div');
     row.className = 'sentence-row';
+    if (window.selectedSentenceIdx === idx) {
+      row.className += ' selected-row';
+    }
+    row.onclick = () => {
+      window.selectedSentenceIdx = idx;
+      document.querySelectorAll('.sentence-row').forEach(r => r.classList.remove('selected-row'));
+      row.classList.add('selected-row');
+    };
     
     const top = document.createElement('div');
     top.className = 'sentence-top';
@@ -309,8 +320,8 @@ function renderSentences() {
     };
  
     icons.appendChild(replayBtn);
-    icons.appendChild(playBtn);
     icons.appendChild(micBtn);
+    icons.appendChild(playBtn);
     icons.appendChild(resetBtn);
     icons.appendChild(delBtn);
     
@@ -351,3 +362,28 @@ window.selectListById = selectListById;
 // Load initial lists and configurations
 loadListsFromLocal();
 loadConfigLocal();
+
+// Keyboard shortcuts for selected sentence row
+document.addEventListener('keydown', (e) => {
+  const activeEl = document.activeElement;
+  if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'SELECT')) {
+    return;
+  }
+  
+  if (window.selectedSentenceIdx !== null && window.selectedSentenceIdx !== undefined) {
+    const rows = document.querySelectorAll('.sentence-row');
+    const row = rows[window.selectedSentenceIdx];
+    if (row) {
+      if (e.key === '1') {
+        const btn = row.querySelector('.replay-btn');
+        if (btn) btn.click();
+      } else if (e.key === '2') {
+        const btn = row.querySelector('[title="Record and compare"]');
+        if (btn) btn.click();
+      } else if (e.key === '3') {
+        const btn = row.querySelector('[title="Play sentence"]');
+        if (btn) btn.click();
+      }
+    }
+  }
+});

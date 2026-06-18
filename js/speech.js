@@ -172,6 +172,9 @@ function startRecognition(item, row, idx) {
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent) || 
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
   // Core recognition setup function
   const runRecognition = (stream = null) => {
     const rec = new SpeechRecognition();
@@ -292,8 +295,8 @@ function startRecognition(item, row, idx) {
     rec.start();
   };
 
-  if (isMobile) {
-    // Hide replay button on mobile since we don't record audio to prevent resource locks
+  if (isIOS) {
+    // Hide replay button on iOS since we don't record audio to prevent WebKit resource locks
     const replayBtn = row.querySelector('.replay-btn');
     if (replayBtn) {
       replayBtn.classList.add('invisible');

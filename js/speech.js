@@ -159,7 +159,7 @@ function startRecognition(item, row, idx) {
   // Visually enter recording state
   if (micBtn) {
     micBtn.classList.add('recording');
-    micBtn.innerHTML = STOP_ICON;
+    micBtn.innerHTML = STOP_ICON + '<span class="key-badge">2</span>';
   }
 
   window.activeRecognition = {
@@ -284,7 +284,7 @@ function startRecognition(item, row, idx) {
 
       if (micBtn) {
         micBtn.classList.remove('recording');
-        micBtn.innerHTML = MIC_ICON;
+        micBtn.innerHTML = MIC_ICON + '<span class="key-badge">2</span>';
       }
 
       if (window.activeRecognition && window.activeRecognition.rec === rec) {
@@ -317,7 +317,7 @@ function startRecognition(item, row, idx) {
         alert('Không thể truy cập microphone. Vui lòng cấp quyền truy cập micro.');
         if (micBtn) {
           micBtn.classList.remove('recording');
-          micBtn.innerHTML = MIC_ICON;
+          micBtn.innerHTML = MIC_ICON + '<span class="key-badge">2</span>';
         }
         window.activeRecognition = null;
       });

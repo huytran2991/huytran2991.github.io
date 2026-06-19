@@ -528,4 +528,14 @@ footer {
   .topbar-group {
     justify-content: space-between;
   }
+
+  .selected-row .icon-btn .key-badge {
+    display: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .selected-row .icon-btn .key-badge {
+    display: none !important;
+  }
 }

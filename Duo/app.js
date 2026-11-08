@@ -3,6 +3,16 @@
 const app = document.querySelector('#app');
 const storageKey = 'duo-grade3-best-v1';
 const voiceKey = 'duo-grade3-voice-v1';
+const completionKey = 'duo-grade3-completed-v1';
+const practiceModes = [
+  ['matching', '🧩 Ghép cặp từ · 8 cặp'],
+  ['quiz', '📝 Trắc nghiệm câu · 8 câu', makeQuiz],
+  ['listening', '🎧 Nghe và chọn đáp án · 8 câu', makeListeningQuiz],
+  ['sentences', '🔤 Xếp từ thành câu · 8 câu', makeSentences],
+  ['translation', '✍️ Dịch Việt → Anh · 8 câu', makeTranslations],
+  ['mixed', '🎯 Luyện tổng hợp · 16 câu', makeQuestions]
+];
+const completed = new Set();
 let best = {};
 let preferredVoice = '';
 let unitIndex;
@@ -17,6 +27,21 @@ try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
   // Use the default voice when browser storage is unavailable.
+}
+try {
+  const stored = JSON.parse(localStorage.getItem(completionKey));
+  if (Array.isArray(stored)) for (const id of stored) completed.add(id);
+} catch {
+  // Track completion for this visit when storage is unavailable.
+}
+
+function markCompleted(mode) {
+  completed.add(unitIndex + '/' + mode);
+  try {
+    localStorage.setItem(completionKey, JSON.stringify([...completed]));
+  } catch {
+    // Keep the completed state for this visit.
+  }
 }
 
 function element(tag, text, className) {
@@ -132,7 +157,7 @@ function showHome(focus = true) {
     say('Hello! Let’s practise English together.', .9, status);
   });
   refreshVoices();
-  configureGemini();
+  app.querySelector('.voice-settings').after(configureGemini());
   const grid = app.querySelector('.unit-grid');
   units.forEach(([title, topic, page, icon], index) => {
     const card = button('', () => showUnit(index), 'unit');
@@ -167,22 +192,15 @@ function showUnit(index) {
   const panel = showPanel('Unit ' + (index + 1) + ' · ' + title, '← Các Unit', showHome);
   panel.append(element('p', topic + ' · Trang ' + page + ' trong sách'));
   const modes = element('div', '', 'mode-grid');
-  modes.append(
-    button('🎯 Luyện tổng hợp · 16 câu', () => startRound(makeQuestions()), 'primary'),
-    button('📝 Trắc nghiệm · 8 câu', () => startRound(makeQuiz(), false, makeQuiz)),
-    button('🎧 Nghe và chọn đáp án · 8 câu', () => startRound(makeListeningQuiz(), false, makeListeningQuiz)),
-    button('🧩 Ghép cặp từ · 8 cặp', showMatching),
-    button('🔤 Xếp từ thành câu · 8 câu', () => startRound(makeSentences(), false, makeSentences)),
-    button('✍️ Dịch Việt → Anh · 16 câu', () => {
-      if (geminiKey) {
-        startRound(makeTranslations(), false, makeTranslations);
-      } else {
-        showHome(false);
-        app.querySelector('#gemini-settings').open = true;
-        app.querySelector('#gemini-key').focus();
-      }
-    })
-  );
+  for (const [mode, label, makeRound] of practiceModes) {
+    const done = completed.has(index + '/' + mode) || (mode === 'mixed' && best[index] > 0);
+    const action = makeRound ? () => startRound(makeRound(), false, makeRound) : showMatching;
+    const control = button(label, action, done ? 'mode-completed' : '');
+    if (done) {
+      control.append(element('small', '✓ Đã hoàn thành'));
+    }
+    modes.append(control);
+  }
   panel.append(modes);
   const list = element('ul', '', 'word-list');
   const status = audioStatus();
@@ -213,7 +231,7 @@ function makeQuestions() {
     title: 'Đọc và chọn nghĩa đúng', lines: [pair[0]], answer: pair[1], choices: choices(pair, 1)
   });
   const writing = pair => ({
-    title: 'Gõ từ hoặc câu tiếng Anh theo nghĩa gợi ý', clue: pair[1], answer: pair[0], english: true
+    title: 'Gõ từ hoặc câu tiếng Anh theo nghĩa gợi ý', clue: pair[1], translation: true
   });
   const listening = sample.slice(0, 4).map(pair => ({
     title: 'Nghe rồi gõ lại', sound: pair[0], answer: pair[0], english: true
@@ -252,7 +270,7 @@ function makeListeningQuiz() {
 }
 
 function makeTranslations() {
-  return shuffle(translationPrompts[unitIndex]).map(clue => ({
+  return shuffle(translationPrompts[unitIndex]).slice(0, 8).map(clue => ({
     title: 'Dịch sang tiếng Anh', clue, english: true, translation: true
   }));
 }
@@ -317,6 +335,7 @@ function showMatching() {
           ? 'Đúng rồi! Đã ghép ' + matched + '/' + pairs.length + ' cặp.'
           : 'Hai thẻ này chưa khớp. Em thử lại nhé!';
         if (matched === pairs.length) {
+          markCompleted('matching');
           restart.hidden = false;
           restart.focus();
         } else if (correct) {
@@ -506,11 +525,22 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     actions.append(check);
     form.append(choices, feedback, actions);
     panel.append(form);
+    if (question.translation) {
+      if (!geminiKey) panel.append(configureGemini(() => input.focus()));
+      input.focus();
+    }
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (checked || request || !answer.trim()) return;
       let review;
       if (question.translation) {
+        if (!geminiKey) {
+          const settings = panel.querySelector('#gemini-settings');
+          feedback.textContent = 'Hãy lưu Gemini API key để chấm câu dịch.';
+          settings.open = true;
+          settings.querySelector('#gemini-key').focus();
+          return;
+        }
         request = new AbortController();
         const timeout = setTimeout(() => request.abort(), 30000);
         check.disabled = true;
@@ -519,7 +549,10 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
         try {
           review = await gradeTranslation(question.clue, answer.trim(), request.signal);
         } catch (error) {
-          if (panel.isConnected) feedback.textContent = error.message;
+          if (panel.isConnected) {
+            feedback.textContent = error.message;
+            input.focus();
+          }
           return;
         } finally {
           clearTimeout(timeout);
@@ -530,6 +563,10 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
         if (!panel.isConnected) return;
       }
       checked = true;
+      if (!review && position === questions.length - 1) {
+        const mode = practiceModes.find(([, , factory]) => factory === makeRound);
+        if (mode) markCompleted(mode[0]);
+      }
       const correct = review ? review.accepted
         : question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);
       if (!correct) missed.push(question);

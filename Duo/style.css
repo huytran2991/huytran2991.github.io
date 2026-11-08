@@ -54,6 +54,11 @@ input { display: block; width: 100%; padding: .75rem; margin-top: .4rem; border:
   gap: .7rem;
 }
 .matching-column { display: grid; align-content: start; gap: .6rem; }
+.mode-grid .mode-completed {
+  background: #e0efdc;
+  border-color: var(--green);
+}
+.mode-completed small { display: block; color: var(--green); }
 .matching-column h2 { margin-bottom: 0; }
 .matching-column .choice { overflow-wrap: anywhere; }
 .choice.matched:disabled { background: #e0efdc; border-color: var(--green); opacity: 1; }

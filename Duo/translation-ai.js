@@ -8,15 +8,11 @@ try {
   // The key can still be used for this visit.
 }
 
-function configureGemini(onSaved) {
-  const settings = document.querySelector('#gemini-template').content.firstElementChild.cloneNode(true);
+function configureGemini(settings, onSaved) {
   const form = settings.querySelector('#gemini-form');
   const input = settings.querySelector('#gemini-key');
   const remove = settings.querySelector('#gemini-remove');
   const status = settings.querySelector('#gemini-status');
-  settings.addEventListener('toggle', () => {
-    if (settings.open) input.focus();
-  });
   remove.disabled = !geminiKey;
   status.textContent = geminiKey ? 'Đã có API key.' : 'Chưa có API key.';
   form.addEventListener('submit', event => {
@@ -35,10 +31,7 @@ function configureGemini(onSaved) {
     } catch {
       status.textContent = 'API key dùng được trong lần mở trang này.';
     }
-    if (onSaved) {
-      settings.open = false;
-      onSaved();
-    }
+    onSaved();
   });
   remove.addEventListener('click', () => {
     try {
@@ -52,7 +45,6 @@ function configureGemini(onSaved) {
     remove.disabled = true;
     status.textContent = 'Đã xóa API key.';
   });
-  return settings;
 }
 
 async function gradeTranslation(vietnamese, answer, signal) {

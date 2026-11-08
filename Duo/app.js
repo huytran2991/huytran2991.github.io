@@ -1,6 +1,8 @@
 'use strict';
 
 const app = document.querySelector('#app');
+const settingsDialog = document.querySelector('#settings-dialog');
+const settingsKeyInput = settingsDialog.querySelector('#gemini-key');
 const voiceKey = 'duo-grade3-voice-v1';
 const completionKey = 'duo-grade3-authored-completed-v1';
 const practiceModes = [
@@ -16,6 +18,7 @@ let units = [];
 let preferredVoice = '';
 let unitIndex;
 let audioRequest = 0;
+let returnToAnswer;
 try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
@@ -65,8 +68,7 @@ function englishVoices() {
 }
 
 function refreshVoices() {
-  const select = app.querySelector('#voice');
-  if (!select) return;
+  const select = settingsDialog.querySelector('#voice');
   const voices = englishVoices();
   const automatic = element('option', 'Tự động (ưu tiên Anh–Anh)');
   automatic.value = '';
@@ -79,8 +81,8 @@ function refreshVoices() {
   select.value = voices.some(voice => voice.voiceURI === preferredVoice) ? preferredVoice : '';
   select.disabled = voices.length === 0;
   const available = Boolean(window.speechSynthesis && window.SpeechSynthesisUtterance);
-  app.querySelector('#voice-preview').disabled = !available;
-  app.querySelector('#voice-status').textContent = !available
+  settingsDialog.querySelector('#voice-preview').disabled = !available;
+  settingsDialog.querySelector('#voice-status').textContent = !available
     ? 'Trình duyệt này chưa hỗ trợ giọng đọc.'
     : voices.length === 0 ? 'Chưa tìm thấy giọng tiếng Anh. Em có thể nghe thử giọng tự động.' : '';
 }
@@ -141,11 +143,23 @@ function updateStars() {
   document.querySelector('#stars').textContent = '⭐ ' + total + ' / ' + maximum + ' sao';
 }
 
-function showHome(focus = true) {
-  stopAudio();
-  app.replaceChildren(document.querySelector('#home-template').content.cloneNode(true));
-  const status = app.querySelector('#voice-status');
-  app.querySelector('#voice').addEventListener('change', event => {
+function openSettings(answerInput) {
+  returnToAnswer = answerInput;
+  refreshVoices();
+  settingsDialog.showModal();
+  settingsKeyInput.focus();
+}
+
+function setupSettings() {
+  const status = settingsDialog.querySelector('#voice-status');
+  settingsDialog.addEventListener('close', () => {
+    stopAudio();
+    settingsKeyInput.value = '';
+    if (returnToAnswer?.isConnected) returnToAnswer.focus();
+    else app.querySelector('#open-settings')?.focus();
+    returnToAnswer = undefined;
+  });
+  settingsDialog.querySelector('#voice').addEventListener('change', event => {
     stopAudio();
     preferredVoice = event.target.value;
     status.textContent = '';
@@ -155,11 +169,18 @@ function showHome(focus = true) {
       status.textContent = 'Giọng đọc đã đổi cho lần mở trang này.';
     }
   });
-  app.querySelector('#voice-preview').addEventListener('click', () => {
+  settingsDialog.querySelector('#voice-preview').addEventListener('click', () => {
     say('Hello! Let’s practise English together.', .9, status);
   });
-  refreshVoices();
-  app.querySelector('.voice-settings').after(configureGemini());
+  configureGemini(settingsDialog.querySelector('#gemini-settings'), () => {
+    if (returnToAnswer) settingsDialog.close();
+  });
+}
+
+function showHome(focus = true) {
+  stopAudio();
+  app.replaceChildren(document.querySelector('#home-template').content.cloneNode(true));
+  app.querySelector('#open-settings').addEventListener('click', () => openSettings());
   const grid = app.querySelector('.unit-grid');
   units.forEach(({ id, title, topic, pages, icon }, index) => {
     const card = button('', () => showUnit(index), 'unit');
@@ -461,7 +482,6 @@ function startRound(questions, mode, review = false) {
     actions.append(check);
     form.append(choices, feedback, actions);
     panel.append(form);
-    if (question.translation && !geminiKey) panel.append(configureGemini(() => input.focus()));
     input?.focus();
     form.addEventListener('submit', async event => {
       event.preventDefault();
@@ -469,10 +489,8 @@ function startRound(questions, mode, review = false) {
       let grade;
       if (question.translation) {
         if (!geminiKey) {
-          const settings = panel.querySelector('#gemini-settings');
           feedback.textContent = 'Hãy lưu Gemini API key để chấm câu dịch.';
-          settings.open = true;
-          settings.querySelector('#gemini-key').focus();
+          openSettings(input);
           return;
         }
         request = new AbortController();
@@ -535,6 +553,7 @@ function startRound(questions, mode, review = false) {
 }
 
 window.speechSynthesis?.addEventListener?.('voiceschanged', refreshVoices);
+setupSettings();
 async function loadUnits() {
   try {
     if (location.protocol === 'file:') {

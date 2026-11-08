@@ -1,0 +1,266 @@
+{
+    "1": {
+        "ipa": "i:",
+        "word": "sleep",
+        "text-sound": "1.-iː-sleep-1.m4a",
+        "word-sound": "1.-iː-sleep-2.m4a"
+    },
+    "2": {
+        "ipa": "ɪ",
+        "word": "slip",
+        "text-sound": "2.-slip-1.m4a",
+        "word-sound": "2.-slip-2.m4a"
+    },
+    "3": {
+        "ipa": "ʊ",
+        "word": "good",
+        "text-sound": "3.-good-1.m4a",
+        "word-sound": "3.-good-2.m4a"
+    },
+    "4": {
+        "ipa": "u:",
+        "word": "food",
+        "text-sound": "4.-food-1.m4a",
+        "word-sound": "4.-food-2-1.m4a"
+    },
+    "5": {
+        "ipa": "e",
+        "word": "ten",
+        "text-sound": "5.-ten-1-1.m4a",
+        "word-sound": "5.-ten-2-1.m4a"
+    },
+    "6": {
+        "ipa": "ə",
+        "word": "better",
+        "text-sound": "6.-better-1.m4a",
+        "word-sound": "6.-better-2.m4a"
+    },
+    "7": {
+        "ipa": "ɜ:",
+        "word": "word",
+        "text-sound": "7.-word-1.m4a",
+        "word-sound": "7.-word-2.m4a"
+    },
+    "8": {
+        "ipa": "ɔ:",
+        "word": "more",
+        "text-sound": "8.-more-1.m4a",
+        "word-sound": "8.-more-2.m4a"
+    },
+    "9": {
+        "ipa": "æ",
+        "word": "tap",
+        "text-sound": "9.-tap-1.m4a",
+        "word-sound": "9.-tap-2.m4a"
+    },
+    "10": {
+        "ipa": "ʌ",
+        "word": "cup",
+        "text-sound": "10.-cup-1.m4a",
+        "word-sound": "10.-cup-2.m4a"
+    },
+    "11": {
+        "ipa": "ɑ:",
+        "word": "bar",
+        "text-sound": "11.-bar-1.m4a",
+        "word-sound": "11.-bar-2.m4a"
+    },
+    "12": {
+        "ipa": "ɒ",
+        "word": "gone",
+        "text-sound": "12.-gone-1.m4a",
+        "word-sound": "12.-gone-2.m4a"
+    },
+    "13": {
+        "ipa": "ɪə",
+        "word": "hear",
+        "text-sound": "13.-hear-1.m4a",
+        "word-sound": "13.-hear-2.m4a"
+    },
+    "14": {
+        "ipa": "eɪ",
+        "word": "game",
+        "text-sound": "14.-game-1.m4a",
+        "word-sound": "14.-game-2.m4a"
+    },
+    "15": {
+        "ipa": "ʊə",
+        "word": "pure",
+        "text-sound": "15.-pure-1.m4a",
+        "word-sound": "15.-pure-2.m4a"
+    },
+    "16": {
+        "ipa": "ɔɪ",
+        "word": "toy",
+        "text-sound": "16.-toy-1.m4a",
+        "word-sound": "16.-toy-2.m4a"
+    },
+    "17": {
+        "ipa": "əʊ",
+        "word": "no",
+        "text-sound": "17.-no-1.m4a",
+        "word-sound": "17.-no-2.m4a"
+    },
+    "18": {
+        "ipa": "eə",
+        "word": "where",
+        "text-sound": "18.-where-1.m4a",
+        "word-sound": "18.-where-2.m4a"
+    },
+    "19": {
+        "ipa": "aɪ",
+        "word": "mine",
+        "text-sound": "19.-mine-1.m4a",
+        "word-sound": "19.-mine-2.m4a"
+    },
+    "20": {
+        "ipa": "aʊ",
+        "word": "how",
+        "text-sound": "20.-how-1.m4a",
+        "word-sound": "20.-how-2.m4a"
+    },
+    "21": {
+        "ipa": "p",
+        "word": "pen",
+        "text-sound": "21.-pen-1.m4a",
+        "word-sound": "21.-pen-2.m4a"
+    },
+    "22": {
+        "ipa": "f",
+        "word": "fig",
+        "text-sound": "22.-fig-1.m4a",
+        "word-sound": "22.-fig-2.m4a"
+    },
+    "23": {
+        "ipa": "t",
+        "word": "tip",
+        "text-sound": "23.-tip-1.m4a",
+        "word-sound": "23.-tip-2.m4a"
+    },
+    "24": {
+        "ipa": "θ",
+        "word": "thought",
+        "text-sound": "24.-thought-1.m4a",
+        "word-sound": "24.-thought-2.m4a"
+    },
+    "25": {
+        "ipa": "ʧ",
+        "word": "chip",
+        "text-sound": "25.-chip-1.m4a",
+        "word-sound": "25.-chip-2.m4a"
+    },
+    "26": {
+        "ipa": "s",
+        "word": "save",
+        "text-sound": "26.-save-1.m4a",
+        "word-sound": "26.-save-2.m4a"
+    },
+    "27": {
+        "ipa": "ʃ",
+        "word": "sure",
+        "text-sound": "27.-sure-1.m4a",
+        "word-sound": "27.-sure-2.m4a"
+    },
+    "28": {
+        "ipa": "k",
+        "word": "cat",
+        "text-sound": "28.-cat-1.m4a",
+        "word-sound": "28.-cat-2.m4a"
+    },
+    "29": {
+        "ipa": "b",
+        "word": "bit",
+        "text-sound": "29.-bit-1.m4a",
+        "word-sound": "29.-bit-2.m4a"
+    },
+    "30": {
+        "ipa": "v",
+        "word": "vase",
+        "text-sound": "30.-vase-1.m4a",
+        "word-sound": "30.-vase-2.m4a"
+    },
+    "31": {
+        "ipa": "d",
+        "word": "done",
+        "text-sound": "31.-done-1.m4a",
+        "word-sound": "31.-done-2.m4a"
+    },
+    "32": {
+        "ipa": "ð",
+        "word": "those",
+        "text-sound": "32.-those-1.m4a",
+        "word-sound": "32.-those-2.m4a"
+    },
+    "33": {
+        "ipa": "ʤ",
+        "word": "jam",
+        "text-sound": "33.-jam-1.m4a",
+        "word-sound": "33.-jam-2.m4a"
+    },
+    "34": {
+        "ipa": "z",
+        "word": "zoo",
+        "text-sound": "34.-zoo-1.m4a",
+        "word-sound": "34.-zoo-2.m4a"
+    },
+    "35": {
+        "ipa": "ʒ",
+        "word": "vision",
+        "text-sound": "35.-vision-1.m4a",
+        "word-sound": "35.-vision-2.m4a"
+    },
+    "36": {
+        "ipa": "g",
+        "word": "goal",
+        "text-sound": "36.-goal-1.m4a",
+        "word-sound": "36.-goal-2.m4a"
+    },
+    "37": {
+        "ipa": "h",
+        "word": "him",
+        "text-sound": "37.-him-1.m4a",
+        "word-sound": "37.-him-2.m4a"
+    },
+    "38": {
+        "ipa": "m",
+        "word": "may",
+        "text-sound": "38.-may-1.m4a",
+        "word-sound": "38.-may-2.m4a"
+    },
+    "39": {
+        "ipa": "n",
+        "word": "not",
+        "text-sound": "39.-not-1.m4a",
+        "word-sound": "39.-not-2.m4a"
+    },
+    "40": {
+        "ipa": "ŋ",
+        "word": "sing",
+        "text-sound": "40.-sing-1.m4a",
+        "word-sound": "40.-sing-2.m4a"
+    },
+    "41": {
+        "ipa": "r",
+        "word": "reach",
+        "text-sound": "41.-reach-1.m4a",
+        "word-sound": "41.-reach-2.m4a"
+    },
+    "42": {
+        "ipa": "l",
+        "word": "lie",
+        "text-sound": "42-lie-1.m4a",
+        "word-sound": "42-lie-2.m4a"
+    },
+    "43": {
+        "ipa": "w",
+        "word": "will",
+        "text-sound": "43.-will-1.m4a",
+        "word-sound": "43.-will-2.m4a"
+    },
+    "44": {
+        "ipa": "j",
+        "word": "yet",
+        "text-sound": "44.-yet-1.m4a",
+        "word-sound": "44.-yet-2.m4a"
+    }
+}

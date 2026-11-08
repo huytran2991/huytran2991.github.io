@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=4f52eb8e-4cbe-460b-8487-41f4fcb67ecc
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <title>Phonemic Chart - IPA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+        --bg: #f7f7f8;
+        --border: #cfcfd3;
+        --text: #1d1d20;
+        --short: #fdffd6;
+        --long: #fff484;
+        --dip: #ffa4a4;
+        --unvoiced: #dff0d8;
+        --voiced: #cfe5ff;
+        --empty: #fff;
+        --title: #4b5563;
+        --legend-text: #4b5563;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "DejaVu Sans", "Arial Unicode MS", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+    .wrap{
+      max-width:1200px;
+      margin:24px auto;
+      padding:0 16px 40px;
+    }
+    h1{
+      margin:0 0 16px;
+      font-size:28px;
+      color:#111827;
+      letter-spacing:.3px;
+    }
+    .legend{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      align-items:center;
+      margin:8px 0 20px;
+      color:var(--legend-text);
+      font-size:14px;
+    }
+    .legend .box{
+      width:14px;height:14px;border:1px solid var(--border);border-radius:3px;margin-right:6px;display:inline-block;vertical-align:middle;
+    }
+    .box.short{background:var(--short)}
+    .box.long{background:var(--long)}
+    .box.dip{background:var(--dip)}
+    .box.voiced{background:var(--voiced)}
+    .box.unvoiced{background:var(--unvoiced)}
+
+    section{
+      margin-top:18px;
+      background:white;
+      border:1px solid var(--border);
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,.04);
+    }
+    section>header{
+      padding:10px 14px;
+
+      color:var(--title);
+      font-weight:600;
+      letter-spacing:.2px;
+    }
+
+    /* Grids */
+    .grid{
+      display:grid;
+      gap:8px;
+      padding:12px;
+    }
+    .vowels-wrapper{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:8px;
+    }
+    .grid.vowels-mono,
+    .grid.vowels-dip{ grid-template-columns: repeat(4, 1fr); }
+    .grid.cons{ grid-template-columns: repeat(8, 1fr); }
+
+    .tile{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:92px;
+      border:1px solid var(--border);
+      border-radius:8px;
+      background:#fff;
+      cursor:pointer;
+      user-select:none;
+      transition:transform .05s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .tile:hover{ transform:translateY(-1px); box-shadow:0 4px 10px rgba(0,0,0,.06) }
+    .tile:active{ transform:translateY(0) }
+    .tile.empty{ background:var(--empty); border:none; cursor:default; }
+    .tile.empty .ipa, .tile.empty .word{ opacity:.3 }
+
+    .tile.short{ background:var(--short) }
+    .tile.long{ background:var(--long) }
+    .tile.dip{ background:var(--dip) }
+    .tile.unvoiced{ background:var(--unvoiced) }
+    .tile.voiced{ background:var(--voiced) }
+
+    .ipa{
+      font-size:38px;
+      line-height:1;
+      font-weight:700;
+      margin-bottom:8px;
+    }
+    .word{
+      font-size:14px;
+      opacity:.9;
+      letter-spacing:.2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .vowels-wrapper{ grid-template-columns: 1fr; }
+      .grid.cons{ grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (max-width: 520px){
+      .ipa{ font-size:34px }
+      .tile{ min-height:84px }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Phonemic Chart</h1>
+
+    <div class="legend" aria-hidden="true">
+      <span><i class="box short"></i>short</span>
+      <span><i class="box long"></i>long</span>
+      <span><i class="box dip"></i>diphthongs</span>
+      <span><i class="box unvoiced"></i>unvoiced</span>
+      <span><i class="box voiced"></i>voiced</span>
+    </div>
+
+    <!-- VOWELS -->
+    <section>
+      <header>Vowels</header>
+      <div class="vowels-wrapper">
+        <div class="grid vowels-mono">
+
+          <div class="tile long"  data-id="1"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile short" data-id="2"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile short" data-id="3"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile long"  data-id="4"><div class="ipa"></div><div class="word"></div></div>
+
+          <div class="tile short" data-id="5"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile short" data-id="6"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile long"  data-id="7"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile long"  data-id="8"><div class="ipa"></div><div class="word"></div></div>
+
+          <div class="tile short" data-id="9"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile short" data-id="10"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile long"  data-id="11"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile short" data-id="12"><div class="ipa"></div><div class="word"></div></div>
+
+        </div>
+        <div class="grid vowels-dip">
+
+          <div class="tile dip"   data-id="13"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile dip"   data-id="14"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile empty"><div class="ipa"> </div><div class="word"></div></div>
+          <div class="tile empty"><div class="ipa"> </div><div class="word"></div></div>
+
+          <div class="tile dip"   data-id="15"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile dip"   data-id="16"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile dip"   data-id="17"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile empty"><div class="ipa"> </div><div class="word"></div></div>
+
+          <div class="tile dip"   data-id="18"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile dip"   data-id="19"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile dip"   data-id="20"><div class="ipa"></div><div class="word"></div></div>
+          <div class="tile empty"><div class="ipa"> </div><div class="word"></div></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSONANTS -->
+    <section>
+      <header>Consonants</header>
+      <div class="grid cons">
+        <!-- Row 1 -->
+        <div class="tile unvoiced" data-id="21"><div class="ipa"></div><div class="word"></div></div> <!-- p -->
+        <div class="tile voiced"   data-id="29"><div class="ipa"></div><div class="word"></div></div> <!-- b -->
+        <div class="tile unvoiced" data-id="23"><div class="ipa"></div><div class="word"></div></div> <!-- t -->
+        <div class="tile voiced"   data-id="31"><div class="ipa"></div><div class="word"></div></div> <!-- d -->
+        <div class="tile unvoiced" data-id="25"><div class="ipa"></div><div class="word"></div></div> <!-- ʧ -->
+        <div class="tile voiced"   data-id="33"><div class="ipa"></div><div class="word"></div></div> <!-- ʤ -->
+        <div class="tile unvoiced" data-id="28"><div class="ipa"></div><div class="word"></div></div> <!-- k -->
+        <div class="tile voiced"   data-id="36"><div class="ipa"></div><div class="word"></div></div> <!-- g -->
+
+        <!-- Row 2 -->
+        <div class="tile unvoiced" data-id="22"><div class="ipa"></div><div class="word"></div></div> <!-- f -->
+        <div class="tile voiced"   data-id="30"><div class="ipa"></div><div class="word"></div></div> <!-- v -->
+        <div class="tile unvoiced" data-id="24"><div class="ipa"></div><div class="word"></div></div> <!-- θ -->
+        <div class="tile voiced"   data-id="32"><div class="ipa"></div><div class="word"></div></div> <!-- ð -->
+        <div class="tile unvoiced" data-id="26"><div class="ipa"></div><div class="word"></div></div> <!-- s -->
+        <div class="tile voiced"   data-id="34"><div class="ipa"></div><div class="word"></div></div> <!-- z -->
+        <div class="tile unvoiced" data-id="27"><div class="ipa"></div><div class="word"></div></div> <!-- ʃ -->
+        <div class="tile voiced"   data-id="35"><div class="ipa"></div><div class="word"></div></div> <!-- ʒ -->
+
+        <!-- Row 3 -->
+        <div class="tile voiced"   data-id="38"><div class="ipa"></div><div class="word"></div></div> <!-- m -->
+        <div class="tile voiced"   data-id="39"><div class="ipa"></div><div class="word"></div></div> <!-- n -->
+        <div class="tile voiced"   data-id="40"><div class="ipa"></div><div class="word"></div></div> <!-- ŋ -->
+        <div class="tile voiced"   data-id="42"><div class="ipa"></div><div class="word"></div></div> <!-- l -->
+        <div class="tile voiced"   data-id="41"><div class="ipa"></div><div class="word"></div></div> <!-- r -->
+        <div class="tile voiced"   data-id="43"><div class="ipa"></div><div class="word"></div></div> <!-- w -->
+        <div class="tile voiced"   data-id="44"><div class="ipa"></div><div class="word"></div></div> <!-- j -->
+        <div class="tile unvoiced" data-id="37"><div class="ipa"></div><div class="word"></div></div> <!-- h -->
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function(){
+      const vowelsContainer = document.querySelector('.grid.vowels');
+      const consContainer   = document.querySelector('.grid.cons');
+
+      // State for audio playback with cancellation
+      const state = {
+        token: 0,
+        timer: null,
+        textAudio: new Audio(),
+        wordAudio: new Audio()
+      };
+
+      function ensureMp4(name){
+        if(!name) return '';
+        return encodeURI(name.replace(/\.m4a$/i, '.mp4'));
+      }
+
+      function cancelPlayback(){
+        state.token++;
+        if(state.timer){ clearTimeout(state.timer); state.timer = null; }
+        [state.textAudio, state.wordAudio].forEach(a=>{
+          try{ a.pause(); }catch(e){}
+          try{ a.currentTime = 0; }catch(e){}
+          a.src = '';
+          a.onended = null;
+        });
+      }
+
+      function playSequence(item){
+        cancelPlayback();
+        const myToken = state.token;
+
+        const tSrc = 'audio/' + ensureMp4(item['text-sound']);
+        const wSrc = 'audio/' + ensureMp4(item['word-sound']);
+
+        state.textAudio.src = tSrc;
+        state.wordAudio.src = wSrc;
+
+        const playWord = () => {
+          if(myToken !== state.token) return;
+          state.wordAudio.play().catch(()=>{ /* ignore */ });
+        };
+
+        state.textAudio.onended = () => {
+          if(myToken !== state.token) return;
+          state.timer = setTimeout(playWord, 500);
+        };
+
+        state.textAudio.play()
+          .catch(() => {
+            // If text audio cannot play, jump directly to word audio
+            playWord();
+          });
+      }
+
+      // Load map.txt then populate tiles
+      fetch('audio/map.txt')
+        .then(r=>r.json())
+        .then(map=>{
+          // Fill text and click handlers
+          document.querySelectorAll('.tile[data-id]').forEach(tile=>{
+            const id = tile.getAttribute('data-id');
+            const data = map[id];
+            if(!data){ tile.classList.add('empty'); tile.title = 'N/A'; return; }
+
+            const ipaEl = tile.querySelector('.ipa');
+            const wordEl = tile.querySelector('.word');
+            ipaEl.textContent = data.ipa || '';
+            wordEl.textContent = data.word || '';
+
+            tile.setAttribute('aria-label', (data.ipa||'') + ' - ' + (data.word||''));
+            tile.addEventListener('click', ()=>{
+              playSequence(data);
+            });
+          });
+
+          // Click outside to stop current playback
+          document.addEventListener('click', (e)=>{
+            const tile = e.target.closest('.tile[data-id]');
+            if(!tile) cancelPlayback();
+          });
+        })
+        .catch(err=>{
+          console.error('Không thể tải audio/map.txt', err);
+        });
+    })();
+  </script>
+</body>
+</html>

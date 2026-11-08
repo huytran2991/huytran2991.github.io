@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Writing Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=<?= filemtime(__DIR__ . '/css/styles.css') ?>">
+  <script src="../practice-api.js" defer></script>
+  <script src="js/practice.js" defer></script>
+  <script src="../practice-state.js?v=<?= filemtime(__DIR__ . '/../practice-state.js') ?>" defer></script>
+  <script src="js/app.js?v=<?= filemtime(__DIR__ . '/js/app.js') ?>" defer></script>
+</head>
+<body>
+<div class="shell">
+  <header class="header">
+    <div><p class="eyebrow">ENGLISH PRACTICE</p><h1>Think. Write. Improve.</h1><p class="muted">Translate your daily work into English. One sentence at a time.</p></div>
+    <nav class="actions" aria-label="Other practice tools"><a class="btn ghost" href="../Listening/">Listening ↗</a><a class="btn ghost" href="../Speaking/">Speaking ↗</a></nav>
+  </header>
+  <div class="workspace">
+    <aside class="card library" aria-label="Lesson library">
+      <div class="section-heading"><h2>Your lessons</h2><button class="btn ghost compact" id="reload" type="button">Reload</button></div>
+      <p id="status" class="small" role="status" aria-live="polite"></p>
+      <div class="lesson-search"><label for="lesson-search">Search lessons</label><input id="lesson-search" type="search" placeholder="Search by lesson name…" aria-controls="lessons"></div>
+      <p class="small">Each .txt file is a lesson. Each nonempty line is one Vietnamese sentence. Create a lesson below.</p>
+      <div id="lessons" class="lesson-list"></div>
+      <p id="search-empty" class="small" role="status" hidden>No matching lessons.</p>
+      <form id="create-lesson" class="lesson-form">
+        <h2>Create a lesson</h2>
+        <label for="file-name">Lesson name</label>
+        <input id="file-name" type="text" placeholder="My lesson" maxlength="176" required>
+        <label for="file-content">Vietnamese sentences</label>
+        <textarea id="file-content" lang="vi" rows="5" placeholder="One Vietnamese sentence per line" aria-describedby="create-help" required></textarea>
+        <p id="create-help" class="small">Up to 200 sentences, 2,000 UTF-8 bytes per sentence. A .txt file is created automatically.</p>
+        <button class="btn" id="create" type="submit" disabled>Create</button>
+        <p id="create-status" class="small" role="status" aria-live="polite"></p>
+      </form>
+      <div class="library-footer"><span id="completed">0 completed</span><progress id="progress" value="0" max="1" aria-label="Lesson completion"></progress></div>
+    </aside>
+    <main>
+      <section class="card settings" aria-label="AI review status">
+        <label for="model">Review model<select id="model" aria-describedby="ai-status" disabled><option value="">Loading models…</option></select></label>
+        <p class="small" id="ai-status" role="status">Checking AI availability…</p>
+      </section>
+      <section class="card practice" aria-label="Translation exercise">
+        <div class="section-heading"><h2 id="lesson-title">Choose a lesson</h2><span class="pill" id="position">0 / 0</span></div>
+        <div class="source"><p class="eyebrow">TRANSLATE INTO ENGLISH</p><p id="source" lang="vi">Choose a lesson to start.</p></div>
+        <form id="answer-form">
+          <label for="answer">Your English translation</label>
+          <div class="answer-field">
+            <textarea id="answer" lang="en" rows="4" maxlength="2000" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="Write your translation here…" disabled></textarea>
+            <button class="btn secondary" id="dictate" type="button" aria-label="Dictate in English" aria-pressed="false" disabled hidden>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <rect x="9" y="2" width="6" height="13" rx="3"/>
+                <path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3"/>
+              </svg>
+            </button>
+          </div>
+          <p id="dictation-status" class="small" role="status" hidden></p>
+          <div class="actions"><button class="btn" id="ai-review" type="submit" disabled>AI review</button><span id="transfer-actions" class="actions" hidden><button class="btn secondary" id="add-speaking" type="button">Add to Speaking</button><button class="btn secondary" id="add-listening" type="button">Add to Listening</button></span></div>
+          <p id="transfer-status" class="small" role="status" aria-live="polite" hidden></p>
+          <p class="small">Enter for AI review · Enter again after acceptance to continue · Shift + Enter for a new line</p>
+        </form>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+        <div class="navigation"><button class="btn ghost" id="previous" type="button" disabled>← Previous</button><span class="small">AI checks meaning, grammar and naturalness.</span><button class="btn secondary" id="next" type="button" disabled>Next →</button></div>
+      </section>
+      <section class="card sentence-card" aria-label="Sentence navigation"><div class="section-heading"><h2>Sentences</h2><button class="btn ghost compact" id="clear-all" type="button" disabled>Clear progress</button></div><div id="sentences" class="sentence-grid"></div><p class="small sentence-legend">✓ AI accepted</p></section>
+    </main>
+  </div>
+  <footer class="small">Progress stays in this browser. AI receives only the current exercise and your translation when you click AI review.</footer>
+</div>
+</body>
+</html>

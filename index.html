@@ -3,14 +3,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2f6f4">
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>English Practice</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font: 1rem/1.5 system-ui, sans-serif;
+      color: #162e2a;
+      background: #f2f6f4;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at 8% 0%, #dceee6, transparent 48%);
+    }
+
+    main {
+      max-width: 65rem;
+      margin: 0 auto;
+      padding: clamp(1.25rem, 5vw, 3.5rem);
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: clamp(1.5rem, 4vw, 2.75rem);
+      border: 1px solid #c4d9cf;
+      border-radius: 1.25rem;
+      background: #eaf5ef;
+    }
+
+    .intro img { display: block; width: 3rem; height: 3rem; }
+    h1 { margin: 0; line-height: 1.15; }
+    .intro h1 { margin-top: .75rem; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -.045em; }
+    .intro p { margin: .6rem 0 0; color: #36544c; }
+    .intro .account-status { min-height: 1.5em; font-size: .9rem; }
+
+    .account {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: .6rem 1rem;
+      padding: .75rem 1rem;
+      border: 1px solid #c4d9cf;
+      border-radius: .9rem;
+      background: #eaf5ef;
+    }
+
+    .account strong, .account-email { display: block; overflow-wrap: anywhere; }
+    .account-email { color: #36544c; font-size: .9rem; }
+    .account-error { flex-basis: 100%; margin: 0; color: #8b291e; }
+    .account-error:empty { display: none; }
+
+    button {
+      min-height: 2.75rem;
+      padding: .55rem 1rem;
+      border: 1px solid #225448;
+      border-radius: .65rem;
+      background: #225448;
+      color: #fff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button:hover:not(:disabled) { background: #163f35; }
+    button:disabled { opacity: .65; cursor: default; }
+    #sign-out { background: transparent; color: #225448; }
+    #sign-out:hover:not(:disabled) { background: #dceee6; }
+    :focus-visible { outline: 3px solid #7b4a0b; outline-offset: 4px; }
+
+    .practice { margin-top: 1.5rem; }
+    .practice h1 { font-size: 1.4rem; }
+
+    .tool-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+      gap: .85rem;
+      margin: 1rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tool {
+      display: block;
+      height: 100%;
+      padding: 1.15rem;
+      border: 1px solid #cadbd3;
+      border-radius: .9rem;
+      background: #fff;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .tool:hover { border-color: #458071; background: #f7fcf9; }
+    .tool-heading { display: flex; justify-content: space-between; gap: .6rem; }
+    .tool strong { font-size: 1.08rem; }
+    .arrow { color: #225448; }
+    .description { display: block; margin-top: .45rem; color: #405a53; font-size: .95rem; }
+  </style>
 </head>
 <body>
   <main>
-    <h1>English Practice</h1>
-    <p>The site is ready.</p>
+    <header id="intro" class="intro">
+      <div>
+        <img src="apple-touch-icon.png" width="48" height="48" alt="">
+        <h1>English Practice</h1>
+        <p>Build your listening, speaking, writing, and pronunciation skills.</p>
+        <p id="status" class="account-status" role="status">Checking your Google sign-in…</p>
+      </div>
+      <button type="button" id="sign-in" disabled>Sign in with Google</button>
+    </header>
+
+    <header id="account" class="account" hidden>
+      <div>
+        <strong id="user-name"></strong>
+        <span id="user-email" class="account-email" hidden></span>
+      </div>
+      <button type="button" id="sign-out">Sign out</button>
+      <p id="account-error" class="account-error" role="status"></p>
+    </header>
+
+    <section id="practice" class="practice" aria-labelledby="practice-title" hidden>
+      <h1 id="practice-title">Practice tools</h1>
+      <ul class="tool-list">
+        <li><a class="tool" href="Listening/index.php">
+          <span class="tool-heading"><strong>Listening</strong><span class="arrow" aria-hidden="true">→</span></span>
+          <span class="description">Listen to sentences and practice dictation.</span>
+        </a></li>
+        <li><a class="tool" href="Speaking/index.php">
+          <span class="tool-heading"><strong>Speaking</strong><span class="arrow" aria-hidden="true">→</span></span>
+          <span class="description">Practice speaking with your lesson library.</span>
+        </a></li>
+        <li><a class="tool" href="SpeakingReview/index.php">
+          <span class="tool-heading"><strong>Speaking Review</strong><span class="arrow" aria-hidden="true">→</span></span>
+          <span class="description">Record a message, get AI feedback, and try speaking again.</span>
+        </a></li>
+        <li><a class="tool" href="Writing/index.php">
+          <span class="tool-heading"><strong>Writing</strong><span class="arrow" aria-hidden="true">→</span></span>
+          <span class="description">Translate and review your English with AI.</span>
+        </a></li>
+        <li><a class="tool" href="IPA/">
+          <span class="tool-heading"><strong>IPA</strong><span class="arrow" aria-hidden="true">→</span></span>
+          <span class="description">Explore 44 sounds and pronunciation examples.</span>
+        </a></li>
+      </ul>
+    </section>
   </main>
+  <script type="module">
+    const status = document.getElementById('status');
+    const signInButton = document.getElementById('sign-in');
+    const signOutButton = document.getElementById('sign-out');
+    const intro = document.getElementById('intro');
+    const account = document.getElementById('account');
+    const userName = document.getElementById('user-name');
+    const userEmail = document.getElementById('user-email');
+    const accountError = document.getElementById('account-error');
+    const practice = document.getElementById('practice');
+
+    try {
+      const { auth, onAuthStateChanged, signInWithGoogle, signOut } = await import('./firebase-client.js');
+
+      signInButton.addEventListener('click', async () => {
+        signInButton.disabled = true;
+        status.textContent = 'Waiting for Google sign-in…';
+        try {
+          await signInWithGoogle();
+        } catch (error) {
+          status.textContent = `Google sign-in failed (${error.code ?? 'unknown error'}). Try again.`;
+          signInButton.disabled = false;
+        }
+      });
+
+      signOutButton.addEventListener('click', async () => {
+        signOutButton.disabled = true;
+        accountError.textContent = '';
+        try {
+          await signOut(auth);
+        } catch {
+          accountError.textContent = 'Could not sign out. Try again.';
+        } finally {
+          signOutButton.disabled = false;
+        }
+      });
+
+      onAuthStateChanged(auth, user => {
+        const signedIn = Boolean(user);
+        const name = user?.displayName?.trim() || '';
+        const email = user?.email || '';
+        userName.textContent = name || email || 'Google account';
+        userEmail.textContent = email;
+        userEmail.hidden = !name || !email || email === name;
+        accountError.textContent = '';
+        intro.hidden = signedIn;
+        account.hidden = !signedIn;
+        practice.hidden = !signedIn;
+        signInButton.disabled = false;
+        status.textContent = signedIn ? '' : 'Sign in to open your practice tools.';
+      });
+    } catch {
+      status.textContent = 'Google sign-in could not load. Check your connection and reload this page.';
+    }
+  </script>
 </body>
 </html>

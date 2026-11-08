@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Firebase Connection Test · English Practice</title>
+  <style>
+    body { max-width: 40rem; margin: 3rem auto; padding: 0 1rem; font: 1rem/1.5 system-ui, sans-serif; }
+    button { padding: .5rem .8rem; margin-right: .4rem; font: inherit; }
+    article { margin: .8rem 0; padding: .8rem 1rem; border: 1px solid #aaa; border-radius: .5rem; }
+    article h3, article p { margin: 0 0 .4rem; }
+    #results { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Firebase Connection Test</h1>
+    <p>Sign in with the Google account you used for English Practice. This page reads up to three Speaking lists and your saved settings.</p>
+    <p id="status" role="status">Loading Firebase…</p>
+    <button type="button" id="sign-in" disabled>Sign in with Google</button>
+    <button type="button" id="refresh" hidden>Read Firestore again</button>
+    <button type="button" id="sign-out" hidden>Sign out</button>
+    <section id="results" aria-label="Firestore results"></section>
+  </main>
+  <script type="module">
+    import { app, auth, signInWithGoogle } from './firebase-client.js';
+    import { onAuthStateChanged, signOut }
+      from 'https://www.gstatic.com/firebasejs/13.2.0/firebase-auth.js';
+    import { collection, doc, getDocFromServer, getDocsFromServer, getFirestore, limit, query }
+      from 'https://www.gstatic.com/firebasejs/13.2.0/firebase-firestore.js';
+
+    const db = getFirestore(app);
+    const status = document.getElementById('status');
+    const results = document.getElementById('results');
+    const signInButton = document.getElementById('sign-in');
+    const signOutButton = document.getElementById('sign-out');
+    const refreshButton = document.getElementById('refresh');
+    let readSequence = 0;
+
+    function describeError(error) {
+      if (error.code === 'auth/unauthorized-domain') {
+        return 'Add this hostname under Firebase Authentication → Settings → Authorized domains.';
+      }
+      if (error.code === 'permission-denied') {
+        return 'Firestore denied access. Check that the Rules allow your Google account UID to read its own lists and settings.';
+      }
+      return error.code ?? 'Unknown error';
+    }
+
+    function appendText(parent, tag, text) {
+      const element = document.createElement(tag);
+      element.textContent = text;
+      parent.append(element);
+      return element;
+    }
+
+    async function readFirestore(user) {
+      const sequence = ++readSequence;
+      results.replaceChildren();
+      refreshButton.disabled = true;
+      status.textContent = 'Google sign-in succeeded. Reading from Firestore…';
+
+      try {
+        const userRef = doc(db, 'users', user.uid);
+        const [lists, config] = await Promise.all([
+          getDocsFromServer(query(collection(userRef, 'lists'), limit(3))),
+          getDocFromServer(doc(userRef, 'meta', 'config'))
+        ]);
+        if (sequence !== readSequence) return;
+
+        status.textContent = 'Google sign-in and Firestore read succeeded.';
+        appendText(results, 'h2', 'Speaking lists');
+        if (lists.empty) appendText(results, 'p', 'This account has no Speaking lists.');
+        for (const snapshot of lists.docs) {
+          const data = snapshot.data();
+          const sentences = Array.isArray(data.sentences) ? data.sentences : [];
+          const card = document.createElement('article');
+          appendText(card, 'h3', typeof data.name === 'string' ? data.name : 'Untitled list');
+          appendText(card, 'p', `${sentences.length} sentence(s)`);
+          for (const sentence of sentences.slice(0, 2)) {
+            if (typeof sentence?.text === 'string') appendText(card, 'p', sentence.text);
+          }
+          results.append(card);
+        }
+
+        appendText(results, 'h2', 'Saved settings');
+        if (config.exists()) {
+          const { voice, rate } = config.data();
+          appendText(results, 'p', `Voice: ${voice ?? 'Default'} · Rate: ${rate ?? 'Default'}`);
+        } else {
+          appendText(results, 'p', 'This account has no saved settings.');
+        }
+      } catch (error) {
+        if (sequence === readSequence) {
+          status.textContent = `Google sign-in succeeded. Firestore read failed. ${describeError(error)}`;
+        }
+      } finally {
+        if (sequence === readSequence) refreshButton.disabled = false;
+      }
+    }
+
+    signInButton.addEventListener('click', async () => {
+      signInButton.disabled = true;
+      try {
+        await signInWithGoogle();
+      } catch (error) {
+        status.textContent = `Google sign-in failed. ${describeError(error)}`;
+      } finally {
+        signInButton.disabled = false;
+      }
+    });
+    signOutButton.addEventListener('click', async () => {
+      try {
+        await signOut(auth);
+      } catch (error) {
+        status.textContent = `Sign-out failed. ${describeError(error)}`;
+      }
+    });
+    refreshButton.addEventListener('click', () => {
+      if (auth.currentUser) readFirestore(auth.currentUser);
+    });
+    onAuthStateChanged(auth, user => {
+      signInButton.hidden = Boolean(user);
+      signInButton.disabled = false;
+      refreshButton.hidden = !user;
+      signOutButton.hidden = !user;
+      if (user) {
+        readFirestore(user);
+      } else {
+        readSequence++;
+        results.replaceChildren();
+        status.textContent = 'Ready. Sign in with Google to test the connection.';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -3,14 +3,14 @@
 const app = document.querySelector('#app');
 const storageKey = 'duo-grade3-best-v1';
 const voiceKey = 'duo-grade3-voice-v1';
-const completionKey = 'duo-grade3-completed-v1';
+const completionKey = 'duo-grade3-completed-v2';
 const practiceModes = [
-  ['matching', '🧩 Ghép cặp từ · 8 cặp'],
-  ['quiz', '📝 Trắc nghiệm câu · 8 câu', makeQuiz],
-  ['listening', '🎧 Nghe và chọn đáp án · 8 câu', makeListeningQuiz],
-  ['sentences', '🔤 Xếp từ thành câu · 8 câu', makeSentences],
-  ['translation', '✍️ Dịch Việt → Anh · 8 câu', makeTranslations],
-  ['mixed', '🎯 Luyện tổng hợp · 16 câu', makeQuestions]
+  ['matching', '🧩 Ghép cặp từ'],
+  ['quiz', '📝 Trắc nghiệm câu', makeQuiz],
+  ['listening', '🎧 Nghe và chọn đáp án', makeListeningQuiz],
+  ['sentences', '🔤 Xếp từ thành câu', makeSentences],
+  ['translation', '✍️ Dịch Việt → Anh', makeTranslations],
+  ['mixed', '🎯 Luyện tổng hợp', makeQuestions]
 ];
 const completed = new Set();
 let best = {};
@@ -193,9 +193,11 @@ function showUnit(index) {
   panel.append(element('p', topic + ' · Trang ' + page + ' trong sách'));
   const modes = element('div', '', 'mode-grid');
   for (const [mode, label, makeRound] of practiceModes) {
-    const done = completed.has(index + '/' + mode) || (mode === 'mixed' && best[index] > 0);
-    const action = makeRound ? () => startRound(makeRound(), false, makeRound) : showMatching;
-    const control = button(label, action, done ? 'mode-completed' : '');
+    const done = completed.has(index + '/' + mode);
+    const questions = makeRound?.();
+    const action = questions ? () => startRound(questions, false, makeRound) : showMatching;
+    const count = questions ? questions.length + ' câu' : vocabulary(words).length + ' cặp';
+    const control = button(label + ' · ' + count, action, done ? 'mode-completed' : '');
     if (done) {
       control.append(element('small', '✓ Đã hoàn thành'));
     }
@@ -220,64 +222,92 @@ function showUnit(index) {
   panel.append(details);
 }
 
+function isSentence(text) {
+  return /[.!?]$/.test(text);
+}
+
+function vocabulary(words) {
+  return words.filter(([text]) => !isSentence(text));
+}
+
+function prioritizeVocabulary(words, limit) {
+  const terms = vocabulary(words);
+  const examples = shuffle(words.filter(([text]) => isSentence(text)));
+  return shuffle([...terms, ...examples.slice(0, limit - terms.length)]);
+}
+
+function wordChoices(pair, words, column, size) {
+  const sameKind = isSentence(pair[0]);
+  const others = shuffle(words.filter(word => word[column] !== pair[column]));
+  const ordered = [
+    ...others.filter(word => isSentence(word[0]) === sameKind),
+    ...others.filter(word => isSentence(word[0]) !== sameKind)
+  ];
+  const values = [...new Set(ordered.map(word => word[column]))];
+  return shuffle([pair[column], ...values.slice(0, size - 1)]);
+}
+
+function readingQuestion(pair, words) {
+  return {
+    title: 'Đọc và chọn nghĩa đúng', lines: [pair[0]], answer: pair[1], choices: wordChoices(pair, words, 1, 3)
+  };
+}
+
+function dialogueQuestions(dialogues) {
+  return dialogues.map(([first, second, title, answer, ...others]) => ({
+    title, lines: [first, second], answer, choices: shuffle([answer, ...others])
+  }));
+}
+
 function makeQuestions() {
   const [, , , , words, dialogues] = units[unitIndex];
-  const sample = shuffle(words);
-  const choices = (pair, column) => shuffle([
-    pair[column],
-    ...shuffle(words.filter(word => word !== pair)).slice(0, 2).map(word => word[column])
-  ]);
-  const reading = pair => ({
-    title: 'Đọc và chọn nghĩa đúng', lines: [pair[0]], answer: pair[1], choices: choices(pair, 1)
+  const count = Math.min(20, Math.max(16, vocabulary(words).length + 4 + dialogues.length));
+  const practice = prioritizeVocabulary(words, count - dialogues.length).map((pair, index) => {
+    const [answer, clue] = pair;
+    switch (index % 4) {
+      case 0:
+        return {
+          title: 'Nghe và chọn chữ em nghe được', sound: answer, answer, english: true,
+          choices: wordChoices(pair, words, 0, 3)
+        };
+      case 1:
+        return readingQuestion(pair, words);
+      case 2:
+        return { title: 'Nghe rồi gõ lại', sound: answer, answer, english: true };
+      default:
+        return { title: 'Gõ từ hoặc câu tiếng Anh theo nghĩa gợi ý', clue, translation: true };
+    }
   });
-  const writing = pair => ({
-    title: 'Gõ từ hoặc câu tiếng Anh theo nghĩa gợi ý', clue: pair[1], translation: true
-  });
-  const listening = sample.slice(0, 4).map(pair => ({
-    title: 'Nghe rồi gõ lại', sound: pair[0], answer: pair[0], english: true
-  }));
-  for (const index of [0, 2]) {
-    listening[index].title = 'Nghe và chọn chữ em nghe được';
-    listening[index].choices = choices(sample[index], 0);
-  }
-  return shuffle(dialogues).flatMap(([first, second, title, answer, ...others], index) => [
-    listening[index],
-    reading(sample[index + 4]),
-    { title, lines: [first, second], answer, choices: shuffle([answer, ...others]) },
-    writing(sample[index + 8])
-  ]);
+  return shuffle([...practice, ...dialogueQuestions(dialogues)]);
 }
 
 function makeQuiz() {
-  return makeQuestions().filter(question => question.choices && !question.sound);
+  const [, , , , words, dialogues] = units[unitIndex];
+  const terms = vocabulary(words);
+  const passages = shuffle(dialogueQuestions(dialogues)).slice(0, 16 - terms.length);
+  return shuffle([...terms.map(pair => readingQuestion(pair, words)), ...passages]);
 }
 
 function makeListeningQuiz() {
-  const words = units[unitIndex][4].map(([english]) => english);
-  return shuffle(words).slice(0, 8).map(answer => {
-    const isSentence = text => /[.!?]$/.test(text);
-    const others = shuffle(words.filter(word => word !== answer));
-    const similar = others.filter(word => isSentence(word) === isSentence(answer));
-    const different = others.filter(word => isSentence(word) !== isSentence(answer));
-    return {
-      title: 'Nghe và chọn đáp án',
-      sound: answer,
-      answer,
-      english: true,
-      choices: shuffle([answer, ...[...similar, ...different].slice(0, 3)])
-    };
-  });
+  const words = units[unitIndex][4];
+  return prioritizeVocabulary(words, Math.min(16, vocabulary(words).length + 2)).map(pair => ({
+    title: 'Nghe và chọn đáp án',
+    sound: pair[0],
+    answer: pair[0],
+    english: true,
+    choices: wordChoices(pair, words, 0, 4)
+  }));
 }
 
 function makeTranslations() {
-  return shuffle(translationPrompts[unitIndex]).slice(0, 8).map(clue => ({
+  return shuffle(translationPrompts[unitIndex]).map(clue => ({
     title: 'Dịch sang tiếng Anh', clue, english: true, translation: true
   }));
 }
 
 function makeSentences() {
   const [, , , , words, dialogues] = units[unitIndex];
-  const examples = words.filter(([text]) => /[.!?]$/.test(text)).map(([text, clue]) => ({
+  const examples = words.filter(([text]) => isSentence(text)).map(([text, clue]) => ({
     answer: text, clue
   }));
   for (const dialogue of dialogues) {
@@ -291,8 +321,8 @@ function makeSentences() {
     const key = normalize(example.answer);
     if (!unique.has(key)) unique.set(key, example);
   }
-  return shuffle([...unique.values()].filter(({ answer }) => answer.split(/\s+/).length >= 3))
-    .slice(0, 8).map(example => ({
+  return shuffle([...unique.values()].filter(({ answer }) => answer.split(/\s+/).length >= 3).slice(0, 16))
+    .map(example => ({
       ...example, title: 'Xếp từ thành câu', english: true, tiles: true
     }));
 }
@@ -300,7 +330,7 @@ function makeSentences() {
 function showMatching() {
   const panel = showPanel('Ghép cặp từ', '← Về Unit', () => showUnit(unitIndex));
   panel.append(element('p', 'Chọn một từ tiếng Anh và nghĩa tiếng Việt tương ứng.'));
-  const pairs = shuffle(units[unitIndex][4].filter(([text]) => !/[.!?]$/.test(text))).slice(0, 8);
+  const pairs = vocabulary(units[unitIndex][4]);
   const grid = element('div', '', 'matching-grid');
   const status = element('p', 'Đã ghép 0/' + pairs.length + ' cặp.', 'feedback');
   status.setAttribute('role', 'status');
@@ -525,10 +555,8 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     actions.append(check);
     form.append(choices, feedback, actions);
     panel.append(form);
-    if (question.translation) {
-      if (!geminiKey) panel.append(configureGemini(() => input.focus()));
-      input.focus();
-    }
+    if (question.translation && !geminiKey) panel.append(configureGemini(() => input.focus()));
+    input?.focus();
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (checked || request || !answer.trim()) return;

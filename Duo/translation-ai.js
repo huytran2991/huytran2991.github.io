@@ -14,6 +14,9 @@ function configureGemini(onSaved) {
   const input = settings.querySelector('#gemini-key');
   const remove = settings.querySelector('#gemini-remove');
   const status = settings.querySelector('#gemini-status');
+  settings.addEventListener('toggle', () => {
+    if (settings.open) input.focus();
+  });
   remove.disabled = !geminiKey;
   status.textContent = geminiKey ? 'Đã có API key.' : 'Chưa có API key.';
   form.addEventListener('submit', event => {
@@ -32,7 +35,10 @@ function configureGemini(onSaved) {
     } catch {
       status.textContent = 'API key dùng được trong lần mở trang này.';
     }
-    onSaved?.();
+    if (onSaved) {
+      settings.open = false;
+      onSaved();
+    }
   });
   remove.addEventListener('click', () => {
     try {

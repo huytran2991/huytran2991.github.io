@@ -19,6 +19,7 @@ let preferredVoice = '';
 let unitIndex;
 let audioRequest = 0;
 let returnToAnswer;
+let loadingPage = true;
 try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
@@ -140,7 +141,29 @@ function unitStars(id) {
 function updateStars() {
   const total = units.reduce((sum, unit) => sum + unitStars(unit.id), 0);
   const maximum = units.length * practiceModes.length;
-  document.querySelector('#stars').textContent = '⭐ ' + total + ' / ' + maximum + ' sao';
+  document.querySelector('#stars').textContent = total + '/' + maximum + ' ⭐';
+}
+
+function saveLocation(mode, question, progress) {
+  const url = new URL(location.href);
+  const unit = units[unitIndex]?.id;
+  const params = { unit, mode, question };
+  for (const [key, value] of Object.entries(params)) {
+    if (value === undefined) url.searchParams.delete(key);
+    else url.searchParams.set(key, value);
+  }
+  const state = { ...history.state, duo: { ...params, progress } };
+  try {
+    history.replaceState(state, '', url);
+  } catch {
+    // Some browsers allow only fragment changes when opening a local file.
+    if (location.protocol === 'file:') {
+      const file = new URL(location.href);
+      file.hash = url.search ? 'duo?' + url.searchParams.toString() : '';
+      location.replace(file.href);
+      history.replaceState(state, '');
+    }
+  }
 }
 
 function openSettings(answerInput) {
@@ -179,6 +202,8 @@ function setupSettings() {
 
 function showHome(focus = true) {
   stopAudio();
+  unitIndex = undefined;
+  saveLocation();
   app.replaceChildren(document.querySelector('#home-template').content.cloneNode(true));
   app.querySelector('#open-settings').addEventListener('click', () => openSettings());
   const grid = app.querySelector('.unit-grid');
@@ -189,8 +214,10 @@ function showHome(focus = true) {
     const info = element('span', '');
     const name = element('strong', title);
     name.lang = 'en';
-    info.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + pages.first), name,
-      element('small', topic + ' · ⭐ ' + unitStars(id) + '/' + practiceModes.length));
+    const meta = element('span', '', 'unit-meta');
+    meta.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + pages.first),
+      element('small', unitStars(id) + '/' + practiceModes.length + ' ⭐'));
+    info.append(meta, name, element('small', topic));
     card.append(symbol, info);
     grid.append(card);
   });
@@ -205,11 +232,11 @@ function showPanel(title, backLabel, backAction) {
   heading.tabIndex = -1;
   panel.append(button(backLabel, backAction, 'back'), heading);
   app.replaceChildren(panel);
-  heading.focus();
+  if (!loadingPage) heading.focus();
   return panel;
 }
 
-function showUnit(index) {
+function showUnit(index, referenceOpen = false) {
   unitIndex = index;
   const { id, title, topic, pages, reference, exercises } = units[index];
   const panel = showPanel('Unit ' + id + ' · ' + title, '← Các Unit', showHome);
@@ -218,7 +245,7 @@ function showUnit(index) {
   for (const [mode, label] of practiceModes) {
     const items = exercises[mode];
     const done = completed.has(id + '/' + mode);
-    const action = mode === 'matching' ? showMatching : () => openPractice(mode);
+    const action = mode === 'matching' ? () => showMatching() : () => openPractice(mode);
     const control = button(label + ' · ' + items.length + (mode === 'matching' ? ' cặp' : ' câu'),
       action, done ? 'mode-completed' : '');
     if (done) control.append(element('small', '✓ Đã hoàn thành'));
@@ -226,6 +253,11 @@ function showUnit(index) {
   }
   panel.append(modes);
   const details = element('details', '', 'actions');
+  details.open = referenceOpen;
+  saveLocation(referenceOpen ? 'reference' : undefined);
+  details.addEventListener('toggle', () => {
+    if (details.isConnected) saveLocation(details.open ? 'reference' : undefined);
+  });
   details.append(element('summary', 'Xem từ vựng và mẫu câu'));
   const status = audioStatus();
   details.append(status);
@@ -247,7 +279,7 @@ function showUnit(index) {
   panel.append(details);
 }
 
-function openPractice(mode) {
+function openPractice(mode, position = 0) {
   const types = { quiz: 'choice', listening: 'listening', sentences: 'sentence', translation: 'translation' };
   const questions = units[unitIndex].exercises[mode].map(item => {
     switch (item.type || types[mode]) {
@@ -263,20 +295,27 @@ function openPractice(mode) {
         return { title: 'Dịch sang tiếng Anh', clue: item.prompt, translation: true };
     }
   });
-  startRound(shuffle(questions), mode);
+  startRound(shuffle(questions), mode, { position });
 }
 
-function showMatching() {
+function showMatching(saved = []) {
   const panel = showPanel('Ghép cặp từ', '← Về Unit', () => showUnit(unitIndex));
   panel.append(element('p', 'Chọn một từ tiếng Anh và nghĩa tiếng Việt tương ứng.'));
   const pairs = units[unitIndex].exercises.matching;
   const grid = element('div', '', 'matching-grid');
-  const status = element('p', 'Đã ghép 0/' + pairs.length + ' cặp.', 'feedback');
+  const matched = new Set(pairs.filter(pair => saved.includes(pair.english)).map(pair => pair.english));
+  const status = element('p', 'Đã ghép ' + matched.size + '/' + pairs.length + ' cặp.', 'feedback');
   status.setAttribute('role', 'status');
   const selected = [null, null];
-  let matched = 0;
-  const restart = button('Chơi lại', showMatching);
-  restart.hidden = true;
+  const restart = button('Chơi lại', () => showMatching());
+  restart.hidden = matched.size < pairs.length;
+  saveLocation('matching', undefined, [...matched]);
+
+  function markTile(tile) {
+    tile.classList.add('matched');
+    tile.disabled = true;
+    tile.append(' ✓');
+  }
 
   for (const [column, label] of ['Tiếng Anh', 'Tiếng Việt'].entries()) {
     const group = element('div', '', 'matching-column');
@@ -291,19 +330,18 @@ function showMatching() {
         const correct = selected[0].pair === selected[1].pair;
         for (const item of selected) {
           item.tile.setAttribute('aria-pressed', 'false');
-          if (correct) {
-            item.tile.classList.add('matched');
-            item.tile.disabled = true;
-            item.tile.append(' ✓');
-          }
+          if (correct) markTile(item.tile);
         }
         selected.fill(null);
-        if (correct) matched += 1;
+        if (correct) {
+          matched.add(pair.english);
+          saveLocation('matching', undefined, [...matched]);
+        }
         status.classList.toggle('correct', correct);
         status.textContent = correct
-          ? 'Đúng rồi! Đã ghép ' + matched + '/' + pairs.length + ' cặp.'
+          ? 'Đúng rồi! Đã ghép ' + matched.size + '/' + pairs.length + ' cặp.'
           : 'Hai thẻ này chưa khớp. Em thử lại nhé!';
-        if (matched === pairs.length) {
+        if (matched.size === pairs.length) {
           markCompleted('matching');
           restart.hidden = false;
           restart.focus();
@@ -313,6 +351,7 @@ function showMatching() {
       }, 'choice');
       tile.lang = column === 0 ? 'en' : 'vi';
       tile.setAttribute('aria-pressed', 'false');
+      if (matched.has(pair.english)) markTile(tile);
       group.append(tile);
     }
     grid.append(group);
@@ -387,19 +426,20 @@ function sentenceTiles(question, onChange) {
   return board;
 }
 
-function startRound(questions, mode, review = false) {
-  let position = 0;
-  let earnedStar = false;
-  const missed = [];
+function startRound(questions, mode, { position = 0, earnedStar = false, missed = [], review = false } = {}) {
+  function saveRound(question) {
+    saveLocation(mode, question, { questions, position, earnedStar, missed, review });
+  }
 
   function finish() {
+    saveRound('done');
     const correct = questions.length - missed.length;
     const panel = showPanel('🎉 Hoàn thành!', '← Về Unit', () => showUnit(unitIndex));
     panel.append(element('p', 'Em làm đúng ' + correct + '/' + questions.length + ' câu.'));
     if (earnedStar) panel.append(element('p', '⭐ Em nhận được 1 sao!'));
     const actions = element('div', '', 'actions');
     if (missed.length) {
-      actions.append(button('Ôn lại câu sai', () => startRound(missed, mode, true), 'primary'));
+      actions.append(button('Ôn lại câu sai', () => startRound(missed, mode, { review: true }), 'primary'));
     }
     actions.append(button('Luyện lại cả bài', () => openPractice(mode)));
     if (unitIndex + 1 < units.length) actions.append(button('Unit tiếp theo →', () => showUnit(unitIndex + 1)));
@@ -407,6 +447,7 @@ function startRound(questions, mode, review = false) {
   }
 
   function render() {
+    saveRound(position + 1);
     const question = questions[position];
     let request;
     const panel = showPanel(question.title, '← Về Unit', () => {
@@ -549,7 +590,38 @@ function startRound(questions, mode, review = false) {
     });
   }
 
-  render();
+  if (position === questions.length) finish();
+  else render();
+}
+
+function restoreLocation() {
+  const params = new URLSearchParams(location.protocol === 'file:' && location.hash.startsWith('#duo?')
+    ? location.hash.slice(5) : location.search);
+  const id = Number(params.get('unit'));
+  const index = units.findIndex(unit => unit.id === id);
+  if (index === -1) {
+    showHome(false);
+    return;
+  }
+  unitIndex = index;
+  const mode = params.get('mode');
+  const rawQuestion = params.get('question');
+  const question = rawQuestion === 'done' ? 'done' : Number(rawQuestion) || undefined;
+  const saved = history.state?.duo;
+  const progress = saved?.unit === id && saved.mode === mode && saved.question === question
+    ? saved.progress : undefined;
+  if (mode === 'matching') {
+    showMatching(Array.isArray(progress) ? progress : []);
+  } else if (practiceModes.some(([key]) => key === mode)) {
+    if (progress?.questions?.length) startRound(progress.questions, mode, progress);
+    else {
+      const size = units[index].exercises[mode].length;
+      const position = Number.isInteger(question) && question >= 1 && question <= size ? question - 1 : 0;
+      openPractice(mode, position);
+    }
+  } else {
+    showUnit(index, mode === 'reference');
+  }
 }
 
 window.speechSynthesis?.addEventListener?.('voiceschanged', refreshVoices);
@@ -573,9 +645,12 @@ async function loadUnits() {
         return response.json();
       }));
     }
-    showHome(false);
+    updateStars();
+    restoreLocation();
   } catch {
     app.replaceChildren(element('p', 'Chưa mở được bài học. Hãy tải lại trang để thử lại.'));
+  } finally {
+    loadingPage = false;
   }
 }
 

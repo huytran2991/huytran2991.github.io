@@ -1,7 +1,6 @@
 'use strict';
 
 const app = document.querySelector('#app');
-const storageKey = 'duo-grade3-best-v1';
 const voiceKey = 'duo-grade3-voice-v1';
 const completionKey = 'duo-grade3-authored-completed-v1';
 const practiceModes = [
@@ -14,16 +13,9 @@ const practiceModes = [
 ];
 const completed = new Set();
 let units = [];
-let best = {};
 let preferredVoice = '';
 let unitIndex;
 let audioRequest = 0;
-try {
-  const stored = JSON.parse(localStorage.getItem(storageKey));
-  best = stored && typeof stored === 'object' ? stored : {};
-} catch {
-  // Practice still works when browser storage is unavailable.
-}
 try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
@@ -37,12 +29,16 @@ try {
 }
 
 function markCompleted(mode) {
-  completed.add(units[unitIndex].id + '/' + mode);
+  const id = units[unitIndex].id + '/' + mode;
+  if (completed.has(id)) return false;
+  completed.add(id);
   try {
     localStorage.setItem(completionKey, JSON.stringify([...completed]));
   } catch {
     // Keep the completed state for this visit.
   }
+  updateStars();
+  return true;
 }
 
 function element(tag, text, className) {
@@ -135,9 +131,14 @@ function normalize(text) {
   return text.toLowerCase().replace(/['’.,!?]/g, '').trim().replace(/\s+/g, ' ');
 }
 
+function unitStars(id) {
+  return practiceModes.filter(([mode]) => completed.has(id + '/' + mode)).length;
+}
+
 function updateStars() {
-  const total = units.reduce((sum, _, index) => sum + (best[index] || 0), 0);
-  document.querySelector('#stars').textContent = '⭐ ' + total + ' / 30 sao';
+  const total = units.reduce((sum, unit) => sum + unitStars(unit.id), 0);
+  const maximum = units.length * practiceModes.length;
+  document.querySelector('#stars').textContent = '⭐ ' + total + ' / ' + maximum + ' sao';
 }
 
 function showHome(focus = true) {
@@ -160,7 +161,7 @@ function showHome(focus = true) {
   refreshVoices();
   app.querySelector('.voice-settings').after(configureGemini());
   const grid = app.querySelector('.unit-grid');
-  units.forEach(({ title, topic, pages, icon }, index) => {
+  units.forEach(({ id, title, topic, pages, icon }, index) => {
     const card = button('', () => showUnit(index), 'unit');
     const symbol = element('span', icon, 'icon');
     symbol.setAttribute('aria-hidden', 'true');
@@ -168,7 +169,7 @@ function showHome(focus = true) {
     const name = element('strong', title);
     name.lang = 'en';
     info.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + pages.first), name,
-      element('small', topic + (best[index] ? ' · ⭐ ' + best[index] + '/3' : '')));
+      element('small', topic + ' · ⭐ ' + unitStars(id) + '/' + practiceModes.length));
     card.append(symbol, info);
     grid.append(card);
   });
@@ -367,26 +368,14 @@ function sentenceTiles(question, onChange) {
 
 function startRound(questions, mode, review = false) {
   let position = 0;
+  let earnedStar = false;
   const missed = [];
 
   function finish() {
     const correct = questions.length - missed.length;
-    const stars = correct === questions.length ? 3
-      : correct >= questions.length * .75 ? 2
-      : correct >= questions.length * .5 ? 1 : 0;
-    const awardsStars = !review && mode === 'mixed';
-    if (awardsStars && stars > (best[unitIndex] || 0)) {
-      best[unitIndex] = stars;
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(best));
-      } catch {
-        // Keep progress for this visit.
-      }
-      updateStars();
-    }
     const panel = showPanel('🎉 Hoàn thành!', '← Về Unit', () => showUnit(unitIndex));
     panel.append(element('p', 'Em làm đúng ' + correct + '/' + questions.length + ' câu.'));
-    if (awardsStars && stars) panel.append(element('p', '⭐ Em nhận được ' + stars + ' sao!'));
+    if (earnedStar) panel.append(element('p', '⭐ Em nhận được 1 sao!'));
     const actions = element('div', '', 'actions');
     if (missed.length) {
       actions.append(button('Ôn lại câu sai', () => startRound(missed, mode, true), 'primary'));
@@ -509,7 +498,7 @@ function startRound(questions, mode, review = false) {
       }
       checked = true;
       if (!review && position === questions.length - 1) {
-        markCompleted(mode);
+        earnedStar = markCompleted(mode);
       }
       const correct = grade ? grade.accepted
         : question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);

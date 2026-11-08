@@ -1,0 +1,668 @@
+{
+  "id": 6,
+  "title": "Our school",
+  "topic": "Trường học",
+  "icon": "🏫",
+  "pages": {
+    "first": 44,
+    "last": 49
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "art room",
+        "vietnamese": "phòng mỹ thuật"
+      },
+      {
+        "english": "classroom",
+        "vietnamese": "lớp học"
+      },
+      {
+        "english": "computer room",
+        "vietnamese": "phòng máy tính"
+      },
+      {
+        "english": "gym",
+        "vietnamese": "phòng thể dục"
+      },
+      {
+        "english": "library",
+        "vietnamese": "thư viện"
+      },
+      {
+        "english": "music room",
+        "vietnamese": "phòng âm nhạc"
+      },
+      {
+        "english": "playground",
+        "vietnamese": "sân chơi"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "our",
+        "vietnamese": "của chúng mình"
+      },
+      {
+        "english": "go",
+        "vietnamese": "đi"
+      },
+      {
+        "english": "art",
+        "vietnamese": "mỹ thuật"
+      },
+      {
+        "english": "picture",
+        "vietnamese": "bức hình"
+      },
+      {
+        "english": "poster",
+        "vietnamese": "áp phích"
+      }
+    ],
+    "structures": [
+      {
+        "english": "Let's go to the library.",
+        "vietnamese": "Mình cùng đến thư viện nhé."
+      },
+      {
+        "english": "Is this our school?",
+        "vietnamese": "Đây có phải là trường của chúng mình không?"
+      },
+      {
+        "english": "Let's go to the music room.",
+        "vietnamese": "Mình cùng đến phòng âm nhạc nhé."
+      },
+      {
+        "english": "Is this our gym?",
+        "vietnamese": "Đây có phải là phòng thể dục của chúng mình không?"
+      },
+      {
+        "english": "This is our playground.",
+        "vietnamese": "Đây là sân chơi của chúng mình."
+      },
+      {
+        "english": "Let's go to the classroom.",
+        "vietnamese": "Mình cùng đến lớp nhé."
+      },
+      {
+        "english": "Welcome to our school!",
+        "vietnamese": "Chào mừng đến trường của chúng mình!"
+      },
+      {
+        "english": "Let's go to the playground.",
+        "vietnamese": "Mình cùng ra sân chơi nhé."
+      },
+      {
+        "english": "Look at this picture.",
+        "vietnamese": "Hãy nhìn bức hình này."
+      },
+      {
+        "english": "Yes, it is.",
+        "vietnamese": "Đúng rồi."
+      },
+      {
+        "english": "No, it isn’t.",
+        "vietnamese": "Không phải."
+      },
+      {
+        "english": "It’s our school.",
+        "vietnamese": "Đó là trường của chúng mình."
+      },
+      {
+        "english": "Is that your classroom?",
+        "vietnamese": "Kia có phải là lớp học của bạn không?"
+      },
+      {
+        "english": "Let’s go to the art room.",
+        "vietnamese": "Mình cùng đến phòng mỹ thuật nhé."
+      },
+      {
+        "english": "Let’s go to the computer room.",
+        "vietnamese": "Mình cùng đến phòng máy tính nhé."
+      },
+      {
+        "english": "Let’s go to the gym.",
+        "vietnamese": "Mình cùng đến phòng thể dục nhé."
+      },
+      {
+        "english": "OK, let’s go.",
+        "vietnamese": "Được, mình đi thôi."
+      },
+      {
+        "english": "We like our school very much.",
+        "vietnamese": "Chúng mình rất thích trường của mình."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "art room",
+        "vietnamese": "phòng mỹ thuật"
+      },
+      {
+        "english": "classroom",
+        "vietnamese": "lớp học"
+      },
+      {
+        "english": "computer room",
+        "vietnamese": "phòng máy tính"
+      },
+      {
+        "english": "gym",
+        "vietnamese": "phòng thể dục"
+      },
+      {
+        "english": "library",
+        "vietnamese": "thư viện"
+      },
+      {
+        "english": "music room",
+        "vietnamese": "phòng âm nhạc"
+      },
+      {
+        "english": "playground",
+        "vietnamese": "sân chơi"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "our",
+        "vietnamese": "của chúng mình"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Đây là phòng nào?",
+        "passage": [
+          "Lucy: Is this our classroom?",
+          "Ben: No, it isn't. It's the art room."
+        ],
+        "options": [
+          "Phòng mỹ thuật",
+          "Lớp học",
+          "Phòng âm nhạc"
+        ],
+        "answer": "Phòng mỹ thuật"
+      },
+      {
+        "prompt": "Hai bạn định đi đâu?",
+        "passage": [
+          "Mai: Let's go to the gym.",
+          "Minh: OK, let's go."
+        ],
+        "options": [
+          "Phòng thể dục",
+          "Thư viện",
+          "Sân chơi"
+        ],
+        "answer": "Phòng thể dục"
+      },
+      {
+        "prompt": "Hai bạn sẽ đến đâu?",
+        "passage": [
+          "Ben: Let's go to the computer room.",
+          "Lucy: Yes, let's go together."
+        ],
+        "options": [
+          "Phòng máy tính",
+          "Phòng âm nhạc",
+          "Thư viện"
+        ],
+        "answer": "Phòng máy tính"
+      },
+      {
+        "prompt": "Mai và Minh đang ở đâu?",
+        "passage": [
+          "Mai: Is this our playground?",
+          "Minh: No, it isn't. This is our gym."
+        ],
+        "options": [
+          "Phòng thể dục",
+          "Sân chơi",
+          "Lớp học"
+        ],
+        "answer": "Phòng thể dục"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "OK, let’s go."
+        ],
+        "options": [
+          "Được, mình đi thôi.",
+          "Mình cùng đến thư viện nhé.",
+          "Đây có phải là trường của chúng mình không?"
+        ],
+        "answer": "Được, mình đi thôi."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "We like our school very much."
+        ],
+        "options": [
+          "Chúng mình rất thích trường của mình.",
+          "Đây có phải là trường của chúng mình không?",
+          "Mình cùng đến phòng âm nhạc nhé."
+        ],
+        "answer": "Chúng mình rất thích trường của mình."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Let's go to the classroom."
+        ],
+        "options": [
+          "Mình cùng đến lớp nhé.",
+          "Mình cùng đến phòng âm nhạc nhé.",
+          "Đây có phải là phòng thể dục của chúng mình không?"
+        ],
+        "answer": "Mình cùng đến lớp nhé."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Welcome to our school!"
+        ],
+        "options": [
+          "Chào mừng đến trường của chúng mình!",
+          "Đây có phải là phòng thể dục của chúng mình không?",
+          "Đây là sân chơi của chúng mình."
+        ],
+        "answer": "Chào mừng đến trường của chúng mình!"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Let's go to the playground."
+        ],
+        "options": [
+          "Mình cùng ra sân chơi nhé.",
+          "Đây là sân chơi của chúng mình.",
+          "Mình cùng đến lớp nhé."
+        ],
+        "answer": "Mình cùng ra sân chơi nhé."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Look at this picture."
+        ],
+        "options": [
+          "Hãy nhìn bức hình này.",
+          "Mình cùng đến lớp nhé.",
+          "Chào mừng đến trường của chúng mình!"
+        ],
+        "answer": "Hãy nhìn bức hình này."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "classroom",
+        "options": [
+          "classroom",
+          "playground",
+          "school",
+          "library"
+        ],
+        "answer": "classroom"
+      },
+      {
+        "audio": "playground",
+        "options": [
+          "playground",
+          "school",
+          "library",
+          "gym"
+        ],
+        "answer": "playground"
+      },
+      {
+        "audio": "school",
+        "options": [
+          "school",
+          "library",
+          "gym",
+          "computer room"
+        ],
+        "answer": "school"
+      },
+      {
+        "audio": "library",
+        "options": [
+          "library",
+          "gym",
+          "computer room",
+          "art room"
+        ],
+        "answer": "library"
+      },
+      {
+        "audio": "gym",
+        "options": [
+          "gym",
+          "computer room",
+          "art room",
+          "music room"
+        ],
+        "answer": "gym"
+      },
+      {
+        "audio": "computer room",
+        "options": [
+          "computer room",
+          "art room",
+          "music room",
+          "classroom"
+        ],
+        "answer": "computer room"
+      },
+      {
+        "audio": "art room",
+        "options": [
+          "art room",
+          "music room",
+          "classroom",
+          "playground"
+        ],
+        "answer": "art room"
+      },
+      {
+        "audio": "music room",
+        "options": [
+          "music room",
+          "classroom",
+          "playground",
+          "school"
+        ],
+        "answer": "music room"
+      },
+      {
+        "audio": "Let’s go to the gym.",
+        "options": [
+          "Let’s go to the gym.",
+          "Look at this picture.",
+          "Yes, it is.",
+          "No, it isn’t."
+        ],
+        "answer": "Let’s go to the gym."
+      },
+      {
+        "audio": "OK, let’s go.",
+        "options": [
+          "OK, let’s go.",
+          "Yes, it is.",
+          "No, it isn’t.",
+          "It’s our school."
+        ],
+        "answer": "OK, let’s go."
+      },
+      {
+        "audio": "We like our school very much.",
+        "options": [
+          "We like our school very much.",
+          "No, it isn’t.",
+          "It’s our school.",
+          "Is that your classroom?"
+        ],
+        "answer": "We like our school very much."
+      },
+      {
+        "audio": "Let's go to the library.",
+        "options": [
+          "Let's go to the library.",
+          "Is that your classroom?",
+          "Let’s go to the art room.",
+          "Let’s go to the computer room."
+        ],
+        "answer": "Let's go to the library."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "Let's go to the library.",
+        "hint": "Mình cùng đến thư viện nhé."
+      },
+      {
+        "answer": "Is this our school?",
+        "hint": "Đây có phải là trường của chúng mình không?"
+      },
+      {
+        "answer": "Let's go to the music room.",
+        "hint": "Mình cùng đến phòng âm nhạc nhé."
+      },
+      {
+        "answer": "Is this our gym?",
+        "hint": "Đây có phải là phòng thể dục của chúng mình không?"
+      },
+      {
+        "answer": "This is our playground.",
+        "hint": "Đây là sân chơi của chúng mình."
+      },
+      {
+        "answer": "Let's go to the classroom.",
+        "hint": "Mình cùng đến lớp nhé."
+      },
+      {
+        "answer": "Welcome to our school!",
+        "hint": "Chào mừng đến trường của chúng mình!"
+      },
+      {
+        "answer": "Let's go to the playground.",
+        "hint": "Mình cùng ra sân chơi nhé."
+      },
+      {
+        "answer": "Look at this picture.",
+        "hint": "Hãy nhìn bức hình này."
+      },
+      {
+        "answer": "Yes, it is.",
+        "hint": "Đúng rồi."
+      },
+      {
+        "answer": "No, it isn’t.",
+        "hint": "Không phải."
+      },
+      {
+        "answer": "It’s our school.",
+        "hint": "Đó là trường của chúng mình."
+      },
+      {
+        "answer": "Is that your classroom?",
+        "hint": "Kia có phải là lớp học của bạn không?"
+      },
+      {
+        "answer": "Let’s go to the art room.",
+        "hint": "Mình cùng đến phòng mỹ thuật nhé."
+      },
+      {
+        "answer": "Let’s go to the computer room.",
+        "hint": "Mình cùng đến phòng máy tính nhé."
+      },
+      {
+        "answer": "Let’s go to the gym.",
+        "hint": "Mình cùng đến phòng thể dục nhé."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Đây có phải là trường của chúng mình không?"
+      },
+      {
+        "prompt": "Mình cùng đến thư viện nhé."
+      },
+      {
+        "prompt": "Đây là lớp học của chúng mình."
+      },
+      {
+        "prompt": "Mình cùng đến phòng máy tính nhé."
+      },
+      {
+        "prompt": "Mình cùng đến phòng thể dục nhé."
+      },
+      {
+        "prompt": "Kia có phải là thư viện không?"
+      },
+      {
+        "prompt": "Không, đây là lớp học."
+      },
+      {
+        "prompt": "Đây là phòng mỹ thuật của chúng mình."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Đây là phòng nào?",
+        "passage": [
+          "Lucy: Is this our classroom?",
+          "Ben: No, it isn't. It's the art room."
+        ],
+        "options": [
+          "Phòng mỹ thuật",
+          "Lớp học",
+          "Phòng âm nhạc"
+        ],
+        "answer": "Phòng mỹ thuật"
+      },
+      {
+        "type": "choice",
+        "prompt": "Hai bạn định đi đâu?",
+        "passage": [
+          "Mai: Let's go to the gym.",
+          "Minh: OK, let's go."
+        ],
+        "options": [
+          "Phòng thể dục",
+          "Thư viện",
+          "Sân chơi"
+        ],
+        "answer": "Phòng thể dục"
+      },
+      {
+        "type": "choice",
+        "prompt": "Hai bạn sẽ đến đâu?",
+        "passage": [
+          "Ben: Let's go to the computer room.",
+          "Lucy: Yes, let's go together."
+        ],
+        "options": [
+          "Phòng máy tính",
+          "Phòng âm nhạc",
+          "Thư viện"
+        ],
+        "answer": "Phòng máy tính"
+      },
+      {
+        "type": "choice",
+        "prompt": "Mai và Minh đang ở đâu?",
+        "passage": [
+          "Mai: Is this our playground?",
+          "Minh: No, it isn't. This is our gym."
+        ],
+        "options": [
+          "Phòng thể dục",
+          "Sân chơi",
+          "Lớp học"
+        ],
+        "answer": "Phòng thể dục"
+      },
+      {
+        "type": "listening",
+        "audio": "playground",
+        "answer": "playground",
+        "options": [
+          "playground",
+          "classroom",
+          "computer room",
+          "art room"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "classroom",
+        "answer": "classroom",
+        "options": [
+          "classroom",
+          "computer room",
+          "art room",
+          "school"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "computer room",
+        "answer": "computer room",
+        "options": [
+          "computer room",
+          "art room",
+          "school",
+          "library"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "art room",
+        "answer": "art room",
+        "options": [
+          "art room",
+          "school",
+          "library",
+          "gym"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Is this our school?",
+        "answer": "Is this our school?"
+      },
+      {
+        "type": "dictation",
+        "audio": "OK, let’s go.",
+        "answer": "OK, let’s go."
+      },
+      {
+        "type": "dictation",
+        "audio": "Let's go to the library.",
+        "answer": "Let's go to the library."
+      },
+      {
+        "type": "sentence",
+        "answer": "Is that your classroom?",
+        "hint": "Kia có phải là lớp học của bạn không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "Let’s go to the art room.",
+        "hint": "Mình cùng đến phòng mỹ thuật nhé."
+      },
+      {
+        "type": "sentence",
+        "answer": "Let's go to the playground.",
+        "hint": "Mình cùng ra sân chơi nhé."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây có phải là trường của chúng mình không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình cùng đến thư viện nhé."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là lớp học của chúng mình."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình cùng đến phòng máy tính nhé."
+      }
+    ]
+  }
+}

@@ -1,0 +1,632 @@
+{
+  "id": 2,
+  "title": "Our names",
+  "topic": "Tên và tuổi",
+  "icon": "🎂",
+  "pages": {
+    "first": 16,
+    "last": 21
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "name",
+        "vietnamese": "tên"
+      },
+      {
+        "english": "seven",
+        "vietnamese": "số 7"
+      },
+      {
+        "english": "eight",
+        "vietnamese": "số 8"
+      },
+      {
+        "english": "nine",
+        "vietnamese": "số 9"
+      },
+      {
+        "english": "my",
+        "vietnamese": "của mình"
+      },
+      {
+        "english": "your",
+        "vietnamese": "của bạn"
+      },
+      {
+        "english": "old",
+        "vietnamese": "lớn tuổi"
+      },
+      {
+        "english": "ten",
+        "vietnamese": "số 10"
+      },
+      {
+        "english": "six",
+        "vietnamese": "số 6"
+      },
+      {
+        "english": "what",
+        "vietnamese": "cái gì"
+      },
+      {
+        "english": "how",
+        "vietnamese": "như thế nào"
+      },
+      {
+        "english": "Mary",
+        "vietnamese": "Mary (tên bạn nữ)"
+      },
+      {
+        "english": "Nam",
+        "vietnamese": "Nam (tên bạn nam)"
+      },
+      {
+        "english": "Linh",
+        "vietnamese": "Linh (tên bạn nữ)"
+      },
+      {
+        "english": "Bill",
+        "vietnamese": "Bill (tên bạn nam)"
+      },
+      {
+        "english": "years old",
+        "vietnamese": "tuổi (khi nói tuổi)"
+      },
+      {
+        "english": "Mai",
+        "vietnamese": "Mai (tên bạn nữ)"
+      },
+      {
+        "english": "Lucy",
+        "vietnamese": "Lucy (tên bạn nữ)"
+      },
+      {
+        "english": "Ben",
+        "vietnamese": "Ben (tên bạn nam)"
+      },
+      {
+        "english": "Minh",
+        "vietnamese": "Minh (tên bạn nam)"
+      },
+      {
+        "english": "birthday cake",
+        "vietnamese": "bánh sinh nhật"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What's your name?",
+        "vietnamese": "Bạn tên gì?"
+      },
+      {
+        "english": "How old are you?",
+        "vietnamese": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "english": "I'm eight years old.",
+        "vietnamese": "Mình tám tuổi."
+      },
+      {
+        "english": "My name's Lucy.",
+        "vietnamese": "Tên mình là Lucy."
+      },
+      {
+        "english": "I'm seven years old.",
+        "vietnamese": "Mình bảy tuổi."
+      },
+      {
+        "english": "I'm ten years old.",
+        "vietnamese": "Mình mười tuổi."
+      },
+      {
+        "english": "My name’s Mary.",
+        "vietnamese": "Tên mình là Mary."
+      },
+      {
+        "english": "My name’s Nam.",
+        "vietnamese": "Tên mình là Nam."
+      },
+      {
+        "english": "I’m Mary.",
+        "vietnamese": "Mình là Mary."
+      },
+      {
+        "english": "I’m seven.",
+        "vietnamese": "Mình bảy tuổi."
+      },
+      {
+        "english": "I’m nine years old.",
+        "vietnamese": "Mình chín tuổi."
+      },
+      {
+        "english": "How old are you, Lucy?",
+        "vietnamese": "Lucy ơi, bạn bao nhiêu tuổi?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "name",
+        "vietnamese": "tên"
+      },
+      {
+        "english": "my",
+        "vietnamese": "của mình"
+      },
+      {
+        "english": "your",
+        "vietnamese": "của bạn"
+      },
+      {
+        "english": "seven",
+        "vietnamese": "số 7"
+      },
+      {
+        "english": "eight",
+        "vietnamese": "số 8"
+      },
+      {
+        "english": "nine",
+        "vietnamese": "số 9"
+      },
+      {
+        "english": "ten",
+        "vietnamese": "số 10"
+      },
+      {
+        "english": "years old",
+        "vietnamese": "tuổi (khi nói tuổi)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Bill bao nhiêu tuổi?",
+        "passage": [
+          "Linh: What's your name?",
+          "Bill: My name's Bill. I'm nine years old."
+        ],
+        "options": [
+          "9 tuổi",
+          "7 tuổi",
+          "8 tuổi"
+        ],
+        "answer": "9 tuổi"
+      },
+      {
+        "prompt": "Bạn nào trả lời Mary?",
+        "passage": [
+          "Mary: Hi! I'm Mary. What's your name?",
+          "Nam: My name's Nam."
+        ],
+        "options": [
+          "Nam",
+          "Bill",
+          "Linh"
+        ],
+        "answer": "Nam"
+      },
+      {
+        "prompt": "Linh bao nhiêu tuổi?",
+        "passage": [
+          "Nam: How old are you, Linh?",
+          "Linh: I'm seven years old."
+        ],
+        "options": [
+          "7 tuổi",
+          "6 tuổi",
+          "10 tuổi"
+        ],
+        "answer": "7 tuổi"
+      },
+      {
+        "prompt": "Lucy bao nhiêu tuổi?",
+        "passage": [
+          "Bill: What's your name?",
+          "Lucy: My name's Lucy. I'm eight years old."
+        ],
+        "options": [
+          "8 tuổi",
+          "9 tuổi",
+          "10 tuổi"
+        ],
+        "answer": "8 tuổi"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "How old are you?"
+        ],
+        "options": [
+          "Bạn bao nhiêu tuổi?",
+          "Bạn tên gì?",
+          "Mình tám tuổi."
+        ],
+        "answer": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I'm eight years old."
+        ],
+        "options": [
+          "Mình tám tuổi.",
+          "Bạn bao nhiêu tuổi?",
+          "Tên mình là Lucy."
+        ],
+        "answer": "Mình tám tuổi."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "My name's Lucy."
+        ],
+        "options": [
+          "Tên mình là Lucy.",
+          "Mình tám tuổi.",
+          "Mình bảy tuổi."
+        ],
+        "answer": "Tên mình là Lucy."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I'm seven years old."
+        ],
+        "options": [
+          "Mình bảy tuổi.",
+          "Tên mình là Lucy.",
+          "Mình mười tuổi."
+        ],
+        "answer": "Mình bảy tuổi."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "what",
+        "options": [
+          "what",
+          "how",
+          "old",
+          "six"
+        ],
+        "answer": "what"
+      },
+      {
+        "audio": "how",
+        "options": [
+          "how",
+          "old",
+          "six",
+          "seven"
+        ],
+        "answer": "how"
+      },
+      {
+        "audio": "old",
+        "options": [
+          "old",
+          "six",
+          "seven",
+          "eight"
+        ],
+        "answer": "old"
+      },
+      {
+        "audio": "six",
+        "options": [
+          "six",
+          "seven",
+          "eight",
+          "nine"
+        ],
+        "answer": "six"
+      },
+      {
+        "audio": "seven",
+        "options": [
+          "seven",
+          "eight",
+          "nine",
+          "ten"
+        ],
+        "answer": "seven"
+      },
+      {
+        "audio": "eight",
+        "options": [
+          "eight",
+          "nine",
+          "ten",
+          "what"
+        ],
+        "answer": "eight"
+      },
+      {
+        "audio": "nine",
+        "options": [
+          "nine",
+          "ten",
+          "what",
+          "how"
+        ],
+        "answer": "nine"
+      },
+      {
+        "audio": "ten",
+        "options": [
+          "ten",
+          "what",
+          "how",
+          "old"
+        ],
+        "answer": "ten"
+      },
+      {
+        "audio": "My name's Lucy.",
+        "options": [
+          "My name's Lucy.",
+          "How old are you?",
+          "I'm eight years old.",
+          "I'm seven years old."
+        ],
+        "answer": "My name's Lucy."
+      },
+      {
+        "audio": "I'm seven years old.",
+        "options": [
+          "I'm seven years old.",
+          "I'm eight years old.",
+          "My name's Lucy.",
+          "I'm ten years old."
+        ],
+        "answer": "I'm seven years old."
+      },
+      {
+        "audio": "I'm ten years old.",
+        "options": [
+          "I'm ten years old.",
+          "My name's Lucy.",
+          "I'm seven years old.",
+          "My name’s Mary."
+        ],
+        "answer": "I'm ten years old."
+      },
+      {
+        "audio": "My name’s Mary.",
+        "options": [
+          "My name’s Mary.",
+          "I'm seven years old.",
+          "I'm ten years old.",
+          "My name’s Nam."
+        ],
+        "answer": "My name’s Mary."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What's your name?",
+        "hint": "Bạn tên gì?"
+      },
+      {
+        "answer": "How old are you?",
+        "hint": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "answer": "I'm eight years old.",
+        "hint": "Mình tám tuổi."
+      },
+      {
+        "answer": "My name's Lucy.",
+        "hint": "Tên mình là Lucy."
+      },
+      {
+        "answer": "I'm seven years old.",
+        "hint": "Mình bảy tuổi."
+      },
+      {
+        "answer": "I'm ten years old.",
+        "hint": "Mình mười tuổi."
+      },
+      {
+        "answer": "My name’s Mary.",
+        "hint": "Tên mình là Mary."
+      },
+      {
+        "answer": "My name’s Nam.",
+        "hint": "Tên mình là Nam."
+      },
+      {
+        "answer": "I’m Mary.",
+        "hint": "Mình là Mary."
+      },
+      {
+        "answer": "I’m seven.",
+        "hint": "Mình bảy tuổi."
+      },
+      {
+        "answer": "I’m nine years old.",
+        "hint": "Mình chín tuổi."
+      },
+      {
+        "answer": "How old are you, Lucy?",
+        "hint": "Lucy ơi, bạn bao nhiêu tuổi?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn tên gì?"
+      },
+      {
+        "prompt": "Tên mình là Mary."
+      },
+      {
+        "prompt": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "prompt": "Mình tám tuổi."
+      },
+      {
+        "prompt": "Tên mình là Nam."
+      },
+      {
+        "prompt": "Mình chín tuổi."
+      },
+      {
+        "prompt": "Mình bảy tuổi."
+      },
+      {
+        "prompt": "Mình mười tuổi."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Bill bao nhiêu tuổi?",
+        "passage": [
+          "Linh: What's your name?",
+          "Bill: My name's Bill. I'm nine years old."
+        ],
+        "options": [
+          "9 tuổi",
+          "7 tuổi",
+          "8 tuổi"
+        ],
+        "answer": "9 tuổi"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bạn nào trả lời Mary?",
+        "passage": [
+          "Mary: Hi! I'm Mary. What's your name?",
+          "Nam: My name's Nam."
+        ],
+        "options": [
+          "Nam",
+          "Bill",
+          "Linh"
+        ],
+        "answer": "Nam"
+      },
+      {
+        "type": "choice",
+        "prompt": "Linh bao nhiêu tuổi?",
+        "passage": [
+          "Nam: How old are you, Linh?",
+          "Linh: I'm seven years old."
+        ],
+        "options": [
+          "7 tuổi",
+          "6 tuổi",
+          "10 tuổi"
+        ],
+        "answer": "7 tuổi"
+      },
+      {
+        "type": "choice",
+        "prompt": "Lucy bao nhiêu tuổi?",
+        "passage": [
+          "Bill: What's your name?",
+          "Lucy: My name's Lucy. I'm eight years old."
+        ],
+        "options": [
+          "8 tuổi",
+          "9 tuổi",
+          "10 tuổi"
+        ],
+        "answer": "8 tuổi"
+      },
+      {
+        "type": "listening",
+        "audio": "name",
+        "answer": "name",
+        "options": [
+          "name",
+          "seven",
+          "eight",
+          "ten"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "seven",
+        "answer": "seven",
+        "options": [
+          "seven",
+          "eight",
+          "ten",
+          "what"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "eight",
+        "answer": "eight",
+        "options": [
+          "eight",
+          "ten",
+          "what",
+          "how"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "ten",
+        "answer": "ten",
+        "options": [
+          "ten",
+          "what",
+          "how",
+          "old"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What's your name?",
+        "answer": "What's your name?"
+      },
+      {
+        "type": "dictation",
+        "audio": "I’m seven.",
+        "answer": "I’m seven."
+      },
+      {
+        "type": "dictation",
+        "audio": "My name’s Nam.",
+        "answer": "My name’s Nam."
+      },
+      {
+        "type": "sentence",
+        "answer": "How old are you?",
+        "hint": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I'm eight years old.",
+        "hint": "Mình tám tuổi."
+      },
+      {
+        "type": "sentence",
+        "answer": "My name’s Mary.",
+        "hint": "Tên mình là Mary."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn tên gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Tên mình là Mary."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình tám tuổi."
+      }
+    ]
+  }
+}

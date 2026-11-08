@@ -1,0 +1,668 @@
+{
+  "id": 9,
+  "title": "Colours",
+  "topic": "Màu sắc",
+  "icon": "🌈",
+  "pages": {
+    "first": 62,
+    "last": 67
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "black",
+        "vietnamese": "màu đen"
+      },
+      {
+        "english": "blue",
+        "vietnamese": "màu xanh dương"
+      },
+      {
+        "english": "brown",
+        "vietnamese": "màu nâu"
+      },
+      {
+        "english": "green",
+        "vietnamese": "màu xanh lá"
+      },
+      {
+        "english": "orange",
+        "vietnamese": "màu cam"
+      },
+      {
+        "english": "red",
+        "vietnamese": "màu đỏ"
+      },
+      {
+        "english": "white",
+        "vietnamese": "màu trắng"
+      },
+      {
+        "english": "yellow",
+        "vietnamese": "màu vàng"
+      },
+      {
+        "english": "colour",
+        "vietnamese": "màu sắc"
+      },
+      {
+        "english": "they",
+        "vietnamese": "họ / chúng"
+      },
+      {
+        "english": "pen",
+        "vietnamese": "bút mực"
+      },
+      {
+        "english": "pencils",
+        "vietnamese": "các cây bút chì"
+      },
+      {
+        "english": "rulers",
+        "vietnamese": "các cây thước"
+      },
+      {
+        "english": "school bag",
+        "vietnamese": "cặp sách"
+      },
+      {
+        "english": "notebooks",
+        "vietnamese": "các quyển vở"
+      },
+      {
+        "english": "pencil case",
+        "vietnamese": "hộp bút"
+      },
+      {
+        "english": "eraser",
+        "vietnamese": "cục tẩy"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What colour is it?",
+        "vietnamese": "Nó màu gì?"
+      },
+      {
+        "english": "What colour are they?",
+        "vietnamese": "Chúng màu gì?"
+      },
+      {
+        "english": "My notebook is yellow.",
+        "vietnamese": "Quyển vở của mình màu vàng."
+      },
+      {
+        "english": "They are red.",
+        "vietnamese": "Chúng có màu đỏ."
+      },
+      {
+        "english": "It's a brown school bag.",
+        "vietnamese": "Đó là một chiếc cặp màu nâu."
+      },
+      {
+        "english": "My pencils are orange.",
+        "vietnamese": "Các bút chì của mình có màu cam."
+      },
+      {
+        "english": "My school bag is blue.",
+        "vietnamese": "Cặp sách của mình màu xanh dương."
+      },
+      {
+        "english": "The pencil cases are brown.",
+        "vietnamese": "Các hộp bút màu nâu."
+      },
+      {
+        "english": "It’s blue.",
+        "vietnamese": "Nó màu xanh dương."
+      },
+      {
+        "english": "It’s brown.",
+        "vietnamese": "Nó màu nâu."
+      },
+      {
+        "english": "They’re green.",
+        "vietnamese": "Chúng màu xanh lá."
+      },
+      {
+        "english": "What colour is the pen?",
+        "vietnamese": "Cây bút mực màu gì?"
+      },
+      {
+        "english": "What colour are the rulers?",
+        "vietnamese": "Những cây thước màu gì?"
+      },
+      {
+        "english": "The pencils are green.",
+        "vietnamese": "Những cây bút chì màu xanh lá."
+      },
+      {
+        "english": "My books and notebooks are blue.",
+        "vietnamese": "Sách và vở của mình màu xanh dương."
+      },
+      {
+        "english": "My pencil case and eraser are orange.",
+        "vietnamese": "Hộp bút và cục tẩy của mình màu cam."
+      },
+      {
+        "english": "My pen and pencil are black.",
+        "vietnamese": "Bút mực và bút chì của mình màu đen."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "black",
+        "vietnamese": "màu đen"
+      },
+      {
+        "english": "blue",
+        "vietnamese": "màu xanh dương"
+      },
+      {
+        "english": "brown",
+        "vietnamese": "màu nâu"
+      },
+      {
+        "english": "green",
+        "vietnamese": "màu xanh lá"
+      },
+      {
+        "english": "orange",
+        "vietnamese": "màu cam"
+      },
+      {
+        "english": "red",
+        "vietnamese": "màu đỏ"
+      },
+      {
+        "english": "white",
+        "vietnamese": "màu trắng"
+      },
+      {
+        "english": "yellow",
+        "vietnamese": "màu vàng"
+      },
+      {
+        "english": "colour",
+        "vietnamese": "màu sắc"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Thước của Lucy màu gì?",
+        "passage": [
+          "Ben: What colour is your ruler?",
+          "Lucy: It's blue."
+        ],
+        "options": [
+          "Màu xanh dương",
+          "Màu vàng",
+          "Màu đỏ"
+        ],
+        "answer": "Màu xanh dương"
+      },
+      {
+        "prompt": "Bút chì của Minh màu gì?",
+        "passage": [
+          "Mai: What colour are your pencils?",
+          "Minh: They're green."
+        ],
+        "options": [
+          "Màu xanh lá",
+          "Màu đen",
+          "Màu trắng"
+        ],
+        "answer": "Màu xanh lá"
+      },
+      {
+        "prompt": "Vở của Nam màu gì?",
+        "passage": [
+          "Linh: What colour is your notebook?",
+          "Nam: My notebook is yellow."
+        ],
+        "options": [
+          "Màu vàng",
+          "Màu cam",
+          "Màu nâu"
+        ],
+        "answer": "Màu vàng"
+      },
+      {
+        "prompt": "Các cây bút của Bill màu gì?",
+        "passage": [
+          "Mary: What colour are your pens?",
+          "Bill: They are red."
+        ],
+        "options": [
+          "Màu đỏ",
+          "Màu xanh lá",
+          "Màu trắng"
+        ],
+        "answer": "Màu đỏ"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "My pen and pencil are black."
+        ],
+        "options": [
+          "Bút mực và bút chì của mình màu đen.",
+          "Nó màu gì?",
+          "Chúng màu gì?"
+        ],
+        "answer": "Bút mực và bút chì của mình màu đen."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It’s blue."
+        ],
+        "options": [
+          "Nó màu xanh dương.",
+          "Chúng màu gì?",
+          "Quyển vở của mình màu vàng."
+        ],
+        "answer": "Nó màu xanh dương."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It’s brown."
+        ],
+        "options": [
+          "Nó màu nâu.",
+          "Quyển vở của mình màu vàng.",
+          "Chúng có màu đỏ."
+        ],
+        "answer": "Nó màu nâu."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "They’re green."
+        ],
+        "options": [
+          "Chúng màu xanh lá.",
+          "Chúng có màu đỏ.",
+          "Đó là một chiếc cặp màu nâu."
+        ],
+        "answer": "Chúng màu xanh lá."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "What colour is the pen?"
+        ],
+        "options": [
+          "Cây bút mực màu gì?",
+          "Đó là một chiếc cặp màu nâu.",
+          "Các bút chì của mình có màu cam."
+        ],
+        "answer": "Cây bút mực màu gì?"
+      }
+    ],
+    "listening": [
+      {
+        "audio": "blue",
+        "options": [
+          "blue",
+          "brown",
+          "black",
+          "green"
+        ],
+        "answer": "blue"
+      },
+      {
+        "audio": "brown",
+        "options": [
+          "brown",
+          "black",
+          "green",
+          "orange"
+        ],
+        "answer": "brown"
+      },
+      {
+        "audio": "black",
+        "options": [
+          "black",
+          "green",
+          "orange",
+          "red"
+        ],
+        "answer": "black"
+      },
+      {
+        "audio": "green",
+        "options": [
+          "green",
+          "orange",
+          "red",
+          "white"
+        ],
+        "answer": "green"
+      },
+      {
+        "audio": "orange",
+        "options": [
+          "orange",
+          "red",
+          "white",
+          "yellow"
+        ],
+        "answer": "orange"
+      },
+      {
+        "audio": "red",
+        "options": [
+          "red",
+          "white",
+          "yellow",
+          "blue"
+        ],
+        "answer": "red"
+      },
+      {
+        "audio": "white",
+        "options": [
+          "white",
+          "yellow",
+          "blue",
+          "brown"
+        ],
+        "answer": "white"
+      },
+      {
+        "audio": "yellow",
+        "options": [
+          "yellow",
+          "blue",
+          "brown",
+          "black"
+        ],
+        "answer": "yellow"
+      },
+      {
+        "audio": "The pencil cases are brown.",
+        "options": [
+          "The pencil cases are brown.",
+          "They’re green.",
+          "What colour is the pen?",
+          "What colour are the rulers?"
+        ],
+        "answer": "The pencil cases are brown."
+      },
+      {
+        "audio": "It’s blue.",
+        "options": [
+          "It’s blue.",
+          "What colour is the pen?",
+          "What colour are the rulers?",
+          "The pencils are green."
+        ],
+        "answer": "It’s blue."
+      },
+      {
+        "audio": "It’s brown.",
+        "options": [
+          "It’s brown.",
+          "What colour are the rulers?",
+          "The pencils are green.",
+          "My books and notebooks are blue."
+        ],
+        "answer": "It’s brown."
+      },
+      {
+        "audio": "They’re green.",
+        "options": [
+          "They’re green.",
+          "The pencils are green.",
+          "My books and notebooks are blue.",
+          "My pencil case and eraser are orange."
+        ],
+        "answer": "They’re green."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What colour is it?",
+        "hint": "Nó màu gì?"
+      },
+      {
+        "answer": "What colour are they?",
+        "hint": "Chúng màu gì?"
+      },
+      {
+        "answer": "My notebook is yellow.",
+        "hint": "Quyển vở của mình màu vàng."
+      },
+      {
+        "answer": "They are red.",
+        "hint": "Chúng có màu đỏ."
+      },
+      {
+        "answer": "It's a brown school bag.",
+        "hint": "Đó là một chiếc cặp màu nâu."
+      },
+      {
+        "answer": "My pencils are orange.",
+        "hint": "Các bút chì của mình có màu cam."
+      },
+      {
+        "answer": "My school bag is blue.",
+        "hint": "Cặp sách của mình màu xanh dương."
+      },
+      {
+        "answer": "The pencil cases are brown.",
+        "hint": "Các hộp bút màu nâu."
+      },
+      {
+        "answer": "It’s blue.",
+        "hint": "Nó màu xanh dương."
+      },
+      {
+        "answer": "It’s brown.",
+        "hint": "Nó màu nâu."
+      },
+      {
+        "answer": "They’re green.",
+        "hint": "Chúng màu xanh lá."
+      },
+      {
+        "answer": "What colour is the pen?",
+        "hint": "Cây bút mực màu gì?"
+      },
+      {
+        "answer": "What colour are the rulers?",
+        "hint": "Những cây thước màu gì?"
+      },
+      {
+        "answer": "The pencils are green.",
+        "hint": "Những cây bút chì màu xanh lá."
+      },
+      {
+        "answer": "My books and notebooks are blue.",
+        "hint": "Sách và vở của mình màu xanh dương."
+      },
+      {
+        "answer": "My pencil case and eraser are orange.",
+        "hint": "Hộp bút và cục tẩy của mình màu cam."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Nó màu gì?"
+      },
+      {
+        "prompt": "Chúng màu gì?"
+      },
+      {
+        "prompt": "Cây thước của mình màu xanh dương."
+      },
+      {
+        "prompt": "Các cây bút chì của mình màu đỏ."
+      },
+      {
+        "prompt": "Cặp sách của bạn màu gì?"
+      },
+      {
+        "prompt": "Các quyển sách màu xanh lá."
+      },
+      {
+        "prompt": "Cặp sách của mình màu nâu."
+      },
+      {
+        "prompt": "Những cây thước màu gì?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Thước của Lucy màu gì?",
+        "passage": [
+          "Ben: What colour is your ruler?",
+          "Lucy: It's blue."
+        ],
+        "options": [
+          "Màu xanh dương",
+          "Màu vàng",
+          "Màu đỏ"
+        ],
+        "answer": "Màu xanh dương"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bút chì của Minh màu gì?",
+        "passage": [
+          "Mai: What colour are your pencils?",
+          "Minh: They're green."
+        ],
+        "options": [
+          "Màu xanh lá",
+          "Màu đen",
+          "Màu trắng"
+        ],
+        "answer": "Màu xanh lá"
+      },
+      {
+        "type": "choice",
+        "prompt": "Vở của Nam màu gì?",
+        "passage": [
+          "Linh: What colour is your notebook?",
+          "Nam: My notebook is yellow."
+        ],
+        "options": [
+          "Màu vàng",
+          "Màu cam",
+          "Màu nâu"
+        ],
+        "answer": "Màu vàng"
+      },
+      {
+        "type": "choice",
+        "prompt": "Các cây bút của Bill màu gì?",
+        "passage": [
+          "Mary: What colour are your pens?",
+          "Bill: They are red."
+        ],
+        "options": [
+          "Màu đỏ",
+          "Màu xanh lá",
+          "Màu trắng"
+        ],
+        "answer": "Màu đỏ"
+      },
+      {
+        "type": "listening",
+        "audio": "blue",
+        "answer": "blue",
+        "options": [
+          "blue",
+          "brown",
+          "orange",
+          "green"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "brown",
+        "answer": "brown",
+        "options": [
+          "brown",
+          "orange",
+          "green",
+          "black"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "orange",
+        "answer": "orange",
+        "options": [
+          "orange",
+          "green",
+          "black",
+          "red"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "green",
+        "answer": "green",
+        "options": [
+          "green",
+          "black",
+          "red",
+          "white"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What colour is it?",
+        "answer": "What colour is it?"
+      },
+      {
+        "type": "dictation",
+        "audio": "They’re green.",
+        "answer": "They’re green."
+      },
+      {
+        "type": "dictation",
+        "audio": "My school bag is blue.",
+        "answer": "My school bag is blue."
+      },
+      {
+        "type": "sentence",
+        "answer": "What colour are they?",
+        "hint": "Chúng màu gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "The pencil cases are brown.",
+        "hint": "Các hộp bút màu nâu."
+      },
+      {
+        "type": "sentence",
+        "answer": "What colour is the pen?",
+        "hint": "Cây bút mực màu gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Nó màu gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Chúng màu gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Cây thước của mình màu xanh dương."
+      },
+      {
+        "type": "translation",
+        "prompt": "Các cây bút chì của mình màu đỏ."
+      }
+    ]
+  }
+}

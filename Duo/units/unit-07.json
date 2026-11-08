@@ -1,0 +1,676 @@
+{
+  "id": 7,
+  "title": "Classroom instructions",
+  "topic": "Chỉ dẫn trong lớp",
+  "icon": "🙋",
+  "pages": {
+    "first": 50,
+    "last": 55
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "close",
+        "vietnamese": "đóng"
+      },
+      {
+        "english": "come in",
+        "vietnamese": "vào trong"
+      },
+      {
+        "english": "go out",
+        "vietnamese": "ra ngoài"
+      },
+      {
+        "english": "sit down",
+        "vietnamese": "ngồi xuống"
+      },
+      {
+        "english": "speak",
+        "vietnamese": "nói"
+      },
+      {
+        "english": "stand up",
+        "vietnamese": "đứng lên"
+      },
+      {
+        "english": "open",
+        "vietnamese": "mở"
+      },
+      {
+        "english": "please",
+        "vietnamese": "vui lòng"
+      },
+      {
+        "english": "stand",
+        "vietnamese": "đứng"
+      },
+      {
+        "english": "speak English",
+        "vietnamese": "nói tiếng Anh"
+      },
+      {
+        "english": "speak Vietnamese",
+        "vietnamese": "nói tiếng Việt"
+      },
+      {
+        "english": "English",
+        "vietnamese": "tiếng Anh"
+      },
+      {
+        "english": "Vietnamese",
+        "vietnamese": "tiếng Việt"
+      },
+      {
+        "english": "book",
+        "vietnamese": "quyển sách"
+      },
+      {
+        "english": "class",
+        "vietnamese": "cả lớp"
+      },
+      {
+        "english": "may",
+        "vietnamese": "có thể (khi xin phép)"
+      }
+    ],
+    "structures": [
+      {
+        "english": "May I come in?",
+        "vietnamese": "Em xin phép vào được không?"
+      },
+      {
+        "english": "Sit down, please.",
+        "vietnamese": "Mời em ngồi xuống."
+      },
+      {
+        "english": "Open your book, please.",
+        "vietnamese": "Em vui lòng mở sách."
+      },
+      {
+        "english": "May I speak?",
+        "vietnamese": "Em xin phép nói được không?"
+      },
+      {
+        "english": "Close your book, please.",
+        "vietnamese": "Em vui lòng đóng sách."
+      },
+      {
+        "english": "May I sit down?",
+        "vietnamese": "Em xin phép ngồi xuống được không?"
+      },
+      {
+        "english": "May I speak Vietnamese?",
+        "vietnamese": "Em xin phép nói tiếng Việt được không?"
+      },
+      {
+        "english": "No, you can't.",
+        "vietnamese": "Không, em không được phép."
+      },
+      {
+        "english": "Good morning, Ms Hoa.",
+        "vietnamese": "Em chào cô Hoa buổi sáng."
+      },
+      {
+        "english": "Hello, class.",
+        "vietnamese": "Chào cả lớp."
+      },
+      {
+        "english": "Open your books, please!",
+        "vietnamese": "Các em vui lòng mở sách."
+      },
+      {
+        "english": "Stand up, please!",
+        "vietnamese": "Em vui lòng đứng lên."
+      },
+      {
+        "english": "May I go out?",
+        "vietnamese": "Em xin phép ra ngoài được không?"
+      },
+      {
+        "english": "May I open the book?",
+        "vietnamese": "Em xin phép mở sách được không?"
+      },
+      {
+        "english": "Speak English, please!",
+        "vietnamese": "Em vui lòng nói tiếng Anh."
+      },
+      {
+        "english": "May I stand up?",
+        "vietnamese": "Em xin phép đứng lên được không?"
+      },
+      {
+        "english": "May I come in and sit down?",
+        "vietnamese": "Em xin phép vào lớp và ngồi xuống được không?"
+      },
+      {
+        "english": "Yes, you can.",
+        "vietnamese": "Được, em có thể làm vậy."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "open",
+        "vietnamese": "mở"
+      },
+      {
+        "english": "close",
+        "vietnamese": "đóng"
+      },
+      {
+        "english": "come in",
+        "vietnamese": "vào trong"
+      },
+      {
+        "english": "go out",
+        "vietnamese": "ra ngoài"
+      },
+      {
+        "english": "sit down",
+        "vietnamese": "ngồi xuống"
+      },
+      {
+        "english": "stand up",
+        "vietnamese": "đứng lên"
+      },
+      {
+        "english": "speak",
+        "vietnamese": "nói"
+      },
+      {
+        "english": "please",
+        "vietnamese": "vui lòng"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Mai xin phép làm gì?",
+        "passage": [
+          "Mai: May I go out?",
+          "Teacher: Yes, you can."
+        ],
+        "options": [
+          "Ra ngoài",
+          "Vào lớp",
+          "Ngồi xuống"
+        ],
+        "answer": "Ra ngoài"
+      },
+      {
+        "prompt": "Bill cần làm gì?",
+        "passage": [
+          "Teacher: Stand up, please.",
+          "Bill: OK!"
+        ],
+        "options": [
+          "Đứng lên",
+          "Ngồi xuống",
+          "Đóng sách"
+        ],
+        "answer": "Đứng lên"
+      },
+      {
+        "prompt": "Giáo viên yêu cầu Linh làm gì?",
+        "passage": [
+          "Teacher: Close your book, please.",
+          "Linh: OK. May I go out?"
+        ],
+        "options": [
+          "Đóng sách",
+          "Mở sách",
+          "Ra ngoài"
+        ],
+        "answer": "Đóng sách"
+      },
+      {
+        "prompt": "Nam được phép làm gì?",
+        "passage": [
+          "Nam: May I come in?",
+          "Teacher: Yes, you can come in."
+        ],
+        "options": [
+          "Vào lớp",
+          "Ra ngoài",
+          "Đứng lên"
+        ],
+        "answer": "Vào lớp"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "May I come in and sit down?"
+        ],
+        "options": [
+          "Em xin phép vào lớp và ngồi xuống được không?",
+          "Em xin phép vào được không?",
+          "Mời em ngồi xuống."
+        ],
+        "answer": "Em xin phép vào lớp và ngồi xuống được không?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Yes, you can."
+        ],
+        "options": [
+          "Được, em có thể làm vậy.",
+          "Mời em ngồi xuống.",
+          "Em vui lòng mở sách."
+        ],
+        "answer": "Được, em có thể làm vậy."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "May I speak Vietnamese?"
+        ],
+        "options": [
+          "Em xin phép nói tiếng Việt được không?",
+          "Em vui lòng mở sách.",
+          "Em xin phép nói được không?"
+        ],
+        "answer": "Em xin phép nói tiếng Việt được không?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "No, you can't."
+        ],
+        "options": [
+          "Không, em không được phép.",
+          "Em xin phép nói được không?",
+          "Em vui lòng đóng sách."
+        ],
+        "answer": "Không, em không được phép."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Good morning, Ms Hoa."
+        ],
+        "options": [
+          "Em chào cô Hoa buổi sáng.",
+          "Em vui lòng đóng sách.",
+          "Em xin phép ngồi xuống được không?"
+        ],
+        "answer": "Em chào cô Hoa buổi sáng."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Hello, class."
+        ],
+        "options": [
+          "Chào cả lớp.",
+          "Em xin phép ngồi xuống được không?",
+          "Em xin phép nói tiếng Việt được không?"
+        ],
+        "answer": "Chào cả lớp."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "stand",
+        "options": [
+          "stand",
+          "speak",
+          "speak English",
+          "speak Vietnamese"
+        ],
+        "answer": "stand"
+      },
+      {
+        "audio": "speak",
+        "options": [
+          "speak",
+          "speak English",
+          "speak Vietnamese",
+          "come in"
+        ],
+        "answer": "speak"
+      },
+      {
+        "audio": "speak English",
+        "options": [
+          "speak English",
+          "speak Vietnamese",
+          "come in",
+          "go out"
+        ],
+        "answer": "speak English"
+      },
+      {
+        "audio": "speak Vietnamese",
+        "options": [
+          "speak Vietnamese",
+          "come in",
+          "go out",
+          "sit down"
+        ],
+        "answer": "speak Vietnamese"
+      },
+      {
+        "audio": "come in",
+        "options": [
+          "come in",
+          "go out",
+          "sit down",
+          "stand up"
+        ],
+        "answer": "come in"
+      },
+      {
+        "audio": "go out",
+        "options": [
+          "go out",
+          "sit down",
+          "stand up",
+          "stand"
+        ],
+        "answer": "go out"
+      },
+      {
+        "audio": "sit down",
+        "options": [
+          "sit down",
+          "stand up",
+          "stand",
+          "speak"
+        ],
+        "answer": "sit down"
+      },
+      {
+        "audio": "stand up",
+        "options": [
+          "stand up",
+          "stand",
+          "speak",
+          "speak English"
+        ],
+        "answer": "stand up"
+      },
+      {
+        "audio": "May I come in?",
+        "options": [
+          "May I come in?",
+          "Hello, class.",
+          "Open your books, please!",
+          "Stand up, please!"
+        ],
+        "answer": "May I come in?"
+      },
+      {
+        "audio": "Sit down, please.",
+        "options": [
+          "Sit down, please.",
+          "Open your books, please!",
+          "Stand up, please!",
+          "May I go out?"
+        ],
+        "answer": "Sit down, please."
+      },
+      {
+        "audio": "Open your book, please.",
+        "options": [
+          "Open your book, please.",
+          "Stand up, please!",
+          "May I go out?",
+          "May I open the book?"
+        ],
+        "answer": "Open your book, please."
+      },
+      {
+        "audio": "May I speak?",
+        "options": [
+          "May I speak?",
+          "May I go out?",
+          "May I open the book?",
+          "Speak English, please!"
+        ],
+        "answer": "May I speak?"
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "May I come in?",
+        "hint": "Em xin phép vào được không?"
+      },
+      {
+        "answer": "Sit down, please.",
+        "hint": "Mời em ngồi xuống."
+      },
+      {
+        "answer": "Open your book, please.",
+        "hint": "Em vui lòng mở sách."
+      },
+      {
+        "answer": "May I speak?",
+        "hint": "Em xin phép nói được không?"
+      },
+      {
+        "answer": "Close your book, please.",
+        "hint": "Em vui lòng đóng sách."
+      },
+      {
+        "answer": "May I sit down?",
+        "hint": "Em xin phép ngồi xuống được không?"
+      },
+      {
+        "answer": "May I speak Vietnamese?",
+        "hint": "Em xin phép nói tiếng Việt được không?"
+      },
+      {
+        "answer": "No, you can't.",
+        "hint": "Không, em không được phép."
+      },
+      {
+        "answer": "Good morning, Ms Hoa.",
+        "hint": "Em chào cô Hoa buổi sáng."
+      },
+      {
+        "answer": "Hello, class.",
+        "hint": "Chào cả lớp."
+      },
+      {
+        "answer": "Open your books, please!",
+        "hint": "Các em vui lòng mở sách."
+      },
+      {
+        "answer": "Stand up, please!",
+        "hint": "Em vui lòng đứng lên."
+      },
+      {
+        "answer": "May I go out?",
+        "hint": "Em xin phép ra ngoài được không?"
+      },
+      {
+        "answer": "May I open the book?",
+        "hint": "Em xin phép mở sách được không?"
+      },
+      {
+        "answer": "Speak English, please!",
+        "hint": "Em vui lòng nói tiếng Anh."
+      },
+      {
+        "answer": "May I stand up?",
+        "hint": "Em xin phép đứng lên được không?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Mời em ngồi xuống."
+      },
+      {
+        "prompt": "Em vui lòng đứng lên."
+      },
+      {
+        "prompt": "Em xin phép vào lớp được không?"
+      },
+      {
+        "prompt": "Em xin phép ra ngoài được không?"
+      },
+      {
+        "prompt": "Em vui lòng đóng sách."
+      },
+      {
+        "prompt": "Em xin phép nói được không?"
+      },
+      {
+        "prompt": "Mời em vào."
+      },
+      {
+        "prompt": "Em xin phép nói tiếng Việt được không?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Mai xin phép làm gì?",
+        "passage": [
+          "Mai: May I go out?",
+          "Teacher: Yes, you can."
+        ],
+        "options": [
+          "Ra ngoài",
+          "Vào lớp",
+          "Ngồi xuống"
+        ],
+        "answer": "Ra ngoài"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bill cần làm gì?",
+        "passage": [
+          "Teacher: Stand up, please.",
+          "Bill: OK!"
+        ],
+        "options": [
+          "Đứng lên",
+          "Ngồi xuống",
+          "Đóng sách"
+        ],
+        "answer": "Đứng lên"
+      },
+      {
+        "type": "choice",
+        "prompt": "Giáo viên yêu cầu Linh làm gì?",
+        "passage": [
+          "Teacher: Close your book, please.",
+          "Linh: OK. May I go out?"
+        ],
+        "options": [
+          "Đóng sách",
+          "Mở sách",
+          "Ra ngoài"
+        ],
+        "answer": "Đóng sách"
+      },
+      {
+        "type": "choice",
+        "prompt": "Nam được phép làm gì?",
+        "passage": [
+          "Nam: May I come in?",
+          "Teacher: Yes, you can come in."
+        ],
+        "options": [
+          "Vào lớp",
+          "Ra ngoài",
+          "Đứng lên"
+        ],
+        "answer": "Vào lớp"
+      },
+      {
+        "type": "listening",
+        "audio": "speak",
+        "answer": "speak",
+        "options": [
+          "speak",
+          "stand",
+          "come in",
+          "go out"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "stand",
+        "answer": "stand",
+        "options": [
+          "stand",
+          "come in",
+          "go out",
+          "speak English"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "come in",
+        "answer": "come in",
+        "options": [
+          "come in",
+          "go out",
+          "speak English",
+          "speak Vietnamese"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "go out",
+        "answer": "go out",
+        "options": [
+          "go out",
+          "speak English",
+          "speak Vietnamese",
+          "sit down"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Stand up, please!",
+        "answer": "Stand up, please!"
+      },
+      {
+        "type": "dictation",
+        "audio": "Speak English, please!",
+        "answer": "Speak English, please!"
+      },
+      {
+        "type": "dictation",
+        "audio": "Yes, you can.",
+        "answer": "Yes, you can."
+      },
+      {
+        "type": "sentence",
+        "answer": "May I come in?",
+        "hint": "Em xin phép vào được không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "May I speak Vietnamese?",
+        "hint": "Em xin phép nói tiếng Việt được không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "No, you can't.",
+        "hint": "Không, em không được phép."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mời em ngồi xuống."
+      },
+      {
+        "type": "translation",
+        "prompt": "Em vui lòng đứng lên."
+      },
+      {
+        "type": "translation",
+        "prompt": "Em xin phép vào lớp được không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Em xin phép ra ngoài được không?"
+      }
+    ]
+  }
+}

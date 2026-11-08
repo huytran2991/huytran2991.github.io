@@ -3,16 +3,17 @@
 const app = document.querySelector('#app');
 const storageKey = 'duo-grade3-best-v1';
 const voiceKey = 'duo-grade3-voice-v1';
-const completionKey = 'duo-grade3-completed-v2';
+const completionKey = 'duo-grade3-authored-completed-v1';
 const practiceModes = [
   ['matching', '🧩 Ghép cặp từ'],
-  ['quiz', '📝 Trắc nghiệm câu', makeQuiz],
-  ['listening', '🎧 Nghe và chọn đáp án', makeListeningQuiz],
-  ['sentences', '🔤 Xếp từ thành câu', makeSentences],
-  ['translation', '✍️ Dịch Việt → Anh', makeTranslations],
-  ['mixed', '🎯 Luyện tổng hợp', makeQuestions]
+  ['quiz', '📝 Trắc nghiệm câu'],
+  ['listening', '🎧 Nghe và chọn đáp án'],
+  ['sentences', '🔤 Xếp từ thành câu'],
+  ['translation', '✍️ Dịch Việt → Anh'],
+  ['mixed', '🎯 Luyện tổng hợp']
 ];
 const completed = new Set();
+let units = [];
 let best = {};
 let preferredVoice = '';
 let unitIndex;
@@ -36,7 +37,7 @@ try {
 }
 
 function markCompleted(mode) {
-  completed.add(unitIndex + '/' + mode);
+  completed.add(units[unitIndex].id + '/' + mode);
   try {
     localStorage.setItem(completionKey, JSON.stringify([...completed]));
   } catch {
@@ -159,14 +160,14 @@ function showHome(focus = true) {
   refreshVoices();
   app.querySelector('.voice-settings').after(configureGemini());
   const grid = app.querySelector('.unit-grid');
-  units.forEach(([title, topic, page, icon], index) => {
+  units.forEach(({ title, topic, pages, icon }, index) => {
     const card = button('', () => showUnit(index), 'unit');
     const symbol = element('span', icon, 'icon');
     symbol.setAttribute('aria-hidden', 'true');
     const info = element('span', '');
     const name = element('strong', title);
     name.lang = 'en';
-    info.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + page), name,
+    info.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + pages.first), name,
       element('small', topic + (best[index] ? ' · ⭐ ' + best[index] + '/3' : '')));
     card.append(symbol, info);
     grid.append(card);
@@ -188,149 +189,65 @@ function showPanel(title, backLabel, backAction) {
 
 function showUnit(index) {
   unitIndex = index;
-  const [title, topic, page, , words] = units[index];
-  const panel = showPanel('Unit ' + (index + 1) + ' · ' + title, '← Các Unit', showHome);
-  panel.append(element('p', topic + ' · Trang ' + page + ' trong sách'));
+  const { id, title, topic, pages, reference, exercises } = units[index];
+  const panel = showPanel('Unit ' + id + ' · ' + title, '← Các Unit', showHome);
+  panel.append(element('p', topic + ' · Trang ' + pages.first + '–' + pages.last + ' trong sách'));
   const modes = element('div', '', 'mode-grid');
-  for (const [mode, label, makeRound] of practiceModes) {
-    const done = completed.has(index + '/' + mode);
-    const questions = makeRound?.();
-    const action = questions ? () => startRound(questions, false, makeRound) : showMatching;
-    const count = questions ? questions.length + ' câu' : vocabulary(words).length + ' cặp';
-    const control = button(label + ' · ' + count, action, done ? 'mode-completed' : '');
-    if (done) {
-      control.append(element('small', '✓ Đã hoàn thành'));
-    }
+  for (const [mode, label] of practiceModes) {
+    const items = exercises[mode];
+    const done = completed.has(id + '/' + mode);
+    const action = mode === 'matching' ? showMatching : () => openPractice(mode);
+    const control = button(label + ' · ' + items.length + (mode === 'matching' ? ' cặp' : ' câu'),
+      action, done ? 'mode-completed' : '');
+    if (done) control.append(element('small', '✓ Đã hoàn thành'));
     modes.append(control);
   }
   panel.append(modes);
-  const list = element('ul', '', 'word-list');
-  const status = audioStatus();
-  for (const [english, meaning] of words) {
-    const row = element('li', '');
-    const label = element('span', '');
-    const word = element('strong', english);
-    word.lang = 'en';
-    label.append(word, element('small', meaning));
-    const play = button('🔊 Nghe', () => say(english, .85, status));
-    play.setAttribute('aria-label', 'Nghe cách đọc ' + english);
-    row.append(label, play);
-    list.append(row);
-  }
   const details = element('details', '', 'actions');
-  details.append(element('summary', 'Xem từ vựng và mẫu câu'), status, list);
+  details.append(element('summary', 'Xem từ vựng và mẫu câu'));
+  const status = audioStatus();
+  details.append(status);
+  for (const [label, entries] of [['Từ vựng', reference.vocabulary], ['Mẫu câu', reference.structures]]) {
+    const list = element('ul', '', 'word-list');
+    for (const { english, vietnamese } of entries) {
+      const row = element('li', '');
+      const label = element('span', '');
+      const word = element('strong', english);
+      word.lang = 'en';
+      label.append(word, element('small', vietnamese));
+      const play = button('🔊 Nghe', () => say(english, .85, status));
+      play.setAttribute('aria-label', 'Nghe cách đọc ' + english);
+      row.append(label, play);
+      list.append(row);
+    }
+    details.append(element('h2', label), list);
+  }
   panel.append(details);
 }
 
-function isSentence(text) {
-  return /[.!?]$/.test(text);
-}
-
-function vocabulary(words) {
-  return words.filter(([text]) => !isSentence(text));
-}
-
-function prioritizeVocabulary(words, limit) {
-  const terms = vocabulary(words);
-  const examples = shuffle(words.filter(([text]) => isSentence(text)));
-  return shuffle([...terms, ...examples.slice(0, limit - terms.length)]);
-}
-
-function wordChoices(pair, words, column, size) {
-  const sameKind = isSentence(pair[0]);
-  const others = shuffle(words.filter(word => word[column] !== pair[column]));
-  const ordered = [
-    ...others.filter(word => isSentence(word[0]) === sameKind),
-    ...others.filter(word => isSentence(word[0]) !== sameKind)
-  ];
-  const values = [...new Set(ordered.map(word => word[column]))];
-  return shuffle([pair[column], ...values.slice(0, size - 1)]);
-}
-
-function readingQuestion(pair, words) {
-  return {
-    title: 'Đọc và chọn nghĩa đúng', lines: [pair[0]], answer: pair[1], choices: wordChoices(pair, words, 1, 3)
-  };
-}
-
-function dialogueQuestions(dialogues) {
-  return dialogues.map(([first, second, title, answer, ...others]) => ({
-    title, lines: [first, second], answer, choices: shuffle([answer, ...others])
-  }));
-}
-
-function makeQuestions() {
-  const [, , , , words, dialogues] = units[unitIndex];
-  const count = Math.min(20, Math.max(16, vocabulary(words).length + 4 + dialogues.length));
-  const practice = prioritizeVocabulary(words, count - dialogues.length).map((pair, index) => {
-    const [answer, clue] = pair;
-    switch (index % 4) {
-      case 0:
-        return {
-          title: 'Nghe và chọn chữ em nghe được', sound: answer, answer, english: true,
-          choices: wordChoices(pair, words, 0, 3)
-        };
-      case 1:
-        return readingQuestion(pair, words);
-      case 2:
-        return { title: 'Nghe rồi gõ lại', sound: answer, answer, english: true };
-      default:
-        return { title: 'Gõ từ hoặc câu tiếng Anh theo nghĩa gợi ý', clue, translation: true };
+function openPractice(mode) {
+  const types = { quiz: 'choice', listening: 'listening', sentences: 'sentence', translation: 'translation' };
+  const questions = units[unitIndex].exercises[mode].map(item => {
+    switch (item.type || types[mode]) {
+      case 'choice':
+        return { title: item.prompt, lines: item.passage, answer: item.answer, choices: shuffle(item.options) };
+      case 'listening':
+        return { title: 'Nghe và chọn đáp án', sound: item.audio, answer: item.answer, english: true, choices: shuffle(item.options) };
+      case 'dictation':
+        return { title: 'Nghe rồi gõ lại', sound: item.audio, answer: item.answer, english: true };
+      case 'sentence':
+        return { title: 'Xếp từ thành câu', clue: item.hint, answer: item.answer, english: true, tiles: true };
+      case 'translation':
+        return { title: 'Dịch sang tiếng Anh', clue: item.prompt, translation: true };
     }
   });
-  return shuffle([...practice, ...dialogueQuestions(dialogues)]);
-}
-
-function makeQuiz() {
-  const [, , , , words, dialogues] = units[unitIndex];
-  const terms = vocabulary(words);
-  const passages = shuffle(dialogueQuestions(dialogues)).slice(0, 16 - terms.length);
-  return shuffle([...terms.map(pair => readingQuestion(pair, words)), ...passages]);
-}
-
-function makeListeningQuiz() {
-  const words = units[unitIndex][4];
-  return prioritizeVocabulary(words, Math.min(16, vocabulary(words).length + 2)).map(pair => ({
-    title: 'Nghe và chọn đáp án',
-    sound: pair[0],
-    answer: pair[0],
-    english: true,
-    choices: wordChoices(pair, words, 0, 4)
-  }));
-}
-
-function makeTranslations() {
-  return shuffle(translationPrompts[unitIndex]).map(clue => ({
-    title: 'Dịch sang tiếng Anh', clue, english: true, translation: true
-  }));
-}
-
-function makeSentences() {
-  const [, , , , words, dialogues] = units[unitIndex];
-  const examples = words.filter(([text]) => isSentence(text)).map(([text, clue]) => ({
-    answer: text, clue
-  }));
-  for (const dialogue of dialogues) {
-    for (const line of dialogue.slice(0, 2)) {
-      const sentences = line.replace(/^[^:]+: /, '').match(/[^.!?]+[.!?]/g) || [];
-      examples.push(...sentences.map(answer => ({ answer: answer.trim() })));
-    }
-  }
-  const unique = new Map();
-  for (const example of examples) {
-    const key = normalize(example.answer);
-    if (!unique.has(key)) unique.set(key, example);
-  }
-  return shuffle([...unique.values()].filter(({ answer }) => answer.split(/\s+/).length >= 3).slice(0, 16))
-    .map(example => ({
-      ...example, title: 'Xếp từ thành câu', english: true, tiles: true
-    }));
+  startRound(shuffle(questions), mode);
 }
 
 function showMatching() {
   const panel = showPanel('Ghép cặp từ', '← Về Unit', () => showUnit(unitIndex));
   panel.append(element('p', 'Chọn một từ tiếng Anh và nghĩa tiếng Việt tương ứng.'));
-  const pairs = vocabulary(units[unitIndex][4]);
+  const pairs = units[unitIndex].exercises.matching;
   const grid = element('div', '', 'matching-grid');
   const status = element('p', 'Đã ghép 0/' + pairs.length + ' cặp.', 'feedback');
   status.setAttribute('role', 'status');
@@ -343,7 +260,7 @@ function showMatching() {
     const group = element('div', '', 'matching-column');
     group.append(element('h2', label));
     for (const pair of shuffle(pairs)) {
-      const tile = button(pair[column], () => {
+      const tile = button(column === 0 ? pair.english : pair.vietnamese, () => {
         const previous = selected[column];
         previous?.tile.setAttribute('aria-pressed', 'false');
         selected[column] = previous?.tile === tile ? null : { pair, tile };
@@ -448,7 +365,7 @@ function sentenceTiles(question, onChange) {
   return board;
 }
 
-function startRound(questions, review = false, makeRound = makeQuestions) {
+function startRound(questions, mode, review = false) {
   let position = 0;
   const missed = [];
 
@@ -457,7 +374,7 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     const stars = correct === questions.length ? 3
       : correct >= questions.length * .75 ? 2
       : correct >= questions.length * .5 ? 1 : 0;
-    const awardsStars = !review && makeRound === makeQuestions;
+    const awardsStars = !review && mode === 'mixed';
     if (awardsStars && stars > (best[unitIndex] || 0)) {
       best[unitIndex] = stars;
       try {
@@ -472,9 +389,9 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     if (awardsStars && stars) panel.append(element('p', '⭐ Em nhận được ' + stars + ' sao!'));
     const actions = element('div', '', 'actions');
     if (missed.length) {
-      actions.append(button('Ôn lại câu sai', () => startRound(missed, true, makeRound), 'primary'));
+      actions.append(button('Ôn lại câu sai', () => startRound(missed, mode, true), 'primary'));
     }
-    actions.append(button('Luyện lại cả bài', () => startRound(makeRound(), false, makeRound)));
+    actions.append(button('Luyện lại cả bài', () => openPractice(mode)));
     if (unitIndex + 1 < units.length) actions.append(button('Unit tiếp theo →', () => showUnit(unitIndex + 1)));
     panel.append(actions);
   }
@@ -560,7 +477,7 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (checked || request || !answer.trim()) return;
-      let review;
+      let grade;
       if (question.translation) {
         if (!geminiKey) {
           const settings = panel.querySelector('#gemini-settings');
@@ -575,7 +492,7 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
         input.readOnly = true;
         feedback.textContent = 'Gemini đang chấm câu dịch…';
         try {
-          review = await gradeTranslation(question.clue, answer.trim(), request.signal);
+          grade = await gradeTranslation(question.clue, answer.trim(), request.signal);
         } catch (error) {
           if (panel.isConnected) {
             feedback.textContent = error.message;
@@ -592,17 +509,16 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
       }
       checked = true;
       if (!review && position === questions.length - 1) {
-        const mode = practiceModes.find(([, , factory]) => factory === makeRound);
-        if (mode) markCompleted(mode[0]);
+        markCompleted(mode);
       }
-      const correct = review ? review.accepted
+      const correct = grade ? grade.accepted
         : question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);
       if (!correct) missed.push(question);
       feedback.classList.toggle('correct', correct);
-      if (review) {
-        const example = element('strong', review.example);
+      if (grade) {
+        const example = element('strong', grade.example);
         example.lang = 'en';
-        feedback.textContent = (correct ? '✓ Đạt. ' : 'Em xem lại nhé. ') + review.feedback;
+        feedback.textContent = (correct ? '✓ Đạt. ' : 'Em xem lại nhé. ') + grade.feedback;
         feedback.append(document.createElement('br'), 'Câu dịch mẫu: ', example);
       } else if (correct) {
         feedback.textContent = '✓ Chính xác!';
@@ -630,4 +546,29 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
 }
 
 window.speechSynthesis?.addEventListener?.('voiceschanged', refreshVoices);
-showHome(false);
+async function loadUnits() {
+  try {
+    if (location.protocol === 'file:') {
+      await new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'units-offline.js';
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.append(script);
+      });
+      units = window.duoOfflineUnits;
+    } else {
+      units = await Promise.all(Array.from({ length: 10 }, async (_, index) => {
+        const id = String(index + 1).padStart(2, '0');
+        const response = await fetch('units/unit-' + id + '.json');
+        if (!response.ok) throw new Error('Could not load Unit ' + id);
+        return response.json();
+      }));
+    }
+    showHome(false);
+  } catch {
+    app.replaceChildren(element('p', 'Chưa mở được bài học. Hãy tải lại trang để thử lại.'));
+  }
+}
+
+loadUnits();

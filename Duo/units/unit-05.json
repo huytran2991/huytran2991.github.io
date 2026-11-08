@@ -1,0 +1,628 @@
+{
+  "id": 5,
+  "title": "My hobbies",
+  "topic": "Sở thích",
+  "icon": "🎨",
+  "pages": {
+    "first": 34,
+    "last": 39
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "cooking",
+        "vietnamese": "nấu ăn"
+      },
+      {
+        "english": "dancing",
+        "vietnamese": "nhảy múa"
+      },
+      {
+        "english": "drawing",
+        "vietnamese": "vẽ bằng bút"
+      },
+      {
+        "english": "painting",
+        "vietnamese": "vẽ bằng màu"
+      },
+      {
+        "english": "running",
+        "vietnamese": "chạy"
+      },
+      {
+        "english": "singing",
+        "vietnamese": "hát"
+      },
+      {
+        "english": "swimming",
+        "vietnamese": "bơi"
+      },
+      {
+        "english": "walking",
+        "vietnamese": "đi bộ"
+      },
+      {
+        "english": "hobby",
+        "vietnamese": "sở thích"
+      },
+      {
+        "english": "like",
+        "vietnamese": "thích"
+      },
+      {
+        "english": "hobby show",
+        "vietnamese": "buổi trình diễn sở thích"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What's your hobby?",
+        "vietnamese": "Sở thích của bạn là gì?"
+      },
+      {
+        "english": "I like swimming.",
+        "vietnamese": "Mình thích bơi."
+      },
+      {
+        "english": "I like drawing.",
+        "vietnamese": "Mình thích vẽ bằng bút."
+      },
+      {
+        "english": "I like dancing.",
+        "vietnamese": "Mình thích nhảy múa."
+      },
+      {
+        "english": "I like walking.",
+        "vietnamese": "Mình thích đi bộ."
+      },
+      {
+        "english": "My hobby is painting.",
+        "vietnamese": "Sở thích của mình là vẽ bằng màu."
+      },
+      {
+        "english": "It's dancing.",
+        "vietnamese": "Sở thích của mình là nhảy múa."
+      },
+      {
+        "english": "It’s singing.",
+        "vietnamese": "Sở thích của mình là hát."
+      },
+      {
+        "english": "It’s drawing.",
+        "vietnamese": "Sở thích của mình là vẽ bằng bút."
+      },
+      {
+        "english": "It’s swimming.",
+        "vietnamese": "Sở thích của mình là bơi."
+      },
+      {
+        "english": "It’s cooking.",
+        "vietnamese": "Sở thích của mình là nấu ăn."
+      },
+      {
+        "english": "I like cooking.",
+        "vietnamese": "Mình thích nấu ăn."
+      },
+      {
+        "english": "I like painting.",
+        "vietnamese": "Mình thích vẽ bằng màu."
+      },
+      {
+        "english": "I like running.",
+        "vietnamese": "Mình thích chạy."
+      },
+      {
+        "english": "I like singing.",
+        "vietnamese": "Mình thích hát."
+      },
+      {
+        "english": "My name is Mary.",
+        "vietnamese": "Tên mình là Mary."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "cooking",
+        "vietnamese": "nấu ăn"
+      },
+      {
+        "english": "dancing",
+        "vietnamese": "nhảy múa"
+      },
+      {
+        "english": "drawing",
+        "vietnamese": "vẽ bằng bút"
+      },
+      {
+        "english": "painting",
+        "vietnamese": "vẽ bằng màu"
+      },
+      {
+        "english": "running",
+        "vietnamese": "chạy"
+      },
+      {
+        "english": "singing",
+        "vietnamese": "hát"
+      },
+      {
+        "english": "swimming",
+        "vietnamese": "bơi"
+      },
+      {
+        "english": "walking",
+        "vietnamese": "đi bộ"
+      },
+      {
+        "english": "hobby",
+        "vietnamese": "sở thích"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Linh thích làm gì?",
+        "passage": [
+          "Bill: What's your hobby, Linh?",
+          "Linh: I like singing."
+        ],
+        "options": [
+          "Hát",
+          "Bơi",
+          "Chạy"
+        ],
+        "answer": "Hát"
+      },
+      {
+        "prompt": "Nam thích làm gì?",
+        "passage": [
+          "Mary: What's your hobby, Nam?",
+          "Nam: It's cooking. How about you?"
+        ],
+        "options": [
+          "Nấu ăn",
+          "Đi bộ",
+          "Nhảy múa"
+        ],
+        "answer": "Nấu ăn"
+      },
+      {
+        "prompt": "Mai thích làm gì?",
+        "passage": [
+          "Mai: I like walking. What's your hobby?",
+          "Lucy: I like dancing."
+        ],
+        "options": [
+          "Đi bộ",
+          "Nhảy múa",
+          "Vẽ"
+        ],
+        "answer": "Đi bộ"
+      },
+      {
+        "prompt": "Minh thích làm gì?",
+        "passage": [
+          "Ben: My hobby is painting. What about you?",
+          "Minh: My hobby is running."
+        ],
+        "options": [
+          "Chạy",
+          "Vẽ bằng màu",
+          "Nấu ăn"
+        ],
+        "answer": "Chạy"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I like walking."
+        ],
+        "options": [
+          "Mình thích đi bộ.",
+          "Sở thích của bạn là gì?",
+          "Mình thích bơi."
+        ],
+        "answer": "Mình thích đi bộ."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "My hobby is painting."
+        ],
+        "options": [
+          "Sở thích của mình là vẽ bằng màu.",
+          "Mình thích bơi.",
+          "Mình thích vẽ bằng bút."
+        ],
+        "answer": "Sở thích của mình là vẽ bằng màu."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It's dancing."
+        ],
+        "options": [
+          "Sở thích của mình là nhảy múa.",
+          "Mình thích vẽ bằng bút.",
+          "Mình thích nhảy múa."
+        ],
+        "answer": "Sở thích của mình là nhảy múa."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It’s singing."
+        ],
+        "options": [
+          "Sở thích của mình là hát.",
+          "Mình thích nhảy múa.",
+          "Mình thích đi bộ."
+        ],
+        "answer": "Sở thích của mình là hát."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "painting",
+        "options": [
+          "painting",
+          "running",
+          "singing",
+          "drawing"
+        ],
+        "answer": "painting"
+      },
+      {
+        "audio": "running",
+        "options": [
+          "running",
+          "singing",
+          "drawing",
+          "swimming"
+        ],
+        "answer": "running"
+      },
+      {
+        "audio": "singing",
+        "options": [
+          "singing",
+          "drawing",
+          "swimming",
+          "dancing"
+        ],
+        "answer": "singing"
+      },
+      {
+        "audio": "drawing",
+        "options": [
+          "drawing",
+          "swimming",
+          "dancing",
+          "cooking"
+        ],
+        "answer": "drawing"
+      },
+      {
+        "audio": "swimming",
+        "options": [
+          "swimming",
+          "dancing",
+          "cooking",
+          "walking"
+        ],
+        "answer": "swimming"
+      },
+      {
+        "audio": "dancing",
+        "options": [
+          "dancing",
+          "cooking",
+          "walking",
+          "painting"
+        ],
+        "answer": "dancing"
+      },
+      {
+        "audio": "cooking",
+        "options": [
+          "cooking",
+          "walking",
+          "painting",
+          "running"
+        ],
+        "answer": "cooking"
+      },
+      {
+        "audio": "walking",
+        "options": [
+          "walking",
+          "painting",
+          "running",
+          "singing"
+        ],
+        "answer": "walking"
+      },
+      {
+        "audio": "I like painting.",
+        "options": [
+          "I like painting.",
+          "It’s drawing.",
+          "It’s swimming.",
+          "It’s cooking."
+        ],
+        "answer": "I like painting."
+      },
+      {
+        "audio": "I like running.",
+        "options": [
+          "I like running.",
+          "It’s swimming.",
+          "It’s cooking.",
+          "I like cooking."
+        ],
+        "answer": "I like running."
+      },
+      {
+        "audio": "I like singing.",
+        "options": [
+          "I like singing.",
+          "It’s cooking.",
+          "I like cooking.",
+          "I like painting."
+        ],
+        "answer": "I like singing."
+      },
+      {
+        "audio": "My name is Mary.",
+        "options": [
+          "My name is Mary.",
+          "I like cooking.",
+          "I like painting.",
+          "I like running."
+        ],
+        "answer": "My name is Mary."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What's your hobby?",
+        "hint": "Sở thích của bạn là gì?"
+      },
+      {
+        "answer": "I like swimming.",
+        "hint": "Mình thích bơi."
+      },
+      {
+        "answer": "I like drawing.",
+        "hint": "Mình thích vẽ bằng bút."
+      },
+      {
+        "answer": "I like dancing.",
+        "hint": "Mình thích nhảy múa."
+      },
+      {
+        "answer": "I like walking.",
+        "hint": "Mình thích đi bộ."
+      },
+      {
+        "answer": "My hobby is painting.",
+        "hint": "Sở thích của mình là vẽ bằng màu."
+      },
+      {
+        "answer": "It's dancing.",
+        "hint": "Sở thích của mình là nhảy múa."
+      },
+      {
+        "answer": "It’s singing.",
+        "hint": "Sở thích của mình là hát."
+      },
+      {
+        "answer": "It’s drawing.",
+        "hint": "Sở thích của mình là vẽ bằng bút."
+      },
+      {
+        "answer": "It’s swimming.",
+        "hint": "Sở thích của mình là bơi."
+      },
+      {
+        "answer": "It’s cooking.",
+        "hint": "Sở thích của mình là nấu ăn."
+      },
+      {
+        "answer": "I like cooking.",
+        "hint": "Mình thích nấu ăn."
+      },
+      {
+        "answer": "I like painting.",
+        "hint": "Mình thích vẽ bằng màu."
+      },
+      {
+        "answer": "I like running.",
+        "hint": "Mình thích chạy."
+      },
+      {
+        "answer": "I like singing.",
+        "hint": "Mình thích hát."
+      },
+      {
+        "answer": "My name is Mary.",
+        "hint": "Tên mình là Mary."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Sở thích của bạn là gì?"
+      },
+      {
+        "prompt": "Mình thích bơi."
+      },
+      {
+        "prompt": "Mình thích hát."
+      },
+      {
+        "prompt": "Sở thích của mình là nấu ăn."
+      },
+      {
+        "prompt": "Mình thích chạy."
+      },
+      {
+        "prompt": "Sở thích của mình là nhảy múa."
+      },
+      {
+        "prompt": "Mình thích vẽ bằng bút."
+      },
+      {
+        "prompt": "Sở thích của mình là vẽ bằng màu."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Linh thích làm gì?",
+        "passage": [
+          "Bill: What's your hobby, Linh?",
+          "Linh: I like singing."
+        ],
+        "options": [
+          "Hát",
+          "Bơi",
+          "Chạy"
+        ],
+        "answer": "Hát"
+      },
+      {
+        "type": "choice",
+        "prompt": "Nam thích làm gì?",
+        "passage": [
+          "Mary: What's your hobby, Nam?",
+          "Nam: It's cooking. How about you?"
+        ],
+        "options": [
+          "Nấu ăn",
+          "Đi bộ",
+          "Nhảy múa"
+        ],
+        "answer": "Nấu ăn"
+      },
+      {
+        "type": "choice",
+        "prompt": "Mai thích làm gì?",
+        "passage": [
+          "Mai: I like walking. What's your hobby?",
+          "Lucy: I like dancing."
+        ],
+        "options": [
+          "Đi bộ",
+          "Nhảy múa",
+          "Vẽ"
+        ],
+        "answer": "Đi bộ"
+      },
+      {
+        "type": "choice",
+        "prompt": "Minh thích làm gì?",
+        "passage": [
+          "Ben: My hobby is painting. What about you?",
+          "Minh: My hobby is running."
+        ],
+        "options": [
+          "Chạy",
+          "Vẽ bằng màu",
+          "Nấu ăn"
+        ],
+        "answer": "Chạy"
+      },
+      {
+        "type": "listening",
+        "audio": "painting",
+        "answer": "painting",
+        "options": [
+          "painting",
+          "running",
+          "swimming",
+          "cooking"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "running",
+        "answer": "running",
+        "options": [
+          "running",
+          "swimming",
+          "cooking",
+          "singing"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "swimming",
+        "answer": "swimming",
+        "options": [
+          "swimming",
+          "cooking",
+          "singing",
+          "drawing"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "cooking",
+        "answer": "cooking",
+        "options": [
+          "cooking",
+          "singing",
+          "drawing",
+          "dancing"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What's your hobby?",
+        "answer": "What's your hobby?"
+      },
+      {
+        "type": "dictation",
+        "audio": "It’s singing.",
+        "answer": "It’s singing."
+      },
+      {
+        "type": "dictation",
+        "audio": "I like walking.",
+        "answer": "I like walking."
+      },
+      {
+        "type": "sentence",
+        "answer": "I like cooking.",
+        "hint": "Mình thích nấu ăn."
+      },
+      {
+        "type": "sentence",
+        "answer": "I like painting.",
+        "hint": "Mình thích vẽ bằng màu."
+      },
+      {
+        "type": "sentence",
+        "answer": "My hobby is painting.",
+        "hint": "Sở thích của mình là vẽ bằng màu."
+      },
+      {
+        "type": "translation",
+        "prompt": "Sở thích của bạn là gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình thích bơi."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình thích hát."
+      },
+      {
+        "type": "translation",
+        "prompt": "Sở thích của mình là nấu ăn."
+      }
+    ]
+  }
+}

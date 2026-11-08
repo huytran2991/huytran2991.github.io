@@ -1,0 +1,616 @@
+{
+  "id": 1,
+  "title": "Hello",
+  "topic": "Chào hỏi",
+  "icon": "👋",
+  "pages": {
+    "first": 10,
+    "last": 15
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "hello",
+        "vietnamese": "xin chào"
+      },
+      {
+        "english": "bye",
+        "vietnamese": "tạm biệt"
+      },
+      {
+        "english": "fine",
+        "vietnamese": "khỏe"
+      },
+      {
+        "english": "thank you",
+        "vietnamese": "cảm ơn"
+      },
+      {
+        "english": "I",
+        "vietnamese": "tôi / mình"
+      },
+      {
+        "english": "goodbye",
+        "vietnamese": "chào tạm biệt"
+      },
+      {
+        "english": "how",
+        "vietnamese": "như thế nào"
+      },
+      {
+        "english": "you",
+        "vietnamese": "bạn (người đang nghe)"
+      },
+      {
+        "english": "hi",
+        "vietnamese": "chào bạn"
+      },
+      {
+        "english": "pupil card",
+        "vietnamese": "thẻ học sinh"
+      },
+      {
+        "english": "Ben",
+        "vietnamese": "Ben (tên bạn nam)"
+      },
+      {
+        "english": "Mai",
+        "vietnamese": "Mai (tên bạn nữ)"
+      },
+      {
+        "english": "Minh",
+        "vietnamese": "Minh (tên bạn nam)"
+      },
+      {
+        "english": "Lucy",
+        "vietnamese": "Lucy (tên bạn nữ)"
+      },
+      {
+        "english": "class",
+        "vietnamese": "lớp học"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "name",
+        "vietnamese": "tên"
+      }
+    ],
+    "structures": [
+      {
+        "english": "How are you?",
+        "vietnamese": "Bạn khỏe không?"
+      },
+      {
+        "english": "Hello, I'm Mai.",
+        "vietnamese": "Xin chào, mình là Mai."
+      },
+      {
+        "english": "Hi, I'm Ben.",
+        "vietnamese": "Chào bạn, mình là Ben."
+      },
+      {
+        "english": "I'm fine, thank you.",
+        "vietnamese": "Mình khỏe, cảm ơn bạn."
+      },
+      {
+        "english": "Hello, how are you?",
+        "vietnamese": "Xin chào, bạn khỏe không?"
+      },
+      {
+        "english": "Goodbye, my friend.",
+        "vietnamese": "Tạm biệt bạn của mình."
+      },
+      {
+        "english": "I'm Lucy.",
+        "vietnamese": "Mình là Lucy."
+      },
+      {
+        "english": "Hi, Ben.",
+        "vietnamese": "Chào Ben."
+      },
+      {
+        "english": "How are you, Mai?",
+        "vietnamese": "Mai ơi, bạn khỏe không?"
+      },
+      {
+        "english": "Fine, thank you.",
+        "vietnamese": "Khỏe, cảm ơn bạn."
+      },
+      {
+        "english": "Goodbye, Mai.",
+        "vietnamese": "Tạm biệt Mai."
+      },
+      {
+        "english": "Bye, Ben.",
+        "vietnamese": "Tạm biệt Ben."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "hello",
+        "vietnamese": "xin chào"
+      },
+      {
+        "english": "goodbye",
+        "vietnamese": "chào tạm biệt"
+      },
+      {
+        "english": "fine",
+        "vietnamese": "khỏe"
+      },
+      {
+        "english": "thank you",
+        "vietnamese": "cảm ơn"
+      },
+      {
+        "english": "I",
+        "vietnamese": "tôi / mình"
+      },
+      {
+        "english": "you",
+        "vietnamese": "bạn (người đang nghe)"
+      },
+      {
+        "english": "how",
+        "vietnamese": "như thế nào"
+      },
+      {
+        "english": "pupil card",
+        "vietnamese": "thẻ học sinh"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Ben hỏi Lucy điều gì?",
+        "passage": [
+          "Ben: Hi, Lucy! How are you?",
+          "Lucy: Fine, thank you."
+        ],
+        "options": [
+          "Bạn khỏe không?",
+          "Bạn tên gì?",
+          "Bạn bao nhiêu tuổi?"
+        ],
+        "answer": "Bạn khỏe không?"
+      },
+      {
+        "prompt": "Bạn nào chào Minh?",
+        "passage": [
+          "Minh: Hello, I'm Minh.",
+          "Mai: Hi, Minh. I'm Mai."
+        ],
+        "options": [
+          "Mai",
+          "Lucy",
+          "Ben"
+        ],
+        "answer": "Mai"
+      },
+      {
+        "prompt": "Ben trả lời thế nào?",
+        "passage": [
+          "Lucy: Hi, Ben! How are you?",
+          "Ben: I'm fine, thank you."
+        ],
+        "options": [
+          "Mình khỏe, cảm ơn bạn.",
+          "Mình tên là Ben.",
+          "Tạm biệt bạn."
+        ],
+        "answer": "Mình khỏe, cảm ơn bạn."
+      },
+      {
+        "prompt": "Hai bạn đang làm gì?",
+        "passage": [
+          "Mai: Goodbye, Minh!",
+          "Minh: Bye, Mai! See you!"
+        ],
+        "options": [
+          "Chào tạm biệt",
+          "Hỏi tên",
+          "Hỏi tuổi"
+        ],
+        "answer": "Chào tạm biệt"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "How are you?"
+        ],
+        "options": [
+          "Bạn khỏe không?",
+          "Xin chào, mình là Mai.",
+          "Chào bạn, mình là Ben."
+        ],
+        "answer": "Bạn khỏe không?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Hello, I'm Mai."
+        ],
+        "options": [
+          "Xin chào, mình là Mai.",
+          "Chào bạn, mình là Ben.",
+          "Mình khỏe, cảm ơn bạn."
+        ],
+        "answer": "Xin chào, mình là Mai."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Hi, I'm Ben."
+        ],
+        "options": [
+          "Chào bạn, mình là Ben.",
+          "Mình khỏe, cảm ơn bạn.",
+          "Xin chào, bạn khỏe không?"
+        ],
+        "answer": "Chào bạn, mình là Ben."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I'm fine, thank you."
+        ],
+        "options": [
+          "Mình khỏe, cảm ơn bạn.",
+          "Xin chào, bạn khỏe không?",
+          "Tạm biệt bạn của mình."
+        ],
+        "answer": "Mình khỏe, cảm ơn bạn."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "hi",
+        "options": [
+          "hi",
+          "bye",
+          "name",
+          "class"
+        ],
+        "answer": "hi"
+      },
+      {
+        "audio": "bye",
+        "options": [
+          "bye",
+          "name",
+          "class",
+          "school"
+        ],
+        "answer": "bye"
+      },
+      {
+        "audio": "name",
+        "options": [
+          "name",
+          "class",
+          "school",
+          "hello"
+        ],
+        "answer": "name"
+      },
+      {
+        "audio": "class",
+        "options": [
+          "class",
+          "school",
+          "hello",
+          "goodbye"
+        ],
+        "answer": "class"
+      },
+      {
+        "audio": "school",
+        "options": [
+          "school",
+          "hello",
+          "goodbye",
+          "thank you"
+        ],
+        "answer": "school"
+      },
+      {
+        "audio": "hello",
+        "options": [
+          "hello",
+          "goodbye",
+          "thank you",
+          "hi"
+        ],
+        "answer": "hello"
+      },
+      {
+        "audio": "goodbye",
+        "options": [
+          "goodbye",
+          "thank you",
+          "hi",
+          "bye"
+        ],
+        "answer": "goodbye"
+      },
+      {
+        "audio": "thank you",
+        "options": [
+          "thank you",
+          "hi",
+          "bye",
+          "name"
+        ],
+        "answer": "thank you"
+      },
+      {
+        "audio": "How are you?",
+        "options": [
+          "How are you?",
+          "Goodbye, Mai.",
+          "Bye, Ben.",
+          "Hello, I'm Mai."
+        ],
+        "answer": "How are you?"
+      },
+      {
+        "audio": "Hello, I'm Mai.",
+        "options": [
+          "Hello, I'm Mai.",
+          "Bye, Ben.",
+          "How are you?",
+          "Hi, I'm Ben."
+        ],
+        "answer": "Hello, I'm Mai."
+      },
+      {
+        "audio": "Hi, I'm Ben.",
+        "options": [
+          "Hi, I'm Ben.",
+          "How are you?",
+          "Hello, I'm Mai.",
+          "I'm fine, thank you."
+        ],
+        "answer": "Hi, I'm Ben."
+      },
+      {
+        "audio": "I'm fine, thank you.",
+        "options": [
+          "I'm fine, thank you.",
+          "Hello, I'm Mai.",
+          "Hi, I'm Ben.",
+          "Hello, how are you?"
+        ],
+        "answer": "I'm fine, thank you."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "How are you?",
+        "hint": "Bạn khỏe không?"
+      },
+      {
+        "answer": "Hello, I'm Mai.",
+        "hint": "Xin chào, mình là Mai."
+      },
+      {
+        "answer": "Hi, I'm Ben.",
+        "hint": "Chào bạn, mình là Ben."
+      },
+      {
+        "answer": "I'm fine, thank you.",
+        "hint": "Mình khỏe, cảm ơn bạn."
+      },
+      {
+        "answer": "Hello, how are you?",
+        "hint": "Xin chào, bạn khỏe không?"
+      },
+      {
+        "answer": "Goodbye, my friend.",
+        "hint": "Tạm biệt bạn của mình."
+      },
+      {
+        "answer": "I'm Lucy.",
+        "hint": "Mình là Lucy."
+      },
+      {
+        "answer": "Hi, Ben.",
+        "hint": "Chào Ben."
+      },
+      {
+        "answer": "How are you, Mai?",
+        "hint": "Mai ơi, bạn khỏe không?"
+      },
+      {
+        "answer": "Fine, thank you.",
+        "hint": "Khỏe, cảm ơn bạn."
+      },
+      {
+        "answer": "Goodbye, Mai.",
+        "hint": "Tạm biệt Mai."
+      },
+      {
+        "answer": "Bye, Ben.",
+        "hint": "Tạm biệt Ben."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Xin chào, mình là Ben."
+      },
+      {
+        "prompt": "Chào Lucy, mình là Mai."
+      },
+      {
+        "prompt": "Chào Minh, bạn khỏe không?"
+      },
+      {
+        "prompt": "Mình khỏe, cảm ơn bạn."
+      },
+      {
+        "prompt": "Tạm biệt nhé, Ben."
+      },
+      {
+        "prompt": "Chào Mai, mình là Lucy."
+      },
+      {
+        "prompt": "Xin chào, mình là Minh."
+      },
+      {
+        "prompt": "Cảm ơn bạn, Mai."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Ben hỏi Lucy điều gì?",
+        "passage": [
+          "Ben: Hi, Lucy! How are you?",
+          "Lucy: Fine, thank you."
+        ],
+        "options": [
+          "Bạn khỏe không?",
+          "Bạn tên gì?",
+          "Bạn bao nhiêu tuổi?"
+        ],
+        "answer": "Bạn khỏe không?"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bạn nào chào Minh?",
+        "passage": [
+          "Minh: Hello, I'm Minh.",
+          "Mai: Hi, Minh. I'm Mai."
+        ],
+        "options": [
+          "Mai",
+          "Lucy",
+          "Ben"
+        ],
+        "answer": "Mai"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ben trả lời thế nào?",
+        "passage": [
+          "Lucy: Hi, Ben! How are you?",
+          "Ben: I'm fine, thank you."
+        ],
+        "options": [
+          "Mình khỏe, cảm ơn bạn.",
+          "Mình tên là Ben.",
+          "Tạm biệt bạn."
+        ],
+        "answer": "Mình khỏe, cảm ơn bạn."
+      },
+      {
+        "type": "choice",
+        "prompt": "Hai bạn đang làm gì?",
+        "passage": [
+          "Mai: Goodbye, Minh!",
+          "Minh: Bye, Mai! See you!"
+        ],
+        "options": [
+          "Chào tạm biệt",
+          "Hỏi tên",
+          "Hỏi tuổi"
+        ],
+        "answer": "Chào tạm biệt"
+      },
+      {
+        "type": "listening",
+        "audio": "hello",
+        "answer": "hello",
+        "options": [
+          "hello",
+          "hi",
+          "bye",
+          "thank you"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "hi",
+        "answer": "hi",
+        "options": [
+          "hi",
+          "bye",
+          "thank you",
+          "name"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "bye",
+        "answer": "bye",
+        "options": [
+          "bye",
+          "thank you",
+          "name",
+          "class"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "thank you",
+        "answer": "thank you",
+        "options": [
+          "thank you",
+          "name",
+          "class",
+          "school"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "I'm Lucy.",
+        "answer": "I'm Lucy."
+      },
+      {
+        "type": "dictation",
+        "audio": "How are you, Mai?",
+        "answer": "How are you, Mai?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Goodbye, Mai.",
+        "answer": "Goodbye, Mai."
+      },
+      {
+        "type": "sentence",
+        "answer": "Fine, thank you.",
+        "hint": "Khỏe, cảm ơn bạn."
+      },
+      {
+        "type": "sentence",
+        "answer": "Hi, I'm Ben.",
+        "hint": "Chào bạn, mình là Ben."
+      },
+      {
+        "type": "sentence",
+        "answer": "Hello, I'm Mai.",
+        "hint": "Xin chào, mình là Mai."
+      },
+      {
+        "type": "translation",
+        "prompt": "Xin chào, mình là Ben."
+      },
+      {
+        "type": "translation",
+        "prompt": "Chào Lucy, mình là Mai."
+      },
+      {
+        "type": "translation",
+        "prompt": "Chào Minh, bạn khỏe không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình khỏe, cảm ơn bạn."
+      }
+    ]
+  }
+}

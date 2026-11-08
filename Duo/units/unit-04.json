@@ -1,0 +1,632 @@
+{
+  "id": 4,
+  "title": "Our bodies",
+  "topic": "Cơ thể",
+  "icon": "👂",
+  "pages": {
+    "first": 28,
+    "last": 33
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "ear",
+        "vietnamese": "tai"
+      },
+      {
+        "english": "eye",
+        "vietnamese": "mắt"
+      },
+      {
+        "english": "face",
+        "vietnamese": "khuôn mặt"
+      },
+      {
+        "english": "hair",
+        "vietnamese": "tóc"
+      },
+      {
+        "english": "hand",
+        "vietnamese": "bàn tay"
+      },
+      {
+        "english": "mouth",
+        "vietnamese": "miệng"
+      },
+      {
+        "english": "nose",
+        "vietnamese": "mũi"
+      },
+      {
+        "english": "arm",
+        "vietnamese": "cánh tay"
+      },
+      {
+        "english": "touch",
+        "vietnamese": "chạm vào"
+      },
+      {
+        "english": "open",
+        "vietnamese": "mở"
+      },
+      {
+        "english": "ears",
+        "vietnamese": "đôi tai"
+      },
+      {
+        "english": "eyes",
+        "vietnamese": "đôi mắt"
+      },
+      {
+        "english": "parts of the body",
+        "vietnamese": "các bộ phận cơ thể"
+      },
+      {
+        "english": "game",
+        "vietnamese": "trò chơi"
+      }
+    ],
+    "structures": [
+      {
+        "english": "Touch your nose.",
+        "vietnamese": "Chạm vào mũi của em."
+      },
+      {
+        "english": "Open your mouth.",
+        "vietnamese": "Mở miệng ra."
+      },
+      {
+        "english": "Touch your ears.",
+        "vietnamese": "Chạm vào hai tai của em."
+      },
+      {
+        "english": "Open your eyes.",
+        "vietnamese": "Mở mắt ra."
+      },
+      {
+        "english": "This is my hand.",
+        "vietnamese": "Đây là bàn tay của mình."
+      },
+      {
+        "english": "It's an eye.",
+        "vietnamese": "Đó là một con mắt."
+      },
+      {
+        "english": "Touch your hair!",
+        "vietnamese": "Chạm vào tóc của em!"
+      },
+      {
+        "english": "What's that?",
+        "vietnamese": "Kia là cái gì?"
+      },
+      {
+        "english": "What’s this?",
+        "vietnamese": "Đây là cái gì?"
+      },
+      {
+        "english": "It’s a nose.",
+        "vietnamese": "Đó là một cái mũi."
+      },
+      {
+        "english": "It’s an ear.",
+        "vietnamese": "Đó là một cái tai."
+      },
+      {
+        "english": "It’s a face.",
+        "vietnamese": "Đó là một khuôn mặt."
+      },
+      {
+        "english": "It’s a hand.",
+        "vietnamese": "Đó là một bàn tay."
+      },
+      {
+        "english": "Touch your face!",
+        "vietnamese": "Chạm vào mặt của em!"
+      },
+      {
+        "english": "Let’s play a game!",
+        "vietnamese": "Mình cùng chơi một trò nhé!"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "ear",
+        "vietnamese": "tai"
+      },
+      {
+        "english": "eye",
+        "vietnamese": "mắt"
+      },
+      {
+        "english": "face",
+        "vietnamese": "khuôn mặt"
+      },
+      {
+        "english": "hair",
+        "vietnamese": "tóc"
+      },
+      {
+        "english": "hand",
+        "vietnamese": "bàn tay"
+      },
+      {
+        "english": "mouth",
+        "vietnamese": "miệng"
+      },
+      {
+        "english": "nose",
+        "vietnamese": "mũi"
+      },
+      {
+        "english": "touch",
+        "vietnamese": "chạm vào"
+      },
+      {
+        "english": "open",
+        "vietnamese": "mở"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Lucy cần chạm vào đâu?",
+        "passage": [
+          "Teacher: Touch your nose!",
+          "Lucy: OK!"
+        ],
+        "options": [
+          "Mũi",
+          "Tai",
+          "Tóc"
+        ],
+        "answer": "Mũi"
+      },
+      {
+        "prompt": "Mai nói đó là bộ phận nào?",
+        "passage": [
+          "Ben: What's this?",
+          "Mai: It's an ear."
+        ],
+        "options": [
+          "Tai",
+          "Mắt",
+          "Miệng"
+        ],
+        "answer": "Tai"
+      },
+      {
+        "prompt": "Minh được yêu cầu làm gì?",
+        "passage": [
+          "Teacher: Open your eyes, please.",
+          "Minh: Yes, I can see now!"
+        ],
+        "options": [
+          "Mở mắt",
+          "Mở miệng",
+          "Chạm vào tai"
+        ],
+        "answer": "Mở mắt"
+      },
+      {
+        "prompt": "Ben nói về bộ phận nào?",
+        "passage": [
+          "Lucy: What's this, Ben?",
+          "Ben: It's my hand."
+        ],
+        "options": [
+          "Bàn tay",
+          "Mũi",
+          "Cánh tay"
+        ],
+        "answer": "Bàn tay"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Open your eyes."
+        ],
+        "options": [
+          "Mở mắt ra.",
+          "Chạm vào mũi của em.",
+          "Mở miệng ra."
+        ],
+        "answer": "Mở mắt ra."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "This is my hand."
+        ],
+        "options": [
+          "Đây là bàn tay của mình.",
+          "Mở miệng ra.",
+          "Chạm vào hai tai của em."
+        ],
+        "answer": "Đây là bàn tay của mình."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It's an eye."
+        ],
+        "options": [
+          "Đó là một con mắt.",
+          "Chạm vào hai tai của em.",
+          "Mở mắt ra."
+        ],
+        "answer": "Đó là một con mắt."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Touch your hair!"
+        ],
+        "options": [
+          "Chạm vào tóc của em!",
+          "Mở mắt ra.",
+          "Đây là bàn tay của mình."
+        ],
+        "answer": "Chạm vào tóc của em!"
+      }
+    ],
+    "listening": [
+      {
+        "audio": "ear",
+        "options": [
+          "ear",
+          "eye",
+          "hair",
+          "ears"
+        ],
+        "answer": "ear"
+      },
+      {
+        "audio": "eye",
+        "options": [
+          "eye",
+          "hair",
+          "ears",
+          "eyes"
+        ],
+        "answer": "eye"
+      },
+      {
+        "audio": "hair",
+        "options": [
+          "hair",
+          "ears",
+          "eyes",
+          "touch"
+        ],
+        "answer": "hair"
+      },
+      {
+        "audio": "ears",
+        "options": [
+          "ears",
+          "eyes",
+          "touch",
+          "open"
+        ],
+        "answer": "ears"
+      },
+      {
+        "audio": "eyes",
+        "options": [
+          "eyes",
+          "touch",
+          "open",
+          "nose"
+        ],
+        "answer": "eyes"
+      },
+      {
+        "audio": "touch",
+        "options": [
+          "touch",
+          "open",
+          "nose",
+          "ear"
+        ],
+        "answer": "touch"
+      },
+      {
+        "audio": "open",
+        "options": [
+          "open",
+          "nose",
+          "ear",
+          "eye"
+        ],
+        "answer": "open"
+      },
+      {
+        "audio": "nose",
+        "options": [
+          "nose",
+          "ear",
+          "eye",
+          "hair"
+        ],
+        "answer": "nose"
+      },
+      {
+        "audio": "It’s a nose.",
+        "options": [
+          "It’s a nose.",
+          "What’s this?",
+          "It’s an ear.",
+          "It’s a face."
+        ],
+        "answer": "It’s a nose."
+      },
+      {
+        "audio": "It’s an ear.",
+        "options": [
+          "It’s an ear.",
+          "It’s a nose.",
+          "It’s a face.",
+          "It’s a hand."
+        ],
+        "answer": "It’s an ear."
+      },
+      {
+        "audio": "It’s a face.",
+        "options": [
+          "It’s a face.",
+          "It’s an ear.",
+          "It’s a hand.",
+          "Touch your face!"
+        ],
+        "answer": "It’s a face."
+      },
+      {
+        "audio": "It’s a hand.",
+        "options": [
+          "It’s a hand.",
+          "It’s a face.",
+          "Touch your face!",
+          "Let’s play a game!"
+        ],
+        "answer": "It’s a hand."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "Touch your nose.",
+        "hint": "Chạm vào mũi của em."
+      },
+      {
+        "answer": "Open your mouth.",
+        "hint": "Mở miệng ra."
+      },
+      {
+        "answer": "Touch your ears.",
+        "hint": "Chạm vào hai tai của em."
+      },
+      {
+        "answer": "Open your eyes.",
+        "hint": "Mở mắt ra."
+      },
+      {
+        "answer": "This is my hand.",
+        "hint": "Đây là bàn tay của mình."
+      },
+      {
+        "answer": "It's an eye.",
+        "hint": "Đó là một con mắt."
+      },
+      {
+        "answer": "Touch your hair!",
+        "hint": "Chạm vào tóc của em!"
+      },
+      {
+        "answer": "What's that?",
+        "hint": "Kia là cái gì?"
+      },
+      {
+        "answer": "What’s this?",
+        "hint": "Đây là cái gì?"
+      },
+      {
+        "answer": "It’s a nose.",
+        "hint": "Đó là một cái mũi."
+      },
+      {
+        "answer": "It’s an ear.",
+        "hint": "Đó là một cái tai."
+      },
+      {
+        "answer": "It’s a face.",
+        "hint": "Đó là một khuôn mặt."
+      },
+      {
+        "answer": "It’s a hand.",
+        "hint": "Đó là một bàn tay."
+      },
+      {
+        "answer": "Touch your face!",
+        "hint": "Chạm vào mặt của em!"
+      },
+      {
+        "answer": "Let’s play a game!",
+        "hint": "Mình cùng chơi một trò nhé!"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Chạm vào mũi của em."
+      },
+      {
+        "prompt": "Mở miệng ra."
+      },
+      {
+        "prompt": "Đây là cái gì?"
+      },
+      {
+        "prompt": "Đây là một con mắt."
+      },
+      {
+        "prompt": "Chạm vào tóc của em."
+      },
+      {
+        "prompt": "Mở mắt ra."
+      },
+      {
+        "prompt": "Chạm vào tai của em."
+      },
+      {
+        "prompt": "Chạm vào mặt của em."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Lucy cần chạm vào đâu?",
+        "passage": [
+          "Teacher: Touch your nose!",
+          "Lucy: OK!"
+        ],
+        "options": [
+          "Mũi",
+          "Tai",
+          "Tóc"
+        ],
+        "answer": "Mũi"
+      },
+      {
+        "type": "choice",
+        "prompt": "Mai nói đó là bộ phận nào?",
+        "passage": [
+          "Ben: What's this?",
+          "Mai: It's an ear."
+        ],
+        "options": [
+          "Tai",
+          "Mắt",
+          "Miệng"
+        ],
+        "answer": "Tai"
+      },
+      {
+        "type": "choice",
+        "prompt": "Minh được yêu cầu làm gì?",
+        "passage": [
+          "Teacher: Open your eyes, please.",
+          "Minh: Yes, I can see now!"
+        ],
+        "options": [
+          "Mở mắt",
+          "Mở miệng",
+          "Chạm vào tai"
+        ],
+        "answer": "Mở mắt"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ben nói về bộ phận nào?",
+        "passage": [
+          "Lucy: What's this, Ben?",
+          "Ben: It's my hand."
+        ],
+        "options": [
+          "Bàn tay",
+          "Mũi",
+          "Cánh tay"
+        ],
+        "answer": "Bàn tay"
+      },
+      {
+        "type": "listening",
+        "audio": "touch",
+        "answer": "touch",
+        "options": [
+          "touch",
+          "open",
+          "ears",
+          "eyes"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "open",
+        "answer": "open",
+        "options": [
+          "open",
+          "ears",
+          "eyes",
+          "ear"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "ears",
+        "answer": "ears",
+        "options": [
+          "ears",
+          "eyes",
+          "ear",
+          "eye"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "eyes",
+        "answer": "eyes",
+        "options": [
+          "eyes",
+          "ear",
+          "eye",
+          "hair"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Touch your hair!",
+        "answer": "Touch your hair!"
+      },
+      {
+        "type": "dictation",
+        "audio": "Open your mouth.",
+        "answer": "Open your mouth."
+      },
+      {
+        "type": "dictation",
+        "audio": "It's an eye.",
+        "answer": "It's an eye."
+      },
+      {
+        "type": "sentence",
+        "answer": "What’s this?",
+        "hint": "Đây là cái gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "Touch your ears.",
+        "hint": "Chạm vào hai tai của em."
+      },
+      {
+        "type": "sentence",
+        "answer": "Open your eyes.",
+        "hint": "Mở mắt ra."
+      },
+      {
+        "type": "translation",
+        "prompt": "Chạm vào mũi của em."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mở miệng ra."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là cái gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là một con mắt."
+      }
+    ]
+  }
+}

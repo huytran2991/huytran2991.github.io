@@ -1,0 +1,664 @@
+{
+  "id": 3,
+  "title": "Our friends",
+  "topic": "Bạn bè",
+  "icon": "🤝",
+  "pages": {
+    "first": 22,
+    "last": 27
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "friend",
+        "vietnamese": "bạn"
+      },
+      {
+        "english": "teacher",
+        "vietnamese": "giáo viên"
+      },
+      {
+        "english": "this",
+        "vietnamese": "đây / này"
+      },
+      {
+        "english": "that",
+        "vietnamese": "kia / đó"
+      },
+      {
+        "english": "Mr",
+        "vietnamese": "ông / thầy (trước tên)"
+      },
+      {
+        "english": "Ms",
+        "vietnamese": "bà / cô (trước tên)"
+      },
+      {
+        "english": "yes",
+        "vietnamese": "vâng / có"
+      },
+      {
+        "english": "no",
+        "vietnamese": "không"
+      },
+      {
+        "english": "it",
+        "vietnamese": "nó / đó"
+      },
+      {
+        "english": "thank",
+        "vietnamese": "cảm ơn"
+      },
+      {
+        "english": "Mr Long",
+        "vietnamese": "thầy Long"
+      },
+      {
+        "english": "Ms Hoa",
+        "vietnamese": "cô Hoa"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "Mary",
+        "vietnamese": "Mary (tên bạn nữ)"
+      },
+      {
+        "english": "Bill",
+        "vietnamese": "Bill (tên bạn nam)"
+      },
+      {
+        "english": "Linh",
+        "vietnamese": "Linh (tên bạn nữ)"
+      },
+      {
+        "english": "Lucy",
+        "vietnamese": "Lucy (tên bạn nữ)"
+      },
+      {
+        "english": "Nam",
+        "vietnamese": "Nam (tên bạn nam)"
+      },
+      {
+        "english": "Minh",
+        "vietnamese": "Minh (tên bạn nam)"
+      },
+      {
+        "english": "Ben",
+        "vietnamese": "Ben (tên bạn nam)"
+      },
+      {
+        "english": "Mai",
+        "vietnamese": "Mai (tên bạn nữ)"
+      }
+    ],
+    "structures": [
+      {
+        "english": "This is my friend.",
+        "vietnamese": "Đây là bạn của mình."
+      },
+      {
+        "english": "Is that Mr Long?",
+        "vietnamese": "Kia có phải là thầy Long không?"
+      },
+      {
+        "english": "This is my teacher.",
+        "vietnamese": "Đây là giáo viên của mình."
+      },
+      {
+        "english": "That is my friend.",
+        "vietnamese": "Kia là bạn của mình."
+      },
+      {
+        "english": "Is this your teacher?",
+        "vietnamese": "Đây có phải là giáo viên của bạn không?"
+      },
+      {
+        "english": "That's my teacher, Ms Hoa.",
+        "vietnamese": "Kia là cô Hoa, giáo viên của mình."
+      },
+      {
+        "english": "This is Mary.",
+        "vietnamese": "Đây là Mary."
+      },
+      {
+        "english": "That’s Mr Long.",
+        "vietnamese": "Kia là thầy Long."
+      },
+      {
+        "english": "Is this Bill?",
+        "vietnamese": "Đây có phải là Bill không?"
+      },
+      {
+        "english": "Is that Nam?",
+        "vietnamese": "Kia có phải là Nam không?"
+      },
+      {
+        "english": "Yes, it is.",
+        "vietnamese": "Đúng rồi."
+      },
+      {
+        "english": "No, it isn’t.",
+        "vietnamese": "Không phải."
+      },
+      {
+        "english": "It’s Nam.",
+        "vietnamese": "Đó là Nam."
+      },
+      {
+        "english": "Thank you, Lucy.",
+        "vietnamese": "Cảm ơn bạn, Lucy."
+      },
+      {
+        "english": "That’s Lucy.",
+        "vietnamese": "Kia là Lucy."
+      },
+      {
+        "english": "This is my friend, Linh.",
+        "vietnamese": "Đây là bạn mình, Linh."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "friend",
+        "vietnamese": "bạn"
+      },
+      {
+        "english": "teacher",
+        "vietnamese": "giáo viên"
+      },
+      {
+        "english": "this",
+        "vietnamese": "đây / này"
+      },
+      {
+        "english": "that",
+        "vietnamese": "kia / đó"
+      },
+      {
+        "english": "Mr",
+        "vietnamese": "ông / thầy (trước tên)"
+      },
+      {
+        "english": "Ms",
+        "vietnamese": "bà / cô (trước tên)"
+      },
+      {
+        "english": "yes",
+        "vietnamese": "vâng / có"
+      },
+      {
+        "english": "no",
+        "vietnamese": "không"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Người mà Mai chỉ là ai?",
+        "passage": [
+          "Mai: Is that Mr Long?",
+          "Nam: No, it isn't. It's Ms Hoa."
+        ],
+        "options": [
+          "Cô Hoa",
+          "Thầy Long",
+          "Bạn Nam"
+        ],
+        "answer": "Cô Hoa"
+      },
+      {
+        "prompt": "Bạn của Nam tên gì?",
+        "passage": [
+          "Mai: Is this your friend?",
+          "Nam: Yes, it is. This is Bill."
+        ],
+        "options": [
+          "Bill",
+          "Minh",
+          "Ben"
+        ],
+        "answer": "Bill"
+      },
+      {
+        "prompt": "Cô Hoa là ai?",
+        "passage": [
+          "Linh: Is this your teacher?",
+          "Nam: Yes, it is. This is Ms Hoa."
+        ],
+        "options": [
+          "Giáo viên của Nam",
+          "Bạn của Nam",
+          "Giáo viên của Linh"
+        ],
+        "answer": "Giáo viên của Nam"
+      },
+      {
+        "prompt": "Ben giới thiệu bạn nào?",
+        "passage": [
+          "Ben: That is my friend, Lucy.",
+          "Lucy: Hello! Nice to meet you."
+        ],
+        "options": [
+          "Lucy",
+          "Mai",
+          "Linh"
+        ],
+        "answer": "Lucy"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "This is my teacher."
+        ],
+        "options": [
+          "Đây là giáo viên của mình.",
+          "Đây là bạn của mình.",
+          "Kia có phải là thầy Long không?"
+        ],
+        "answer": "Đây là giáo viên của mình."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "That is my friend."
+        ],
+        "options": [
+          "Kia là bạn của mình.",
+          "Kia có phải là thầy Long không?",
+          "Đây là giáo viên của mình."
+        ],
+        "answer": "Kia là bạn của mình."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Is this your teacher?"
+        ],
+        "options": [
+          "Đây có phải là giáo viên của bạn không?",
+          "Đây là giáo viên của mình.",
+          "Kia là bạn của mình."
+        ],
+        "answer": "Đây có phải là giáo viên của bạn không?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "That's my teacher, Ms Hoa."
+        ],
+        "options": [
+          "Kia là cô Hoa, giáo viên của mình.",
+          "Kia là bạn của mình.",
+          "Đây có phải là giáo viên của bạn không?"
+        ],
+        "answer": "Kia là cô Hoa, giáo viên của mình."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "it",
+        "options": [
+          "it",
+          "thank",
+          "school",
+          "friend"
+        ],
+        "answer": "it"
+      },
+      {
+        "audio": "thank",
+        "options": [
+          "thank",
+          "school",
+          "friend",
+          "teacher"
+        ],
+        "answer": "thank"
+      },
+      {
+        "audio": "school",
+        "options": [
+          "school",
+          "friend",
+          "teacher",
+          "this"
+        ],
+        "answer": "school"
+      },
+      {
+        "audio": "friend",
+        "options": [
+          "friend",
+          "teacher",
+          "this",
+          "that"
+        ],
+        "answer": "friend"
+      },
+      {
+        "audio": "teacher",
+        "options": [
+          "teacher",
+          "this",
+          "that",
+          "yes"
+        ],
+        "answer": "teacher"
+      },
+      {
+        "audio": "this",
+        "options": [
+          "this",
+          "that",
+          "yes",
+          "it"
+        ],
+        "answer": "this"
+      },
+      {
+        "audio": "that",
+        "options": [
+          "that",
+          "yes",
+          "it",
+          "thank"
+        ],
+        "answer": "that"
+      },
+      {
+        "audio": "yes",
+        "options": [
+          "yes",
+          "it",
+          "thank",
+          "school"
+        ],
+        "answer": "yes"
+      },
+      {
+        "audio": "This is Mary.",
+        "options": [
+          "This is Mary.",
+          "Thank you, Lucy.",
+          "That’s Lucy.",
+          "This is my friend, Linh."
+        ],
+        "answer": "This is Mary."
+      },
+      {
+        "audio": "That’s Mr Long.",
+        "options": [
+          "That’s Mr Long.",
+          "That’s Lucy.",
+          "This is my friend, Linh.",
+          "This is my friend."
+        ],
+        "answer": "That’s Mr Long."
+      },
+      {
+        "audio": "Is this Bill?",
+        "options": [
+          "Is this Bill?",
+          "This is my friend, Linh.",
+          "This is my friend.",
+          "Is that Mr Long?"
+        ],
+        "answer": "Is this Bill?"
+      },
+      {
+        "audio": "Is that Nam?",
+        "options": [
+          "Is that Nam?",
+          "This is my friend.",
+          "Is that Mr Long?",
+          "This is my teacher."
+        ],
+        "answer": "Is that Nam?"
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "This is my friend.",
+        "hint": "Đây là bạn của mình."
+      },
+      {
+        "answer": "Is that Mr Long?",
+        "hint": "Kia có phải là thầy Long không?"
+      },
+      {
+        "answer": "This is my teacher.",
+        "hint": "Đây là giáo viên của mình."
+      },
+      {
+        "answer": "That is my friend.",
+        "hint": "Kia là bạn của mình."
+      },
+      {
+        "answer": "Is this your teacher?",
+        "hint": "Đây có phải là giáo viên của bạn không?"
+      },
+      {
+        "answer": "That's my teacher, Ms Hoa.",
+        "hint": "Kia là cô Hoa, giáo viên của mình."
+      },
+      {
+        "answer": "This is Mary.",
+        "hint": "Đây là Mary."
+      },
+      {
+        "answer": "That’s Mr Long.",
+        "hint": "Kia là thầy Long."
+      },
+      {
+        "answer": "Is this Bill?",
+        "hint": "Đây có phải là Bill không?"
+      },
+      {
+        "answer": "Is that Nam?",
+        "hint": "Kia có phải là Nam không?"
+      },
+      {
+        "answer": "Yes, it is.",
+        "hint": "Đúng rồi."
+      },
+      {
+        "answer": "No, it isn’t.",
+        "hint": "Không phải."
+      },
+      {
+        "answer": "It’s Nam.",
+        "hint": "Đó là Nam."
+      },
+      {
+        "answer": "Thank you, Lucy.",
+        "hint": "Cảm ơn bạn, Lucy."
+      },
+      {
+        "answer": "That’s Lucy.",
+        "hint": "Kia là Lucy."
+      },
+      {
+        "answer": "This is my friend, Linh.",
+        "hint": "Đây là bạn mình, Linh."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Đây là bạn của mình."
+      },
+      {
+        "prompt": "Đây là bạn mình, Ben."
+      },
+      {
+        "prompt": "Kia là cô Hoa."
+      },
+      {
+        "prompt": "Đây có phải là thầy Long không?"
+      },
+      {
+        "prompt": "Kia có phải là bạn của bạn không?"
+      },
+      {
+        "prompt": "Đúng, đó là bạn của mình."
+      },
+      {
+        "prompt": "Không, đó là Lucy."
+      },
+      {
+        "prompt": "Đây là cô Hoa, giáo viên của mình."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Người mà Mai chỉ là ai?",
+        "passage": [
+          "Mai: Is that Mr Long?",
+          "Nam: No, it isn't. It's Ms Hoa."
+        ],
+        "options": [
+          "Cô Hoa",
+          "Thầy Long",
+          "Bạn Nam"
+        ],
+        "answer": "Cô Hoa"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bạn của Nam tên gì?",
+        "passage": [
+          "Mai: Is this your friend?",
+          "Nam: Yes, it is. This is Bill."
+        ],
+        "options": [
+          "Bill",
+          "Minh",
+          "Ben"
+        ],
+        "answer": "Bill"
+      },
+      {
+        "type": "choice",
+        "prompt": "Cô Hoa là ai?",
+        "passage": [
+          "Linh: Is this your teacher?",
+          "Nam: Yes, it is. This is Ms Hoa."
+        ],
+        "options": [
+          "Giáo viên của Nam",
+          "Bạn của Nam",
+          "Giáo viên của Linh"
+        ],
+        "answer": "Giáo viên của Nam"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ben giới thiệu bạn nào?",
+        "passage": [
+          "Ben: That is my friend, Lucy.",
+          "Lucy: Hello! Nice to meet you."
+        ],
+        "options": [
+          "Lucy",
+          "Mai",
+          "Linh"
+        ],
+        "answer": "Lucy"
+      },
+      {
+        "type": "listening",
+        "audio": "this",
+        "answer": "this",
+        "options": [
+          "this",
+          "that",
+          "friend",
+          "thank"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "that",
+        "answer": "that",
+        "options": [
+          "that",
+          "friend",
+          "thank",
+          "it"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "friend",
+        "answer": "friend",
+        "options": [
+          "friend",
+          "thank",
+          "it",
+          "school"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "thank",
+        "answer": "thank",
+        "options": [
+          "thank",
+          "it",
+          "school",
+          "teacher"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "This is Mary.",
+        "answer": "This is Mary."
+      },
+      {
+        "type": "dictation",
+        "audio": "That’s Mr Long.",
+        "answer": "That’s Mr Long."
+      },
+      {
+        "type": "dictation",
+        "audio": "It’s Nam.",
+        "answer": "It’s Nam."
+      },
+      {
+        "type": "sentence",
+        "answer": "Is this Bill?",
+        "hint": "Đây có phải là Bill không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "No, it isn’t.",
+        "hint": "Không phải."
+      },
+      {
+        "type": "sentence",
+        "answer": "Thank you, Lucy.",
+        "hint": "Cảm ơn bạn, Lucy."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là bạn của mình."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là bạn mình, Ben."
+      },
+      {
+        "type": "translation",
+        "prompt": "Kia là cô Hoa."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây có phải là thầy Long không?"
+      }
+    ]
+  }
+}

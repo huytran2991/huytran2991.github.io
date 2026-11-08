@@ -1,0 +1,648 @@
+{
+  "id": 10,
+  "title": "Break time activities",
+  "topic": "Hoạt động giờ ra chơi",
+  "icon": "⚽",
+  "pages": {
+    "first": 68,
+    "last": 73
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "break time",
+        "vietnamese": "giờ ra chơi"
+      },
+      {
+        "english": "chat",
+        "vietnamese": "trò chuyện"
+      },
+      {
+        "english": "badminton",
+        "vietnamese": "cầu lông"
+      },
+      {
+        "english": "basketball",
+        "vietnamese": "bóng rổ"
+      },
+      {
+        "english": "chess",
+        "vietnamese": "cờ vua"
+      },
+      {
+        "english": "football",
+        "vietnamese": "bóng đá"
+      },
+      {
+        "english": "table tennis",
+        "vietnamese": "bóng bàn"
+      },
+      {
+        "english": "volleyball",
+        "vietnamese": "bóng chuyền"
+      },
+      {
+        "english": "word puzzles",
+        "vietnamese": "trò đố chữ"
+      },
+      {
+        "english": "play",
+        "vietnamese": "chơi"
+      },
+      {
+        "english": "activities",
+        "vietnamese": "các hoạt động"
+      },
+      {
+        "english": "friends",
+        "vietnamese": "các bạn"
+      },
+      {
+        "english": "playground",
+        "vietnamese": "sân chơi"
+      },
+      {
+        "english": "play word puzzles",
+        "vietnamese": "chơi trò đố chữ"
+      },
+      {
+        "english": "chat with my friends",
+        "vietnamese": "trò chuyện với các bạn của mình"
+      }
+    ],
+    "structures": [
+      {
+        "english": "I play football at break time.",
+        "vietnamese": "Mình chơi bóng đá vào giờ ra chơi."
+      },
+      {
+        "english": "What do you do at break time?",
+        "vietnamese": "Bạn làm gì vào giờ ra chơi?"
+      },
+      {
+        "english": "I play volleyball at break time.",
+        "vietnamese": "Mình chơi bóng chuyền vào giờ ra chơi."
+      },
+      {
+        "english": "I chat with my friends.",
+        "vietnamese": "Mình trò chuyện với các bạn."
+      },
+      {
+        "english": "I solve word puzzles.",
+        "vietnamese": "Mình chơi trò đố chữ."
+      },
+      {
+        "english": "I play basketball at break time.",
+        "vietnamese": "Mình chơi bóng rổ vào giờ ra chơi."
+      },
+      {
+        "english": "I play badminton.",
+        "vietnamese": "Mình chơi cầu lông."
+      },
+      {
+        "english": "I play table tennis.",
+        "vietnamese": "Mình chơi bóng bàn."
+      },
+      {
+        "english": "It’s break time.",
+        "vietnamese": "Đến giờ ra chơi rồi."
+      },
+      {
+        "english": "Let’s play chess.",
+        "vietnamese": "Mình cùng chơi cờ vua nhé."
+      },
+      {
+        "english": "I play basketball.",
+        "vietnamese": "Mình chơi bóng rổ."
+      },
+      {
+        "english": "I play chess.",
+        "vietnamese": "Mình chơi cờ vua."
+      },
+      {
+        "english": "What about you, Minh?",
+        "vietnamese": "Còn bạn thì sao, Minh?"
+      },
+      {
+        "english": "I play word puzzles.",
+        "vietnamese": "Mình chơi trò đố chữ."
+      },
+      {
+        "english": "I am in the school playground.",
+        "vietnamese": "Mình đang ở sân chơi của trường."
+      },
+      {
+        "english": "I like playing football.",
+        "vietnamese": "Mình thích chơi bóng đá."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "break time",
+        "vietnamese": "giờ ra chơi"
+      },
+      {
+        "english": "chat",
+        "vietnamese": "trò chuyện"
+      },
+      {
+        "english": "play",
+        "vietnamese": "chơi"
+      },
+      {
+        "english": "badminton",
+        "vietnamese": "cầu lông"
+      },
+      {
+        "english": "basketball",
+        "vietnamese": "bóng rổ"
+      },
+      {
+        "english": "chess",
+        "vietnamese": "cờ vua"
+      },
+      {
+        "english": "football",
+        "vietnamese": "bóng đá"
+      },
+      {
+        "english": "table tennis",
+        "vietnamese": "bóng bàn"
+      },
+      {
+        "english": "volleyball",
+        "vietnamese": "bóng chuyền"
+      },
+      {
+        "english": "word puzzles",
+        "vietnamese": "trò đố chữ"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Nam chơi gì vào giờ ra chơi?",
+        "passage": [
+          "Linh: What do you do at break time?",
+          "Nam: I play chess."
+        ],
+        "options": [
+          "Cờ vua",
+          "Bóng rổ",
+          "Bóng đá"
+        ],
+        "answer": "Cờ vua"
+      },
+      {
+        "prompt": "Bill chơi môn gì?",
+        "passage": [
+          "Mary: I play badminton at break time. How about you?",
+          "Bill: I play table tennis."
+        ],
+        "options": [
+          "Bóng bàn",
+          "Cầu lông",
+          "Bóng chuyền"
+        ],
+        "answer": "Bóng bàn"
+      },
+      {
+        "prompt": "Minh chơi gì vào giờ ra chơi?",
+        "passage": [
+          "Mai: I play volleyball at break time. How about you?",
+          "Minh: I play basketball at break time."
+        ],
+        "options": [
+          "Bóng rổ",
+          "Bóng chuyền",
+          "Cầu lông"
+        ],
+        "answer": "Bóng rổ"
+      },
+      {
+        "prompt": "Ben làm gì vào giờ ra chơi?",
+        "passage": [
+          "Lucy: What do you do at break time?",
+          "Ben: I chat with my friends."
+        ],
+        "options": [
+          "Trò chuyện với bạn bè",
+          "Chơi cờ vua",
+          "Chơi bóng đá"
+        ],
+        "answer": "Trò chuyện với bạn bè"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Let’s play chess."
+        ],
+        "options": [
+          "Mình cùng chơi cờ vua nhé.",
+          "Mình chơi bóng đá vào giờ ra chơi.",
+          "Bạn làm gì vào giờ ra chơi?"
+        ],
+        "answer": "Mình cùng chơi cờ vua nhé."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I play basketball."
+        ],
+        "options": [
+          "Mình chơi bóng rổ.",
+          "Bạn làm gì vào giờ ra chơi?",
+          "Mình chơi bóng chuyền vào giờ ra chơi."
+        ],
+        "answer": "Mình chơi bóng rổ."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I play chess."
+        ],
+        "options": [
+          "Mình chơi cờ vua.",
+          "Mình chơi bóng chuyền vào giờ ra chơi.",
+          "Mình trò chuyện với các bạn."
+        ],
+        "answer": "Mình chơi cờ vua."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "What about you, Minh?"
+        ],
+        "options": [
+          "Còn bạn thì sao, Minh?",
+          "Mình trò chuyện với các bạn.",
+          "Mình chơi trò đố chữ."
+        ],
+        "answer": "Còn bạn thì sao, Minh?"
+      }
+    ],
+    "listening": [
+      {
+        "audio": "football",
+        "options": [
+          "football",
+          "volleyball",
+          "badminton",
+          "basketball"
+        ],
+        "answer": "football"
+      },
+      {
+        "audio": "volleyball",
+        "options": [
+          "volleyball",
+          "badminton",
+          "basketball",
+          "chess"
+        ],
+        "answer": "volleyball"
+      },
+      {
+        "audio": "badminton",
+        "options": [
+          "badminton",
+          "basketball",
+          "chess",
+          "table tennis"
+        ],
+        "answer": "badminton"
+      },
+      {
+        "audio": "basketball",
+        "options": [
+          "basketball",
+          "chess",
+          "table tennis",
+          "play word puzzles"
+        ],
+        "answer": "basketball"
+      },
+      {
+        "audio": "chess",
+        "options": [
+          "chess",
+          "table tennis",
+          "play word puzzles",
+          "chat with my friends"
+        ],
+        "answer": "chess"
+      },
+      {
+        "audio": "table tennis",
+        "options": [
+          "table tennis",
+          "play word puzzles",
+          "chat with my friends",
+          "football"
+        ],
+        "answer": "table tennis"
+      },
+      {
+        "audio": "play word puzzles",
+        "options": [
+          "play word puzzles",
+          "chat with my friends",
+          "football",
+          "volleyball"
+        ],
+        "answer": "play word puzzles"
+      },
+      {
+        "audio": "chat with my friends",
+        "options": [
+          "chat with my friends",
+          "football",
+          "volleyball",
+          "badminton"
+        ],
+        "answer": "chat with my friends"
+      },
+      {
+        "audio": "I play chess.",
+        "options": [
+          "I play chess.",
+          "It’s break time.",
+          "Let’s play chess.",
+          "I play basketball."
+        ],
+        "answer": "I play chess."
+      },
+      {
+        "audio": "What about you, Minh?",
+        "options": [
+          "What about you, Minh?",
+          "Let’s play chess.",
+          "I play basketball.",
+          "I play chess."
+        ],
+        "answer": "What about you, Minh?"
+      },
+      {
+        "audio": "I play word puzzles.",
+        "options": [
+          "I play word puzzles.",
+          "I play basketball.",
+          "I play chess.",
+          "What about you, Minh?"
+        ],
+        "answer": "I play word puzzles."
+      },
+      {
+        "audio": "I am in the school playground.",
+        "options": [
+          "I am in the school playground.",
+          "I play chess.",
+          "What about you, Minh?",
+          "I play word puzzles."
+        ],
+        "answer": "I am in the school playground."
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "I play football at break time.",
+        "hint": "Mình chơi bóng đá vào giờ ra chơi."
+      },
+      {
+        "answer": "What do you do at break time?",
+        "hint": "Bạn làm gì vào giờ ra chơi?"
+      },
+      {
+        "answer": "I play volleyball at break time.",
+        "hint": "Mình chơi bóng chuyền vào giờ ra chơi."
+      },
+      {
+        "answer": "I chat with my friends.",
+        "hint": "Mình trò chuyện với các bạn."
+      },
+      {
+        "answer": "I solve word puzzles.",
+        "hint": "Mình chơi trò đố chữ."
+      },
+      {
+        "answer": "I play basketball at break time.",
+        "hint": "Mình chơi bóng rổ vào giờ ra chơi."
+      },
+      {
+        "answer": "I play badminton.",
+        "hint": "Mình chơi cầu lông."
+      },
+      {
+        "answer": "I play table tennis.",
+        "hint": "Mình chơi bóng bàn."
+      },
+      {
+        "answer": "It’s break time.",
+        "hint": "Đến giờ ra chơi rồi."
+      },
+      {
+        "answer": "Let’s play chess.",
+        "hint": "Mình cùng chơi cờ vua nhé."
+      },
+      {
+        "answer": "I play basketball.",
+        "hint": "Mình chơi bóng rổ."
+      },
+      {
+        "answer": "I play chess.",
+        "hint": "Mình chơi cờ vua."
+      },
+      {
+        "answer": "What about you, Minh?",
+        "hint": "Còn bạn thì sao, Minh?"
+      },
+      {
+        "answer": "I play word puzzles.",
+        "hint": "Mình chơi trò đố chữ."
+      },
+      {
+        "answer": "I am in the school playground.",
+        "hint": "Mình đang ở sân chơi của trường."
+      },
+      {
+        "answer": "I like playing football.",
+        "hint": "Mình thích chơi bóng đá."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn làm gì vào giờ ra chơi?"
+      },
+      {
+        "prompt": "Mình chơi bóng đá vào giờ ra chơi."
+      },
+      {
+        "prompt": "Mình chơi cầu lông."
+      },
+      {
+        "prompt": "Mình chơi cờ vua vào giờ ra chơi."
+      },
+      {
+        "prompt": "Mình chơi bóng rổ."
+      },
+      {
+        "prompt": "Mình chơi bóng bàn."
+      },
+      {
+        "prompt": "Mình chơi bóng chuyền vào giờ ra chơi."
+      },
+      {
+        "prompt": "Mình chơi trò đố chữ vào giờ ra chơi."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Nam chơi gì vào giờ ra chơi?",
+        "passage": [
+          "Linh: What do you do at break time?",
+          "Nam: I play chess."
+        ],
+        "options": [
+          "Cờ vua",
+          "Bóng rổ",
+          "Bóng đá"
+        ],
+        "answer": "Cờ vua"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bill chơi môn gì?",
+        "passage": [
+          "Mary: I play badminton at break time. How about you?",
+          "Bill: I play table tennis."
+        ],
+        "options": [
+          "Bóng bàn",
+          "Cầu lông",
+          "Bóng chuyền"
+        ],
+        "answer": "Bóng bàn"
+      },
+      {
+        "type": "choice",
+        "prompt": "Minh chơi gì vào giờ ra chơi?",
+        "passage": [
+          "Mai: I play volleyball at break time. How about you?",
+          "Minh: I play basketball at break time."
+        ],
+        "options": [
+          "Bóng rổ",
+          "Bóng chuyền",
+          "Cầu lông"
+        ],
+        "answer": "Bóng rổ"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ben làm gì vào giờ ra chơi?",
+        "passage": [
+          "Lucy: What do you do at break time?",
+          "Ben: I chat with my friends."
+        ],
+        "options": [
+          "Trò chuyện với bạn bè",
+          "Chơi cờ vua",
+          "Chơi bóng đá"
+        ],
+        "answer": "Trò chuyện với bạn bè"
+      },
+      {
+        "type": "listening",
+        "audio": "football",
+        "answer": "football",
+        "options": [
+          "football",
+          "volleyball",
+          "table tennis",
+          "word puzzles"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "volleyball",
+        "answer": "volleyball",
+        "options": [
+          "volleyball",
+          "table tennis",
+          "word puzzles",
+          "badminton"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "table tennis",
+        "answer": "table tennis",
+        "options": [
+          "table tennis",
+          "word puzzles",
+          "badminton",
+          "basketball"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "word puzzles",
+        "answer": "word puzzles",
+        "options": [
+          "word puzzles",
+          "badminton",
+          "basketball",
+          "chess"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "It’s break time.",
+        "answer": "It’s break time."
+      },
+      {
+        "type": "dictation",
+        "audio": "I play badminton.",
+        "answer": "I play badminton."
+      },
+      {
+        "type": "dictation",
+        "audio": "I play table tennis.",
+        "answer": "I play table tennis."
+      },
+      {
+        "type": "sentence",
+        "answer": "What do you do at break time?",
+        "hint": "Bạn làm gì vào giờ ra chơi?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I play word puzzles.",
+        "hint": "Mình chơi trò đố chữ."
+      },
+      {
+        "type": "sentence",
+        "answer": "I chat with my friends.",
+        "hint": "Mình trò chuyện với các bạn."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn làm gì vào giờ ra chơi?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình chơi bóng đá vào giờ ra chơi."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình chơi cầu lông."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình chơi cờ vua vào giờ ra chơi."
+      }
+    ]
+  }
+}

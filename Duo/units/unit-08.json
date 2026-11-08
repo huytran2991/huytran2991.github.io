@@ -1,0 +1,688 @@
+{
+  "id": 8,
+  "title": "My school things",
+  "topic": "Đồ dùng học tập",
+  "icon": "✏️",
+  "pages": {
+    "first": 56,
+    "last": 61
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "book",
+        "vietnamese": "sách"
+      },
+      {
+        "english": "eraser",
+        "vietnamese": "cục tẩy"
+      },
+      {
+        "english": "notebook",
+        "vietnamese": "vở"
+      },
+      {
+        "english": "pen",
+        "vietnamese": "bút mực"
+      },
+      {
+        "english": "pencil",
+        "vietnamese": "bút chì"
+      },
+      {
+        "english": "pencil case",
+        "vietnamese": "hộp bút"
+      },
+      {
+        "english": "ruler",
+        "vietnamese": "thước kẻ"
+      },
+      {
+        "english": "school bag",
+        "vietnamese": "cặp sách"
+      },
+      {
+        "english": "have",
+        "vietnamese": "có"
+      },
+      {
+        "english": "school things",
+        "vietnamese": "đồ dùng học tập"
+      },
+      {
+        "english": "nice",
+        "vietnamese": "đẹp"
+      },
+      {
+        "english": "too",
+        "vietnamese": "cũng"
+      },
+      {
+        "english": "English book",
+        "vietnamese": "sách tiếng Anh"
+      },
+      {
+        "english": "my",
+        "vietnamese": "của mình"
+      }
+    ],
+    "structures": [
+      {
+        "english": "I have a ruler.",
+        "vietnamese": "Mình có một cây thước."
+      },
+      {
+        "english": "Do you have a pencil?",
+        "vietnamese": "Bạn có bút chì không?"
+      },
+      {
+        "english": "I have a notebook.",
+        "vietnamese": "Mình có một quyển vở."
+      },
+      {
+        "english": "Do you have a school bag?",
+        "vietnamese": "Bạn có cặp sách không?"
+      },
+      {
+        "english": "I have a pencil case.",
+        "vietnamese": "Mình có một hộp bút."
+      },
+      {
+        "english": "Do you have a book?",
+        "vietnamese": "Bạn có sách không?"
+      },
+      {
+        "english": "I have an eraser.",
+        "vietnamese": "Mình có một cục tẩy."
+      },
+      {
+        "english": "No, I don't.",
+        "vietnamese": "Không, mình không có."
+      },
+      {
+        "english": "Look, Ben.",
+        "vietnamese": "Nhìn này, Ben."
+      },
+      {
+        "english": "I have a pen.",
+        "vietnamese": "Mình có một cây bút mực."
+      },
+      {
+        "english": "It’s nice.",
+        "vietnamese": "Nó đẹp đấy."
+      },
+      {
+        "english": "I like it.",
+        "vietnamese": "Mình thích nó."
+      },
+      {
+        "english": "I have a ruler, too.",
+        "vietnamese": "Mình cũng có một cây thước."
+      },
+      {
+        "english": "This is a book.",
+        "vietnamese": "Đây là một quyển sách."
+      },
+      {
+        "english": "Do you have a pen?",
+        "vietnamese": "Bạn có bút mực không?"
+      },
+      {
+        "english": "Do you have an eraser?",
+        "vietnamese": "Bạn có một cục tẩy không?"
+      },
+      {
+        "english": "Yes, I do.",
+        "vietnamese": "Có, mình có."
+      },
+      {
+        "english": "Look at my school things.",
+        "vietnamese": "Hãy xem đồ dùng học tập của mình."
+      },
+      {
+        "english": "Do you have any school things?",
+        "vietnamese": "Bạn có đồ dùng học tập nào không?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "book",
+        "vietnamese": "sách"
+      },
+      {
+        "english": "eraser",
+        "vietnamese": "cục tẩy"
+      },
+      {
+        "english": "notebook",
+        "vietnamese": "vở"
+      },
+      {
+        "english": "pen",
+        "vietnamese": "bút mực"
+      },
+      {
+        "english": "pencil",
+        "vietnamese": "bút chì"
+      },
+      {
+        "english": "pencil case",
+        "vietnamese": "hộp bút"
+      },
+      {
+        "english": "ruler",
+        "vietnamese": "thước kẻ"
+      },
+      {
+        "english": "school bag",
+        "vietnamese": "cặp sách"
+      },
+      {
+        "english": "have",
+        "vietnamese": "có"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Mary có đồ vật nào?",
+        "passage": [
+          "Nam: Do you have a pen?",
+          "Mary: No, I don't. I have a pencil."
+        ],
+        "options": [
+          "Bút chì",
+          "Bút mực",
+          "Thước kẻ"
+        ],
+        "answer": "Bút chì"
+      },
+      {
+        "prompt": "Bill có đồ vật nào?",
+        "passage": [
+          "Linh: Do you have an eraser?",
+          "Bill: Yes, I do."
+        ],
+        "options": [
+          "Cục tẩy",
+          "Sách",
+          "Cặp sách"
+        ],
+        "answer": "Cục tẩy"
+      },
+      {
+        "prompt": "Ngoài vở, Minh còn có gì?",
+        "passage": [
+          "Mai: Do you have a notebook?",
+          "Minh: Yes, I do. I have a pen, too."
+        ],
+        "options": [
+          "Bút mực",
+          "Bút chì",
+          "Hộp bút"
+        ],
+        "answer": "Bút mực"
+      },
+      {
+        "prompt": "Ben có gì?",
+        "passage": [
+          "Lucy: I have a school bag. Do you have one?",
+          "Ben: No, I don't. I have a ruler."
+        ],
+        "options": [
+          "Thước kẻ",
+          "Cặp sách",
+          "Cục tẩy"
+        ],
+        "answer": "Thước kẻ"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Yes, I do."
+        ],
+        "options": [
+          "Có, mình có.",
+          "Mình có một cây thước.",
+          "Bạn có bút chì không?"
+        ],
+        "answer": "Có, mình có."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Look at my school things."
+        ],
+        "options": [
+          "Hãy xem đồ dùng học tập của mình.",
+          "Bạn có bút chì không?",
+          "Mình có một quyển vở."
+        ],
+        "answer": "Hãy xem đồ dùng học tập của mình."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Do you have any school things?"
+        ],
+        "options": [
+          "Bạn có đồ dùng học tập nào không?",
+          "Mình có một quyển vở.",
+          "Bạn có cặp sách không?"
+        ],
+        "answer": "Bạn có đồ dùng học tập nào không?"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "No, I don't."
+        ],
+        "options": [
+          "Không, mình không có.",
+          "Bạn có cặp sách không?",
+          "Mình có một hộp bút."
+        ],
+        "answer": "Không, mình không có."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "Look, Ben."
+        ],
+        "options": [
+          "Nhìn này, Ben.",
+          "Mình có một hộp bút.",
+          "Bạn có sách không?"
+        ],
+        "answer": "Nhìn này, Ben."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "I have a pen."
+        ],
+        "options": [
+          "Mình có một cây bút mực.",
+          "Bạn có sách không?",
+          "Mình có một cục tẩy."
+        ],
+        "answer": "Mình có một cây bút mực."
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "passage": [
+          "It’s nice."
+        ],
+        "options": [
+          "Nó đẹp đấy.",
+          "Mình có một cục tẩy.",
+          "Không, mình không có."
+        ],
+        "answer": "Nó đẹp đấy."
+      }
+    ],
+    "listening": [
+      {
+        "audio": "book",
+        "options": [
+          "book",
+          "eraser",
+          "notebook",
+          "pen"
+        ],
+        "answer": "book"
+      },
+      {
+        "audio": "eraser",
+        "options": [
+          "eraser",
+          "notebook",
+          "pen",
+          "pencil"
+        ],
+        "answer": "eraser"
+      },
+      {
+        "audio": "notebook",
+        "options": [
+          "notebook",
+          "pen",
+          "pencil",
+          "pencil case"
+        ],
+        "answer": "notebook"
+      },
+      {
+        "audio": "pen",
+        "options": [
+          "pen",
+          "pencil",
+          "pencil case",
+          "ruler"
+        ],
+        "answer": "pen"
+      },
+      {
+        "audio": "pencil",
+        "options": [
+          "pencil",
+          "pencil case",
+          "ruler",
+          "school bag"
+        ],
+        "answer": "pencil"
+      },
+      {
+        "audio": "pencil case",
+        "options": [
+          "pencil case",
+          "ruler",
+          "school bag",
+          "book"
+        ],
+        "answer": "pencil case"
+      },
+      {
+        "audio": "ruler",
+        "options": [
+          "ruler",
+          "school bag",
+          "book",
+          "eraser"
+        ],
+        "answer": "ruler"
+      },
+      {
+        "audio": "school bag",
+        "options": [
+          "school bag",
+          "book",
+          "eraser",
+          "notebook"
+        ],
+        "answer": "school bag"
+      },
+      {
+        "audio": "I have a notebook.",
+        "options": [
+          "I have a notebook.",
+          "I have a pen.",
+          "It’s nice.",
+          "I like it."
+        ],
+        "answer": "I have a notebook."
+      },
+      {
+        "audio": "Do you have a school bag?",
+        "options": [
+          "Do you have a school bag?",
+          "It’s nice.",
+          "I like it.",
+          "I have a ruler, too."
+        ],
+        "answer": "Do you have a school bag?"
+      },
+      {
+        "audio": "I have a pencil case.",
+        "options": [
+          "I have a pencil case.",
+          "I like it.",
+          "I have a ruler, too.",
+          "This is a book."
+        ],
+        "answer": "I have a pencil case."
+      },
+      {
+        "audio": "Do you have a book?",
+        "options": [
+          "Do you have a book?",
+          "I have a ruler, too.",
+          "This is a book.",
+          "Do you have a pen?"
+        ],
+        "answer": "Do you have a book?"
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "I have a ruler.",
+        "hint": "Mình có một cây thước."
+      },
+      {
+        "answer": "Do you have a pencil?",
+        "hint": "Bạn có bút chì không?"
+      },
+      {
+        "answer": "I have a notebook.",
+        "hint": "Mình có một quyển vở."
+      },
+      {
+        "answer": "Do you have a school bag?",
+        "hint": "Bạn có cặp sách không?"
+      },
+      {
+        "answer": "I have a pencil case.",
+        "hint": "Mình có một hộp bút."
+      },
+      {
+        "answer": "Do you have a book?",
+        "hint": "Bạn có sách không?"
+      },
+      {
+        "answer": "I have an eraser.",
+        "hint": "Mình có một cục tẩy."
+      },
+      {
+        "answer": "No, I don't.",
+        "hint": "Không, mình không có."
+      },
+      {
+        "answer": "Look, Ben.",
+        "hint": "Nhìn này, Ben."
+      },
+      {
+        "answer": "I have a pen.",
+        "hint": "Mình có một cây bút mực."
+      },
+      {
+        "answer": "It’s nice.",
+        "hint": "Nó đẹp đấy."
+      },
+      {
+        "answer": "I like it.",
+        "hint": "Mình thích nó."
+      },
+      {
+        "answer": "I have a ruler, too.",
+        "hint": "Mình cũng có một cây thước."
+      },
+      {
+        "answer": "This is a book.",
+        "hint": "Đây là một quyển sách."
+      },
+      {
+        "answer": "Do you have a pen?",
+        "hint": "Bạn có bút mực không?"
+      },
+      {
+        "answer": "Do you have an eraser?",
+        "hint": "Bạn có một cục tẩy không?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Mình có một cây bút chì."
+      },
+      {
+        "prompt": "Bạn có một cục tẩy không?"
+      },
+      {
+        "prompt": "Mình có một cây thước."
+      },
+      {
+        "prompt": "Bạn có bút mực không?"
+      },
+      {
+        "prompt": "Mình có một quyển vở."
+      },
+      {
+        "prompt": "Bạn có hộp bút không?"
+      },
+      {
+        "prompt": "Mình có một chiếc cặp sách."
+      },
+      {
+        "prompt": "Bạn có sách không?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Mary có đồ vật nào?",
+        "passage": [
+          "Nam: Do you have a pen?",
+          "Mary: No, I don't. I have a pencil."
+        ],
+        "options": [
+          "Bút chì",
+          "Bút mực",
+          "Thước kẻ"
+        ],
+        "answer": "Bút chì"
+      },
+      {
+        "type": "choice",
+        "prompt": "Bill có đồ vật nào?",
+        "passage": [
+          "Linh: Do you have an eraser?",
+          "Bill: Yes, I do."
+        ],
+        "options": [
+          "Cục tẩy",
+          "Sách",
+          "Cặp sách"
+        ],
+        "answer": "Cục tẩy"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ngoài vở, Minh còn có gì?",
+        "passage": [
+          "Mai: Do you have a notebook?",
+          "Minh: Yes, I do. I have a pen, too."
+        ],
+        "options": [
+          "Bút mực",
+          "Bút chì",
+          "Hộp bút"
+        ],
+        "answer": "Bút mực"
+      },
+      {
+        "type": "choice",
+        "prompt": "Ben có gì?",
+        "passage": [
+          "Lucy: I have a school bag. Do you have one?",
+          "Ben: No, I don't. I have a ruler."
+        ],
+        "options": [
+          "Thước kẻ",
+          "Cặp sách",
+          "Cục tẩy"
+        ],
+        "answer": "Thước kẻ"
+      },
+      {
+        "type": "listening",
+        "audio": "book",
+        "answer": "book",
+        "options": [
+          "book",
+          "eraser",
+          "pencil case",
+          "school bag"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "eraser",
+        "answer": "eraser",
+        "options": [
+          "eraser",
+          "pencil case",
+          "school bag",
+          "notebook"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "pencil case",
+        "answer": "pencil case",
+        "options": [
+          "pencil case",
+          "school bag",
+          "notebook",
+          "pen"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "school bag",
+        "answer": "school bag",
+        "options": [
+          "school bag",
+          "notebook",
+          "pen",
+          "pencil"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "I have a ruler.",
+        "answer": "I have a ruler."
+      },
+      {
+        "type": "dictation",
+        "audio": "It’s nice.",
+        "answer": "It’s nice."
+      },
+      {
+        "type": "dictation",
+        "audio": "I have an eraser.",
+        "answer": "I have an eraser."
+      },
+      {
+        "type": "sentence",
+        "answer": "Do you have a pencil?",
+        "hint": "Bạn có bút chì không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "Yes, I do.",
+        "hint": "Có, mình có."
+      },
+      {
+        "type": "sentence",
+        "answer": "No, I don't.",
+        "hint": "Không, mình không có."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình có một cây bút chì."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn có một cục tẩy không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình có một cây thước."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn có bút mực không?"
+      }
+    ]
+  }
+}

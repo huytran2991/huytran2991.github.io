@@ -7,6 +7,7 @@
   <title>Duo Lớp 3 · Global Success</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="units.js"></script>
+  <script defer src="translation-ai.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -29,6 +30,19 @@
         <button type="button" id="voice-preview">Nghe thử</button>
       </div>
       <p id="voice-status" class="audio-status" role="status"></p>
+    </details>
+    <details class="voice-settings" id="gemini-settings">
+      <summary>Cấu hình AI · Gemini</summary>
+      <form id="gemini-form">
+        <label for="gemini-key">Gemini API key</label>
+        <input id="gemini-key" type="password" maxlength="256" autocomplete="off" spellcheck="false" required>
+        <div class="actions">
+          <button type="submit" class="primary">Lưu API key</button>
+          <button type="button" id="gemini-remove">Xóa API key</button>
+        </div>
+      </form>
+      <p id="gemini-status" class="audio-status" role="status"></p>
+      <p>Key lưu trong trình duyệt này. Khi chấm bài dịch, đề và câu trả lời được gửi đến Google Gemini.</p>
     </details>
     <h2>Chọn Unit</h2>
     <div class="unit-grid"></div>

@@ -110,3 +110,87 @@ const units = [
     ["Lucy: What do you do at break time?","Ben: I chat with my friends.","Ben làm gì vào giờ ra chơi?","Trò chuyện với bạn bè","Chơi cờ vua","Chơi bóng đá"]
   ]]
 ];
+
+// Vietnamese prompts for the AI-graded translation mode, in Unit order.
+const translationPrompts = [
+  [
+    "Xin chào, mình là Ben.", "Chào Lucy, mình là Mai.", "Chào Minh, bạn khỏe không?",
+    "Mình khỏe, cảm ơn bạn.", "Tạm biệt nhé, Ben.", "Chào Mai, mình là Lucy.",
+    "Xin chào, mình là Minh.", "Tạm biệt, hẹn gặp lại bạn.", "Chào Ben, bạn khỏe không?",
+    "Mình khỏe. Còn bạn thì sao?", "Chào Lucy, bạn khỏe không?", "Cảm ơn bạn, Mai.",
+    "Chào buổi sáng, Minh.", "Chào buổi chiều, Lucy.", "Chúc bạn một ngày vui vẻ.",
+    "Chào bạn, rất vui được gặp bạn."
+  ],
+  [
+    "Bạn tên gì?", "Tên mình là Mary.", "Bạn bao nhiêu tuổi?", "Mình tám tuổi.",
+    "Tên mình là Nam.", "Mình chín tuổi.", "Chào bạn, tên mình là Linh.",
+    "Mình bảy tuổi.", "Bạn tám tuổi phải không?", "Mình tên là Bill và mình chín tuổi.",
+    "Mary bao nhiêu tuổi?", "Tên của bạn ấy là gì?", "Linh bảy tuổi.", "Bill chín tuổi.",
+    "Mình tên là Lucy và mình tám tuổi.", "Mình mười tuổi."
+  ],
+  [
+    "Đây là bạn của mình.", "Kia là giáo viên của mình.", "Đây là bạn mình, Ben.",
+    "Kia là cô Hoa.", "Đây có phải là thầy Long không?", "Kia có phải là bạn của bạn không?",
+    "Đúng, đó là bạn của mình.", "Không, đó là Lucy.", "Đây là bạn mình, Mai.",
+    "Kia là bạn mình, Nam.", "Đây có phải là giáo viên của bạn không?", "Không, đó là thầy Long.",
+    "Đây là cô Hoa, giáo viên của mình.", "Kia có phải là Minh không?",
+    "Đây là bạn của bạn phải không?", "Đúng, đó là bạn mình, Linh."
+  ],
+  [
+    "Đây là tai của mình.", "Đây là bàn tay của mình.", "Chạm vào mũi của em.",
+    "Mở miệng ra.", "Đây là cái gì?", "Đây là một con mắt.", "Chạm vào tóc của em.",
+    "Mở mắt ra.", "Đây là khuôn mặt của mình.", "Chạm vào tai của em.",
+    "Chạm vào bàn tay của em.", "Đây là mũi của mình.", "Đây là miệng của mình.",
+    "Chạm vào mặt của em.", "Đây có phải là tai của bạn không?", "Mình có hai mắt."
+  ],
+  [
+    "Sở thích của bạn là gì?", "Mình thích bơi.", "Mình thích hát.", "Sở thích của mình là nấu ăn.",
+    "Mình thích chạy.", "Sở thích của mình là nhảy múa.", "Mình thích vẽ bằng bút.",
+    "Sở thích của mình là vẽ bằng màu.", "Mình thích đi bộ.", "Bạn có thích bơi không?",
+    "Mình thích hát và nhảy múa.", "Bạn có thích nấu ăn không?", "Sở thích của Mai là bơi.",
+    "Ben thích chạy.", "Mình thích vẽ bằng bút và vẽ bằng màu.", "Lucy thích đi bộ."
+  ],
+  [
+    "Đây có phải là trường của chúng mình không?", "Mình cùng đến thư viện nhé.",
+    "Đây là lớp học của chúng mình.", "Kia là sân chơi của chúng mình.",
+    "Mình cùng đến phòng máy tính nhé.", "Đây có phải là phòng mỹ thuật không?",
+    "Mình cùng đến phòng thể dục nhé.", "Đây là phòng âm nhạc.",
+    "Kia có phải là thư viện không?", "Đúng, đây là trường của chúng mình.",
+    "Không, đây là lớp học.", "Mình cùng ra sân chơi nhé.", "Mình cùng đến phòng âm nhạc nhé.",
+    "Đây là phòng mỹ thuật của chúng mình.", "Mình cùng đến lớp học nhé.",
+    "Đây có phải là phòng máy tính của chúng mình không?"
+  ],
+  [
+    "Mời em ngồi xuống.", "Em vui lòng đứng lên.", "Em xin phép vào lớp được không?",
+    "Em xin phép ra ngoài được không?", "Em vui lòng đóng sách.", "Em vui lòng mở vở.",
+    "Em xin phép nói được không?", "Em xin phép ngồi xuống được không?", "Mời em vào.",
+    "Em vui lòng mở sách.", "Em vui lòng đóng cửa.", "Em vui lòng mở cửa.",
+    "Em xin phép mở cửa được không?", "Em xin phép đóng cửa được không?",
+    "Em xin phép đứng lên được không?", "Em vui lòng đóng vở."
+  ],
+  [
+    "Mình có một cây bút chì.", "Bạn có một cục tẩy không?", "Mình có một cây thước.",
+    "Bạn có bút mực không?", "Mình có một quyển vở.", "Bạn có hộp bút không?",
+    "Mình có một chiếc cặp sách.", "Bạn có sách không?", "Mình có hai cây bút chì.",
+    "Mình có một quyển sách và một quyển vở.", "Bạn có một cây thước không?",
+    "Mình không có bút mực.", "Bạn có cặp sách không?", "Mình có một cục tẩy và một cây thước.",
+    "Mình không có hộp bút.", "Bạn có một quyển vở không?"
+  ],
+  [
+    "Nó màu gì?", "Chúng màu gì?", "Cây thước của mình màu xanh dương.", "Quyển vở của mình màu vàng.",
+    "Các cây bút chì của mình màu đỏ.", "Cặp sách của bạn màu gì?", "Cục tẩy màu trắng.",
+    "Các quyển sách màu xanh lá.", "Hộp bút của mình màu cam.", "Cặp sách của mình màu nâu.",
+    "Cây bút mực màu đen.", "Các cây thước của bạn màu gì?", "Cây bút chì của mình màu vàng.",
+    "Các quyển vở của bạn màu gì?", "Chiếc cặp màu đen và trắng.", "Mình có một cây bút màu đỏ."
+  ],
+  [
+    "Bạn làm gì vào giờ ra chơi?", "Mình chơi bóng đá vào giờ ra chơi.",
+    "Mình chơi cầu lông.", "Mình chơi cờ vua vào giờ ra chơi.", "Mình chơi bóng rổ.",
+    "Mình chơi bóng bàn.", "Mình chơi bóng chuyền vào giờ ra chơi.",
+    "Mình trò chuyện với các bạn vào giờ ra chơi.", "Mình giải đố chữ vào giờ ra chơi.",
+    "Bạn có chơi bóng đá vào giờ ra chơi không?", "Mai chơi cầu lông vào giờ ra chơi.",
+    "Ben chơi bóng rổ vào giờ ra chơi.", "Mình chơi cờ vua với bạn của mình.",
+    "Bạn có chơi bóng bàn không?", "Lucy chơi bóng chuyền vào giờ ra chơi.",
+    "Nam trò chuyện với các bạn vào giờ ra chơi."
+  ]
+];

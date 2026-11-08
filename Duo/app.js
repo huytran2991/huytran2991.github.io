@@ -132,6 +132,7 @@ function showHome(focus = true) {
     say('Hello! Let’s practise English together.', .9, status);
   });
   refreshVoices();
+  configureGemini();
   const grid = app.querySelector('.unit-grid');
   units.forEach(([title, topic, page, icon], index) => {
     const card = button('', () => showUnit(index), 'unit');
@@ -169,8 +170,18 @@ function showUnit(index) {
   modes.append(
     button('🎯 Luyện tổng hợp · 16 câu', () => startRound(makeQuestions()), 'primary'),
     button('📝 Trắc nghiệm · 8 câu', () => startRound(makeQuiz(), false, makeQuiz)),
+    button('🎧 Nghe và chọn đáp án · 8 câu', () => startRound(makeListeningQuiz(), false, makeListeningQuiz)),
     button('🧩 Ghép cặp từ · 8 cặp', showMatching),
-    button('🔤 Xếp từ thành câu · 8 câu', () => startRound(makeSentences(), false, makeSentences))
+    button('🔤 Xếp từ thành câu · 8 câu', () => startRound(makeSentences(), false, makeSentences)),
+    button('✍️ Dịch Việt → Anh · 16 câu', () => {
+      if (geminiKey) {
+        startRound(makeTranslations(), false, makeTranslations);
+      } else {
+        showHome(false);
+        app.querySelector('#gemini-settings').open = true;
+        app.querySelector('#gemini-key').focus();
+      }
+    })
   );
   panel.append(modes);
   const list = element('ul', '', 'word-list');
@@ -221,6 +232,29 @@ function makeQuestions() {
 
 function makeQuiz() {
   return makeQuestions().filter(question => question.choices && !question.sound);
+}
+
+function makeListeningQuiz() {
+  const words = units[unitIndex][4].map(([english]) => english);
+  return shuffle(words).slice(0, 8).map(answer => {
+    const isSentence = text => /[.!?]$/.test(text);
+    const others = shuffle(words.filter(word => word !== answer));
+    const similar = others.filter(word => isSentence(word) === isSentence(answer));
+    const different = others.filter(word => isSentence(word) !== isSentence(answer));
+    return {
+      title: 'Nghe và chọn đáp án',
+      sound: answer,
+      answer,
+      english: true,
+      choices: shuffle([answer, ...[...similar, ...different].slice(0, 3)])
+    };
+  });
+}
+
+function makeTranslations() {
+  return shuffle(translationPrompts[unitIndex]).map(clue => ({
+    title: 'Dịch sang tiếng Anh', clue, english: true, translation: true
+  }));
 }
 
 function makeSentences() {
@@ -398,7 +432,11 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
 
   function render() {
     const question = questions[position];
-    const panel = showPanel(question.title, '← Về Unit', () => showUnit(unitIndex));
+    let request;
+    const panel = showPanel(question.title, '← Về Unit', () => {
+      request?.abort();
+      showUnit(unitIndex);
+    });
     const progress = element('progress', '');
     progress.max = questions.length;
     progress.value = position;
@@ -427,7 +465,7 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     const feedback = element('p', '', 'feedback');
     feedback.setAttribute('role', 'status');
     const actions = element('div', '', 'actions');
-    const check = element('button', 'Kiểm tra', 'primary');
+    const check = element('button', question.translation ? 'Chấm bằng AI' : 'Kiểm tra', 'primary');
     check.type = 'submit';
     check.disabled = true;
     let answer = '';
@@ -457,6 +495,7 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
       input.autocomplete = 'off';
       input.spellcheck = false;
       input.setAttribute('autocapitalize', 'off');
+      if (question.translation) input.maxLength = 500;
       input.addEventListener('input', () => {
         answer = input.value;
         check.disabled = !answer.trim();
@@ -467,14 +506,40 @@ function startRound(questions, review = false, makeRound = makeQuestions) {
     actions.append(check);
     form.append(choices, feedback, actions);
     panel.append(form);
-    form.addEventListener('submit', event => {
+    form.addEventListener('submit', async event => {
       event.preventDefault();
-      if (checked || !answer.trim()) return;
+      if (checked || request || !answer.trim()) return;
+      let review;
+      if (question.translation) {
+        request = new AbortController();
+        const timeout = setTimeout(() => request.abort(), 30000);
+        check.disabled = true;
+        input.readOnly = true;
+        feedback.textContent = 'Gemini đang chấm câu dịch…';
+        try {
+          review = await gradeTranslation(question.clue, answer.trim(), request.signal);
+        } catch (error) {
+          if (panel.isConnected) feedback.textContent = error.message;
+          return;
+        } finally {
+          clearTimeout(timeout);
+          request = undefined;
+          check.disabled = false;
+          input.readOnly = false;
+        }
+        if (!panel.isConnected) return;
+      }
       checked = true;
-      const correct = question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);
+      const correct = review ? review.accepted
+        : question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);
       if (!correct) missed.push(question);
       feedback.classList.toggle('correct', correct);
-      if (correct) {
+      if (review) {
+        const example = element('strong', review.example);
+        example.lang = 'en';
+        feedback.textContent = (correct ? '✓ Đạt. ' : 'Em xem lại nhé. ') + review.feedback;
+        feedback.append(document.createElement('br'), 'Câu dịch mẫu: ', example);
+      } else if (correct) {
         feedback.textContent = '✓ Chính xác!';
       } else {
         const expected = element('strong', question.answer);

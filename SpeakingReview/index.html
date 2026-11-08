@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>English Speaking Review</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="../practice-api.js" defer></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=static-1">
+  <script src="../practice-api.js?v=static-1" defer></script>
+  <script src="app.js?v=static-1" defer></script>
 </head>
 <body>
 <div class="shell">
@@ -18,7 +18,17 @@
       <label for="model">Review model</label><select id="model" disabled><option>Loading…</option></select>
       <details><summary>Read selected prompt</summary><pre id="prompt-preview" lang="vi"></pre></details>
       <p id="config-status" class="small" role="status">Loading review settings…</p>
-      <p class="small">Add or edit .txt files in SpeakingReview/prompts/, then reload prompts.</p>
+      <details id="gemini-settings">
+        <summary>Gemini settings</summary>
+        <form autocomplete="off">
+          <label for="gemini-key">Gemini API key</label>
+          <input id="gemini-key" type="password" required autocomplete="off" spellcheck="false">
+          <button type="submit">Save key</button>
+          <button type="button" class="quiet" id="gemini-key-remove" disabled>Remove key</button>
+        </form>
+        <p id="gemini-key-status" class="small" role="status">Keys are saved only in this browser.</p>
+      </details>
+      <p class="small">Prompts are loaded from Firestore. Reload prompts to see saved changes.</p>
     </aside>
     <div class="practice">
       <section class="card recorder" aria-labelledby="record-title">
@@ -26,7 +36,7 @@
         <p class="muted">A short update, a question, or an explanation. Pause and repeat words whenever you need.</p>
         <div id="record-state" class="record-state"><span id="dot" class="dot"></span><span id="record-label">Ready to record</span><strong id="timer">0:00</strong></div>
         <div class="actions"><button id="record" type="button">Start recording</button><button id="stop" class="danger" type="button" disabled>Stop recording</button><label class="file-button" for="audio-file">Choose audio file<input id="audio-file" type="file" accept="audio/*,.mp3,.wav,.webm,.ogg,.flac,.m4a,.aac"></label></div>
-        <p class="small">Record up to 3 minutes, or choose an audio file up to 8 MB. Server upload limits also apply.</p>
+        <p class="small">Record up to 3 minutes, or choose an audio file up to 8 MB.</p>
         <div id="preview" hidden><div class="heading"><span id="audio-name" class="small"></span><a id="download" download="speaking-practice.webm">Download audio</a></div><audio id="audio" controls preload="metadata"></audio></div>
         <div class="send-row"><button id="send" type="button" disabled>Send for review</button><button id="cancel" class="quiet" type="button" hidden>Cancel review</button></div>
         <p id="status" class="message" role="status" aria-live="polite">Record a short message or choose an audio file.</p>

@@ -88,3 +88,9 @@ footer { text-align: center; padding: 24px 0 0; }
 #feedback strong { color: var(--text-main); }
 @media (max-width: 800px) { .shell { padding: 20px 16px; } .workspace { grid-template-columns: 1fr; gap: 16px; } .library { position: static; } .lesson-list { max-height: 180px; margin: 12px 0; } .library-footer { margin-top: 14px; } .header { align-items: flex-start; flex-wrap: wrap; } .navigation { flex-wrap: wrap; } .navigation > span { order: 3; width: 100%; text-align: center; } }
 @media (max-width: 460px) { .settings { flex-wrap: wrap; padding: 16px; } .settings label:first-child { flex-basis: 100%; } .practice, .sentence-card { padding: 18px; } .sentence-card .section-heading { flex-wrap: wrap; } }
+
+#gemini-settings { flex-basis: 100%; }
+#gemini-settings summary { cursor: pointer; font-weight: 650; }
+#gemini-settings form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .65rem 0 .4rem; }
+#gemini-settings label { flex: 0 1 auto; }
+#gemini-key { flex: 1 1 12rem; min-width: 0; padding: .55rem; border: 1px solid #bdccc8; border-radius: .45rem; font: inherit; }

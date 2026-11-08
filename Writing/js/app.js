@@ -3,7 +3,7 @@
   const $ = id => document.getElementById(id);
   let results = {};
   const drafts = new Map();
-  let lessons = [], lesson = null, position = 0, csrf = '', available = false;
+  let lessons = [], lesson = null, position = 0, lessonsLoaded = false, available = false;
   let models = {}, selectedModel = '', selection = null;
   const files = new PracticeFiles(error => { $('status').textContent = error.message; });
   let progressEpoch = 0;
@@ -133,7 +133,7 @@
     $('feedback').removeAttribute('aria-busy');
   }
   function controls() {
-    $('create').disabled = loading || creating || !csrf;
+    $('create').disabled = loading || creating || !lessonsLoaded;
     $('reload').disabled = loading || creating;
     const active = !!sentence() && !loading;
     const hasAnswer = $('answer').value.trim() !== '';
@@ -162,7 +162,7 @@
     $('ai-status').hidden = available;
     $('ai-status').textContent = available
       ? ''
-      : 'AI is unavailable. Reload after checking the server connection or credential to review your translation.';
+      : 'Enter your Gemini API key in Gemini settings to enable AI reviews.';
   }
   function filterLessons() {
     const query = $('lesson-search').value.trim().toLocaleLowerCase();
@@ -261,8 +261,8 @@
           feedback(`Retry ${retry}/${maxRetries} in progress — attempt ${retry + 1}/4.`);
         }
         operation.timer = setTimeout(() => controller.abort(), 50000);
-        const response = await englishPracticeFetch('review.php', {method: 'POST', credentials: 'same-origin', signal: controller.signal,
-          headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf}, body: payload});
+        const response = await englishPracticeFetch('review', {method: 'POST', credentials: 'same-origin', signal: controller.signal,
+          headers: {'Content-Type': 'application/json'}, body: payload});
         data = null;
         try { data = await response.json(); }
         catch (_) { if (response.ok) throw new Error('AI returned an unreadable response. Please try again.'); }
@@ -327,8 +327,8 @@
     $('transfer-status').textContent = `Adding your accepted translation to ${target}…`;
     controls();
     try {
-      const response = await englishPracticeFetch('transfer.php', {method: 'POST', credentials: 'same-origin', signal: operation.controller.signal,
-        headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf},
+      const response = await englishPracticeFetch('transfer', {method: 'POST', credentials: 'same-origin', signal: operation.controller.signal,
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({target, transferToken: operation.token})});
       const data = await response.json();
       if (transfer !== operation) return;
@@ -357,15 +357,15 @@
     const previousLesson = lesson?.id, previousLine = sentence()?.id;
     let loaded = false;
     try {
-      const response = await englishPracticeFetch('lessons.php', {credentials: 'same-origin', cache: 'no-store'});
+      const response = await englishPracticeFetch('lessons', {credentials: 'same-origin', cache: 'no-store'});
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || 'Unable to load lessons.');
       if (!Array.isArray(data.lessons)) throw new Error('Invalid lesson response.');
-      lessons = data.lessons; csrf = data.csrf; available = data.aiAvailable === true;
+      lessons = data.lessons; lessonsLoaded = true; available = data.aiAvailable === true;
       if (!data.models || typeof data.models !== 'object' || Array.isArray(data.models) || !Object.hasOwn(data.models, data.model)) {
         throw new Error('Unable to load the available review models.');
       }
-      const config = await files.open(csrf);
+      const config = await files.open();
       selectedModel = config.model;
       selection = config.selection;
       $('lesson-search').value = config.lessonSearch || '';
@@ -383,10 +383,11 @@
       position = lesson && lesson.id === previousId ? Math.max(0, lesson.sentences.findIndex(line => line.id === previousSentence)) : 0;
       await loadProgress(lesson);
       loaded = true;
-      $('status').textContent = lessons.length ? `${lessons.length} lessons loaded.` : 'No .txt lessons found.';
+      $('status').textContent = lessons.length ? `${lessons.length} lessons loaded.` : 'No lessons found.';
     } catch (error) {
       $('status').textContent = error.message;
       // Keep drafts readable, but never send AI requests with a stale session.
+      lessonsLoaded = false;
       available = false;
       $('ai-status').hidden = false;
       $('ai-status').textContent = 'AI is unavailable until lessons reload successfully.';
@@ -398,8 +399,8 @@
     creating = true; controls();
     $('create-status').textContent = 'Creating lesson…';
     try {
-      const response = await englishPracticeFetch('lessons.php', {method: 'POST', credentials: 'same-origin',
-        headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf},
+      const response = await englishPracticeFetch('lessons', {method: 'POST', credentials: 'same-origin',
+        headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({action: 'create', name: $('file-name').value.trim(), content: $('file-content').value})});
       const data = await response.json();
       if (!response.ok || typeof data.selected !== 'string') throw new Error(data.error || 'Unable to create lesson.');
@@ -453,6 +454,12 @@
     const wasPending = !!pending;
     cancelReview();
     if (wasPending) { $('feedback').hidden = true; controls(); }
+  });
+  window.addEventListener('gemini-key-changed', event => {
+    cancelReview();
+    available = event.detail.configured && lessonsLoaded;
+    modelStatus();
+    controls();
   });
   load();
 })();

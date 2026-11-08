@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="../practice-api.js" defer></script>
+  <script src="../practice-api.js?v=static-1" defer></script>
   <script src="js/practice.js" defer></script>
-  <script src="../practice-state.js?v=<?= filemtime(__DIR__ . '/../practice-state.js') ?>" defer></script>
-  <script src="js/app.js?v=<?= filemtime(__DIR__ . '/js/app.js') ?>" defer></script>
+  <script src="../practice-state.js?v=static-1" defer></script>
+  <script src="js/app.js?v=static-1" defer></script>
 </head>
 <body>
 <div class="shell">
@@ -26,7 +26,7 @@
         <label for="lesson-search">Search lessons</label>
         <input id="lesson-search" type="search" placeholder="Search by lesson name…" aria-controls="lessons" autocomplete="off">
       </div>
-      <p class="small">Each .txt file in Listening/lessons or its subfolders is a lesson. Each nonempty line is one sentence.</p>
+      <p class="small">Lessons are saved to Firestore. Each nonempty line is one sentence.</p>
       <p id="lesson-search-empty" class="small" role="status" hidden>No matching lessons.</p>
       <div id="lessons" class="lesson-list"></div>
       <form id="create-lesson" class="lesson-form">
@@ -74,7 +74,7 @@
       <section class="card sentence-card" aria-label="Sentence navigation"><div class="section-heading"><h2>Sentences</h2><button class="btn ghost compact" id="clear-all" type="button" title="Clear correct and viewed marks for this lesson" disabled>Clear all</button></div><div id="sentences" class="sentence-grid"></div><p class="small sentence-legend">✓ Correct · ◉ Answer viewed</p></section>
     </main>
   </div>
-  <footer class="small">Audio uses your browser’s text-to-speech voices. Progress and voice settings are saved in this browser.</footer>
+  <footer class="small">Audio uses your browser’s text-to-speech voices. Progress and voice settings are saved to your Google account.</footer>
 </div>
 </body>
 </html>

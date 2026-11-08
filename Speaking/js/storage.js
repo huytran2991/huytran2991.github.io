@@ -1,6 +1,5 @@
 window.lists = {};
 window.currentListId = null;
-let csrfToken = '';
 let speakingConfig = {};
 let completedLessons = {};
 let configWrite = Promise.resolve();
@@ -16,16 +15,15 @@ function escapeHtml(s) {
 
 async function lessonRequest(action, data = {}, query = {}) {
   const params = new URLSearchParams(query).toString();
-  const response = await englishPracticeFetch(params ? `lessons.php?${params}` : 'lessons.php', action ? {
+  const response = await englishPracticeFetch(params ? `lessons?${params}` : 'lessons', action ? {
     method: 'POST',
-    headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrfToken},
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({...data, action}),
     keepalive: action === 'saveConfig',
     cache: 'no-store'
   } : {cache: 'no-store'});
   const result = await response.json();
   if (!response.ok) throw new Error(result.error || 'Unable to load Speaking data.');
-  csrfToken = result.csrf;
   return result;
 }
 
@@ -96,15 +94,14 @@ let acceptedWordsRevision = null;
 let acceptedWordsText = '';
 
 async function acceptedWordsRequest(data) {
-  const response = await englishPracticeFetch('accepted-words.php', data ? {
+  const response = await englishPracticeFetch('accepted-words', data ? {
     method: 'POST',
-    headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrfToken},
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(data),
     cache: 'no-store'
   } : {cache: 'no-store'});
   const result = await response.json();
   if (!response.ok) throw new Error(result.error || 'Unable to load accepted words.');
-  csrfToken = result.csrf;
   return result;
 }
 

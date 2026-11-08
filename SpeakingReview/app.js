@@ -50,7 +50,7 @@ async function loadConfig() {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
   try {
-    const response = await englishPracticeFetch('config.php', { cache: 'no-store', signal: controller.signal });
+    const response = await englishPracticeFetch('config', { cache: 'no-store', signal: controller.signal });
     const data = await response.json();
     if (!response.ok) throw new Error(data.error || 'Cannot load review settings.');
     config = data;
@@ -59,9 +59,9 @@ async function loadConfig() {
     if (data.prompts.some(item => item.id === oldPrompt)) $('prompt').value = oldPrompt;
     if (Object.hasOwn(data.models, oldModel)) $('model').value = oldModel;
     showPrompt();
-    $('config-status').textContent = !data.prompts.length ? 'No prompts found. Add a .txt file and reload.'
+    $('config-status').textContent = !data.prompts.length ? 'No prompts found in Firestore.'
       : data.available ? 'AI is ready. Feedback will be in Vietnamese.'
-        : 'AI is unavailable. Check Writing’s API key and the PHP cURL/fileinfo extensions.';
+        : 'Enter your Gemini API key in Gemini settings to enable reviews.';
   } catch (error) {
     config = null;
     $('config-status').textContent = error.name === 'AbortError' ? 'Settings timed out. Try Reload prompts.' : error.message;
@@ -233,10 +233,10 @@ async function sendReview() {
   let timedOut = false;
   const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 90000);
   try {
-    const response = await englishPracticeFetch('review.php', { method: 'POST', headers: { 'X-CSRF-Token': config.csrf }, body, signal: controller.signal });
+    const response = await englishPracticeFetch('review', { method: 'POST', body, signal: controller.signal });
     let data;
     try { data = await response.json(); }
-    catch (error) { throw new Error(`The server returned HTTP ${response.status} without a readable review. Check PHP upload limits or try again.`); }
+    catch (error) { throw new Error(`The server returned HTTP ${response.status} without a readable review. Try again.`); }
     if (version !== requestVersion) return;
     if (!response.ok) throw new Error(data.error || `Review failed (HTTP ${response.status}).`);
     if (typeof data.review !== 'string' || !data.review.trim()) throw new Error('AI returned an empty review. Try again.');
@@ -303,3 +303,11 @@ window.addEventListener('pagehide', () => {
 });
 window.addEventListener('pageshow', event => { if (event.persisted) { updateControls(); loadConfig(); } });
 loadConfig();
+
+window.addEventListener('gemini-key-changed', event => {
+  if (!config) return;
+  config.available = event.detail.configured;
+  $('config-status').textContent = config.available ? 'AI is ready. Feedback will be in Vietnamese.'
+    : 'Enter your Gemini API key in Gemini settings to enable reviews.';
+  updateControls();
+});

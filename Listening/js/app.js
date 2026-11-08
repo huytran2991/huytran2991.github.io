@@ -2,7 +2,7 @@
   'use strict';
   const $ = id => document.getElementById(id);
   let saved = {}, lessons = [], current = null, index = 0, drafts = new Map(), voices = [], utterance = null, speechEpoch = 0;
-  let answerCheckedCorrect = false, csrf = null, editing = null;
+  let answerCheckedCorrect = false, lessonsLoaded = false, editing = null;
   let transfer = null;
   const results = new Map();
   const files = new PracticeFiles(error => { $('status').textContent = error.message; });
@@ -166,7 +166,7 @@
     $('feedback').hidden = true;
     $('feedback').replaceChildren();
     ['answer', 'check', 'reveal'].forEach(id => $(id).disabled = !available);
-    $('add-speaking').disabled = !available || !csrf;
+    $('add-speaking').disabled = !available || !lessonsLoaded;
     $('add-speaking').textContent = 'Add to Speaking';
     $('play').disabled = !available || !('speechSynthesis' in window);
     $('previous').disabled = !available || index === 0;
@@ -215,11 +215,11 @@
     $('reload').disabled = true;
     $('status').textContent = 'Loading lessons…';
     try {
-      const response = await englishPracticeFetch('lessons.php', {cache: 'no-store'});
+      const response = await englishPracticeFetch('lessons', {cache: 'no-store'});
       const data = await response.json();
       if (!response.ok || !Array.isArray(data.lessons)) throw new Error(data.error || 'Unable to load lessons.');
-      csrf = data.csrf;
-      saved = await files.open(csrf);
+      lessonsLoaded = true;
+      saved = await files.open();
       if (Array.from($('rate').options).some(option => option.value === saved.rate)) $('rate').value = saved.rate;
       updateVoices();
       $('lesson-search').value = saved.lessonSearch || '';
@@ -230,11 +230,11 @@
         await selectLesson(selected, selection);
       }
       else { ++progressEpoch; current = null; results.clear(); renderLibrary(); renderSentence(); $('status').textContent = ''; }
-    } catch (error) { csrf = null; $('status').textContent = `Could not reload lessons: ${error.message}`; }
+    } catch (error) { lessonsLoaded = false; $('status').textContent = `Could not reload lessons: ${error.message}`; }
     finally { $('reload').disabled = false; }
   }
   async function addToSpeaking() {
-    if ($('add-speaking').disabled || !current?.lines.length || !csrf) return;
+    if ($('add-speaking').disabled || !current?.lines.length || !lessonsLoaded) return;
     const operation = {controller: new AbortController()};
     transfer = operation;
     $('add-speaking').disabled = true;
@@ -242,8 +242,8 @@
     $('transfer-status').textContent = 'Adding this sentence to Speaking…';
     const timer = setTimeout(() => operation.controller.abort(), 20000);
     try {
-      const response = await englishPracticeFetch('transfer.php', {method: 'POST', credentials: 'same-origin',
-        signal: operation.controller.signal, headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf},
+      const response = await englishPracticeFetch('transfer', {method: 'POST', credentials: 'same-origin',
+        signal: operation.controller.signal, headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({lesson: current.id, revision: current.revision, index})});
       const data = await response.json();
       if (transfer !== operation) return;
@@ -270,14 +270,14 @@
     $('edit-status').textContent = '';
   }
   async function saveLesson(payload) {
-    const response = await englishPracticeFetch('lessons.php', {
+    const response = await englishPracticeFetch('lessons', {
       method: 'POST', cache: 'no-store',
-      headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf || ''},
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload),
     });
     const data = await response.json();
     if (!response.ok || !Array.isArray(data.lessons)) throw new Error(data.error || 'Unable to save lesson.');
-    csrf = data.csrf;
+    lessonsLoaded = true;
     return data;
   }
   function acceptLessons(data, selectedId) {

@@ -7,11 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=<?= filemtime(__DIR__ . '/css/styles.css') ?>">
-  <script src="../practice-api.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=static-1">
+  <script src="../practice-api.js?v=static-1" defer></script>
   <script src="js/practice.js" defer></script>
-  <script src="../practice-state.js?v=<?= filemtime(__DIR__ . '/../practice-state.js') ?>" defer></script>
-  <script src="js/app.js?v=<?= filemtime(__DIR__ . '/js/app.js') ?>" defer></script>
+  <script src="../practice-state.js?v=static-1" defer></script>
+  <script src="js/app.js?v=static-1" defer></script>
 </head>
 <body>
 <div class="shell">
@@ -24,7 +24,7 @@
       <div class="section-heading"><h2>Your lessons</h2><button class="btn ghost compact" id="reload" type="button">Reload</button></div>
       <p id="status" class="small" role="status" aria-live="polite"></p>
       <div class="lesson-search"><label for="lesson-search">Search lessons</label><input id="lesson-search" type="search" placeholder="Search by lesson name…" aria-controls="lessons"></div>
-      <p class="small">Each .txt file is a lesson. Each nonempty line is one Vietnamese sentence. Create a lesson below.</p>
+      <p class="small">Each nonempty line is one Vietnamese sentence. Create a lesson below.</p>
       <div id="lessons" class="lesson-list"></div>
       <p id="search-empty" class="small" role="status" hidden>No matching lessons.</p>
       <form id="create-lesson" class="lesson-form">
@@ -33,7 +33,7 @@
         <input id="file-name" type="text" placeholder="My lesson" maxlength="176" required>
         <label for="file-content">Vietnamese sentences</label>
         <textarea id="file-content" lang="vi" rows="5" placeholder="One Vietnamese sentence per line" aria-describedby="create-help" required></textarea>
-        <p id="create-help" class="small">Up to 200 sentences, 2,000 UTF-8 bytes per sentence. A .txt file is created automatically.</p>
+        <p id="create-help" class="small">Up to 200 sentences, 2,000 UTF-8 bytes per sentence.</p>
         <button class="btn" id="create" type="submit" disabled>Create</button>
         <p id="create-status" class="small" role="status" aria-live="polite"></p>
       </form>
@@ -43,6 +43,16 @@
       <section class="card settings" aria-label="AI review status">
         <label for="model">Review model<select id="model" aria-describedby="ai-status" disabled><option value="">Loading models…</option></select></label>
         <p class="small" id="ai-status" role="status">Checking AI availability…</p>
+        <details id="gemini-settings">
+          <summary>Gemini settings</summary>
+          <form autocomplete="off">
+            <label for="gemini-key">Gemini API key</label>
+            <input id="gemini-key" type="password" required autocomplete="off" spellcheck="false">
+            <button type="submit" class="btn">Save key</button>
+            <button type="button" class="btn secondary" id="gemini-key-remove" disabled>Remove key</button>
+          </form>
+          <p id="gemini-key-status" class="small" role="status">Keys are saved only in this browser.</p>
+        </details>
       </section>
       <section class="card practice" aria-label="Translation exercise">
         <div class="section-heading"><h2 id="lesson-title">Choose a lesson</h2><span class="pill" id="position">0 / 0</span></div>
@@ -69,7 +79,7 @@
       <section class="card sentence-card" aria-label="Sentence navigation"><div class="section-heading"><h2>Sentences</h2><button class="btn ghost compact" id="clear-all" type="button" disabled>Clear progress</button></div><div id="sentences" class="sentence-grid"></div><p class="small sentence-legend">✓ AI accepted</p></section>
     </main>
   </div>
-  <footer class="small">Progress stays in this browser. AI receives only the current exercise and your translation when you click AI review.</footer>
+  <footer class="small">Progress is saved to your Google account. AI receives only the current exercise and your translation when you click AI review.</footer>
 </div>
 </body>
 </html>

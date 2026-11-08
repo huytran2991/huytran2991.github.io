@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=<?= filemtime(__DIR__ . "/css/styles.css") ?>" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <div class="app">
@@ -29,7 +29,7 @@
       </div>
       <div class="lists" id="lists"></div>
 
-      <p class="small">Each .txt file in the lessons folder is a lesson. Each line is one sentence.</p>
+      <p class="small">Lessons are saved to Firestore. Each line is one sentence.</p>
       <button id="btnReloadLists" class="btn secondary">Reload lessons</button>
 
       <footer>
@@ -93,9 +93,9 @@
     </div>
   </div>
 
-  <script src="../practice-api.js"></script>
-  <script src="js/storage.js?v=<?= filemtime(__DIR__ . "/js/storage.js") ?>"></script>
-  <script src="js/speech.js?v=<?= filemtime(__DIR__ . "/js/speech.js") ?>"></script>
-  <script src="js/app.js?v=<?= filemtime(__DIR__ . "/js/app.js") ?>"></script>
+  <script src="../practice-api.js?v=static-1"></script>
+  <script src="js/storage.js?v=static-1"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/app.js?v=static-1"></script>
 </body>
 </html>

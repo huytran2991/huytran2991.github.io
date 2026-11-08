@@ -1,19 +1,18 @@
-/* Shared file requests for Listening and Writing. */
+/* Shared practice data requests for Listening and Writing. */
 globalThis.PracticeFiles = class PracticeFiles {
   constructor(reportError) {
     this.reportError = reportError;
-    this.csrf = '';
+    this.ready = false;
     this.summary = {};
     this.pending = Promise.resolve();
   }
 
   request(action, data = {}) {
-    const csrf = this.csrf;
     const work = this.pending.then(async () => {
       const body = JSON.stringify({...data, action});
-      const response = await englishPracticeFetch('progress.php', {
+      const response = await englishPracticeFetch('progress', {
         method: 'POST', cache: 'no-store',
-        headers: {'Content-Type': 'application/json', 'X-CSRF-Token': csrf},
+        headers: {'Content-Type': 'application/json'},
         body,
         keepalive: action === 'config' && body.length < 16000
       });
@@ -25,15 +24,15 @@ globalThis.PracticeFiles = class PracticeFiles {
     return work;
   }
 
-  async open(csrf) {
-    this.csrf = csrf;
+  async open() {
     const state = await this.request('state');
+    this.ready = true;
     this.summary = state.summary;
     return state.config;
   }
 
   config(config) {
-    if (this.csrf) return this.request('config', {config}).catch(this.reportError);
+    if (this.ready) return this.request('config', {config}).catch(this.reportError);
   }
 
   async lesson(action, lesson, fields = {}) {

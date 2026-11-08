@@ -47,3 +47,48 @@ input { display: block; width: 100%; padding: .75rem; margin-top: .4rem; border:
 .feedback, .audio-status { margin: .75rem 0 0; }
 .feedback:not(:empty) { padding: .65rem .85rem; border-radius: .7rem; background: #fff0df; }
 .feedback.correct { background: #e0efdc; }
+
+.mode-grid, .matching-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+}
+.matching-column { display: grid; align-content: start; gap: .6rem; }
+.matching-column h2 { margin-bottom: 0; }
+.matching-column .choice { overflow-wrap: anywhere; }
+.choice.matched:disabled { background: #e0efdc; border-color: var(--green); opacity: 1; }
+.matching-grid ~ button { margin-top: .8rem; }
+.tile-row { display: flex; flex-wrap: wrap; gap: .5rem; padding: .65rem; }
+.drop-zone {
+  min-height: 4.5rem;
+  border: 2px dashed #789481;
+  border-radius: .85rem;
+  background: #f0f6e8;
+}
+.word-tile[draggable="true"] { cursor: grab; }
+.voice-settings {
+  margin-bottom: 1.5rem;
+  padding: .75rem 1rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: .85rem;
+}
+.voice-settings summary { cursor: pointer; font-weight: 700; }
+.voice-settings label { display: block; margin: .65rem 0 .35rem; }
+.voice-controls { display: flex; flex-wrap: wrap; gap: .6rem; }
+.voice-controls select {
+  flex: 1 1 15rem;
+  min-width: 0;
+  max-width: 100%;
+  padding: .55rem;
+  border: 1px solid #798c7e;
+  border-radius: .65rem;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+.voice-settings .audio-status:empty { display: none; }
+@media (max-width: 30rem) {
+  .mode-grid { grid-template-columns: 1fr; }
+  .matching-column .choice { padding-inline: .55rem; }
+}

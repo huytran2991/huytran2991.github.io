@@ -21,6 +21,15 @@
       <h1 tabindex="-1">Mỗi ngày, một chút tiếng Anh!</h1>
       <p>Chọn bài trong sách rồi cùng nghe, đọc và viết.</p>
     </section>
+    <details class="voice-settings">
+      <summary>🔊 Chọn giọng đọc</summary>
+      <label for="voice">Giọng tiếng Anh</label>
+      <div class="voice-controls">
+        <select id="voice"></select>
+        <button type="button" id="voice-preview">Nghe thử</button>
+      </div>
+      <p id="voice-status" class="audio-status" role="status"></p>
+    </details>
     <h2>Chọn Unit</h2>
     <div class="unit-grid"></div>
   </template>

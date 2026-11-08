@@ -12,8 +12,9 @@ function snapshotRefs(uid) {
   return index => doc(db, 'users', uid, 'englishPractice', index ? `v1-chunk-${index}` : 'v1');
 }
 
-async function loadSnapshot(ref, get) {
+async function loadSnapshot(ref, get, createIfMissing = false) {
   const root = (await get(ref(0))).data();
+  if (!root && createIfMissing) return { files: Object.create(null), count: 0 };
   if (!root) throw new Error('No English Practice data was found for this Google account.');
   if (root.schemaVersion !== 1 || !Number.isInteger(root.chunkCount) ||
       root.chunkCount < 1 || root.chunkCount > maxChunks || typeof root.revision !== 'string' ||
@@ -57,11 +58,11 @@ export async function readPractice(uid) {
   throw new Error('Practice data changed while loading. Reload and try again.');
 }
 
-export function updatePractice(uid, apply, signal) {
+export function updatePractice(uid, apply, signal, { createIfMissing = false } = {}) {
   const ref = snapshotRefs(uid);
   return runTransaction(db, async transaction => {
     signal?.throwIfAborted();
-    const snapshot = await loadSnapshot(ref, key => transaction.get(key));
+    const snapshot = await loadSnapshot(ref, key => transaction.get(key), createIfMissing);
     if (!snapshot) throw new Error('Practice data changed while loading. Reload and try again.');
     const before = JSON.stringify(snapshot.files);
     const result = await apply(snapshot.files);

@@ -8,13 +8,17 @@ try {
   // The key can still be used for this visit.
 }
 
+function refreshGeminiStatus(settings) {
+  settings.querySelector('#gemini-remove').disabled = !geminiKey;
+  settings.querySelector('#gemini-status').textContent = geminiKey ? 'Đã có API key.' : 'Chưa có API key.';
+}
+
 function configureGemini(settings, onSaved) {
   const form = settings.querySelector('#gemini-form');
   const input = settings.querySelector('#gemini-key');
   const remove = settings.querySelector('#gemini-remove');
   const status = settings.querySelector('#gemini-status');
-  remove.disabled = !geminiKey;
-  status.textContent = geminiKey ? 'Đã có API key.' : 'Chưa có API key.';
+  refreshGeminiStatus(settings);
   form.addEventListener('submit', event => {
     event.preventDefault();
     const key = input.value.trim();
@@ -25,25 +29,16 @@ function configureGemini(settings, onSaved) {
     geminiKey = key;
     input.value = '';
     remove.disabled = false;
-    try {
-      localStorage.setItem(geminiKeyStorage, geminiKey);
-      status.textContent = 'Đã lưu API key trên trình duyệt này.';
-    } catch {
-      status.textContent = 'API key dùng được trong lần mở trang này.';
-    }
+    status.textContent = saveDuoPreference('key', geminiKey) ? 'Đã lưu API key trên trình duyệt này.'
+      : 'API key dùng được trong lần mở trang này.';
     onSaved();
   });
   remove.addEventListener('click', () => {
-    try {
-      localStorage.removeItem(geminiKeyStorage);
-    } catch {
-      status.textContent = 'Không thể xóa key đã lưu. Hãy kiểm tra cài đặt trình duyệt.';
-      return;
-    }
     geminiKey = '';
     input.value = '';
     remove.disabled = true;
-    status.textContent = 'Đã xóa API key.';
+    status.textContent = saveDuoPreference('key', '') ? 'Đã xóa API key.'
+      : 'Không thể xóa key đã lưu. Hãy kiểm tra cài đặt trình duyệt.';
   });
 }
 

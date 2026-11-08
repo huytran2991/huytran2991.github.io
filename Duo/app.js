@@ -20,6 +20,8 @@ let unitIndex;
 let audioRequest = 0;
 let returnToAnswer;
 let loadingPage = true;
+let duoAccount;
+let accountRevision = 0;
 try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
@@ -31,16 +33,27 @@ try {
 } catch {
   // Track completion for this visit when storage is unavailable.
 }
+const guestProfile = { completed: [...completed], voice: preferredVoice, key: geminiKey };
+
+function saveDuoPreference(field, value) {
+  const stored = duoAccount?.save(field, value);
+  if (stored !== undefined) return stored;
+  guestProfile[field] = value;
+  const keys = { completed: completionKey, voice: voiceKey, key: geminiKeyStorage };
+  try {
+    if (field === 'key' && !value) localStorage.removeItem(keys[field]);
+    else localStorage.setItem(keys[field], field === 'completed' ? JSON.stringify(value) : value);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function markCompleted(mode) {
   const id = units[unitIndex].id + '/' + mode;
   if (completed.has(id)) return false;
   completed.add(id);
-  try {
-    localStorage.setItem(completionKey, JSON.stringify([...completed]));
-  } catch {
-    // Keep the completed state for this visit.
-  }
+  saveDuoPreference('completed', [...completed]);
   updateStars();
   return true;
 }
@@ -144,6 +157,56 @@ function updateStars() {
   document.querySelector('#stars').textContent = total + '/' + maximum + ' ⭐';
 }
 
+function showModeCompletion(control, done) {
+  control.classList.toggle('mode-completed', done);
+  control.querySelector('small')?.remove();
+  if (done) control.append(element('small', '✓ Đã hoàn thành'));
+}
+
+function applyAccountProfile(profile) {
+  completed.clear();
+  for (const id of profile.completed) completed.add(id);
+  if (preferredVoice !== profile.voice) {
+    stopAudio();
+    preferredVoice = profile.voice;
+    refreshVoices();
+  }
+  if (geminiKey !== profile.key) {
+    geminiKey = profile.key;
+    refreshGeminiStatus(settingsDialog.querySelector('#gemini-settings'));
+  }
+  if (units.length) updateStars();
+  for (const badge of app.querySelectorAll('[data-unit-stars]')) {
+    badge.textContent = unitStars(badge.dataset.unitStars) + '/' + practiceModes.length + ' ⭐';
+  }
+  for (const control of app.querySelectorAll('.mode-grid [data-mode]')) {
+    showModeCompletion(control, completed.has(units[unitIndex].id + '/' + control.dataset.mode));
+  }
+}
+
+async function initializeAccount() {
+  const status = document.querySelector('#duo-account-status');
+  if (location.protocol === 'file:') {
+    status.textContent = 'Mở Duo qua website để đăng nhập Google.';
+    return;
+  }
+  try {
+    const { setupDuoAccount } = await import('./account.js');
+    duoAccount = setupDuoAccount({
+      guest: () => guestProfile,
+      apply: applyAccountProfile,
+      loading(value, changedAccount) {
+        if (changedAccount) accountRevision += 1;
+        app.inert = value;
+        app.classList.toggle('account-loading', value);
+        document.querySelector('#stars').hidden = value;
+      }
+    });
+  } catch {
+    status.textContent = 'Chưa tải được Google Sign-In. Duo vẫn lưu trên thiết bị này.';
+  }
+}
+
 function saveLocation(mode, question, progress) {
   const url = new URL(location.href);
   const unit = units[unitIndex]?.id;
@@ -186,9 +249,7 @@ function setupSettings() {
     stopAudio();
     preferredVoice = event.target.value;
     status.textContent = '';
-    try {
-      localStorage.setItem(voiceKey, preferredVoice);
-    } catch {
+    if (!saveDuoPreference('voice', preferredVoice)) {
       status.textContent = 'Giọng đọc đã đổi cho lần mở trang này.';
     }
   });
@@ -215,8 +276,10 @@ function showHome(focus = true) {
     const name = element('strong', title);
     name.lang = 'en';
     const meta = element('span', '', 'unit-meta');
+    const stars = element('small', unitStars(id) + '/' + practiceModes.length + ' ⭐');
+    stars.dataset.unitStars = id;
     meta.append(element('small', 'Unit ' + (index + 1) + ' · Trang ' + pages.first),
-      element('small', unitStars(id) + '/' + practiceModes.length + ' ⭐'));
+      stars);
     info.append(meta, name, element('small', topic));
     card.append(symbol, info);
     grid.append(card);
@@ -246,9 +309,9 @@ function showUnit(index, referenceOpen = false) {
     const items = exercises[mode];
     const done = completed.has(id + '/' + mode);
     const action = mode === 'matching' ? () => showMatching() : () => openPractice(mode);
-    const control = button(label + ' · ' + items.length + (mode === 'matching' ? ' cặp' : ' câu'),
-      action, done ? 'mode-completed' : '');
-    if (done) control.append(element('small', '✓ Đã hoàn thành'));
+    const control = button(label + ' · ' + items.length + (mode === 'matching' ? ' cặp' : ' câu'), action);
+    control.dataset.mode = mode;
+    showModeCompletion(control, done);
     modes.append(control);
   }
   panel.append(modes);
@@ -529,6 +592,7 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
       if (checked || request || !answer.trim()) return;
       let grade;
       if (question.translation) {
+        const revision = accountRevision;
         if (!geminiKey) {
           feedback.textContent = 'Hãy lưu Gemini API key để chấm câu dịch.';
           openSettings(input);
@@ -553,7 +617,10 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
           check.disabled = false;
           input.readOnly = false;
         }
-        if (!panel.isConnected) return;
+        if (!panel.isConnected || revision !== accountRevision) {
+          if (panel.isConnected) feedback.textContent = 'Tài khoản đã thay đổi. Hãy chấm lại câu này.';
+          return;
+        }
       }
       checked = true;
       if (!review && position === questions.length - 1) {
@@ -655,3 +722,4 @@ async function loadUnits() {
 }
 
 loadUnits();
+initializeAccount();

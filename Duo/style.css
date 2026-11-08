@@ -10,6 +10,13 @@
 body { margin: 0; }
 main, .top, footer { width: min(100% - 2rem, 58rem); margin-inline: auto; }
 .top { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: 1rem 0; font-weight: 800; }
+.duo-account { display: flex; flex: 1; flex-wrap: wrap; align-items: center; gap: .35rem .65rem; min-width: 0; font-size: .85rem; }
+.duo-account [hidden] { display: none; }
+.duo-account button { min-height: 2.25rem; padding: .3rem .65rem; }
+#duo-email { overflow-wrap: anywhere; }
+#duo-account-status:not(:empty) { flex-basis: 100%; color: #396044; font-weight: 500; }
+#stars { white-space: nowrap; }
+.account-loading { visibility: hidden; }
 .settings-heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
 .settings-heading button {
   display: grid;

@@ -12,6 +12,12 @@
 <body>
   <header class="top">
     <span><span aria-hidden="true">🌱</span> Duo Lớp 3</span>
+    <div class="duo-account">
+      <button type="button" id="duo-login" disabled>Login</button>
+      <span id="duo-email" hidden></span>
+      <button type="button" id="duo-logout" hidden>Logout</button>
+      <span id="duo-account-status" role="status"></span>
+    </div>
     <span id="stars"></span>
   </header>
   <main id="app">
@@ -46,7 +52,7 @@
         </div>
       </form>
       <p id="gemini-status" class="audio-status" role="status"></p>
-      <p>Key lưu trong trình duyệt này. Khi chấm bài dịch, đề và câu trả lời được gửi đến Google Gemini.</p>
+      <p>Khi đăng nhập, Duo dùng chung key với English Practice. Khi chấm bài dịch, đề và câu trả lời được gửi đến Google Gemini.</p>
     </section>
   </dialog>
   <template id="home-template">

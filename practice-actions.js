@@ -3,7 +3,8 @@ import {
   acceptedWords, appendTransfer, listLessons, PracticeError, practiceProgress, reviewPrompts,
   saveTextLesson, sourceLesson, speakingRequest, speakingReviewModels, trim, writingModels
 } from './practice-data.js';
-import { getGeminiKey, reviewSpeaking, reviewWriting } from './practice-ai.js';
+import { reviewSpeaking, reviewWriting } from './practice-ai.js';
+import { hasGeminiKey } from './gemini-settings.js';
 
 const defaultWritingModel = Object.keys(writingModels)[0];
 const receipts = new Map();
@@ -64,7 +65,7 @@ export async function practiceAction(uid, tool, action, query, options) {
       return read(async files => {
         const lessons = await listLessons(files, tool);
         return tool === 'writing'
-          ? { lessons, aiAvailable: !!getGeminiKey(uid), model: defaultWritingModel, models: writingModels }
+          ? { lessons, aiAvailable: await hasGeminiKey(uid), model: defaultWritingModel, models: writingModels }
           : { lessons, selected: null };
       });
     }
@@ -115,7 +116,7 @@ export async function practiceAction(uid, tool, action, query, options) {
   if (tool === 'speakingreview') {
     if (action === 'config' && !posting) {
       return read(async files => ({
-        prompts: await reviewPrompts(files), models: speakingReviewModels, available: !!getGeminiKey(uid)
+        prompts: await reviewPrompts(files), models: speakingReviewModels, available: await hasGeminiKey(uid)
       }));
     }
     if (action === 'review' && posting) {

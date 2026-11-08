@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=static-1">
-  <script src="../practice-api.js?v=static-1" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=account-key-1">
+  <script src="../practice-api.js?v=account-key-1" defer></script>
   <script src="js/practice.js" defer></script>
   <script src="../practice-state.js?v=static-1" defer></script>
   <script src="js/app.js?v=static-1" defer></script>
@@ -44,14 +44,14 @@
         <label for="model">Review model<select id="model" aria-describedby="ai-status" disabled><option value="">Loading models…</option></select></label>
         <p class="small" id="ai-status" role="status">Checking AI availability…</p>
         <details id="gemini-settings">
-          <summary>Gemini settings</summary>
+          <summary>Gemini settings <span id="gemini-key-badge" class="gemini-badge" role="status">Checking…</span></summary>
           <form autocomplete="off">
             <label for="gemini-key">Gemini API key</label>
             <input id="gemini-key" type="password" required autocomplete="off" spellcheck="false">
             <button type="submit" class="btn">Save key</button>
             <button type="button" class="btn secondary" id="gemini-key-remove" disabled>Remove key</button>
           </form>
-          <p id="gemini-key-status" class="small" role="status">Keys are saved only in this browser.</p>
+          <p id="gemini-key-status" class="small" role="status">Checking your Google account settings…</p>
         </details>
       </section>
       <section class="card practice" aria-label="Translation exercise">

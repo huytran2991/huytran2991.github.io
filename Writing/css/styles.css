@@ -94,3 +94,6 @@ footer { text-align: center; padding: 24px 0 0; }
 #gemini-settings form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: .65rem 0 .4rem; }
 #gemini-settings label { flex: 0 1 auto; }
 #gemini-key { flex: 1 1 12rem; min-width: 0; padding: .55rem; border: 1px solid #bdccc8; border-radius: .45rem; font: inherit; }
+
+.gemini-badge { display: inline-block; margin-left: .35rem; padding: .1rem .5rem; border-radius: 1rem; background: #edf1ef; color: #43584e; font-size: .78rem; }
+.gemini-badge[data-source="account"] { background: #d9f0e1; color: #174e33; }

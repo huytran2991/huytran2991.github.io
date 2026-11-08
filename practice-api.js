@@ -48,23 +48,41 @@ const geminiSettings = document.getElementById('gemini-settings');
 if (geminiSettings) {
   const input = document.getElementById('gemini-key');
   const status = document.getElementById('gemini-key-status');
+  const badge = document.getElementById('gemini-key-badge');
+  const save = geminiSettings.querySelector('button[type="submit"]');
   const remove = document.getElementById('gemini-key-remove');
+  let configured = false;
 
   async function updateGeminiSettings(operation) {
+    save.disabled = remove.disabled = true;
     try {
       const user = await currentPracticeUser();
-      const { getGeminiKey, saveGeminiKey, removeGeminiKey } = await import('./practice-ai.js');
-      if (operation === 'save') saveGeminiKey(user.uid, input.value);
-      if (operation === 'remove') removeGeminiKey(user.uid);
-      const configured = !!getGeminiKey(user.uid);
-      status.textContent = configured ? 'A Gemini key is saved in this browser.' : 'Enter your Gemini API key to enable AI reviews.';
-      remove.disabled = !configured;
+      const { readGeminiKey, saveGeminiKey, removeGeminiKey } = await import('./gemini-settings.js');
+      if (operation === 'save') {
+        await saveGeminiKey(user.uid, input.value);
+        configured = true;
+      } else if (operation === 'remove') {
+        await removeGeminiKey(user.uid);
+        configured = false;
+      } else {
+        configured = !!await readGeminiKey(user.uid);
+      }
+      badge.dataset.source = configured ? 'account' : 'none';
+      badge.textContent = configured ? 'Key saved' : 'No key';
+      status.textContent = configured ? 'Your Gemini key is saved to your Google account settings.'
+        : 'Enter your Gemini API key to enable AI reviews.';
       if (operation) {
         input.value = '';
         window.dispatchEvent(new CustomEvent('gemini-key-changed', { detail: { configured } }));
       }
     } catch (error) {
-      status.textContent = error.message || 'Could not update Gemini settings.';
+      if (!operation) badge.textContent = 'Unavailable';
+      status.textContent = error.code === 'permission-denied'
+        ? 'Firestore denied access to your account settings. Check the settings permissions.'
+        : error.message || 'Could not update Gemini settings.';
+    } finally {
+      save.disabled = false;
+      remove.disabled = !configured;
     }
   }
 

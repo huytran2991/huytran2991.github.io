@@ -2,3 +2,6 @@
 
 #gemini-key { width: 100%; padding: .6rem; margin-bottom: .6rem; border: 1px solid #cfdbd5; border-radius: .5rem; font: inherit; }
 #gemini-settings button { margin-bottom: .3rem; }
+
+.gemini-badge { display: inline-block; margin-left: .35rem; padding: .1rem .5rem; border-radius: 1rem; background: #edf1ef; color: #43584e; font-size: .78rem; }
+.gemini-badge[data-source="account"] { background: #d9f0e1; color: #174e33; }

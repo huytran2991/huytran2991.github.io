@@ -1,100 +1,16 @@
 <!doctype html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>English Speaking Practice — Full</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="android-chrome-512x512.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>English Practice</title>
 </head>
 <body>
-  <div class="app">
-    <div class="sidebar" id="sidebar">
-      <h1>English Practice</h1>
-      <i id="btnShowHideSidebar">›</i>
-      <div class="user-row">
-        <div id="userInfo" class="small">Not signed in</div>
-        <button id="btnSignIn" class="btn">Sign in</button>
-        <button id="btnSignOut" class="btn secondary hidden">Sign out</button>
-      </div>
-
-      <div class="sidebar-action-group">
-        <input id="newListName" placeholder="Tên danh sách / chủ đề" class="w-full mb-8" />
-        <div class="flex-gap-8">
-          <button id="btnCreateList" class="btn">Tạo</button>
-          <button id="btnDeleteList" class="btn ghost" title="Xoá danh sách hiện tại">Xóa hiện tại</button>
-        </div>
-      </div>
-
-      <div class="lists" id="lists"></div>
-
-      <div class="flex-gap-8 mt-8">
-        <button id="btnImport" class="btn secondary">Import từ text</button>
-        <button id="btnExport" class="btn secondary">Export</button>
-      </div>
-
-      <footer>
-        <div class="small">Lưu ý: Dùng Chrome (desktop) trên HTTPS hoặc localhost để SpeechRecognition hoạt động đúng.</div>
-      </footer>
-    </div>
-
-    <div class="main">
-      <div class="topbar">
-        <div class="topbar-group">
-          <label class="small">Danh sách</label>
-          <select id="selectList"></select>
-          <button id="btnLoadDemo" class="btn secondary">Tải demo</button>
-        </div>
-
-        <div class="topbar-group">
-          <label class="small">Giọng:</label>
-          <select id="voiceSelect"></select>
-          <label class="small">Tốc độ</label>
-          <input id="rate" type="range" min="0.5" max="1.7" step="0.1" value="1" />
-          <button id="btnTestVoice" class="btn">Test</button>
-        </div>
-      </div>
-
-      <div class="sentence-input-group">
-        <textarea id="inputSentences" rows="4" class="w-full input-textarea" placeholder="Nhập mỗi câu tiếng Anh trên 1 dòng"></textarea>
-        <div class="flex-gap-8 mt-8">
-          <button id="btnAddSentences" class="btn">Thêm câu vào danh sách</button>
-          <button id="btnClearSentences" class="btn secondary">Clear</button>
-        </div>
-      </div>
-
-      <div id="sentences"></div>
-    </div>
-  </div>
-
-  <!-- Firebase SDKs (Compat v9) -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
-
-  <!-- Application Modules -->
-  <script src="js/firebase-config.js"></script>
-  <script src="js/storage.js"></script>
-  <script src="js/speech.js"></script>
-  <script src="js/app.js"></script>
-  
-  <!-- Service Worker registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./service-worker.js')
-          .then(reg => {
-            console.log('Service Worker registered! 😎', reg);
-          })
-          .catch(err => {
-            console.log('Service Worker registration failed: 😥', err);
-          });
-      });
-    }
-  </script>
+  <main>
+    <h1>English Practice</h1>
+    <p>The site is ready.</p>
+  </main>
 </body>
 </html>

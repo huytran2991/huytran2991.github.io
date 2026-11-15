@@ -108,7 +108,7 @@ input { display: block; width: 100%; padding: .75rem; margin-top: .4rem; border:
   background: #f0f6e8;
 }
 .word-tile[draggable="true"] { cursor: grab; }
-#settings-dialog {
+#settings-dialog, #vocabulary-reset {
   width: min(100% - 2rem, 34rem);
   max-height: calc(100% - 2rem);
   padding: clamp(1rem, 4vw, 1.5rem);
@@ -117,7 +117,7 @@ input { display: block; width: 100%; padding: .75rem; margin-top: .4rem; border:
   border: 1px solid var(--border);
   border-radius: 1rem;
 }
-#settings-dialog::backdrop { background: rgb(24 51 39 / 50%); }
+#settings-dialog::backdrop, #vocabulary-reset::backdrop { background: rgb(24 51 39 / 50%); }
 .settings-heading h2, .settings-section h3 { margin: 0; }
 .settings-section { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .settings-section label { display: block; margin: .4rem 0; }

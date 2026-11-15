@@ -6,7 +6,7 @@ const progressPath = 'Duo/progress.json';
 const importKey = 'duo-grade3-guest-imported';
 const profileKey = uid => 'duo-grade3-account-v1.' + uid;
 const validCompletions = values => Array.isArray(values)
-  ? values.filter(value => /^(?:[1-9]|10)\/(?:matching|quiz|listening|sentences|translation|mixed)$/.test(value))
+  ? values.filter(value => /^(?:[1-9]|10)\/(?:matching|vocabulary|quiz|listening|sentences|translation|mixed)$/.test(value))
   : [];
 const union = (first, second) => [...new Set([...first, ...second])];
 
@@ -161,7 +161,7 @@ export function setupDuoAccount({ guest, apply, loading }) {
     logout.hidden = !user;
     login.disabled = false;
     session = user ? { uid: user.uid, profile: accountCache(user.uid) } : undefined;
-    loading(Boolean(user), true);
+    loading(Boolean(user), true, user?.uid);
     if (session) {
       status.textContent = 'Đang tải tiến độ…';
       void synchronize(session);

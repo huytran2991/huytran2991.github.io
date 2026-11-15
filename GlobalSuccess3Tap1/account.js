@@ -1,8 +1,9 @@
 import { auth, onAuthStateChanged, signInWithGoogle, signOut } from '../firebase-client.js';
-import { updatePractice } from '../practice-store.js';
+import { updateCourseProgress } from '../practice-store.js';
 import { readGeminiKey, removeGeminiKey, saveGeminiKey } from '../gemini-settings.js';
 
-const progressPath = 'Duo/progress.json';
+const course = 'GlobalSuccess3Tap1';
+const legacyProgressPath = 'Duo/progress.json';
 const importKey = 'duo-grade3-guest-imported';
 const profileKey = uid => 'duo-grade3-account-v1.' + uid;
 const validCompletions = values => Array.isArray(values)
@@ -41,20 +42,22 @@ function accountCache(uid) {
   };
 }
 
+function progressFields(previous, additions = [], voice = previous.voice) {
+  return {
+    completed: union(validCompletions(previous.completed), additions),
+    voice: typeof voice === 'string' ? voice : ''
+  };
+}
+
 function readProgress(uid) {
-  return updatePractice(uid, files => decode(files[progressPath]), undefined, { createIfMissing: true });
+  return updateCourseProgress(uid, course, legacyProgressPath, (previous, fromLegacy) =>
+    fromLegacy ? progressFields(previous) : undefined, { migrate: true });
 }
 
 function syncProgress(uid, profile) {
-  return updatePractice(uid, files => {
-    const remote = decode(files[progressPath]);
-    const merged = {
-      completed: union(validCompletions(remote.completed), profile.completed),
-      voice: profile.pendingVoice ? profile.voice : remote.voice
-    };
-    files[progressPath] = JSON.stringify(merged);
-    return merged;
-  }, undefined, { createIfMissing: true });
+  return updateCourseProgress(uid, course, legacyProgressPath, previous =>
+    progressFields(previous, profile.completed, profile.pendingVoice ? profile.voice : previous.voice),
+  { migrate: true });
 }
 
 export function setupDuoAccount({ guest, apply, loading }) {
@@ -123,9 +126,11 @@ export function setupDuoAccount({ guest, apply, loading }) {
         }
       }
       if (current === session) status.textContent = '';
-    } catch {
+    } catch (error) {
       if (current !== session) return;
-      status.textContent = 'Chưa đồng bộ được. Duo đang dùng dữ liệu trên thiết bị này.';
+      status.textContent = error.code === 'permission-denied'
+        ? 'Firestore chưa cấp quyền lưu tiến độ. Duo đang dùng dữ liệu trên thiết bị này.'
+        : 'Chưa đồng bộ được. Duo đang dùng dữ liệu trên thiết bị này.';
       if (!current.loaded) {
         apply(profile);
         loading(false);

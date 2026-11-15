@@ -58,6 +58,28 @@ export async function readPractice(uid) {
   throw new Error('Practice data changed while loading. Reload and try again.');
 }
 
+export function updateCourseProgress(uid, course, legacyPath, apply, { migrate = false } = {}) {
+  const ref = doc(db, 'users', uid, 'englishPractice', course);
+  return runTransaction(db, async transaction => {
+    const current = (await transaction.get(ref)).data();
+    let previous = current;
+    if (!previous && migrate) {
+      const snapshot = await loadSnapshot(snapshotRefs(uid), key => transaction.get(key), true);
+      if (!snapshot) throw new Error('Practice data changed while loading. Reload and try again.');
+      const legacy = snapshot.files[legacyPath];
+      if (legacy !== undefined) {
+        previous = JSON.parse(legacy);
+        if (!previous || typeof previous !== 'object' || Array.isArray(previous)) {
+          throw new Error('The saved course progress has an invalid format.');
+        }
+      }
+    }
+    const next = apply(previous ?? {}, !current && previous !== undefined);
+    if (next) transaction.set(ref, next, { merge: true });
+    return next ?? previous ?? {};
+  });
+}
+
 export function updatePractice(uid, apply, signal, { createIfMissing = false } = {}) {
   const ref = snapshotRefs(uid);
   return runTransaction(db, async transaction => {

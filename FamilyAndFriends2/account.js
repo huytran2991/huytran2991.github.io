@@ -6,7 +6,7 @@ const progressPath = 'FamilyAndFriends2/progress.json';
 const importKey = 'family-friends-2-guest-imported';
 const profileKey = uid => 'family-friends-2-account-v1.' + uid;
 const validCompletions = values => Array.isArray(values)
-  ? values.filter(value => /^(?:[1-9]|1[0-5])\/(?:matching|quiz|listening|sentences|translation|mixed)$/.test(value))
+  ? values.filter(value => /^(?:[1-9]|1[0-5])\/(?:matching|vocabulary|quiz|listening|sentences|translation|mixed)$/.test(value))
   : [];
 const union = (first, second) => [...new Set([...first, ...second])];
 
@@ -161,7 +161,7 @@ export function setupDuoAccount({ guest, apply, loading }) {
     logout.hidden = !user;
     login.disabled = false;
     session = user ? { uid: user.uid, profile: accountCache(user.uid) } : undefined;
-    loading(Boolean(user), true);
+    loading(Boolean(user), true, user?.uid);
     if (session) {
       status.textContent = 'Đang tải tiến độ…';
       void synchronize(session);

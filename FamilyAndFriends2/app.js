@@ -7,6 +7,7 @@ const voiceKey = 'family-friends-2-voice-v1';
 const completionKey = 'family-friends-2-authored-completed-v1';
 const practiceModes = [
   ['matching', '🧩 Ghép cặp từ'],
+  ['vocabulary', '📚 Từ vựng'],
   ['quiz', '📝 Trắc nghiệm câu'],
   ['listening', '🎧 Nghe và chọn đáp án'],
   ['sentences', '🔤 Xếp từ thành câu'],
@@ -22,6 +23,9 @@ let returnToAnswer;
 let loadingPage = true;
 let duoAccount;
 let accountRevision = 0;
+let vocabularyOwner = 'guest';
+let restoreVocabularyForAccount = false;
+const vocabularyCache = new Map();
 try {
   preferredVoice = localStorage.getItem(voiceKey) || '';
 } catch {
@@ -147,6 +151,10 @@ function normalize(text) {
   return text.toLowerCase().replace(/['’.,!?]/g, '').trim().replace(/\s+/g, ' ');
 }
 
+function normalizeVocabulary(text) {
+  return text.toLowerCase().trim().replace(/\s+/g, ' ');
+}
+
 function unitStars(id) {
   return practiceModes.filter(([mode]) => completed.has(id + '/' + mode)).length;
 }
@@ -163,6 +171,39 @@ function showModeCompletion(control, done) {
   if (done) control.append(element('small', '✓ Đã hoàn thành'));
 }
 
+function learnedVocabulary(unit = units[unitIndex]) {
+  const key = 'family-friends-2-vocabulary-v1.' + vocabularyOwner + '.' + unit.id;
+  if (!vocabularyCache.has(key)) {
+    let stored;
+    try {
+      stored = JSON.parse(localStorage.getItem(key));
+    } catch {
+      // Keep progress in memory if storage is unavailable.
+    }
+    const words = unit.reference.vocabulary.map(item => item.english);
+    const learned = Array.isArray(stored) ? words.filter(word => stored.includes(word))
+      : completed.has(unit.id + '/vocabulary') ? words : [];
+    vocabularyCache.set(key, new Set(learned));
+  }
+  return vocabularyCache.get(key);
+}
+
+function saveVocabulary(learned) {
+  const key = 'family-friends-2-vocabulary-v1.' + vocabularyOwner + '.' + units[unitIndex].id;
+  try {
+    localStorage.setItem(key, JSON.stringify([...learned]));
+  } catch {
+    // Keep progress in memory if storage is unavailable.
+  }
+}
+
+function updateVocabularyButton(control) {
+  const total = units[unitIndex].reference.vocabulary.length;
+  const count = learnedVocabulary().size;
+  control.textContent = '📚 Từ vựng - đã học ' + count + '/' + total + ' từ';
+  showModeCompletion(control, count === total);
+}
+
 function applyAccountProfile(profile) {
   completed.clear();
   for (const id of profile.completed) completed.add(id);
@@ -176,11 +217,16 @@ function applyAccountProfile(profile) {
     refreshGeminiStatus(settingsDialog.querySelector('#gemini-settings'));
   }
   if (units.length) updateStars();
+  if (restoreVocabularyForAccount) {
+    restoreVocabularyForAccount = false;
+    restoreLocation();
+  }
   for (const badge of app.querySelectorAll('[data-unit-stars]')) {
     badge.textContent = unitStars(badge.dataset.unitStars) + '/' + practiceModes.length + ' ⭐';
   }
   for (const control of app.querySelectorAll('.mode-grid [data-mode]')) {
-    showModeCompletion(control, completed.has(units[unitIndex].id + '/' + control.dataset.mode));
+    if (control.dataset.mode === 'vocabulary') updateVocabularyButton(control);
+    else showModeCompletion(control, completed.has(units[unitIndex].id + '/' + control.dataset.mode));
   }
 }
 
@@ -195,8 +241,17 @@ async function initializeAccount() {
     duoAccount = setupDuoAccount({
       guest: () => guestProfile,
       apply: applyAccountProfile,
-      loading(value, changedAccount) {
-        if (changedAccount) accountRevision += 1;
+      loading(value, changedAccount, uid) {
+        if (changedAccount) {
+          accountRevision += 1;
+          vocabularyOwner = uid ? 'account.' + uid : 'guest';
+          const resetDialog = document.querySelector('#vocabulary-reset');
+          if (resetDialog.open) resetDialog.close('cancel');
+          if (history.state?.duo?.mode === 'vocabulary' && unitIndex !== undefined) {
+            if (accountRevision === 1) restoreVocabularyForAccount = true;
+            else showUnit(unitIndex);
+          }
+        }
         app.inert = value;
         app.classList.toggle('account-loading', value);
         document.querySelector('#stars').hidden = value;
@@ -306,10 +361,18 @@ function showUnit(index, referenceOpen = false) {
   panel.append(element('p', topic + ' · Trang ' + pages.first + '–' + pages.last + ' trong sách'));
   const modes = element('div', '', 'mode-grid');
   for (const [mode, label] of practiceModes) {
+    if (mode === 'vocabulary') {
+      const control = button(label, chooseVocabulary);
+      control.dataset.mode = mode;
+      updateVocabularyButton(control);
+      modes.append(control);
+      continue;
+    }
     const items = exercises[mode];
     const done = completed.has(id + '/' + mode);
     const action = mode === 'matching' ? () => showMatching() : () => openPractice(mode);
-    const control = button(label + ' · ' + items.length + (mode === 'matching' ? ' cặp' : ' câu'), action);
+    const unit = mode === 'matching' ? ' cặp' : ' câu';
+    const control = button(label + ' · ' + items.length + unit, action);
     control.dataset.mode = mode;
     showModeCompletion(control, done);
     modes.append(control);
@@ -340,6 +403,30 @@ function showUnit(index, referenceOpen = false) {
     details.append(element('h2', label), list);
   }
   panel.append(details);
+}
+
+function chooseVocabulary() {
+  const learned = learnedVocabulary();
+  if (learned.size < units[unitIndex].reference.vocabulary.length) {
+    openVocabulary();
+    return;
+  }
+  const dialog = document.querySelector('#vocabulary-reset');
+  dialog.returnValue = '';
+  dialog.showModal();
+}
+
+function openVocabulary(savedQuestions = []) {
+  const learned = learnedVocabulary();
+  const remaining = units[unitIndex].reference.vocabulary.filter(item => !learned.has(item.english));
+  const savedOrder = new Map(savedQuestions.map((question, index) => [question.answer, index]));
+  const questions = shuffle(remaining).sort((first, second) =>
+    (savedOrder.get(first.english) ?? savedQuestions.length) -
+    (savedOrder.get(second.english) ?? savedQuestions.length)
+  ).map(({ english, vietnamese }) => ({
+    title: 'Học từ vựng', clue: vietnamese, answer: english, english: true
+  }));
+  startRound(questions, 'vocabulary');
 }
 
 function openPractice(mode, position = 0) {
@@ -490,6 +577,7 @@ function sentenceTiles(question, onChange) {
 }
 
 function startRound(questions, mode, { position = 0, earnedStar = false, missed = [], review = false } = {}) {
+  const vocabulary = mode === 'vocabulary';
   function saveRound(question) {
     saveLocation(mode, question, { questions, position, earnedStar, missed, review });
   }
@@ -498,13 +586,15 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
     saveRound('done');
     const correct = questions.length - missed.length;
     const panel = showPanel('🎉 Hoàn thành!', '← Về Unit', () => showUnit(unitIndex));
-    panel.append(element('p', 'Em làm đúng ' + correct + '/' + questions.length + ' câu.'));
+    const summary = vocabulary ? 'Em đã gõ đúng cả ' + units[unitIndex].reference.vocabulary.length + ' mục từ.'
+      : 'Em làm đúng ' + correct + '/' + questions.length + ' câu.';
+    panel.append(element('p', summary));
     if (earnedStar) panel.append(element('p', '⭐ Em nhận được 1 sao!'));
     const actions = element('div', '', 'actions');
     if (missed.length) {
       actions.append(button('Ôn lại câu sai', () => startRound(missed, mode, { review: true }), 'primary'));
     }
-    actions.append(button('Luyện lại cả bài', () => openPractice(mode)));
+    actions.append(button('Luyện lại cả bài', vocabulary ? chooseVocabulary : () => openPractice(mode)));
     if (unitIndex + 1 < units.length) actions.append(button('Unit tiếp theo →', () => showUnit(unitIndex + 1)));
     panel.append(actions);
   }
@@ -518,10 +608,11 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
       showUnit(unitIndex);
     });
     const progress = element('progress', '');
-    progress.max = questions.length;
-    progress.value = position;
+    progress.max = vocabulary ? units[unitIndex].reference.vocabulary.length : questions.length;
+    progress.value = vocabulary ? learnedVocabulary().size : position;
     progress.setAttribute('aria-label', 'Tiến độ luyện tập');
-    const label = element('p', 'Câu ' + (position + 1) + ' / ' + questions.length, 'tag');
+    const label = element('p', vocabulary ? 'Đã học ' + progress.value + '/' + progress.max + ' từ'
+      : 'Câu ' + (position + 1) + ' / ' + questions.length, 'tag');
     panel.insertBefore(label, panel.querySelector('h1'));
     panel.insertBefore(progress, panel.querySelector('h1'));
 
@@ -544,6 +635,7 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
     const choices = element('div', '', 'choices');
     const feedback = element('p', '', 'feedback');
     feedback.setAttribute('role', 'status');
+    const pronunciationStatus = audioStatus();
     const actions = element('div', '', 'actions');
     const check = element('button', question.translation ? 'Chấm bằng AI' : 'Kiểm tra', 'primary');
     check.type = 'submit';
@@ -623,12 +715,25 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
         }
       }
       checked = true;
-      if (!review && position === questions.length - 1) {
-        earnedStar = markCompleted(mode);
-      }
       const correct = grade ? grade.accepted
+        : vocabulary ? normalizeVocabulary(answer) === normalizeVocabulary(question.answer)
         : question.choices ? answer === question.answer : normalize(answer) === normalize(question.answer);
-      if (!correct) missed.push(question);
+      const retry = vocabulary && !correct;
+      const last = !retry && position === questions.length - 1;
+      if (vocabulary && correct) {
+        const learned = learnedVocabulary();
+        learned.add(question.answer);
+        saveVocabulary(learned);
+        progress.value = learned.size;
+        label.textContent = 'Đã học ' + learned.size + '/' + progress.max + ' từ';
+      }
+      if (!review && last) earnedStar = markCompleted(mode);
+      if (retry) {
+        questions.splice(position, 1);
+        questions.push(question);
+        saveRound(position + 1);
+      }
+      if (!vocabulary && !correct) missed.push(question);
       feedback.classList.toggle('correct', correct);
       if (grade) {
         const example = element('strong', grade.example);
@@ -641,14 +746,19 @@ function startRound(questions, mode, { position = 0, earnedStar = false, missed 
         const expected = element('strong', question.answer);
         if (question.english) expected.lang = 'en';
         feedback.append('Đáp án đúng là ', expected);
+        if (retry) feedback.append('. Em sẽ gặp lại mục này.');
       }
       if (input) input.readOnly = true;
       else for (const choice of choices.querySelectorAll('button')) {
         choice.disabled = true;
         choice.draggable = false;
       }
-      const next = button(position + 1 === questions.length ? 'Xem kết quả' : 'Tiếp tục', () => {
-        position += 1;
+      if (input && correct) {
+        feedback.after(pronunciationStatus);
+        say(answer.trim(), .85, pronunciationStatus);
+      }
+      const next = button(last ? 'Xem kết quả' : 'Tiếp tục', () => {
+        if (!retry) position += 1;
         if (position < questions.length) render();
         else finish();
       }, 'primary');
@@ -679,6 +789,8 @@ function restoreLocation() {
     ? saved.progress : undefined;
   if (mode === 'matching') {
     showMatching(Array.isArray(progress) ? progress : []);
+  } else if (mode === 'vocabulary') {
+    openVocabulary(progress?.questions);
   } else if (practiceModes.some(([key]) => key === mode)) {
     if (progress?.questions?.length) startRound(progress.questions, mode, progress);
     else {
@@ -693,6 +805,14 @@ function restoreLocation() {
 
 window.speechSynthesis?.addEventListener?.('voiceschanged', refreshVoices);
 setupSettings();
+const vocabularyReset = document.querySelector('#vocabulary-reset');
+vocabularyReset.addEventListener('close', () => {
+  if (vocabularyReset.returnValue !== 'reset') return;
+  const learned = learnedVocabulary();
+  learned.clear();
+  saveVocabulary(learned);
+  openVocabulary();
+});
 async function loadUnits() {
   try {
     if (location.protocol === 'file:') {

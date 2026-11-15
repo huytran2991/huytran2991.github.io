@@ -1,0 +1,908 @@
+{
+  "id": 15,
+  "title": "Well done!",
+  "topic": "Lễ trao giải và số thứ tự",
+  "icon": "🏅",
+  "pages": {
+    "first": 108,
+    "last": 113
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "man",
+        "vietnamese": "người đàn ông"
+      },
+      {
+        "english": "men",
+        "vietnamese": "những người đàn ông"
+      },
+      {
+        "english": "woman",
+        "vietnamese": "người phụ nữ"
+      },
+      {
+        "english": "women",
+        "vietnamese": "những người phụ nữ"
+      },
+      {
+        "english": "child",
+        "vietnamese": "trẻ em"
+      },
+      {
+        "english": "children",
+        "vietnamese": "những đứa trẻ"
+      },
+      {
+        "english": "first",
+        "vietnamese": "thứ nhất"
+      },
+      {
+        "english": "second",
+        "vietnamese": "thứ hai"
+      },
+      {
+        "english": "third",
+        "vietnamese": "thứ ba"
+      },
+      {
+        "english": "fourth",
+        "vietnamese": "thứ tư"
+      },
+      {
+        "english": "last",
+        "vietnamese": "cuối cùng"
+      },
+      {
+        "english": "prize",
+        "vietnamese": "phần thưởng"
+      },
+      {
+        "english": "winner",
+        "vietnamese": "người thắng"
+      },
+      {
+        "english": "race",
+        "vietnamese": "cuộc đua"
+      },
+      {
+        "english": "prize-giving",
+        "vietnamese": "lễ trao giải"
+      },
+      {
+        "english": "ring",
+        "vietnamese": "nhẫn"
+      },
+      {
+        "english": "king",
+        "vietnamese": "vua"
+      },
+      {
+        "english": "swing",
+        "vietnamese": "xích đu"
+      },
+      {
+        "english": "bank",
+        "vietnamese": "ngân hàng"
+      },
+      {
+        "english": "sink",
+        "vietnamese": "bồn rửa"
+      },
+      {
+        "english": "pink",
+        "vietnamese": "màu hồng"
+      },
+      {
+        "english": "drink",
+        "vietnamese": "đồ uống"
+      },
+      {
+        "english": "song",
+        "vietnamese": "bài hát"
+      },
+      {
+        "english": "runner",
+        "vietnamese": "người chạy"
+      },
+      {
+        "english": "fast",
+        "vietnamese": "nhanh"
+      },
+      {
+        "english": "slow",
+        "vietnamese": "chậm"
+      },
+      {
+        "english": "heavy",
+        "vietnamese": "nặng"
+      },
+      {
+        "english": "fairground",
+        "vietnamese": "khu hội chợ"
+      },
+      {
+        "english": "field",
+        "vietnamese": "cánh đồng"
+      },
+      {
+        "english": "fresh water",
+        "vietnamese": "nước sạch"
+      },
+      {
+        "english": "real",
+        "vietnamese": "thật"
+      },
+      {
+        "english": "tail",
+        "vietnamese": "đuôi"
+      },
+      {
+        "english": "grass",
+        "vietnamese": "cỏ"
+      },
+      {
+        "english": "miss",
+        "vietnamese": "nhớ"
+      },
+      {
+        "english": "teddy",
+        "vietnamese": "gấu bông"
+      },
+      {
+        "english": "lolly",
+        "vietnamese": "kem que"
+      },
+      {
+        "english": "monkey",
+        "vietnamese": "khỉ"
+      },
+      {
+        "english": "toy",
+        "vietnamese": "đồ chơi"
+      },
+      {
+        "english": "late",
+        "vietnamese": "muộn"
+      },
+      {
+        "english": "round and round",
+        "vietnamese": "quay vòng vòng"
+      },
+      {
+        "english": "finish line",
+        "vietnamese": "vạch đích"
+      }
+    ],
+    "structures": [
+      {
+        "english": "There were some teachers.",
+        "vietnamese": "Lúc đó có một vài giáo viên."
+      },
+      {
+        "english": "There weren't any children in the classroom.",
+        "vietnamese": "Lúc đó không có học sinh nào trong lớp."
+      },
+      {
+        "english": "There was a prize for English.",
+        "vietnamese": "Lúc đó có một giải thưởng môn tiếng Anh."
+      },
+      {
+        "english": "How many men were there?",
+        "vietnamese": "Lúc đó có bao nhiêu người đàn ông?"
+      },
+      {
+        "english": "It was a great day.",
+        "vietnamese": "Đó là một ngày tuyệt vời."
+      },
+      {
+        "english": "We were the winners.",
+        "vietnamese": "Chúng mình là những người thắng cuộc."
+      },
+      {
+        "english": "Kim was first.",
+        "vietnamese": "Kim về nhất."
+      },
+      {
+        "english": "She was faster than him.",
+        "vietnamese": "Bạn nữ ấy chạy nhanh hơn bạn nam ấy."
+      },
+      {
+        "english": "Tell me about school today.",
+        "vietnamese": "Kể cho mình nghe chuyện ở trường hôm nay."
+      },
+      {
+        "english": "Was it good?",
+        "vietnamese": "Buổi đó có vui không?"
+      },
+      {
+        "english": "The prize goes to Rosy and Tim.",
+        "vietnamese": "Giải thưởng thuộc về Rosy và Tim."
+      },
+      {
+        "english": "Well done!",
+        "vietnamese": "Làm tốt lắm!"
+      },
+      {
+        "english": "Some children were fast.",
+        "vietnamese": "Một số bạn nhỏ chạy nhanh."
+      },
+      {
+        "english": "I want to run in the fields.",
+        "vietnamese": "Mình muốn chạy trên cánh đồng."
+      },
+      {
+        "english": "I miss my friends.",
+        "vietnamese": "Mình nhớ các bạn."
+      },
+      {
+        "english": "What's she doing?",
+        "vietnamese": "Bạn ấy đang làm gì?"
+      },
+      {
+        "english": "Is she sad?",
+        "vietnamese": "Bạn ấy có buồn không?"
+      },
+      {
+        "english": "There aren't any boys.",
+        "vietnamese": "Không có bạn nam nào."
+      },
+      {
+        "english": "I've got four teddies.",
+        "vietnamese": "Mình có bốn con gấu bông."
+      },
+      {
+        "english": "I want to be a real horse.",
+        "vietnamese": "Mình muốn trở thành một con ngựa thật."
+      },
+      {
+        "english": "She likes lollies.",
+        "vietnamese": "Bạn ấy thích kem que."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "man",
+        "vietnamese": "người đàn ông"
+      },
+      {
+        "english": "men",
+        "vietnamese": "những người đàn ông"
+      },
+      {
+        "english": "woman",
+        "vietnamese": "người phụ nữ"
+      },
+      {
+        "english": "women",
+        "vietnamese": "những người phụ nữ"
+      },
+      {
+        "english": "child",
+        "vietnamese": "trẻ em"
+      },
+      {
+        "english": "children",
+        "vietnamese": "những đứa trẻ"
+      },
+      {
+        "english": "first",
+        "vietnamese": "thứ nhất"
+      },
+      {
+        "english": "second",
+        "vietnamese": "thứ hai"
+      },
+      {
+        "english": "third",
+        "vietnamese": "thứ ba"
+      },
+      {
+        "english": "fourth",
+        "vietnamese": "thứ tư"
+      },
+      {
+        "english": "last",
+        "vietnamese": "cuối cùng"
+      },
+      {
+        "english": "prize",
+        "vietnamese": "phần thưởng"
+      },
+      {
+        "english": "winner",
+        "vietnamese": "người thắng"
+      },
+      {
+        "english": "race",
+        "vietnamese": "cuộc đua"
+      },
+      {
+        "english": "prize-giving",
+        "vietnamese": "lễ trao giải"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Ai về thứ hai?",
+        "options": [
+          "Oscar",
+          "Kim",
+          "Emily",
+          "Joe"
+        ],
+        "answer": "Oscar",
+        "passage": [
+          "There was a race at school. Kim crossed the finish line first. Oscar was second and Emily was third."
+        ]
+      },
+      {
+        "prompt": "Từ nào kết thúc bằng nk?",
+        "options": [
+          "sink",
+          "ring",
+          "king",
+          "swing"
+        ],
+        "answer": "sink"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Kể cho mình nghe chuyện ở trường hôm nay.",
+          "Lúc đó có một vài giáo viên.",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh."
+        ],
+        "answer": "Kể cho mình nghe chuyện ở trường hôm nay.",
+        "passage": [
+          "Tell me about school today."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Buổi đó có vui không?",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?"
+        ],
+        "answer": "Buổi đó có vui không?",
+        "passage": [
+          "Was it good?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Giải thưởng thuộc về Rosy và Tim.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời."
+        ],
+        "answer": "Giải thưởng thuộc về Rosy và Tim.",
+        "passage": [
+          "The prize goes to Rosy and Tim."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Làm tốt lắm!",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời.",
+          "Chúng mình là những người thắng cuộc."
+        ],
+        "answer": "Làm tốt lắm!",
+        "passage": [
+          "Well done!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Một số bạn nhỏ chạy nhanh.",
+          "Đó là một ngày tuyệt vời.",
+          "Chúng mình là những người thắng cuộc.",
+          "Kim về nhất."
+        ],
+        "answer": "Một số bạn nhỏ chạy nhanh.",
+        "passage": [
+          "Some children were fast."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình muốn chạy trên cánh đồng.",
+          "Chúng mình là những người thắng cuộc.",
+          "Kim về nhất.",
+          "Bạn nữ ấy chạy nhanh hơn bạn nam ấy."
+        ],
+        "answer": "Mình muốn chạy trên cánh đồng.",
+        "passage": [
+          "I want to run in the fields."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy có buồn không?",
+          "Lúc đó có một vài giáo viên.",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh."
+        ],
+        "answer": "Bạn ấy có buồn không?",
+        "passage": [
+          "Is she sad?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không có bạn nam nào.",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?"
+        ],
+        "answer": "Không có bạn nam nào.",
+        "passage": [
+          "There aren't any boys."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình có bốn con gấu bông.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời."
+        ],
+        "answer": "Mình có bốn con gấu bông.",
+        "passage": [
+          "I've got four teddies."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình muốn trở thành một con ngựa thật.",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời.",
+          "Chúng mình là những người thắng cuộc."
+        ],
+        "answer": "Mình muốn trở thành một con ngựa thật.",
+        "passage": [
+          "I want to be a real horse."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy thích kem que.",
+          "Đó là một ngày tuyệt vời.",
+          "Chúng mình là những người thắng cuộc.",
+          "Kim về nhất."
+        ],
+        "answer": "Bạn ấy thích kem que.",
+        "passage": [
+          "She likes lollies."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "sink",
+        "answer": "sink",
+        "options": [
+          "sink",
+          "ring",
+          "king",
+          "swing"
+        ]
+      },
+      {
+        "audio": "ring",
+        "answer": "ring",
+        "options": [
+          "ring",
+          "king",
+          "swing",
+          "man"
+        ]
+      },
+      {
+        "audio": "king",
+        "answer": "king",
+        "options": [
+          "king",
+          "swing",
+          "man",
+          "men"
+        ]
+      },
+      {
+        "audio": "swing",
+        "answer": "swing",
+        "options": [
+          "swing",
+          "man",
+          "men",
+          "woman"
+        ]
+      },
+      {
+        "audio": "man",
+        "answer": "man",
+        "options": [
+          "man",
+          "men",
+          "woman",
+          "women"
+        ]
+      },
+      {
+        "audio": "men",
+        "answer": "men",
+        "options": [
+          "men",
+          "woman",
+          "women",
+          "child"
+        ]
+      },
+      {
+        "audio": "woman",
+        "answer": "woman",
+        "options": [
+          "woman",
+          "women",
+          "child",
+          "children"
+        ]
+      },
+      {
+        "audio": "women",
+        "answer": "women",
+        "options": [
+          "women",
+          "child",
+          "children",
+          "sink"
+        ]
+      },
+      {
+        "audio": "child",
+        "answer": "child",
+        "options": [
+          "child",
+          "children",
+          "sink",
+          "ring"
+        ]
+      },
+      {
+        "audio": "children",
+        "answer": "children",
+        "options": [
+          "children",
+          "sink",
+          "ring",
+          "king"
+        ]
+      },
+      {
+        "audio": "There were some teachers.",
+        "answer": "There were some teachers.",
+        "options": [
+          "There were some teachers.",
+          "There weren't any children in the classroom.",
+          "There was a prize for English.",
+          "How many men were there?"
+        ]
+      },
+      {
+        "audio": "There weren't any children in the classroom.",
+        "answer": "There weren't any children in the classroom.",
+        "options": [
+          "There weren't any children in the classroom.",
+          "There was a prize for English.",
+          "How many men were there?",
+          "It was a great day."
+        ]
+      },
+      {
+        "audio": "There was a prize for English.",
+        "answer": "There was a prize for English.",
+        "options": [
+          "There was a prize for English.",
+          "How many men were there?",
+          "It was a great day.",
+          "We were the winners."
+        ]
+      },
+      {
+        "audio": "How many men were there?",
+        "answer": "How many men were there?",
+        "options": [
+          "How many men were there?",
+          "It was a great day.",
+          "We were the winners.",
+          "Kim was first."
+        ]
+      },
+      {
+        "audio": "It was a great day.",
+        "answer": "It was a great day.",
+        "options": [
+          "It was a great day.",
+          "We were the winners.",
+          "Kim was first.",
+          "She was faster than him."
+        ]
+      },
+      {
+        "audio": "We were the winners.",
+        "answer": "We were the winners.",
+        "options": [
+          "We were the winners.",
+          "Kim was first.",
+          "She was faster than him.",
+          "Tell me about school today."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "There were some teachers.",
+        "hint": "Lúc đó có một vài giáo viên."
+      },
+      {
+        "answer": "There weren't any children in the classroom.",
+        "hint": "Lúc đó không có học sinh nào trong lớp."
+      },
+      {
+        "answer": "There was a prize for English.",
+        "hint": "Lúc đó có một giải thưởng môn tiếng Anh."
+      },
+      {
+        "answer": "How many men were there?",
+        "hint": "Lúc đó có bao nhiêu người đàn ông?"
+      },
+      {
+        "answer": "It was a great day.",
+        "hint": "Đó là một ngày tuyệt vời."
+      },
+      {
+        "answer": "We were the winners.",
+        "hint": "Chúng mình là những người thắng cuộc."
+      },
+      {
+        "answer": "Kim was first.",
+        "hint": "Kim về nhất."
+      },
+      {
+        "answer": "She was faster than him.",
+        "hint": "Bạn nữ ấy chạy nhanh hơn bạn nam ấy."
+      },
+      {
+        "answer": "Tell me about school today.",
+        "hint": "Kể cho mình nghe chuyện ở trường hôm nay."
+      },
+      {
+        "answer": "Was it good?",
+        "hint": "Buổi đó có vui không?"
+      },
+      {
+        "answer": "The prize goes to Rosy and Tim.",
+        "hint": "Giải thưởng thuộc về Rosy và Tim."
+      },
+      {
+        "answer": "Well done!",
+        "hint": "Làm tốt lắm!"
+      },
+      {
+        "answer": "Some children were fast.",
+        "hint": "Một số bạn nhỏ chạy nhanh."
+      },
+      {
+        "answer": "I want to run in the fields.",
+        "hint": "Mình muốn chạy trên cánh đồng."
+      },
+      {
+        "answer": "I miss my friends.",
+        "hint": "Mình nhớ các bạn."
+      },
+      {
+        "answer": "What's she doing?",
+        "hint": "Bạn ấy đang làm gì?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Lúc đó có một vài giáo viên."
+      },
+      {
+        "prompt": "Lúc đó không có học sinh nào trong lớp."
+      },
+      {
+        "prompt": "Lúc đó có một giải thưởng môn tiếng Anh."
+      },
+      {
+        "prompt": "Lúc đó có bao nhiêu người đàn ông?"
+      },
+      {
+        "prompt": "Đó là một ngày tuyệt vời."
+      },
+      {
+        "prompt": "Chúng mình là những người thắng cuộc."
+      },
+      {
+        "prompt": "Kim về nhất."
+      },
+      {
+        "prompt": "Bạn nữ ấy chạy nhanh hơn bạn nam ấy."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Ai về thứ hai?",
+        "options": [
+          "Oscar",
+          "Kim",
+          "Emily",
+          "Joe"
+        ],
+        "answer": "Oscar",
+        "passage": [
+          "There was a race at school. Kim crossed the finish line first. Oscar was second and Emily was third."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào kết thúc bằng nk?",
+        "options": [
+          "sink",
+          "ring",
+          "king",
+          "swing"
+        ],
+        "answer": "sink"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đó là một ngày tuyệt vời.",
+          "Lúc đó có một vài giáo viên.",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh."
+        ],
+        "answer": "Đó là một ngày tuyệt vời.",
+        "passage": [
+          "It was a great day."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình là những người thắng cuộc.",
+          "Lúc đó không có học sinh nào trong lớp.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?"
+        ],
+        "answer": "Chúng mình là những người thắng cuộc.",
+        "passage": [
+          "We were the winners."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Kim về nhất.",
+          "Lúc đó có một giải thưởng môn tiếng Anh.",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời."
+        ],
+        "answer": "Kim về nhất.",
+        "passage": [
+          "Kim was first."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn nữ ấy chạy nhanh hơn bạn nam ấy.",
+          "Lúc đó có bao nhiêu người đàn ông?",
+          "Đó là một ngày tuyệt vời.",
+          "Chúng mình là những người thắng cuộc."
+        ],
+        "answer": "Bạn nữ ấy chạy nhanh hơn bạn nam ấy.",
+        "passage": [
+          "She was faster than him."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "sink",
+        "answer": "sink",
+        "options": [
+          "sink",
+          "ring",
+          "king",
+          "swing"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "ring",
+        "answer": "ring",
+        "options": [
+          "ring",
+          "king",
+          "swing",
+          "man"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "king",
+        "answer": "king",
+        "options": [
+          "king",
+          "swing",
+          "man",
+          "men"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Tell me about school today.",
+        "answer": "Tell me about school today."
+      },
+      {
+        "type": "dictation",
+        "audio": "Was it good?",
+        "answer": "Was it good?"
+      },
+      {
+        "type": "dictation",
+        "audio": "The prize goes to Rosy and Tim.",
+        "answer": "The prize goes to Rosy and Tim."
+      },
+      {
+        "type": "sentence",
+        "answer": "There were some teachers.",
+        "hint": "Lúc đó có một vài giáo viên."
+      },
+      {
+        "type": "sentence",
+        "answer": "There weren't any children in the classroom.",
+        "hint": "Lúc đó không có học sinh nào trong lớp."
+      },
+      {
+        "type": "sentence",
+        "answer": "There was a prize for English.",
+        "hint": "Lúc đó có một giải thưởng môn tiếng Anh."
+      },
+      {
+        "type": "translation",
+        "prompt": "Lúc đó có một vài giáo viên."
+      },
+      {
+        "type": "translation",
+        "prompt": "Lúc đó không có học sinh nào trong lớp."
+      },
+      {
+        "type": "translation",
+        "prompt": "Lúc đó có một giải thưởng môn tiếng Anh."
+      }
+    ]
+  }
+}

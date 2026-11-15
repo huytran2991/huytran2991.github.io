@@ -1,0 +1,845 @@
+{
+  "id": 12,
+  "title": "You're sleeping!",
+  "topic": "Lễ cưới và việc đang diễn ra",
+  "icon": "🎉",
+  "pages": {
+    "first": 86,
+    "last": 91
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "wedding",
+        "vietnamese": "đám cưới"
+      },
+      {
+        "english": "guest",
+        "vietnamese": "khách mời"
+      },
+      {
+        "english": "bride",
+        "vietnamese": "cô dâu"
+      },
+      {
+        "english": "band",
+        "vietnamese": "ban nhạc"
+      },
+      {
+        "english": "invitation",
+        "vietnamese": "thiệp mời"
+      },
+      {
+        "english": "wedding cake",
+        "vietnamese": "bánh cưới"
+      },
+      {
+        "english": "watch a video",
+        "vietnamese": "xem video"
+      },
+      {
+        "english": "play music",
+        "vietnamese": "chơi nhạc"
+      },
+      {
+        "english": "choose a dress",
+        "vietnamese": "chọn váy"
+      },
+      {
+        "english": "make a cake",
+        "vietnamese": "làm bánh"
+      },
+      {
+        "english": "take photos",
+        "vietnamese": "chụp ảnh"
+      },
+      {
+        "english": "brush my hair",
+        "vietnamese": "chải tóc"
+      },
+      {
+        "english": "wash the car",
+        "vietnamese": "rửa ô tô"
+      },
+      {
+        "english": "get ready",
+        "vietnamese": "chuẩn bị"
+      },
+      {
+        "english": "suit",
+        "vietnamese": "bộ com-lê"
+      },
+      {
+        "english": "tie",
+        "vietnamese": "cà vạt"
+      },
+      {
+        "english": "June",
+        "vietnamese": "tháng Sáu"
+      },
+      {
+        "english": "tube",
+        "vietnamese": "ống"
+      },
+      {
+        "english": "flute",
+        "vietnamese": "sáo"
+      },
+      {
+        "english": "cube",
+        "vietnamese": "khối lập phương"
+      },
+      {
+        "english": "poster",
+        "vietnamese": "áp phích"
+      },
+      {
+        "english": "party",
+        "vietnamese": "bữa tiệc"
+      },
+      {
+        "english": "summer",
+        "vietnamese": "mùa hè"
+      },
+      {
+        "english": "flat",
+        "vietnamese": "căn hộ"
+      },
+      {
+        "english": "clean",
+        "vietnamese": "dọn dẹp"
+      },
+      {
+        "english": "excited",
+        "vietnamese": "háo hức"
+      },
+      {
+        "english": "pretty",
+        "vietnamese": "xinh"
+      },
+      {
+        "english": "letter",
+        "vietnamese": "chữ cái"
+      },
+      {
+        "english": "soon",
+        "vietnamese": "sớm"
+      },
+      {
+        "english": "send",
+        "vietnamese": "gửi"
+      },
+      {
+        "english": "dance",
+        "vietnamese": "nhảy múa"
+      },
+      {
+        "english": "drink",
+        "vietnamese": "uống"
+      },
+      {
+        "english": "talk",
+        "vietnamese": "nói chuyện"
+      },
+      {
+        "english": "sing",
+        "vietnamese": "hát"
+      },
+      {
+        "english": "sleep",
+        "vietnamese": "ngủ"
+      },
+      {
+        "english": "cake",
+        "vietnamese": "bánh ngọt"
+      },
+      {
+        "english": "guests",
+        "vietnamese": "các khách mời"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What are you doing?",
+        "vietnamese": "Bạn đang làm gì?"
+      },
+      {
+        "english": "I'm dancing with my friends.",
+        "vietnamese": "Mình đang nhảy với các bạn."
+      },
+      {
+        "english": "What are they doing?",
+        "vietnamese": "Họ đang làm gì?"
+      },
+      {
+        "english": "They're talking.",
+        "vietnamese": "Họ đang nói chuyện."
+      },
+      {
+        "english": "What's she doing?",
+        "vietnamese": "Cô ấy đang làm gì?"
+      },
+      {
+        "english": "She's eating the wedding cake.",
+        "vietnamese": "Cô ấy đang ăn bánh cưới."
+      },
+      {
+        "english": "We're getting ready for the party.",
+        "vietnamese": "Chúng mình đang chuẩn bị cho bữa tiệc."
+      },
+      {
+        "english": "You're sleeping.",
+        "vietnamese": "Bạn đang ngủ."
+      },
+      {
+        "english": "Can we watch too?",
+        "vietnamese": "Chúng mình cũng xem được không?"
+      },
+      {
+        "english": "Look at the bride.",
+        "vietnamese": "Hãy nhìn cô dâu."
+      },
+      {
+        "english": "She's wearing a white dress.",
+        "vietnamese": "Cô ấy đang mặc váy trắng."
+      },
+      {
+        "english": "Dad is washing the car.",
+        "vietnamese": "Bố đang rửa ô tô."
+      },
+      {
+        "english": "I can't wait to be there.",
+        "vietnamese": "Mình rất nóng lòng được đến đó."
+      },
+      {
+        "english": "We're choosing party dresses.",
+        "vietnamese": "Chúng mình đang chọn váy dự tiệc."
+      },
+      {
+        "english": "What do you think?",
+        "vietnamese": "Bạn nghĩ sao?"
+      },
+      {
+        "english": "I'll send photos soon.",
+        "vietnamese": "Mình sẽ gửi ảnh sớm."
+      },
+      {
+        "english": "What's he doing?",
+        "vietnamese": "Bạn nam ấy đang làm gì?"
+      },
+      {
+        "english": "We're watching a video.",
+        "vietnamese": "Chúng mình đang xem video."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "wedding",
+        "vietnamese": "đám cưới"
+      },
+      {
+        "english": "guest",
+        "vietnamese": "khách mời"
+      },
+      {
+        "english": "bride",
+        "vietnamese": "cô dâu"
+      },
+      {
+        "english": "band",
+        "vietnamese": "ban nhạc"
+      },
+      {
+        "english": "invitation",
+        "vietnamese": "thiệp mời"
+      },
+      {
+        "english": "wedding cake",
+        "vietnamese": "bánh cưới"
+      },
+      {
+        "english": "watch a video",
+        "vietnamese": "xem video"
+      },
+      {
+        "english": "play music",
+        "vietnamese": "chơi nhạc"
+      },
+      {
+        "english": "choose a dress",
+        "vietnamese": "chọn váy"
+      },
+      {
+        "english": "make a cake",
+        "vietnamese": "làm bánh"
+      },
+      {
+        "english": "take photos",
+        "vietnamese": "chụp ảnh"
+      },
+      {
+        "english": "brush my hair",
+        "vietnamese": "chải tóc"
+      },
+      {
+        "english": "wash the car",
+        "vietnamese": "rửa ô tô"
+      },
+      {
+        "english": "get ready",
+        "vietnamese": "chuẩn bị"
+      },
+      {
+        "english": "suit",
+        "vietnamese": "bộ com-lê"
+      },
+      {
+        "english": "tie",
+        "vietnamese": "cà vạt"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Mẹ đang làm gì?",
+        "options": [
+          "Làm bánh",
+          "Chọn váy",
+          "Chụp ảnh",
+          "Rửa xe"
+        ],
+        "answer": "Làm bánh",
+        "passage": [
+          "We're getting ready for a party. Mum is making the cake, and I'm choosing my dress."
+        ]
+      },
+      {
+        "prompt": "Từ nào có âm dài như trong tube?",
+        "options": [
+          "cube",
+          "flat",
+          "band",
+          "dress"
+        ],
+        "answer": "cube"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình cũng xem được không?",
+          "Bạn đang làm gì?",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?"
+        ],
+        "answer": "Chúng mình cũng xem được không?",
+        "passage": [
+          "Can we watch too?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy nhìn cô dâu.",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?",
+          "Họ đang nói chuyện."
+        ],
+        "answer": "Hãy nhìn cô dâu.",
+        "passage": [
+          "Look at the bride."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy đang mặc váy trắng.",
+          "Họ đang làm gì?",
+          "Họ đang nói chuyện.",
+          "Cô ấy đang làm gì?"
+        ],
+        "answer": "Cô ấy đang mặc váy trắng.",
+        "passage": [
+          "She's wearing a white dress."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bố đang rửa ô tô.",
+          "Họ đang nói chuyện.",
+          "Cô ấy đang làm gì?",
+          "Cô ấy đang ăn bánh cưới."
+        ],
+        "answer": "Bố đang rửa ô tô.",
+        "passage": [
+          "Dad is washing the car."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình rất nóng lòng được đến đó.",
+          "Cô ấy đang làm gì?",
+          "Cô ấy đang ăn bánh cưới.",
+          "Chúng mình đang chuẩn bị cho bữa tiệc."
+        ],
+        "answer": "Mình rất nóng lòng được đến đó.",
+        "passage": [
+          "I can't wait to be there."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình đang chọn váy dự tiệc.",
+          "Cô ấy đang ăn bánh cưới.",
+          "Chúng mình đang chuẩn bị cho bữa tiệc.",
+          "Bạn đang ngủ."
+        ],
+        "answer": "Chúng mình đang chọn váy dự tiệc.",
+        "passage": [
+          "We're choosing party dresses."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn nam ấy đang làm gì?",
+          "Bạn đang làm gì?",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?"
+        ],
+        "answer": "Bạn nam ấy đang làm gì?",
+        "passage": [
+          "What's he doing?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình đang xem video.",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?",
+          "Họ đang nói chuyện."
+        ],
+        "answer": "Chúng mình đang xem video.",
+        "passage": [
+          "We're watching a video."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "cube",
+        "answer": "cube",
+        "options": [
+          "cube",
+          "flat",
+          "band",
+          "dress"
+        ]
+      },
+      {
+        "audio": "flat",
+        "answer": "flat",
+        "options": [
+          "flat",
+          "band",
+          "dress",
+          "wedding"
+        ]
+      },
+      {
+        "audio": "band",
+        "answer": "band",
+        "options": [
+          "band",
+          "dress",
+          "wedding",
+          "guest"
+        ]
+      },
+      {
+        "audio": "dress",
+        "answer": "dress",
+        "options": [
+          "dress",
+          "wedding",
+          "guest",
+          "bride"
+        ]
+      },
+      {
+        "audio": "wedding",
+        "answer": "wedding",
+        "options": [
+          "wedding",
+          "guest",
+          "bride",
+          "invitation"
+        ]
+      },
+      {
+        "audio": "guest",
+        "answer": "guest",
+        "options": [
+          "guest",
+          "bride",
+          "invitation",
+          "wedding cake"
+        ]
+      },
+      {
+        "audio": "bride",
+        "answer": "bride",
+        "options": [
+          "bride",
+          "invitation",
+          "wedding cake",
+          "watch a video"
+        ]
+      },
+      {
+        "audio": "invitation",
+        "answer": "invitation",
+        "options": [
+          "invitation",
+          "wedding cake",
+          "watch a video",
+          "cube"
+        ]
+      },
+      {
+        "audio": "wedding cake",
+        "answer": "wedding cake",
+        "options": [
+          "wedding cake",
+          "watch a video",
+          "cube",
+          "flat"
+        ]
+      },
+      {
+        "audio": "watch a video",
+        "answer": "watch a video",
+        "options": [
+          "watch a video",
+          "cube",
+          "flat",
+          "band"
+        ]
+      },
+      {
+        "audio": "What are you doing?",
+        "answer": "What are you doing?",
+        "options": [
+          "What are you doing?",
+          "I'm dancing with my friends.",
+          "What are they doing?",
+          "They're talking."
+        ]
+      },
+      {
+        "audio": "I'm dancing with my friends.",
+        "answer": "I'm dancing with my friends.",
+        "options": [
+          "I'm dancing with my friends.",
+          "What are they doing?",
+          "They're talking.",
+          "What's she doing?"
+        ]
+      },
+      {
+        "audio": "What are they doing?",
+        "answer": "What are they doing?",
+        "options": [
+          "What are they doing?",
+          "They're talking.",
+          "What's she doing?",
+          "She's eating the wedding cake."
+        ]
+      },
+      {
+        "audio": "They're talking.",
+        "answer": "They're talking.",
+        "options": [
+          "They're talking.",
+          "What's she doing?",
+          "She's eating the wedding cake.",
+          "We're getting ready for the party."
+        ]
+      },
+      {
+        "audio": "What's she doing?",
+        "answer": "What's she doing?",
+        "options": [
+          "What's she doing?",
+          "She's eating the wedding cake.",
+          "We're getting ready for the party.",
+          "You're sleeping."
+        ]
+      },
+      {
+        "audio": "She's eating the wedding cake.",
+        "answer": "She's eating the wedding cake.",
+        "options": [
+          "She's eating the wedding cake.",
+          "We're getting ready for the party.",
+          "You're sleeping.",
+          "Can we watch too?"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What are you doing?",
+        "hint": "Bạn đang làm gì?"
+      },
+      {
+        "answer": "I'm dancing with my friends.",
+        "hint": "Mình đang nhảy với các bạn."
+      },
+      {
+        "answer": "What are they doing?",
+        "hint": "Họ đang làm gì?"
+      },
+      {
+        "answer": "They're talking.",
+        "hint": "Họ đang nói chuyện."
+      },
+      {
+        "answer": "What's she doing?",
+        "hint": "Cô ấy đang làm gì?"
+      },
+      {
+        "answer": "She's eating the wedding cake.",
+        "hint": "Cô ấy đang ăn bánh cưới."
+      },
+      {
+        "answer": "We're getting ready for the party.",
+        "hint": "Chúng mình đang chuẩn bị cho bữa tiệc."
+      },
+      {
+        "answer": "You're sleeping.",
+        "hint": "Bạn đang ngủ."
+      },
+      {
+        "answer": "Can we watch too?",
+        "hint": "Chúng mình cũng xem được không?"
+      },
+      {
+        "answer": "Look at the bride.",
+        "hint": "Hãy nhìn cô dâu."
+      },
+      {
+        "answer": "She's wearing a white dress.",
+        "hint": "Cô ấy đang mặc váy trắng."
+      },
+      {
+        "answer": "Dad is washing the car.",
+        "hint": "Bố đang rửa ô tô."
+      },
+      {
+        "answer": "I can't wait to be there.",
+        "hint": "Mình rất nóng lòng được đến đó."
+      },
+      {
+        "answer": "We're choosing party dresses.",
+        "hint": "Chúng mình đang chọn váy dự tiệc."
+      },
+      {
+        "answer": "What do you think?",
+        "hint": "Bạn nghĩ sao?"
+      },
+      {
+        "answer": "I'll send photos soon.",
+        "hint": "Mình sẽ gửi ảnh sớm."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn đang làm gì?"
+      },
+      {
+        "prompt": "Mình đang nhảy với các bạn."
+      },
+      {
+        "prompt": "Họ đang làm gì?"
+      },
+      {
+        "prompt": "Họ đang nói chuyện."
+      },
+      {
+        "prompt": "Cô ấy đang làm gì?"
+      },
+      {
+        "prompt": "Cô ấy đang ăn bánh cưới."
+      },
+      {
+        "prompt": "Chúng mình đang chuẩn bị cho bữa tiệc."
+      },
+      {
+        "prompt": "Bạn đang ngủ."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Mẹ đang làm gì?",
+        "options": [
+          "Làm bánh",
+          "Chọn váy",
+          "Chụp ảnh",
+          "Rửa xe"
+        ],
+        "answer": "Làm bánh",
+        "passage": [
+          "We're getting ready for a party. Mum is making the cake, and I'm choosing my dress."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có âm dài như trong tube?",
+        "options": [
+          "cube",
+          "flat",
+          "band",
+          "dress"
+        ],
+        "answer": "cube"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy đang làm gì?",
+          "Bạn đang làm gì?",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?"
+        ],
+        "answer": "Cô ấy đang làm gì?",
+        "passage": [
+          "What's she doing?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy đang ăn bánh cưới.",
+          "Mình đang nhảy với các bạn.",
+          "Họ đang làm gì?",
+          "Họ đang nói chuyện."
+        ],
+        "answer": "Cô ấy đang ăn bánh cưới.",
+        "passage": [
+          "She's eating the wedding cake."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình đang chuẩn bị cho bữa tiệc.",
+          "Họ đang làm gì?",
+          "Họ đang nói chuyện.",
+          "Cô ấy đang làm gì?"
+        ],
+        "answer": "Chúng mình đang chuẩn bị cho bữa tiệc.",
+        "passage": [
+          "We're getting ready for the party."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn đang ngủ.",
+          "Họ đang nói chuyện.",
+          "Cô ấy đang làm gì?",
+          "Cô ấy đang ăn bánh cưới."
+        ],
+        "answer": "Bạn đang ngủ.",
+        "passage": [
+          "You're sleeping."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "cube",
+        "answer": "cube",
+        "options": [
+          "cube",
+          "flat",
+          "band",
+          "dress"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "flat",
+        "answer": "flat",
+        "options": [
+          "flat",
+          "band",
+          "dress",
+          "wedding"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "band",
+        "answer": "band",
+        "options": [
+          "band",
+          "dress",
+          "wedding",
+          "guest"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Can we watch too?",
+        "answer": "Can we watch too?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Look at the bride.",
+        "answer": "Look at the bride."
+      },
+      {
+        "type": "dictation",
+        "audio": "She's wearing a white dress.",
+        "answer": "She's wearing a white dress."
+      },
+      {
+        "type": "sentence",
+        "answer": "What are you doing?",
+        "hint": "Bạn đang làm gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I'm dancing with my friends.",
+        "hint": "Mình đang nhảy với các bạn."
+      },
+      {
+        "type": "sentence",
+        "answer": "What are they doing?",
+        "hint": "Họ đang làm gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn đang làm gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình đang nhảy với các bạn."
+      },
+      {
+        "type": "translation",
+        "prompt": "Họ đang làm gì?"
+      }
+    ]
+  }
+}

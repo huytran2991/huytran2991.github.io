@@ -1,0 +1,832 @@
+{
+  "id": 13,
+  "title": "Look at all the animals!",
+  "topic": "Con vật ở nông trại và so sánh",
+  "icon": "🐄",
+  "pages": {
+    "first": 96,
+    "last": 101
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "cow",
+        "vietnamese": "bò"
+      },
+      {
+        "english": "sheep",
+        "vietnamese": "cừu"
+      },
+      {
+        "english": "donkey",
+        "vietnamese": "lừa"
+      },
+      {
+        "english": "goat",
+        "vietnamese": "dê"
+      },
+      {
+        "english": "horse",
+        "vietnamese": "ngựa"
+      },
+      {
+        "english": "chick",
+        "vietnamese": "gà con"
+      },
+      {
+        "english": "hen",
+        "vietnamese": "gà mái"
+      },
+      {
+        "english": "goose",
+        "vietnamese": "ngỗng"
+      },
+      {
+        "english": "duck",
+        "vietnamese": "vịt"
+      },
+      {
+        "english": "quiet",
+        "vietnamese": "yên lặng"
+      },
+      {
+        "english": "loud",
+        "vietnamese": "ồn"
+      },
+      {
+        "english": "slow",
+        "vietnamese": "chậm"
+      },
+      {
+        "english": "fast",
+        "vietnamese": "nhanh"
+      },
+      {
+        "english": "bigger",
+        "vietnamese": "lớn hơn"
+      },
+      {
+        "english": "smaller",
+        "vietnamese": "nhỏ hơn"
+      },
+      {
+        "english": "taller",
+        "vietnamese": "cao hơn"
+      },
+      {
+        "english": "shorter",
+        "vietnamese": "thấp hơn"
+      },
+      {
+        "english": "farm",
+        "vietnamese": "nông trại"
+      },
+      {
+        "english": "farmer",
+        "vietnamese": "nông dân"
+      },
+      {
+        "english": "tractor",
+        "vietnamese": "máy kéo"
+      },
+      {
+        "english": "trip",
+        "vietnamese": "chuyến đi"
+      },
+      {
+        "english": "feed",
+        "vietnamese": "cho ăn"
+      },
+      {
+        "english": "friendly",
+        "vietnamese": "thân thiện"
+      },
+      {
+        "english": "naughty",
+        "vietnamese": "nghịch ngợm"
+      },
+      {
+        "english": "muddy",
+        "vietnamese": "lầy lội"
+      },
+      {
+        "english": "coach",
+        "vietnamese": "xe khách"
+      },
+      {
+        "english": "boots",
+        "vietnamese": "bốt"
+      },
+      {
+        "english": "sun hat",
+        "vietnamese": "mũ che nắng"
+      },
+      {
+        "english": "lunch box",
+        "vietnamese": "hộp cơm"
+      },
+      {
+        "english": "tree",
+        "vietnamese": "cây"
+      },
+      {
+        "english": "cheese",
+        "vietnamese": "phô mai"
+      },
+      {
+        "english": "green",
+        "vietnamese": "màu xanh lá"
+      },
+      {
+        "english": "feet",
+        "vietnamese": "bàn chân"
+      },
+      {
+        "english": "three",
+        "vietnamese": "ba"
+      },
+      {
+        "english": "tail",
+        "vietnamese": "đuôi"
+      },
+      {
+        "english": "open air",
+        "vietnamese": "ngoài trời"
+      },
+      {
+        "english": "popular",
+        "vietnamese": "được yêu thích"
+      },
+      {
+        "english": "bring",
+        "vietnamese": "mang theo"
+      }
+    ],
+    "structures": [
+      {
+        "english": "This cow is bigger than that cow.",
+        "vietnamese": "Con bò này lớn hơn con bò kia."
+      },
+      {
+        "english": "This sheep is smaller than that sheep.",
+        "vietnamese": "Con cừu này nhỏ hơn con cừu kia."
+      },
+      {
+        "english": "The girl is taller than the boy.",
+        "vietnamese": "Bạn nữ cao hơn bạn nam."
+      },
+      {
+        "english": "The boy is shorter than the girl.",
+        "vietnamese": "Bạn nam thấp hơn bạn nữ."
+      },
+      {
+        "english": "The hen is louder than the chick.",
+        "vietnamese": "Gà mái kêu to hơn gà con."
+      },
+      {
+        "english": "The horse is faster than the goat.",
+        "vietnamese": "Ngựa nhanh hơn dê."
+      },
+      {
+        "english": "Is that a daddy goat?",
+        "vietnamese": "Kia có phải là dê bố không?"
+      },
+      {
+        "english": "There are lots of animals on the farm.",
+        "vietnamese": "Có nhiều con vật ở nông trại."
+      },
+      {
+        "english": "It's a baby sheep.",
+        "vietnamese": "Đó là một con cừu con."
+      },
+      {
+        "english": "The chick is quiet.",
+        "vietnamese": "Gà con rất yên lặng."
+      },
+      {
+        "english": "What's hiding in the tree?",
+        "vietnamese": "Con gì đang trốn trên cây?"
+      },
+      {
+        "english": "The children can feed the hens.",
+        "vietnamese": "Các bạn nhỏ có thể cho gà mái ăn."
+      },
+      {
+        "english": "We're travelling by school bus.",
+        "vietnamese": "Chúng mình đi bằng xe buýt của trường."
+      },
+      {
+        "english": "Please don't be late.",
+        "vietnamese": "Xin đừng đến muộn."
+      },
+      {
+        "english": "Please bring boots.",
+        "vietnamese": "Hãy mang theo bốt."
+      },
+      {
+        "english": "This is a cow and this is a goat.",
+        "vietnamese": "Đây là một con bò và đây là một con dê."
+      },
+      {
+        "english": "It's nervous. What is it?",
+        "vietnamese": "Nó đang hồi hộp. Đó là con gì?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "cow",
+        "vietnamese": "bò"
+      },
+      {
+        "english": "sheep",
+        "vietnamese": "cừu"
+      },
+      {
+        "english": "donkey",
+        "vietnamese": "lừa"
+      },
+      {
+        "english": "goat",
+        "vietnamese": "dê"
+      },
+      {
+        "english": "horse",
+        "vietnamese": "ngựa"
+      },
+      {
+        "english": "chick",
+        "vietnamese": "gà con"
+      },
+      {
+        "english": "hen",
+        "vietnamese": "gà mái"
+      },
+      {
+        "english": "goose",
+        "vietnamese": "ngỗng"
+      },
+      {
+        "english": "duck",
+        "vietnamese": "vịt"
+      },
+      {
+        "english": "quiet",
+        "vietnamese": "yên lặng"
+      },
+      {
+        "english": "loud",
+        "vietnamese": "ồn"
+      },
+      {
+        "english": "slow",
+        "vietnamese": "chậm"
+      },
+      {
+        "english": "fast",
+        "vietnamese": "nhanh"
+      },
+      {
+        "english": "bigger",
+        "vietnamese": "lớn hơn"
+      },
+      {
+        "english": "smaller",
+        "vietnamese": "nhỏ hơn"
+      },
+      {
+        "english": "taller",
+        "vietnamese": "cao hơn"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Vì sao cần mang bốt?",
+        "options": [
+          "Vì mặt đất lầy lội",
+          "Vì có tuyết",
+          "Vì cần đi bơi",
+          "Vì sắp chạy đua"
+        ],
+        "answer": "Vì mặt đất lầy lội",
+        "passage": [
+          "Our class is going to a farm. The farmer lets us feed the hens and ride in his tractor. Bring boots because the ground is muddy."
+        ]
+      },
+      {
+        "prompt": "Từ nào có âm /iː/ như trong tree?",
+        "options": [
+          "cheese",
+          "cow",
+          "goat",
+          "farm"
+        ],
+        "answer": "cheese"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đó là một con cừu con.",
+          "Con bò này lớn hơn con bò kia.",
+          "Con cừu này nhỏ hơn con cừu kia.",
+          "Bạn nữ cao hơn bạn nam."
+        ],
+        "answer": "Đó là một con cừu con.",
+        "passage": [
+          "It's a baby sheep."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Gà con rất yên lặng.",
+          "Con cừu này nhỏ hơn con cừu kia.",
+          "Bạn nữ cao hơn bạn nam.",
+          "Bạn nam thấp hơn bạn nữ."
+        ],
+        "answer": "Gà con rất yên lặng.",
+        "passage": [
+          "The chick is quiet."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Con gì đang trốn trên cây?",
+          "Bạn nữ cao hơn bạn nam.",
+          "Bạn nam thấp hơn bạn nữ.",
+          "Gà mái kêu to hơn gà con."
+        ],
+        "answer": "Con gì đang trốn trên cây?",
+        "passage": [
+          "What's hiding in the tree?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Các bạn nhỏ có thể cho gà mái ăn.",
+          "Bạn nam thấp hơn bạn nữ.",
+          "Gà mái kêu to hơn gà con.",
+          "Ngựa nhanh hơn dê."
+        ],
+        "answer": "Các bạn nhỏ có thể cho gà mái ăn.",
+        "passage": [
+          "The children can feed the hens."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình đi bằng xe buýt của trường.",
+          "Gà mái kêu to hơn gà con.",
+          "Ngựa nhanh hơn dê.",
+          "Kia có phải là dê bố không?"
+        ],
+        "answer": "Chúng mình đi bằng xe buýt của trường.",
+        "passage": [
+          "We're travelling by school bus."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Xin đừng đến muộn.",
+          "Ngựa nhanh hơn dê.",
+          "Kia có phải là dê bố không?",
+          "Có nhiều con vật ở nông trại."
+        ],
+        "answer": "Xin đừng đến muộn.",
+        "passage": [
+          "Please don't be late."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Nó đang hồi hộp. Đó là con gì?",
+          "Con bò này lớn hơn con bò kia.",
+          "Con cừu này nhỏ hơn con cừu kia.",
+          "Bạn nữ cao hơn bạn nam."
+        ],
+        "answer": "Nó đang hồi hộp. Đó là con gì?",
+        "passage": [
+          "It's nervous. What is it?"
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "cheese",
+        "answer": "cheese",
+        "options": [
+          "cheese",
+          "cow",
+          "goat",
+          "farm"
+        ]
+      },
+      {
+        "audio": "cow",
+        "answer": "cow",
+        "options": [
+          "cow",
+          "goat",
+          "farm",
+          "sheep"
+        ]
+      },
+      {
+        "audio": "goat",
+        "answer": "goat",
+        "options": [
+          "goat",
+          "farm",
+          "sheep",
+          "donkey"
+        ]
+      },
+      {
+        "audio": "farm",
+        "answer": "farm",
+        "options": [
+          "farm",
+          "sheep",
+          "donkey",
+          "horse"
+        ]
+      },
+      {
+        "audio": "sheep",
+        "answer": "sheep",
+        "options": [
+          "sheep",
+          "donkey",
+          "horse",
+          "chick"
+        ]
+      },
+      {
+        "audio": "donkey",
+        "answer": "donkey",
+        "options": [
+          "donkey",
+          "horse",
+          "chick",
+          "hen"
+        ]
+      },
+      {
+        "audio": "horse",
+        "answer": "horse",
+        "options": [
+          "horse",
+          "chick",
+          "hen",
+          "goose"
+        ]
+      },
+      {
+        "audio": "chick",
+        "answer": "chick",
+        "options": [
+          "chick",
+          "hen",
+          "goose",
+          "cheese"
+        ]
+      },
+      {
+        "audio": "hen",
+        "answer": "hen",
+        "options": [
+          "hen",
+          "goose",
+          "cheese",
+          "cow"
+        ]
+      },
+      {
+        "audio": "goose",
+        "answer": "goose",
+        "options": [
+          "goose",
+          "cheese",
+          "cow",
+          "goat"
+        ]
+      },
+      {
+        "audio": "This cow is bigger than that cow.",
+        "answer": "This cow is bigger than that cow.",
+        "options": [
+          "This cow is bigger than that cow.",
+          "This sheep is smaller than that sheep.",
+          "The girl is taller than the boy.",
+          "The boy is shorter than the girl."
+        ]
+      },
+      {
+        "audio": "This sheep is smaller than that sheep.",
+        "answer": "This sheep is smaller than that sheep.",
+        "options": [
+          "This sheep is smaller than that sheep.",
+          "The girl is taller than the boy.",
+          "The boy is shorter than the girl.",
+          "The hen is louder than the chick."
+        ]
+      },
+      {
+        "audio": "The girl is taller than the boy.",
+        "answer": "The girl is taller than the boy.",
+        "options": [
+          "The girl is taller than the boy.",
+          "The boy is shorter than the girl.",
+          "The hen is louder than the chick.",
+          "The horse is faster than the goat."
+        ]
+      },
+      {
+        "audio": "The boy is shorter than the girl.",
+        "answer": "The boy is shorter than the girl.",
+        "options": [
+          "The boy is shorter than the girl.",
+          "The hen is louder than the chick.",
+          "The horse is faster than the goat.",
+          "Is that a daddy goat?"
+        ]
+      },
+      {
+        "audio": "The hen is louder than the chick.",
+        "answer": "The hen is louder than the chick.",
+        "options": [
+          "The hen is louder than the chick.",
+          "The horse is faster than the goat.",
+          "Is that a daddy goat?",
+          "There are lots of animals on the farm."
+        ]
+      },
+      {
+        "audio": "The horse is faster than the goat.",
+        "answer": "The horse is faster than the goat.",
+        "options": [
+          "The horse is faster than the goat.",
+          "Is that a daddy goat?",
+          "There are lots of animals on the farm.",
+          "It's a baby sheep."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "This cow is bigger than that cow.",
+        "hint": "Con bò này lớn hơn con bò kia."
+      },
+      {
+        "answer": "This sheep is smaller than that sheep.",
+        "hint": "Con cừu này nhỏ hơn con cừu kia."
+      },
+      {
+        "answer": "The girl is taller than the boy.",
+        "hint": "Bạn nữ cao hơn bạn nam."
+      },
+      {
+        "answer": "The boy is shorter than the girl.",
+        "hint": "Bạn nam thấp hơn bạn nữ."
+      },
+      {
+        "answer": "The hen is louder than the chick.",
+        "hint": "Gà mái kêu to hơn gà con."
+      },
+      {
+        "answer": "The horse is faster than the goat.",
+        "hint": "Ngựa nhanh hơn dê."
+      },
+      {
+        "answer": "Is that a daddy goat?",
+        "hint": "Kia có phải là dê bố không?"
+      },
+      {
+        "answer": "There are lots of animals on the farm.",
+        "hint": "Có nhiều con vật ở nông trại."
+      },
+      {
+        "answer": "It's a baby sheep.",
+        "hint": "Đó là một con cừu con."
+      },
+      {
+        "answer": "The chick is quiet.",
+        "hint": "Gà con rất yên lặng."
+      },
+      {
+        "answer": "What's hiding in the tree?",
+        "hint": "Con gì đang trốn trên cây?"
+      },
+      {
+        "answer": "The children can feed the hens.",
+        "hint": "Các bạn nhỏ có thể cho gà mái ăn."
+      },
+      {
+        "answer": "We're travelling by school bus.",
+        "hint": "Chúng mình đi bằng xe buýt của trường."
+      },
+      {
+        "answer": "Please don't be late.",
+        "hint": "Xin đừng đến muộn."
+      },
+      {
+        "answer": "Please bring boots.",
+        "hint": "Hãy mang theo bốt."
+      },
+      {
+        "answer": "This is a cow and this is a goat.",
+        "hint": "Đây là một con bò và đây là một con dê."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Con bò này lớn hơn con bò kia."
+      },
+      {
+        "prompt": "Con cừu này nhỏ hơn con cừu kia."
+      },
+      {
+        "prompt": "Bạn nữ cao hơn bạn nam."
+      },
+      {
+        "prompt": "Bạn nam thấp hơn bạn nữ."
+      },
+      {
+        "prompt": "Gà mái kêu to hơn gà con."
+      },
+      {
+        "prompt": "Ngựa nhanh hơn dê."
+      },
+      {
+        "prompt": "Kia có phải là dê bố không?"
+      },
+      {
+        "prompt": "Có nhiều con vật ở nông trại."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Vì sao cần mang bốt?",
+        "options": [
+          "Vì mặt đất lầy lội",
+          "Vì có tuyết",
+          "Vì cần đi bơi",
+          "Vì sắp chạy đua"
+        ],
+        "answer": "Vì mặt đất lầy lội",
+        "passage": [
+          "Our class is going to a farm. The farmer lets us feed the hens and ride in his tractor. Bring boots because the ground is muddy."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có âm /iː/ như trong tree?",
+        "options": [
+          "cheese",
+          "cow",
+          "goat",
+          "farm"
+        ],
+        "answer": "cheese"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Gà mái kêu to hơn gà con.",
+          "Con bò này lớn hơn con bò kia.",
+          "Con cừu này nhỏ hơn con cừu kia.",
+          "Bạn nữ cao hơn bạn nam."
+        ],
+        "answer": "Gà mái kêu to hơn gà con.",
+        "passage": [
+          "The hen is louder than the chick."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Ngựa nhanh hơn dê.",
+          "Con cừu này nhỏ hơn con cừu kia.",
+          "Bạn nữ cao hơn bạn nam.",
+          "Bạn nam thấp hơn bạn nữ."
+        ],
+        "answer": "Ngựa nhanh hơn dê.",
+        "passage": [
+          "The horse is faster than the goat."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Kia có phải là dê bố không?",
+          "Bạn nữ cao hơn bạn nam.",
+          "Bạn nam thấp hơn bạn nữ.",
+          "Gà mái kêu to hơn gà con."
+        ],
+        "answer": "Kia có phải là dê bố không?",
+        "passage": [
+          "Is that a daddy goat?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có nhiều con vật ở nông trại.",
+          "Bạn nam thấp hơn bạn nữ.",
+          "Gà mái kêu to hơn gà con.",
+          "Ngựa nhanh hơn dê."
+        ],
+        "answer": "Có nhiều con vật ở nông trại.",
+        "passage": [
+          "There are lots of animals on the farm."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "cheese",
+        "answer": "cheese",
+        "options": [
+          "cheese",
+          "cow",
+          "goat",
+          "farm"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "cow",
+        "answer": "cow",
+        "options": [
+          "cow",
+          "goat",
+          "farm",
+          "sheep"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "goat",
+        "answer": "goat",
+        "options": [
+          "goat",
+          "farm",
+          "sheep",
+          "donkey"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "It's a baby sheep.",
+        "answer": "It's a baby sheep."
+      },
+      {
+        "type": "dictation",
+        "audio": "The chick is quiet.",
+        "answer": "The chick is quiet."
+      },
+      {
+        "type": "dictation",
+        "audio": "What's hiding in the tree?",
+        "answer": "What's hiding in the tree?"
+      },
+      {
+        "type": "sentence",
+        "answer": "This cow is bigger than that cow.",
+        "hint": "Con bò này lớn hơn con bò kia."
+      },
+      {
+        "type": "sentence",
+        "answer": "This sheep is smaller than that sheep.",
+        "hint": "Con cừu này nhỏ hơn con cừu kia."
+      },
+      {
+        "type": "sentence",
+        "answer": "The girl is taller than the boy.",
+        "hint": "Bạn nữ cao hơn bạn nam."
+      },
+      {
+        "type": "translation",
+        "prompt": "Con bò này lớn hơn con bò kia."
+      },
+      {
+        "type": "translation",
+        "prompt": "Con cừu này nhỏ hơn con cừu kia."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn nữ cao hơn bạn nam."
+      }
+    ]
+  }
+}

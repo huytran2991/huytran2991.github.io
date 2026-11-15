@@ -1,0 +1,917 @@
+{
+  "id": 3,
+  "title": "I can ride a bike!",
+  "topic": "Hoạt động ngoài trời",
+  "icon": "🚲",
+  "pages": {
+    "first": 20,
+    "last": 25
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "ride a bike",
+        "vietnamese": "đi xe đạp"
+      },
+      {
+        "english": "ride a horse",
+        "vietnamese": "cưỡi ngựa"
+      },
+      {
+        "english": "skate",
+        "vietnamese": "trượt pa-tanh"
+      },
+      {
+        "english": "skateboard",
+        "vietnamese": "trượt ván"
+      },
+      {
+        "english": "play tennis",
+        "vietnamese": "chơi quần vợt"
+      },
+      {
+        "english": "play football",
+        "vietnamese": "chơi bóng đá"
+      },
+      {
+        "english": "swim",
+        "vietnamese": "bơi"
+      },
+      {
+        "english": "behind",
+        "vietnamese": "phía sau"
+      },
+      {
+        "english": "in front of",
+        "vietnamese": "phía trước"
+      },
+      {
+        "english": "next to",
+        "vietnamese": "bên cạnh"
+      },
+      {
+        "english": "between",
+        "vietnamese": "ở giữa"
+      },
+      {
+        "english": "scooter",
+        "vietnamese": "xe trượt"
+      },
+      {
+        "english": "wheel",
+        "vietnamese": "bánh xe"
+      },
+      {
+        "english": "swing",
+        "vietnamese": "xích đu"
+      },
+      {
+        "english": "cat",
+        "vietnamese": "mèo"
+      },
+      {
+        "english": "van",
+        "vietnamese": "xe tải nhỏ"
+      },
+      {
+        "english": "peg",
+        "vietnamese": "móc treo"
+      },
+      {
+        "english": "bed",
+        "vietnamese": "giường"
+      },
+      {
+        "english": "bin",
+        "vietnamese": "thùng rác"
+      },
+      {
+        "english": "fig",
+        "vietnamese": "quả sung"
+      },
+      {
+        "english": "mop",
+        "vietnamese": "cây lau nhà"
+      },
+      {
+        "english": "dog",
+        "vietnamese": "chó"
+      },
+      {
+        "english": "bus",
+        "vietnamese": "xe buýt"
+      },
+      {
+        "english": "jug",
+        "vietnamese": "bình có quai"
+      },
+      {
+        "english": "sofa",
+        "vietnamese": "ghế sô pha"
+      },
+      {
+        "english": "toy box",
+        "vietnamese": "hộp đồ chơi"
+      },
+      {
+        "english": "door",
+        "vietnamese": "cửa"
+      },
+      {
+        "english": "sand",
+        "vietnamese": "cát"
+      },
+      {
+        "english": "grass",
+        "vietnamese": "cỏ"
+      },
+      {
+        "english": "beach",
+        "vietnamese": "bãi biển"
+      },
+      {
+        "english": "park",
+        "vietnamese": "công viên"
+      },
+      {
+        "english": "garden",
+        "vietnamese": "vườn"
+      },
+      {
+        "english": "seat",
+        "vietnamese": "ghế ngồi"
+      },
+      {
+        "english": "safe",
+        "vietnamese": "an toàn"
+      },
+      {
+        "english": "fast",
+        "vietnamese": "nhanh"
+      },
+      {
+        "english": "available",
+        "vietnamese": "có sẵn"
+      },
+      {
+        "english": "umbrella",
+        "vietnamese": "ô"
+      },
+      {
+        "english": "outdoor toys",
+        "vietnamese": "đồ chơi ngoài trời"
+      },
+      {
+        "english": "teach",
+        "vietnamese": "dạy"
+      },
+      {
+        "english": "stop",
+        "vietnamese": "dừng lại"
+      }
+    ],
+    "structures": [
+      {
+        "english": "I can skate.",
+        "vietnamese": "Mình biết trượt pa-tanh."
+      },
+      {
+        "english": "I can't ride a bike.",
+        "vietnamese": "Mình không biết đi xe đạp."
+      },
+      {
+        "english": "Can she play tennis?",
+        "vietnamese": "Bạn ấy biết chơi quần vợt không?"
+      },
+      {
+        "english": "Yes, she can.",
+        "vietnamese": "Có, bạn ấy biết chơi."
+      },
+      {
+        "english": "Can they skateboard?",
+        "vietnamese": "Các bạn ấy biết trượt ván không?"
+      },
+      {
+        "english": "Where's the skateboard?",
+        "vietnamese": "Cái ván trượt ở đâu?"
+      },
+      {
+        "english": "It's behind the door.",
+        "vietnamese": "Nó ở sau cửa."
+      },
+      {
+        "english": "The bike is between the bed and the chair.",
+        "vietnamese": "Xe đạp ở giữa giường và ghế."
+      },
+      {
+        "english": "The scooter is next to the sofa.",
+        "vietnamese": "Xe trượt ở bên cạnh ghế sô pha."
+      },
+      {
+        "english": "The ball is in front of the toy box.",
+        "vietnamese": "Quả bóng ở phía trước hộp đồ chơi."
+      },
+      {
+        "english": "Can you teach me, please?",
+        "vietnamese": "Bạn có thể dạy mình được không?"
+      },
+      {
+        "english": "Yes, of course.",
+        "vietnamese": "Được, tất nhiên rồi."
+      },
+      {
+        "english": "Are you still there?",
+        "vietnamese": "Bạn vẫn ở đó chứ?"
+      },
+      {
+        "english": "Don't stop!",
+        "vietnamese": "Đừng dừng lại!"
+      },
+      {
+        "english": "I can't find my teddy anywhere.",
+        "vietnamese": "Mình tìm mãi không thấy gấu bông."
+      },
+      {
+        "english": "It has got two small wheels.",
+        "vietnamese": "Nó có hai bánh xe nhỏ."
+      },
+      {
+        "english": "You can ride it on sand.",
+        "vietnamese": "Bạn có thể đi xe đó trên cát."
+      },
+      {
+        "english": "There are two seats.",
+        "vietnamese": "Có hai ghế ngồi."
+      },
+      {
+        "english": "She's got an umbrella.",
+        "vietnamese": "Bạn ấy có một cái ô."
+      },
+      {
+        "english": "No, she can't.",
+        "vietnamese": "Không, bạn ấy không làm được."
+      },
+      {
+        "english": "Where are the skates?",
+        "vietnamese": "Đôi giày trượt ở đâu?"
+      },
+      {
+        "english": "Is my teddy hiding behind the door?",
+        "vietnamese": "Gấu bông của mình có đang trốn sau cửa không?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "ride a bike",
+        "vietnamese": "đi xe đạp"
+      },
+      {
+        "english": "ride a horse",
+        "vietnamese": "cưỡi ngựa"
+      },
+      {
+        "english": "skate",
+        "vietnamese": "trượt pa-tanh"
+      },
+      {
+        "english": "skateboard",
+        "vietnamese": "trượt ván"
+      },
+      {
+        "english": "play tennis",
+        "vietnamese": "chơi quần vợt"
+      },
+      {
+        "english": "play football",
+        "vietnamese": "chơi bóng đá"
+      },
+      {
+        "english": "swim",
+        "vietnamese": "bơi"
+      },
+      {
+        "english": "behind",
+        "vietnamese": "phía sau"
+      },
+      {
+        "english": "in front of",
+        "vietnamese": "phía trước"
+      },
+      {
+        "english": "next to",
+        "vietnamese": "bên cạnh"
+      },
+      {
+        "english": "between",
+        "vietnamese": "ở giữa"
+      },
+      {
+        "english": "scooter",
+        "vietnamese": "xe trượt"
+      },
+      {
+        "english": "wheel",
+        "vietnamese": "bánh xe"
+      },
+      {
+        "english": "swing",
+        "vietnamese": "xích đu"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Xe trượt có bao nhiêu bánh?",
+        "options": [
+          "Hai",
+          "Ba",
+          "Bốn",
+          "Năm"
+        ],
+        "answer": "Hai",
+        "passage": [
+          "My scooter is blue and has two small wheels. I ride it in the park."
+        ]
+      },
+      {
+        "prompt": "Từ nào có nguyên âm ngắn /ɪ/?",
+        "options": [
+          "fig",
+          "peg",
+          "mop",
+          "jug"
+        ],
+        "answer": "fig"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Xe trượt ở bên cạnh ghế sô pha.",
+          "Mình biết trượt pa-tanh.",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?"
+        ],
+        "answer": "Xe trượt ở bên cạnh ghế sô pha.",
+        "passage": [
+          "The scooter is next to the sofa."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Quả bóng ở phía trước hộp đồ chơi.",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi."
+        ],
+        "answer": "Quả bóng ở phía trước hộp đồ chơi.",
+        "passage": [
+          "The ball is in front of the toy box."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thể dạy mình được không?",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?"
+        ],
+        "answer": "Bạn có thể dạy mình được không?",
+        "passage": [
+          "Can you teach me, please?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Được, tất nhiên rồi.",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?",
+          "Cái ván trượt ở đâu?"
+        ],
+        "answer": "Được, tất nhiên rồi.",
+        "passage": [
+          "Yes, of course."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn vẫn ở đó chứ?",
+          "Các bạn ấy biết trượt ván không?",
+          "Cái ván trượt ở đâu?",
+          "Nó ở sau cửa."
+        ],
+        "answer": "Bạn vẫn ở đó chứ?",
+        "passage": [
+          "Are you still there?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng dừng lại!",
+          "Cái ván trượt ở đâu?",
+          "Nó ở sau cửa.",
+          "Xe đạp ở giữa giường và ghế."
+        ],
+        "answer": "Đừng dừng lại!",
+        "passage": [
+          "Don't stop!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thể đi xe đó trên cát.",
+          "Mình biết trượt pa-tanh.",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?"
+        ],
+        "answer": "Bạn có thể đi xe đó trên cát.",
+        "passage": [
+          "You can ride it on sand."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có hai ghế ngồi.",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi."
+        ],
+        "answer": "Có hai ghế ngồi.",
+        "passage": [
+          "There are two seats."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy có một cái ô.",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?"
+        ],
+        "answer": "Bạn ấy có một cái ô.",
+        "passage": [
+          "She's got an umbrella."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, bạn ấy không làm được.",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?",
+          "Cái ván trượt ở đâu?"
+        ],
+        "answer": "Không, bạn ấy không làm được.",
+        "passage": [
+          "No, she can't."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đôi giày trượt ở đâu?",
+          "Các bạn ấy biết trượt ván không?",
+          "Cái ván trượt ở đâu?",
+          "Nó ở sau cửa."
+        ],
+        "answer": "Đôi giày trượt ở đâu?",
+        "passage": [
+          "Where are the skates?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Gấu bông của mình có đang trốn sau cửa không?",
+          "Cái ván trượt ở đâu?",
+          "Nó ở sau cửa.",
+          "Xe đạp ở giữa giường và ghế."
+        ],
+        "answer": "Gấu bông của mình có đang trốn sau cửa không?",
+        "passage": [
+          "Is my teddy hiding behind the door?"
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "fig",
+        "answer": "fig",
+        "options": [
+          "fig",
+          "peg",
+          "mop",
+          "jug"
+        ]
+      },
+      {
+        "audio": "peg",
+        "answer": "peg",
+        "options": [
+          "peg",
+          "mop",
+          "jug",
+          "ride a bike"
+        ]
+      },
+      {
+        "audio": "mop",
+        "answer": "mop",
+        "options": [
+          "mop",
+          "jug",
+          "ride a bike",
+          "ride a horse"
+        ]
+      },
+      {
+        "audio": "jug",
+        "answer": "jug",
+        "options": [
+          "jug",
+          "ride a bike",
+          "ride a horse",
+          "skate"
+        ]
+      },
+      {
+        "audio": "ride a bike",
+        "answer": "ride a bike",
+        "options": [
+          "ride a bike",
+          "ride a horse",
+          "skate",
+          "skateboard"
+        ]
+      },
+      {
+        "audio": "ride a horse",
+        "answer": "ride a horse",
+        "options": [
+          "ride a horse",
+          "skate",
+          "skateboard",
+          "play tennis"
+        ]
+      },
+      {
+        "audio": "skate",
+        "answer": "skate",
+        "options": [
+          "skate",
+          "skateboard",
+          "play tennis",
+          "play football"
+        ]
+      },
+      {
+        "audio": "skateboard",
+        "answer": "skateboard",
+        "options": [
+          "skateboard",
+          "play tennis",
+          "play football",
+          "fig"
+        ]
+      },
+      {
+        "audio": "play tennis",
+        "answer": "play tennis",
+        "options": [
+          "play tennis",
+          "play football",
+          "fig",
+          "peg"
+        ]
+      },
+      {
+        "audio": "play football",
+        "answer": "play football",
+        "options": [
+          "play football",
+          "fig",
+          "peg",
+          "mop"
+        ]
+      },
+      {
+        "audio": "I can skate.",
+        "answer": "I can skate.",
+        "options": [
+          "I can skate.",
+          "I can't ride a bike.",
+          "Can she play tennis?",
+          "Yes, she can."
+        ]
+      },
+      {
+        "audio": "I can't ride a bike.",
+        "answer": "I can't ride a bike.",
+        "options": [
+          "I can't ride a bike.",
+          "Can she play tennis?",
+          "Yes, she can.",
+          "Can they skateboard?"
+        ]
+      },
+      {
+        "audio": "Can she play tennis?",
+        "answer": "Can she play tennis?",
+        "options": [
+          "Can she play tennis?",
+          "Yes, she can.",
+          "Can they skateboard?",
+          "Where's the skateboard?"
+        ]
+      },
+      {
+        "audio": "Yes, she can.",
+        "answer": "Yes, she can.",
+        "options": [
+          "Yes, she can.",
+          "Can they skateboard?",
+          "Where's the skateboard?",
+          "It's behind the door."
+        ]
+      },
+      {
+        "audio": "Can they skateboard?",
+        "answer": "Can they skateboard?",
+        "options": [
+          "Can they skateboard?",
+          "Where's the skateboard?",
+          "It's behind the door.",
+          "The bike is between the bed and the chair."
+        ]
+      },
+      {
+        "audio": "Where's the skateboard?",
+        "answer": "Where's the skateboard?",
+        "options": [
+          "Where's the skateboard?",
+          "It's behind the door.",
+          "The bike is between the bed and the chair.",
+          "The scooter is next to the sofa."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "I can skate.",
+        "hint": "Mình biết trượt pa-tanh."
+      },
+      {
+        "answer": "I can't ride a bike.",
+        "hint": "Mình không biết đi xe đạp."
+      },
+      {
+        "answer": "Can she play tennis?",
+        "hint": "Bạn ấy biết chơi quần vợt không?"
+      },
+      {
+        "answer": "Yes, she can.",
+        "hint": "Có, bạn ấy biết chơi."
+      },
+      {
+        "answer": "Can they skateboard?",
+        "hint": "Các bạn ấy biết trượt ván không?"
+      },
+      {
+        "answer": "Where's the skateboard?",
+        "hint": "Cái ván trượt ở đâu?"
+      },
+      {
+        "answer": "It's behind the door.",
+        "hint": "Nó ở sau cửa."
+      },
+      {
+        "answer": "The bike is between the bed and the chair.",
+        "hint": "Xe đạp ở giữa giường và ghế."
+      },
+      {
+        "answer": "The scooter is next to the sofa.",
+        "hint": "Xe trượt ở bên cạnh ghế sô pha."
+      },
+      {
+        "answer": "The ball is in front of the toy box.",
+        "hint": "Quả bóng ở phía trước hộp đồ chơi."
+      },
+      {
+        "answer": "Can you teach me, please?",
+        "hint": "Bạn có thể dạy mình được không?"
+      },
+      {
+        "answer": "Yes, of course.",
+        "hint": "Được, tất nhiên rồi."
+      },
+      {
+        "answer": "Are you still there?",
+        "hint": "Bạn vẫn ở đó chứ?"
+      },
+      {
+        "answer": "Don't stop!",
+        "hint": "Đừng dừng lại!"
+      },
+      {
+        "answer": "I can't find my teddy anywhere.",
+        "hint": "Mình tìm mãi không thấy gấu bông."
+      },
+      {
+        "answer": "It has got two small wheels.",
+        "hint": "Nó có hai bánh xe nhỏ."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Mình biết trượt pa-tanh."
+      },
+      {
+        "prompt": "Mình không biết đi xe đạp."
+      },
+      {
+        "prompt": "Bạn ấy biết chơi quần vợt không?"
+      },
+      {
+        "prompt": "Có, bạn ấy biết chơi."
+      },
+      {
+        "prompt": "Các bạn ấy biết trượt ván không?"
+      },
+      {
+        "prompt": "Cái ván trượt ở đâu?"
+      },
+      {
+        "prompt": "Nó ở sau cửa."
+      },
+      {
+        "prompt": "Xe đạp ở giữa giường và ghế."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Xe trượt có bao nhiêu bánh?",
+        "options": [
+          "Hai",
+          "Ba",
+          "Bốn",
+          "Năm"
+        ],
+        "answer": "Hai",
+        "passage": [
+          "My scooter is blue and has two small wheels. I ride it in the park."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có nguyên âm ngắn /ɪ/?",
+        "options": [
+          "fig",
+          "peg",
+          "mop",
+          "jug"
+        ],
+        "answer": "fig"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Các bạn ấy biết trượt ván không?",
+          "Mình biết trượt pa-tanh.",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?"
+        ],
+        "answer": "Các bạn ấy biết trượt ván không?",
+        "passage": [
+          "Can they skateboard?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cái ván trượt ở đâu?",
+          "Mình không biết đi xe đạp.",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi."
+        ],
+        "answer": "Cái ván trượt ở đâu?",
+        "passage": [
+          "Where's the skateboard?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Nó ở sau cửa.",
+          "Bạn ấy biết chơi quần vợt không?",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?"
+        ],
+        "answer": "Nó ở sau cửa.",
+        "passage": [
+          "It's behind the door."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Xe đạp ở giữa giường và ghế.",
+          "Có, bạn ấy biết chơi.",
+          "Các bạn ấy biết trượt ván không?",
+          "Cái ván trượt ở đâu?"
+        ],
+        "answer": "Xe đạp ở giữa giường và ghế.",
+        "passage": [
+          "The bike is between the bed and the chair."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "fig",
+        "answer": "fig",
+        "options": [
+          "fig",
+          "peg",
+          "mop",
+          "jug"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "peg",
+        "answer": "peg",
+        "options": [
+          "peg",
+          "mop",
+          "jug",
+          "ride a bike"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "mop",
+        "answer": "mop",
+        "options": [
+          "mop",
+          "jug",
+          "ride a bike",
+          "ride a horse"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "The scooter is next to the sofa.",
+        "answer": "The scooter is next to the sofa."
+      },
+      {
+        "type": "dictation",
+        "audio": "The ball is in front of the toy box.",
+        "answer": "The ball is in front of the toy box."
+      },
+      {
+        "type": "dictation",
+        "audio": "Can you teach me, please?",
+        "answer": "Can you teach me, please?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I can skate.",
+        "hint": "Mình biết trượt pa-tanh."
+      },
+      {
+        "type": "sentence",
+        "answer": "I can't ride a bike.",
+        "hint": "Mình không biết đi xe đạp."
+      },
+      {
+        "type": "sentence",
+        "answer": "Can she play tennis?",
+        "hint": "Bạn ấy biết chơi quần vợt không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình biết trượt pa-tanh."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình không biết đi xe đạp."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn ấy biết chơi quần vợt không?"
+      }
+    ]
+  }
+}

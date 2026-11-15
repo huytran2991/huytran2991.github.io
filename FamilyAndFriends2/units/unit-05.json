@@ -1,0 +1,820 @@
+{
+  "id": 5,
+  "title": "We've got English!",
+  "topic": "Môn học và phòng học",
+  "icon": "🎨",
+  "pages": {
+    "first": 36,
+    "last": 41
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "English",
+        "vietnamese": "tiếng Anh"
+      },
+      {
+        "english": "maths",
+        "vietnamese": "toán"
+      },
+      {
+        "english": "science",
+        "vietnamese": "khoa học"
+      },
+      {
+        "english": "art",
+        "vietnamese": "mỹ thuật"
+      },
+      {
+        "english": "music",
+        "vietnamese": "âm nhạc"
+      },
+      {
+        "english": "PE",
+        "vietnamese": "thể dục"
+      },
+      {
+        "english": "playground",
+        "vietnamese": "sân chơi"
+      },
+      {
+        "english": "sports field",
+        "vietnamese": "sân thể thao"
+      },
+      {
+        "english": "art room",
+        "vietnamese": "phòng mỹ thuật"
+      },
+      {
+        "english": "computer room",
+        "vietnamese": "phòng máy tính"
+      },
+      {
+        "english": "football net",
+        "vietnamese": "lưới khung thành"
+      },
+      {
+        "english": "headphones",
+        "vietnamese": "tai nghe"
+      },
+      {
+        "english": "subject",
+        "vietnamese": "môn học"
+      },
+      {
+        "english": "our",
+        "vietnamese": "của chúng mình"
+      },
+      {
+        "english": "their",
+        "vietnamese": "của họ"
+      },
+      {
+        "english": "drum",
+        "vietnamese": "trống"
+      },
+      {
+        "english": "dress",
+        "vietnamese": "váy liền"
+      },
+      {
+        "english": "truck",
+        "vietnamese": "xe tải"
+      },
+      {
+        "english": "tree",
+        "vietnamese": "cây"
+      },
+      {
+        "english": "crayon",
+        "vietnamese": "bút sáp màu"
+      },
+      {
+        "english": "crab",
+        "vietnamese": "cua"
+      },
+      {
+        "english": "train",
+        "vietnamese": "tàu hỏa"
+      },
+      {
+        "english": "paint",
+        "vietnamese": "vẽ bằng màu"
+      },
+      {
+        "english": "draw",
+        "vietnamese": "vẽ"
+      },
+      {
+        "english": "colour",
+        "vietnamese": "tô màu"
+      },
+      {
+        "english": "study",
+        "vietnamese": "học"
+      },
+      {
+        "english": "pupil",
+        "vietnamese": "học sinh"
+      },
+      {
+        "english": "clothes",
+        "vietnamese": "quần áo"
+      },
+      {
+        "english": "wear",
+        "vietnamese": "mặc"
+      },
+      {
+        "english": "forget",
+        "vietnamese": "quên"
+      },
+      {
+        "english": "Thursday",
+        "vietnamese": "thứ Năm"
+      },
+      {
+        "english": "Tuesday",
+        "vietnamese": "thứ Ba"
+      },
+      {
+        "english": "Monday",
+        "vietnamese": "thứ Hai"
+      },
+      {
+        "english": "Wednesday",
+        "vietnamese": "thứ Tư"
+      },
+      {
+        "english": "gym",
+        "vietnamese": "phòng thể dục"
+      },
+      {
+        "english": "week",
+        "vietnamese": "tuần"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What have we got on Monday?",
+        "vietnamese": "Thứ Hai chúng mình có môn gì?"
+      },
+      {
+        "english": "We've got English on Monday.",
+        "vietnamese": "Thứ Hai chúng mình học tiếng Anh."
+      },
+      {
+        "english": "When have we got PE?",
+        "vietnamese": "Khi nào chúng mình có môn thể dục?"
+      },
+      {
+        "english": "We've got PE on Thursday.",
+        "vietnamese": "Thứ Năm chúng mình học thể dục."
+      },
+      {
+        "english": "These are our PE bags.",
+        "vietnamese": "Đây là túi đồ thể dục của chúng mình."
+      },
+      {
+        "english": "Those are their T-shirts.",
+        "vietnamese": "Kia là áo thun của các bạn ấy."
+      },
+      {
+        "english": "What have we got in the art room?",
+        "vietnamese": "Trong phòng mỹ thuật chúng mình có gì?"
+      },
+      {
+        "english": "Have we got maths on Tuesday?",
+        "vietnamese": "Thứ Ba chúng mình có môn toán không?"
+      },
+      {
+        "english": "You can wear their clothes.",
+        "vietnamese": "Bạn có thể mặc quần áo của các bạn ấy."
+      },
+      {
+        "english": "It's time for football.",
+        "vietnamese": "Đến giờ chơi bóng đá rồi."
+      },
+      {
+        "english": "Put on your PE clothes.",
+        "vietnamese": "Hãy mặc đồ thể dục vào."
+      },
+      {
+        "english": "Don't forget these.",
+        "vietnamese": "Đừng quên mấy thứ này."
+      },
+      {
+        "english": "We play sports together.",
+        "vietnamese": "Chúng mình chơi thể thao cùng nhau."
+      },
+      {
+        "english": "We've got twelve computers.",
+        "vietnamese": "Chúng mình có mười hai máy tính."
+      },
+      {
+        "english": "Pupils can listen and speak.",
+        "vietnamese": "Học sinh có thể nghe và nói."
+      },
+      {
+        "english": "They come every Tuesday.",
+        "vietnamese": "Các bạn ấy đến vào mỗi thứ Ba."
+      },
+      {
+        "english": "We go to the gym on Thursday.",
+        "vietnamese": "Chúng mình đến phòng thể dục vào thứ Năm."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "English",
+        "vietnamese": "tiếng Anh"
+      },
+      {
+        "english": "maths",
+        "vietnamese": "toán"
+      },
+      {
+        "english": "science",
+        "vietnamese": "khoa học"
+      },
+      {
+        "english": "art",
+        "vietnamese": "mỹ thuật"
+      },
+      {
+        "english": "music",
+        "vietnamese": "âm nhạc"
+      },
+      {
+        "english": "PE",
+        "vietnamese": "thể dục"
+      },
+      {
+        "english": "playground",
+        "vietnamese": "sân chơi"
+      },
+      {
+        "english": "sports field",
+        "vietnamese": "sân thể thao"
+      },
+      {
+        "english": "art room",
+        "vietnamese": "phòng mỹ thuật"
+      },
+      {
+        "english": "computer room",
+        "vietnamese": "phòng máy tính"
+      },
+      {
+        "english": "football net",
+        "vietnamese": "lưới khung thành"
+      },
+      {
+        "english": "headphones",
+        "vietnamese": "tai nghe"
+      },
+      {
+        "english": "subject",
+        "vietnamese": "môn học"
+      },
+      {
+        "english": "our",
+        "vietnamese": "của chúng mình"
+      },
+      {
+        "english": "their",
+        "vietnamese": "của họ"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Có bao nhiêu máy tính trong phòng?",
+        "options": [
+          "12",
+          "10",
+          "14",
+          "20"
+        ],
+        "answer": "12",
+        "passage": [
+          "Our computer room has twelve computers. We go there on Tuesdays and Thursdays."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng cr?",
+        "options": [
+          "crayon",
+          "tree",
+          "dress",
+          "drum"
+        ],
+        "answer": "crayon"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thể mặc quần áo của các bạn ấy.",
+          "Thứ Hai chúng mình có môn gì?",
+          "Thứ Hai chúng mình học tiếng Anh.",
+          "Khi nào chúng mình có môn thể dục?"
+        ],
+        "answer": "Bạn có thể mặc quần áo của các bạn ấy.",
+        "passage": [
+          "You can wear their clothes."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đến giờ chơi bóng đá rồi.",
+          "Thứ Hai chúng mình học tiếng Anh.",
+          "Khi nào chúng mình có môn thể dục?",
+          "Thứ Năm chúng mình học thể dục."
+        ],
+        "answer": "Đến giờ chơi bóng đá rồi.",
+        "passage": [
+          "It's time for football."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy mặc đồ thể dục vào.",
+          "Khi nào chúng mình có môn thể dục?",
+          "Thứ Năm chúng mình học thể dục.",
+          "Đây là túi đồ thể dục của chúng mình."
+        ],
+        "answer": "Hãy mặc đồ thể dục vào.",
+        "passage": [
+          "Put on your PE clothes."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng quên mấy thứ này.",
+          "Thứ Năm chúng mình học thể dục.",
+          "Đây là túi đồ thể dục của chúng mình.",
+          "Kia là áo thun của các bạn ấy."
+        ],
+        "answer": "Đừng quên mấy thứ này.",
+        "passage": [
+          "Don't forget these."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình chơi thể thao cùng nhau.",
+          "Đây là túi đồ thể dục của chúng mình.",
+          "Kia là áo thun của các bạn ấy.",
+          "Trong phòng mỹ thuật chúng mình có gì?"
+        ],
+        "answer": "Chúng mình chơi thể thao cùng nhau.",
+        "passage": [
+          "We play sports together."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có mười hai máy tính.",
+          "Kia là áo thun của các bạn ấy.",
+          "Trong phòng mỹ thuật chúng mình có gì?",
+          "Thứ Ba chúng mình có môn toán không?"
+        ],
+        "answer": "Chúng mình có mười hai máy tính.",
+        "passage": [
+          "We've got twelve computers."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình đến phòng thể dục vào thứ Năm.",
+          "Thứ Hai chúng mình có môn gì?",
+          "Thứ Hai chúng mình học tiếng Anh.",
+          "Khi nào chúng mình có môn thể dục?"
+        ],
+        "answer": "Chúng mình đến phòng thể dục vào thứ Năm.",
+        "passage": [
+          "We go to the gym on Thursday."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "crayon",
+        "answer": "crayon",
+        "options": [
+          "crayon",
+          "tree",
+          "dress",
+          "drum"
+        ]
+      },
+      {
+        "audio": "tree",
+        "answer": "tree",
+        "options": [
+          "tree",
+          "dress",
+          "drum",
+          "English"
+        ]
+      },
+      {
+        "audio": "dress",
+        "answer": "dress",
+        "options": [
+          "dress",
+          "drum",
+          "English",
+          "maths"
+        ]
+      },
+      {
+        "audio": "drum",
+        "answer": "drum",
+        "options": [
+          "drum",
+          "English",
+          "maths",
+          "science"
+        ]
+      },
+      {
+        "audio": "English",
+        "answer": "English",
+        "options": [
+          "English",
+          "maths",
+          "science",
+          "art"
+        ]
+      },
+      {
+        "audio": "maths",
+        "answer": "maths",
+        "options": [
+          "maths",
+          "science",
+          "art",
+          "music"
+        ]
+      },
+      {
+        "audio": "science",
+        "answer": "science",
+        "options": [
+          "science",
+          "art",
+          "music",
+          "PE"
+        ]
+      },
+      {
+        "audio": "art",
+        "answer": "art",
+        "options": [
+          "art",
+          "music",
+          "PE",
+          "crayon"
+        ]
+      },
+      {
+        "audio": "music",
+        "answer": "music",
+        "options": [
+          "music",
+          "PE",
+          "crayon",
+          "tree"
+        ]
+      },
+      {
+        "audio": "PE",
+        "answer": "PE",
+        "options": [
+          "PE",
+          "crayon",
+          "tree",
+          "dress"
+        ]
+      },
+      {
+        "audio": "What have we got on Monday?",
+        "answer": "What have we got on Monday?",
+        "options": [
+          "What have we got on Monday?",
+          "We've got English on Monday.",
+          "When have we got PE?",
+          "We've got PE on Thursday."
+        ]
+      },
+      {
+        "audio": "We've got English on Monday.",
+        "answer": "We've got English on Monday.",
+        "options": [
+          "We've got English on Monday.",
+          "When have we got PE?",
+          "We've got PE on Thursday.",
+          "These are our PE bags."
+        ]
+      },
+      {
+        "audio": "When have we got PE?",
+        "answer": "When have we got PE?",
+        "options": [
+          "When have we got PE?",
+          "We've got PE on Thursday.",
+          "These are our PE bags.",
+          "Those are their T-shirts."
+        ]
+      },
+      {
+        "audio": "We've got PE on Thursday.",
+        "answer": "We've got PE on Thursday.",
+        "options": [
+          "We've got PE on Thursday.",
+          "These are our PE bags.",
+          "Those are their T-shirts.",
+          "What have we got in the art room?"
+        ]
+      },
+      {
+        "audio": "These are our PE bags.",
+        "answer": "These are our PE bags.",
+        "options": [
+          "These are our PE bags.",
+          "Those are their T-shirts.",
+          "What have we got in the art room?",
+          "Have we got maths on Tuesday?"
+        ]
+      },
+      {
+        "audio": "Those are their T-shirts.",
+        "answer": "Those are their T-shirts.",
+        "options": [
+          "Those are their T-shirts.",
+          "What have we got in the art room?",
+          "Have we got maths on Tuesday?",
+          "You can wear their clothes."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What have we got on Monday?",
+        "hint": "Thứ Hai chúng mình có môn gì?"
+      },
+      {
+        "answer": "We've got English on Monday.",
+        "hint": "Thứ Hai chúng mình học tiếng Anh."
+      },
+      {
+        "answer": "When have we got PE?",
+        "hint": "Khi nào chúng mình có môn thể dục?"
+      },
+      {
+        "answer": "We've got PE on Thursday.",
+        "hint": "Thứ Năm chúng mình học thể dục."
+      },
+      {
+        "answer": "These are our PE bags.",
+        "hint": "Đây là túi đồ thể dục của chúng mình."
+      },
+      {
+        "answer": "Those are their T-shirts.",
+        "hint": "Kia là áo thun của các bạn ấy."
+      },
+      {
+        "answer": "What have we got in the art room?",
+        "hint": "Trong phòng mỹ thuật chúng mình có gì?"
+      },
+      {
+        "answer": "Have we got maths on Tuesday?",
+        "hint": "Thứ Ba chúng mình có môn toán không?"
+      },
+      {
+        "answer": "You can wear their clothes.",
+        "hint": "Bạn có thể mặc quần áo của các bạn ấy."
+      },
+      {
+        "answer": "It's time for football.",
+        "hint": "Đến giờ chơi bóng đá rồi."
+      },
+      {
+        "answer": "Put on your PE clothes.",
+        "hint": "Hãy mặc đồ thể dục vào."
+      },
+      {
+        "answer": "Don't forget these.",
+        "hint": "Đừng quên mấy thứ này."
+      },
+      {
+        "answer": "We play sports together.",
+        "hint": "Chúng mình chơi thể thao cùng nhau."
+      },
+      {
+        "answer": "We've got twelve computers.",
+        "hint": "Chúng mình có mười hai máy tính."
+      },
+      {
+        "answer": "Pupils can listen and speak.",
+        "hint": "Học sinh có thể nghe và nói."
+      },
+      {
+        "answer": "They come every Tuesday.",
+        "hint": "Các bạn ấy đến vào mỗi thứ Ba."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Thứ Hai chúng mình có môn gì?"
+      },
+      {
+        "prompt": "Thứ Hai chúng mình học tiếng Anh."
+      },
+      {
+        "prompt": "Khi nào chúng mình có môn thể dục?"
+      },
+      {
+        "prompt": "Thứ Năm chúng mình học thể dục."
+      },
+      {
+        "prompt": "Đây là túi đồ thể dục của chúng mình."
+      },
+      {
+        "prompt": "Kia là áo thun của các bạn ấy."
+      },
+      {
+        "prompt": "Trong phòng mỹ thuật chúng mình có gì?"
+      },
+      {
+        "prompt": "Thứ Ba chúng mình có môn toán không?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Có bao nhiêu máy tính trong phòng?",
+        "options": [
+          "12",
+          "10",
+          "14",
+          "20"
+        ],
+        "answer": "12",
+        "passage": [
+          "Our computer room has twelve computers. We go there on Tuesdays and Thursdays."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng cr?",
+        "options": [
+          "crayon",
+          "tree",
+          "dress",
+          "drum"
+        ],
+        "answer": "crayon"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đây là túi đồ thể dục của chúng mình.",
+          "Thứ Hai chúng mình có môn gì?",
+          "Thứ Hai chúng mình học tiếng Anh.",
+          "Khi nào chúng mình có môn thể dục?"
+        ],
+        "answer": "Đây là túi đồ thể dục của chúng mình.",
+        "passage": [
+          "These are our PE bags."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Kia là áo thun của các bạn ấy.",
+          "Thứ Hai chúng mình học tiếng Anh.",
+          "Khi nào chúng mình có môn thể dục?",
+          "Thứ Năm chúng mình học thể dục."
+        ],
+        "answer": "Kia là áo thun của các bạn ấy.",
+        "passage": [
+          "Those are their T-shirts."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Trong phòng mỹ thuật chúng mình có gì?",
+          "Khi nào chúng mình có môn thể dục?",
+          "Thứ Năm chúng mình học thể dục.",
+          "Đây là túi đồ thể dục của chúng mình."
+        ],
+        "answer": "Trong phòng mỹ thuật chúng mình có gì?",
+        "passage": [
+          "What have we got in the art room?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Thứ Ba chúng mình có môn toán không?",
+          "Thứ Năm chúng mình học thể dục.",
+          "Đây là túi đồ thể dục của chúng mình.",
+          "Kia là áo thun của các bạn ấy."
+        ],
+        "answer": "Thứ Ba chúng mình có môn toán không?",
+        "passage": [
+          "Have we got maths on Tuesday?"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "crayon",
+        "answer": "crayon",
+        "options": [
+          "crayon",
+          "tree",
+          "dress",
+          "drum"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "tree",
+        "answer": "tree",
+        "options": [
+          "tree",
+          "dress",
+          "drum",
+          "English"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "dress",
+        "answer": "dress",
+        "options": [
+          "dress",
+          "drum",
+          "English",
+          "maths"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "You can wear their clothes.",
+        "answer": "You can wear their clothes."
+      },
+      {
+        "type": "dictation",
+        "audio": "It's time for football.",
+        "answer": "It's time for football."
+      },
+      {
+        "type": "dictation",
+        "audio": "Put on your PE clothes.",
+        "answer": "Put on your PE clothes."
+      },
+      {
+        "type": "sentence",
+        "answer": "What have we got on Monday?",
+        "hint": "Thứ Hai chúng mình có môn gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "We've got English on Monday.",
+        "hint": "Thứ Hai chúng mình học tiếng Anh."
+      },
+      {
+        "type": "sentence",
+        "answer": "When have we got PE?",
+        "hint": "Khi nào chúng mình có môn thể dục?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Thứ Hai chúng mình có môn gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Thứ Hai chúng mình học tiếng Anh."
+      },
+      {
+        "type": "translation",
+        "prompt": "Khi nào chúng mình có môn thể dục?"
+      }
+    ]
+  }
+}

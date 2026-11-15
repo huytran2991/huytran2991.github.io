@@ -1,0 +1,904 @@
+{
+  "id": 1,
+  "title": "Our new things",
+  "topic": "Đồ dùng trong lớp",
+  "icon": "🏫",
+  "pages": {
+    "first": 8,
+    "last": 13
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "classroom",
+        "vietnamese": "phòng học"
+      },
+      {
+        "english": "table",
+        "vietnamese": "bàn"
+      },
+      {
+        "english": "chair",
+        "vietnamese": "ghế"
+      },
+      {
+        "english": "peg",
+        "vietnamese": "móc treo"
+      },
+      {
+        "english": "computer",
+        "vietnamese": "máy tính"
+      },
+      {
+        "english": "board",
+        "vietnamese": "bảng viết"
+      },
+      {
+        "english": "pencil case",
+        "vietnamese": "hộp bút"
+      },
+      {
+        "english": "cupboard",
+        "vietnamese": "tủ đựng đồ"
+      },
+      {
+        "english": "drawer",
+        "vietnamese": "ngăn kéo"
+      },
+      {
+        "english": "poster",
+        "vietnamese": "áp phích"
+      },
+      {
+        "english": "picture",
+        "vietnamese": "bức tranh"
+      },
+      {
+        "english": "door",
+        "vietnamese": "cửa ra vào"
+      },
+      {
+        "english": "window",
+        "vietnamese": "cửa sổ"
+      },
+      {
+        "english": "CD player",
+        "vietnamese": "máy nghe đĩa CD"
+      },
+      {
+        "english": "whiteboard",
+        "vietnamese": "bảng trắng"
+      },
+      {
+        "english": "drawers",
+        "vietnamese": "các ngăn kéo"
+      },
+      {
+        "english": "pen",
+        "vietnamese": "bút mực"
+      },
+      {
+        "english": "pencil",
+        "vietnamese": "bút chì"
+      },
+      {
+        "english": "ruler",
+        "vietnamese": "thước kẻ"
+      },
+      {
+        "english": "bag",
+        "vietnamese": "cặp sách"
+      },
+      {
+        "english": "book",
+        "vietnamese": "sách"
+      },
+      {
+        "english": "wall",
+        "vietnamese": "bức tường"
+      },
+      {
+        "english": "upstairs",
+        "vietnamese": "ở tầng trên"
+      },
+      {
+        "english": "downstairs",
+        "vietnamese": "ở tầng dưới"
+      },
+      {
+        "english": "bright",
+        "vietnamese": "sáng sủa"
+      },
+      {
+        "english": "swimming pool",
+        "vietnamese": "hồ bơi"
+      },
+      {
+        "english": "boy",
+        "vietnamese": "bạn nam"
+      },
+      {
+        "english": "girl",
+        "vietnamese": "bạn nữ"
+      },
+      {
+        "english": "teacher",
+        "vietnamese": "giáo viên"
+      },
+      {
+        "english": "count",
+        "vietnamese": "đếm"
+      },
+      {
+        "english": "touch",
+        "vietnamese": "chạm"
+      },
+      {
+        "english": "knee",
+        "vietnamese": "đầu gối"
+      },
+      {
+        "english": "feet",
+        "vietnamese": "hai bàn chân"
+      },
+      {
+        "english": "head",
+        "vietnamese": "đầu"
+      },
+      {
+        "english": "eye",
+        "vietnamese": "mắt"
+      },
+      {
+        "english": "nose",
+        "vietnamese": "mũi"
+      },
+      {
+        "english": "lion",
+        "vietnamese": "sư tử"
+      },
+      {
+        "english": "dog",
+        "vietnamese": "chó"
+      },
+      {
+        "english": "goat",
+        "vietnamese": "dê"
+      },
+      {
+        "english": "apple",
+        "vietnamese": "táo"
+      },
+      {
+        "english": "sofa",
+        "vietnamese": "ghế sô pha"
+      }
+    ],
+    "structures": [
+      {
+        "english": "This is our new computer.",
+        "vietnamese": "Đây là máy tính mới của chúng mình."
+      },
+      {
+        "english": "That is a whiteboard.",
+        "vietnamese": "Kia là một cái bảng trắng."
+      },
+      {
+        "english": "These are my pencils.",
+        "vietnamese": "Đây là những chiếc bút chì của mình."
+      },
+      {
+        "english": "Those are your pegs.",
+        "vietnamese": "Kia là các móc treo của bạn."
+      },
+      {
+        "english": "There is a cupboard in our classroom.",
+        "vietnamese": "Có một cái tủ trong lớp học của chúng mình."
+      },
+      {
+        "english": "There are ten chairs in the room.",
+        "vietnamese": "Có mười cái ghế trong phòng."
+      },
+      {
+        "english": "How many boys are there in your class?",
+        "vietnamese": "Có bao nhiêu bạn nam trong lớp của bạn?"
+      },
+      {
+        "english": "Where is your classroom?",
+        "vietnamese": "Lớp học của bạn ở đâu?"
+      },
+      {
+        "english": "Look at these pictures.",
+        "vietnamese": "Hãy nhìn những bức tranh này."
+      },
+      {
+        "english": "Is this your pencil case?",
+        "vietnamese": "Đây có phải là hộp bút của bạn không?"
+      },
+      {
+        "english": "Do you like our new things?",
+        "vietnamese": "Bạn có thích đồ dùng mới của chúng mình không?"
+      },
+      {
+        "english": "Yes, we do.",
+        "vietnamese": "Có, chúng mình thích."
+      },
+      {
+        "english": "What's in the classroom?",
+        "vietnamese": "Trong lớp học có những gì?"
+      },
+      {
+        "english": "What can you see?",
+        "vietnamese": "Bạn có thể nhìn thấy gì?"
+      },
+      {
+        "english": "Our classroom is upstairs.",
+        "vietnamese": "Phòng học của chúng mình ở tầng trên."
+      },
+      {
+        "english": "I'm in class 3C.",
+        "vietnamese": "Mình học lớp 3C."
+      },
+      {
+        "english": "What colour is his hair?",
+        "vietnamese": "Tóc của bạn ấy màu gì?"
+      },
+      {
+        "english": "We've got a new CD player.",
+        "vietnamese": "Chúng mình có một máy nghe đĩa CD mới."
+      },
+      {
+        "english": "Close your eyes and count to ten.",
+        "vietnamese": "Nhắm mắt và đếm đến mười."
+      },
+      {
+        "english": "Touch your knee.",
+        "vietnamese": "Hãy chạm vào đầu gối."
+      },
+      {
+        "english": "Come and play this game with me.",
+        "vietnamese": "Hãy đến chơi trò này cùng mình."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "classroom",
+        "vietnamese": "phòng học"
+      },
+      {
+        "english": "table",
+        "vietnamese": "bàn"
+      },
+      {
+        "english": "chair",
+        "vietnamese": "ghế"
+      },
+      {
+        "english": "peg",
+        "vietnamese": "móc treo"
+      },
+      {
+        "english": "computer",
+        "vietnamese": "máy tính"
+      },
+      {
+        "english": "board",
+        "vietnamese": "bảng viết"
+      },
+      {
+        "english": "pencil case",
+        "vietnamese": "hộp bút"
+      },
+      {
+        "english": "cupboard",
+        "vietnamese": "tủ đựng đồ"
+      },
+      {
+        "english": "drawer",
+        "vietnamese": "ngăn kéo"
+      },
+      {
+        "english": "poster",
+        "vietnamese": "áp phích"
+      },
+      {
+        "english": "picture",
+        "vietnamese": "bức tranh"
+      },
+      {
+        "english": "door",
+        "vietnamese": "cửa ra vào"
+      },
+      {
+        "english": "window",
+        "vietnamese": "cửa sổ"
+      },
+      {
+        "english": "CD player",
+        "vietnamese": "máy nghe đĩa CD"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Lớp học nằm ở đâu?",
+        "options": [
+          "Ở tầng trên",
+          "Ở tầng dưới",
+          "Ở cạnh sân chơi",
+          "Ở cạnh hồ bơi"
+        ],
+        "answer": "Ở tầng trên",
+        "passage": [
+          "My classroom is upstairs. There is a large whiteboard, and our pictures are on the wall."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng chữ l?",
+        "options": [
+          "lion",
+          "dog",
+          "goat",
+          "apple"
+        ],
+        "answer": "lion"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy nhìn những bức tranh này.",
+          "Đây là máy tính mới của chúng mình.",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình."
+        ],
+        "answer": "Hãy nhìn những bức tranh này.",
+        "passage": [
+          "Look at these pictures."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đây có phải là hộp bút của bạn không?",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn."
+        ],
+        "answer": "Đây có phải là hộp bút của bạn không?",
+        "passage": [
+          "Is this your pencil case?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thích đồ dùng mới của chúng mình không?",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình."
+        ],
+        "answer": "Bạn có thích đồ dùng mới của chúng mình không?",
+        "passage": [
+          "Do you like our new things?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có, chúng mình thích.",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Có mười cái ghế trong phòng."
+        ],
+        "answer": "Có, chúng mình thích.",
+        "passage": [
+          "Yes, we do."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Trong lớp học có những gì?",
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Có mười cái ghế trong phòng.",
+          "Có bao nhiêu bạn nam trong lớp của bạn?"
+        ],
+        "answer": "Trong lớp học có những gì?",
+        "passage": [
+          "What's in the classroom?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thể nhìn thấy gì?",
+          "Có mười cái ghế trong phòng.",
+          "Có bao nhiêu bạn nam trong lớp của bạn?",
+          "Lớp học của bạn ở đâu?"
+        ],
+        "answer": "Bạn có thể nhìn thấy gì?",
+        "passage": [
+          "What can you see?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Tóc của bạn ấy màu gì?",
+          "Đây là máy tính mới của chúng mình.",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình."
+        ],
+        "answer": "Tóc của bạn ấy màu gì?",
+        "passage": [
+          "What colour is his hair?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có một máy nghe đĩa CD mới.",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn."
+        ],
+        "answer": "Chúng mình có một máy nghe đĩa CD mới.",
+        "passage": [
+          "We've got a new CD player."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Nhắm mắt và đếm đến mười.",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình."
+        ],
+        "answer": "Nhắm mắt và đếm đến mười.",
+        "passage": [
+          "Close your eyes and count to ten."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy chạm vào đầu gối.",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Có mười cái ghế trong phòng."
+        ],
+        "answer": "Hãy chạm vào đầu gối.",
+        "passage": [
+          "Touch your knee."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy đến chơi trò này cùng mình.",
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Có mười cái ghế trong phòng.",
+          "Có bao nhiêu bạn nam trong lớp của bạn?"
+        ],
+        "answer": "Hãy đến chơi trò này cùng mình.",
+        "passage": [
+          "Come and play this game with me."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "lion",
+        "answer": "lion",
+        "options": [
+          "lion",
+          "dog",
+          "goat",
+          "apple"
+        ]
+      },
+      {
+        "audio": "dog",
+        "answer": "dog",
+        "options": [
+          "dog",
+          "goat",
+          "apple",
+          "classroom"
+        ]
+      },
+      {
+        "audio": "goat",
+        "answer": "goat",
+        "options": [
+          "goat",
+          "apple",
+          "classroom",
+          "table"
+        ]
+      },
+      {
+        "audio": "apple",
+        "answer": "apple",
+        "options": [
+          "apple",
+          "classroom",
+          "table",
+          "chair"
+        ]
+      },
+      {
+        "audio": "classroom",
+        "answer": "classroom",
+        "options": [
+          "classroom",
+          "table",
+          "chair",
+          "peg"
+        ]
+      },
+      {
+        "audio": "table",
+        "answer": "table",
+        "options": [
+          "table",
+          "chair",
+          "peg",
+          "computer"
+        ]
+      },
+      {
+        "audio": "chair",
+        "answer": "chair",
+        "options": [
+          "chair",
+          "peg",
+          "computer",
+          "board"
+        ]
+      },
+      {
+        "audio": "peg",
+        "answer": "peg",
+        "options": [
+          "peg",
+          "computer",
+          "board",
+          "lion"
+        ]
+      },
+      {
+        "audio": "computer",
+        "answer": "computer",
+        "options": [
+          "computer",
+          "board",
+          "lion",
+          "dog"
+        ]
+      },
+      {
+        "audio": "board",
+        "answer": "board",
+        "options": [
+          "board",
+          "lion",
+          "dog",
+          "goat"
+        ]
+      },
+      {
+        "audio": "This is our new computer.",
+        "answer": "This is our new computer.",
+        "options": [
+          "This is our new computer.",
+          "That is a whiteboard.",
+          "These are my pencils.",
+          "Those are your pegs."
+        ]
+      },
+      {
+        "audio": "That is a whiteboard.",
+        "answer": "That is a whiteboard.",
+        "options": [
+          "That is a whiteboard.",
+          "These are my pencils.",
+          "Those are your pegs.",
+          "There is a cupboard in our classroom."
+        ]
+      },
+      {
+        "audio": "These are my pencils.",
+        "answer": "These are my pencils.",
+        "options": [
+          "These are my pencils.",
+          "Those are your pegs.",
+          "There is a cupboard in our classroom.",
+          "There are ten chairs in the room."
+        ]
+      },
+      {
+        "audio": "Those are your pegs.",
+        "answer": "Those are your pegs.",
+        "options": [
+          "Those are your pegs.",
+          "There is a cupboard in our classroom.",
+          "There are ten chairs in the room.",
+          "How many boys are there in your class?"
+        ]
+      },
+      {
+        "audio": "There is a cupboard in our classroom.",
+        "answer": "There is a cupboard in our classroom.",
+        "options": [
+          "There is a cupboard in our classroom.",
+          "There are ten chairs in the room.",
+          "How many boys are there in your class?",
+          "Where is your classroom?"
+        ]
+      },
+      {
+        "audio": "There are ten chairs in the room.",
+        "answer": "There are ten chairs in the room.",
+        "options": [
+          "There are ten chairs in the room.",
+          "How many boys are there in your class?",
+          "Where is your classroom?",
+          "Look at these pictures."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "This is our new computer.",
+        "hint": "Đây là máy tính mới của chúng mình."
+      },
+      {
+        "answer": "That is a whiteboard.",
+        "hint": "Kia là một cái bảng trắng."
+      },
+      {
+        "answer": "These are my pencils.",
+        "hint": "Đây là những chiếc bút chì của mình."
+      },
+      {
+        "answer": "Those are your pegs.",
+        "hint": "Kia là các móc treo của bạn."
+      },
+      {
+        "answer": "There is a cupboard in our classroom.",
+        "hint": "Có một cái tủ trong lớp học của chúng mình."
+      },
+      {
+        "answer": "There are ten chairs in the room.",
+        "hint": "Có mười cái ghế trong phòng."
+      },
+      {
+        "answer": "How many boys are there in your class?",
+        "hint": "Có bao nhiêu bạn nam trong lớp của bạn?"
+      },
+      {
+        "answer": "Where is your classroom?",
+        "hint": "Lớp học của bạn ở đâu?"
+      },
+      {
+        "answer": "Look at these pictures.",
+        "hint": "Hãy nhìn những bức tranh này."
+      },
+      {
+        "answer": "Is this your pencil case?",
+        "hint": "Đây có phải là hộp bút của bạn không?"
+      },
+      {
+        "answer": "Do you like our new things?",
+        "hint": "Bạn có thích đồ dùng mới của chúng mình không?"
+      },
+      {
+        "answer": "Yes, we do.",
+        "hint": "Có, chúng mình thích."
+      },
+      {
+        "answer": "What's in the classroom?",
+        "hint": "Trong lớp học có những gì?"
+      },
+      {
+        "answer": "What can you see?",
+        "hint": "Bạn có thể nhìn thấy gì?"
+      },
+      {
+        "answer": "Our classroom is upstairs.",
+        "hint": "Phòng học của chúng mình ở tầng trên."
+      },
+      {
+        "answer": "I'm in class 3C.",
+        "hint": "Mình học lớp 3C."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Đây là máy tính mới của chúng mình."
+      },
+      {
+        "prompt": "Kia là một cái bảng trắng."
+      },
+      {
+        "prompt": "Đây là những chiếc bút chì của mình."
+      },
+      {
+        "prompt": "Kia là các móc treo của bạn."
+      },
+      {
+        "prompt": "Có một cái tủ trong lớp học của chúng mình."
+      },
+      {
+        "prompt": "Có mười cái ghế trong phòng."
+      },
+      {
+        "prompt": "Có bao nhiêu bạn nam trong lớp của bạn?"
+      },
+      {
+        "prompt": "Lớp học của bạn ở đâu?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Lớp học nằm ở đâu?",
+        "options": [
+          "Ở tầng trên",
+          "Ở tầng dưới",
+          "Ở cạnh sân chơi",
+          "Ở cạnh hồ bơi"
+        ],
+        "answer": "Ở tầng trên",
+        "passage": [
+          "My classroom is upstairs. There is a large whiteboard, and our pictures are on the wall."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng chữ l?",
+        "options": [
+          "lion",
+          "dog",
+          "goat",
+          "apple"
+        ],
+        "answer": "lion"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Đây là máy tính mới của chúng mình.",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình."
+        ],
+        "answer": "Có một cái tủ trong lớp học của chúng mình.",
+        "passage": [
+          "There is a cupboard in our classroom."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có mười cái ghế trong phòng.",
+          "Kia là một cái bảng trắng.",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn."
+        ],
+        "answer": "Có mười cái ghế trong phòng.",
+        "passage": [
+          "There are ten chairs in the room."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có bao nhiêu bạn nam trong lớp của bạn?",
+          "Đây là những chiếc bút chì của mình.",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình."
+        ],
+        "answer": "Có bao nhiêu bạn nam trong lớp của bạn?",
+        "passage": [
+          "How many boys are there in your class?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lớp học của bạn ở đâu?",
+          "Kia là các móc treo của bạn.",
+          "Có một cái tủ trong lớp học của chúng mình.",
+          "Có mười cái ghế trong phòng."
+        ],
+        "answer": "Lớp học của bạn ở đâu?",
+        "passage": [
+          "Where is your classroom?"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "lion",
+        "answer": "lion",
+        "options": [
+          "lion",
+          "dog",
+          "goat",
+          "apple"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "dog",
+        "answer": "dog",
+        "options": [
+          "dog",
+          "goat",
+          "apple",
+          "classroom"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "goat",
+        "answer": "goat",
+        "options": [
+          "goat",
+          "apple",
+          "classroom",
+          "table"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Look at these pictures.",
+        "answer": "Look at these pictures."
+      },
+      {
+        "type": "dictation",
+        "audio": "Is this your pencil case?",
+        "answer": "Is this your pencil case?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Do you like our new things?",
+        "answer": "Do you like our new things?"
+      },
+      {
+        "type": "sentence",
+        "answer": "This is our new computer.",
+        "hint": "Đây là máy tính mới của chúng mình."
+      },
+      {
+        "type": "sentence",
+        "answer": "That is a whiteboard.",
+        "hint": "Kia là một cái bảng trắng."
+      },
+      {
+        "type": "sentence",
+        "answer": "These are my pencils.",
+        "hint": "Đây là những chiếc bút chì của mình."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là máy tính mới của chúng mình."
+      },
+      {
+        "type": "translation",
+        "prompt": "Kia là một cái bảng trắng."
+      },
+      {
+        "type": "translation",
+        "prompt": "Đây là những chiếc bút chì của mình."
+      }
+    ]
+  }
+}

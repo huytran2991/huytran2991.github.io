@@ -1,0 +1,821 @@
+{
+  "id": 7,
+  "title": "Let's buy presents!",
+  "topic": "Quà tặng và sở thích",
+  "icon": "🎁",
+  "pages": {
+    "first": 52,
+    "last": 57
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "present",
+        "vietnamese": "quà tặng"
+      },
+      {
+        "english": "balloon",
+        "vietnamese": "bóng bay"
+      },
+      {
+        "english": "cake",
+        "vietnamese": "bánh ngọt"
+      },
+      {
+        "english": "chocolate",
+        "vietnamese": "sô-cô-la"
+      },
+      {
+        "english": "sweets",
+        "vietnamese": "kẹo"
+      },
+      {
+        "english": "pastry",
+        "vietnamese": "bánh ngọt làm từ bột"
+      },
+      {
+        "english": "nut",
+        "vietnamese": "hạt ăn được"
+      },
+      {
+        "english": "neighbour",
+        "vietnamese": "hàng xóm"
+      },
+      {
+        "english": "tie",
+        "vietnamese": "cà vạt"
+      },
+      {
+        "english": "surprise",
+        "vietnamese": "bất ngờ"
+      },
+      {
+        "english": "card",
+        "vietnamese": "thiệp"
+      },
+      {
+        "english": "rectangle",
+        "vietnamese": "hình chữ nhật"
+      },
+      {
+        "english": "fold",
+        "vietnamese": "gấp"
+      },
+      {
+        "english": "in half",
+        "vietnamese": "làm đôi"
+      },
+      {
+        "english": "cloud",
+        "vietnamese": "mây"
+      },
+      {
+        "english": "clock",
+        "vietnamese": "đồng hồ"
+      },
+      {
+        "english": "gloves",
+        "vietnamese": "găng tay"
+      },
+      {
+        "english": "glue",
+        "vietnamese": "keo dán"
+      },
+      {
+        "english": "slide",
+        "vietnamese": "cầu trượt"
+      },
+      {
+        "english": "slippers",
+        "vietnamese": "dép đi trong nhà"
+      },
+      {
+        "english": "asleep",
+        "vietnamese": "đang ngủ"
+      },
+      {
+        "english": "tomorrow",
+        "vietnamese": "ngày mai"
+      },
+      {
+        "english": "take off",
+        "vietnamese": "cởi ra"
+      },
+      {
+        "english": "put on",
+        "vietnamese": "mặc vào"
+      },
+      {
+        "english": "outside",
+        "vietnamese": "bên ngoài"
+      },
+      {
+        "english": "kind",
+        "vietnamese": "tử tế"
+      },
+      {
+        "english": "dear",
+        "vietnamese": "thân mến"
+      },
+      {
+        "english": "front",
+        "vietnamese": "mặt trước"
+      },
+      {
+        "english": "living room",
+        "vietnamese": "phòng khách"
+      },
+      {
+        "english": "someone",
+        "vietnamese": "ai đó"
+      },
+      {
+        "english": "buy",
+        "vietnamese": "mua"
+      },
+      {
+        "english": "pastries",
+        "vietnamese": "các bánh ngọt làm từ bột"
+      },
+      {
+        "english": "nuts",
+        "vietnamese": "các loại hạt"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What does he like?",
+        "vietnamese": "Bạn ấy thích gì?"
+      },
+      {
+        "english": "He likes trains and cars.",
+        "vietnamese": "Bạn ấy thích tàu hỏa và ô tô."
+      },
+      {
+        "english": "He doesn't like balloons.",
+        "vietnamese": "Bạn ấy không thích bóng bay."
+      },
+      {
+        "english": "What does she like?",
+        "vietnamese": "Bạn nữ ấy thích gì?"
+      },
+      {
+        "english": "She likes chocolate.",
+        "vietnamese": "Bạn nữ ấy thích sô-cô-la."
+      },
+      {
+        "english": "Does she like flowers?",
+        "vietnamese": "Bạn nữ ấy có thích hoa không?"
+      },
+      {
+        "english": "I don't like sweets.",
+        "vietnamese": "Mình không thích kẹo."
+      },
+      {
+        "english": "Let's buy a present for Mum.",
+        "vietnamese": "Mình cùng mua quà cho mẹ nhé."
+      },
+      {
+        "english": "What can we buy?",
+        "vietnamese": "Chúng mình có thể mua gì?"
+      },
+      {
+        "english": "What do you like?",
+        "vietnamese": "Bạn thích gì?"
+      },
+      {
+        "english": "Come and have lunch with us.",
+        "vietnamese": "Hãy đến ăn trưa cùng chúng mình."
+      },
+      {
+        "english": "It's time to take off my gloves.",
+        "vietnamese": "Đến lúc cởi găng tay rồi."
+      },
+      {
+        "english": "Cut a rectangle of card.",
+        "vietnamese": "Hãy cắt một miếng bìa hình chữ nhật."
+      },
+      {
+        "english": "Fold it in half.",
+        "vietnamese": "Hãy gấp đôi nó lại."
+      },
+      {
+        "english": "Give the card to Mum.",
+        "vietnamese": "Hãy đưa tấm thiệp cho mẹ."
+      },
+      {
+        "english": "Thank you for my presents.",
+        "vietnamese": "Cảm ơn vì những món quà của con."
+      },
+      {
+        "english": "Someone is in the living room.",
+        "vietnamese": "Có ai đó trong phòng khách."
+      },
+      {
+        "english": "What can we take?",
+        "vietnamese": "Chúng mình có thể mang gì theo?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "present",
+        "vietnamese": "quà tặng"
+      },
+      {
+        "english": "balloon",
+        "vietnamese": "bóng bay"
+      },
+      {
+        "english": "cake",
+        "vietnamese": "bánh ngọt"
+      },
+      {
+        "english": "chocolate",
+        "vietnamese": "sô-cô-la"
+      },
+      {
+        "english": "sweets",
+        "vietnamese": "kẹo"
+      },
+      {
+        "english": "pastry",
+        "vietnamese": "bánh ngọt làm từ bột"
+      },
+      {
+        "english": "nut",
+        "vietnamese": "hạt ăn được"
+      },
+      {
+        "english": "neighbour",
+        "vietnamese": "hàng xóm"
+      },
+      {
+        "english": "tie",
+        "vietnamese": "cà vạt"
+      },
+      {
+        "english": "surprise",
+        "vietnamese": "bất ngờ"
+      },
+      {
+        "english": "card",
+        "vietnamese": "thiệp"
+      },
+      {
+        "english": "rectangle",
+        "vietnamese": "hình chữ nhật"
+      },
+      {
+        "english": "fold",
+        "vietnamese": "gấp"
+      },
+      {
+        "english": "in half",
+        "vietnamese": "làm đôi"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Bạn nhỏ vẽ gì trên thiệp?",
+        "options": [
+          "Hoa",
+          "Bóng bay",
+          "Ô tô",
+          "Cái bánh"
+        ],
+        "answer": "Hoa",
+        "passage": [
+          "Mum likes flowers. I fold some card in half and draw flowers on the front."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng gl?",
+        "options": [
+          "glue",
+          "cloud",
+          "slide",
+          "clock"
+        ],
+        "answer": "glue"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có thể mua gì?",
+          "Bạn ấy thích gì?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay."
+        ],
+        "answer": "Chúng mình có thể mua gì?",
+        "passage": [
+          "What can we buy?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn thích gì?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay.",
+          "Bạn nữ ấy thích gì?"
+        ],
+        "answer": "Bạn thích gì?",
+        "passage": [
+          "What do you like?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy đến ăn trưa cùng chúng mình.",
+          "Bạn ấy không thích bóng bay.",
+          "Bạn nữ ấy thích gì?",
+          "Bạn nữ ấy thích sô-cô-la."
+        ],
+        "answer": "Hãy đến ăn trưa cùng chúng mình.",
+        "passage": [
+          "Come and have lunch with us."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đến lúc cởi găng tay rồi.",
+          "Bạn nữ ấy thích gì?",
+          "Bạn nữ ấy thích sô-cô-la.",
+          "Bạn nữ ấy có thích hoa không?"
+        ],
+        "answer": "Đến lúc cởi găng tay rồi.",
+        "passage": [
+          "It's time to take off my gloves."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy cắt một miếng bìa hình chữ nhật.",
+          "Bạn nữ ấy thích sô-cô-la.",
+          "Bạn nữ ấy có thích hoa không?",
+          "Mình không thích kẹo."
+        ],
+        "answer": "Hãy cắt một miếng bìa hình chữ nhật.",
+        "passage": [
+          "Cut a rectangle of card."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy gấp đôi nó lại.",
+          "Bạn nữ ấy có thích hoa không?",
+          "Mình không thích kẹo.",
+          "Mình cùng mua quà cho mẹ nhé."
+        ],
+        "answer": "Hãy gấp đôi nó lại.",
+        "passage": [
+          "Fold it in half."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có ai đó trong phòng khách.",
+          "Bạn ấy thích gì?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay."
+        ],
+        "answer": "Có ai đó trong phòng khách.",
+        "passage": [
+          "Someone is in the living room."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có thể mang gì theo?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay.",
+          "Bạn nữ ấy thích gì?"
+        ],
+        "answer": "Chúng mình có thể mang gì theo?",
+        "passage": [
+          "What can we take?"
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "glue",
+        "answer": "glue",
+        "options": [
+          "glue",
+          "cloud",
+          "slide",
+          "clock"
+        ]
+      },
+      {
+        "audio": "cloud",
+        "answer": "cloud",
+        "options": [
+          "cloud",
+          "slide",
+          "clock",
+          "present"
+        ]
+      },
+      {
+        "audio": "slide",
+        "answer": "slide",
+        "options": [
+          "slide",
+          "clock",
+          "present",
+          "balloon"
+        ]
+      },
+      {
+        "audio": "clock",
+        "answer": "clock",
+        "options": [
+          "clock",
+          "present",
+          "balloon",
+          "cake"
+        ]
+      },
+      {
+        "audio": "present",
+        "answer": "present",
+        "options": [
+          "present",
+          "balloon",
+          "cake",
+          "chocolate"
+        ]
+      },
+      {
+        "audio": "balloon",
+        "answer": "balloon",
+        "options": [
+          "balloon",
+          "cake",
+          "chocolate",
+          "sweets"
+        ]
+      },
+      {
+        "audio": "cake",
+        "answer": "cake",
+        "options": [
+          "cake",
+          "chocolate",
+          "sweets",
+          "pastry"
+        ]
+      },
+      {
+        "audio": "chocolate",
+        "answer": "chocolate",
+        "options": [
+          "chocolate",
+          "sweets",
+          "pastry",
+          "glue"
+        ]
+      },
+      {
+        "audio": "sweets",
+        "answer": "sweets",
+        "options": [
+          "sweets",
+          "pastry",
+          "glue",
+          "cloud"
+        ]
+      },
+      {
+        "audio": "pastry",
+        "answer": "pastry",
+        "options": [
+          "pastry",
+          "glue",
+          "cloud",
+          "slide"
+        ]
+      },
+      {
+        "audio": "What does he like?",
+        "answer": "What does he like?",
+        "options": [
+          "What does he like?",
+          "He likes trains and cars.",
+          "He doesn't like balloons.",
+          "What does she like?"
+        ]
+      },
+      {
+        "audio": "He likes trains and cars.",
+        "answer": "He likes trains and cars.",
+        "options": [
+          "He likes trains and cars.",
+          "He doesn't like balloons.",
+          "What does she like?",
+          "She likes chocolate."
+        ]
+      },
+      {
+        "audio": "He doesn't like balloons.",
+        "answer": "He doesn't like balloons.",
+        "options": [
+          "He doesn't like balloons.",
+          "What does she like?",
+          "She likes chocolate.",
+          "Does she like flowers?"
+        ]
+      },
+      {
+        "audio": "What does she like?",
+        "answer": "What does she like?",
+        "options": [
+          "What does she like?",
+          "She likes chocolate.",
+          "Does she like flowers?",
+          "I don't like sweets."
+        ]
+      },
+      {
+        "audio": "She likes chocolate.",
+        "answer": "She likes chocolate.",
+        "options": [
+          "She likes chocolate.",
+          "Does she like flowers?",
+          "I don't like sweets.",
+          "Let's buy a present for Mum."
+        ]
+      },
+      {
+        "audio": "Does she like flowers?",
+        "answer": "Does she like flowers?",
+        "options": [
+          "Does she like flowers?",
+          "I don't like sweets.",
+          "Let's buy a present for Mum.",
+          "What can we buy?"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What does he like?",
+        "hint": "Bạn ấy thích gì?"
+      },
+      {
+        "answer": "He likes trains and cars.",
+        "hint": "Bạn ấy thích tàu hỏa và ô tô."
+      },
+      {
+        "answer": "He doesn't like balloons.",
+        "hint": "Bạn ấy không thích bóng bay."
+      },
+      {
+        "answer": "What does she like?",
+        "hint": "Bạn nữ ấy thích gì?"
+      },
+      {
+        "answer": "She likes chocolate.",
+        "hint": "Bạn nữ ấy thích sô-cô-la."
+      },
+      {
+        "answer": "Does she like flowers?",
+        "hint": "Bạn nữ ấy có thích hoa không?"
+      },
+      {
+        "answer": "I don't like sweets.",
+        "hint": "Mình không thích kẹo."
+      },
+      {
+        "answer": "Let's buy a present for Mum.",
+        "hint": "Mình cùng mua quà cho mẹ nhé."
+      },
+      {
+        "answer": "What can we buy?",
+        "hint": "Chúng mình có thể mua gì?"
+      },
+      {
+        "answer": "What do you like?",
+        "hint": "Bạn thích gì?"
+      },
+      {
+        "answer": "Come and have lunch with us.",
+        "hint": "Hãy đến ăn trưa cùng chúng mình."
+      },
+      {
+        "answer": "It's time to take off my gloves.",
+        "hint": "Đến lúc cởi găng tay rồi."
+      },
+      {
+        "answer": "Cut a rectangle of card.",
+        "hint": "Hãy cắt một miếng bìa hình chữ nhật."
+      },
+      {
+        "answer": "Fold it in half.",
+        "hint": "Hãy gấp đôi nó lại."
+      },
+      {
+        "answer": "Give the card to Mum.",
+        "hint": "Hãy đưa tấm thiệp cho mẹ."
+      },
+      {
+        "answer": "Thank you for my presents.",
+        "hint": "Cảm ơn vì những món quà của con."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn ấy thích gì?"
+      },
+      {
+        "prompt": "Bạn ấy thích tàu hỏa và ô tô."
+      },
+      {
+        "prompt": "Bạn ấy không thích bóng bay."
+      },
+      {
+        "prompt": "Bạn nữ ấy thích gì?"
+      },
+      {
+        "prompt": "Bạn nữ ấy thích sô-cô-la."
+      },
+      {
+        "prompt": "Bạn nữ ấy có thích hoa không?"
+      },
+      {
+        "prompt": "Mình không thích kẹo."
+      },
+      {
+        "prompt": "Mình cùng mua quà cho mẹ nhé."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Bạn nhỏ vẽ gì trên thiệp?",
+        "options": [
+          "Hoa",
+          "Bóng bay",
+          "Ô tô",
+          "Cái bánh"
+        ],
+        "answer": "Hoa",
+        "passage": [
+          "Mum likes flowers. I fold some card in half and draw flowers on the front."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng gl?",
+        "options": [
+          "glue",
+          "cloud",
+          "slide",
+          "clock"
+        ],
+        "answer": "glue"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn nữ ấy thích sô-cô-la.",
+          "Bạn ấy thích gì?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay."
+        ],
+        "answer": "Bạn nữ ấy thích sô-cô-la.",
+        "passage": [
+          "She likes chocolate."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn nữ ấy có thích hoa không?",
+          "Bạn ấy thích tàu hỏa và ô tô.",
+          "Bạn ấy không thích bóng bay.",
+          "Bạn nữ ấy thích gì?"
+        ],
+        "answer": "Bạn nữ ấy có thích hoa không?",
+        "passage": [
+          "Does she like flowers?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không thích kẹo.",
+          "Bạn ấy không thích bóng bay.",
+          "Bạn nữ ấy thích gì?",
+          "Bạn nữ ấy thích sô-cô-la."
+        ],
+        "answer": "Mình không thích kẹo.",
+        "passage": [
+          "I don't like sweets."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình cùng mua quà cho mẹ nhé.",
+          "Bạn nữ ấy thích gì?",
+          "Bạn nữ ấy thích sô-cô-la.",
+          "Bạn nữ ấy có thích hoa không?"
+        ],
+        "answer": "Mình cùng mua quà cho mẹ nhé.",
+        "passage": [
+          "Let's buy a present for Mum."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "glue",
+        "answer": "glue",
+        "options": [
+          "glue",
+          "cloud",
+          "slide",
+          "clock"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "cloud",
+        "answer": "cloud",
+        "options": [
+          "cloud",
+          "slide",
+          "clock",
+          "present"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "slide",
+        "answer": "slide",
+        "options": [
+          "slide",
+          "clock",
+          "present",
+          "balloon"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What can we buy?",
+        "answer": "What can we buy?"
+      },
+      {
+        "type": "dictation",
+        "audio": "What do you like?",
+        "answer": "What do you like?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Come and have lunch with us.",
+        "answer": "Come and have lunch with us."
+      },
+      {
+        "type": "sentence",
+        "answer": "What does he like?",
+        "hint": "Bạn ấy thích gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "He likes trains and cars.",
+        "hint": "Bạn ấy thích tàu hỏa và ô tô."
+      },
+      {
+        "type": "sentence",
+        "answer": "He doesn't like balloons.",
+        "hint": "Bạn ấy không thích bóng bay."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn ấy thích gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn ấy thích tàu hỏa và ô tô."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn ấy không thích bóng bay."
+      }
+    ]
+  }
+}

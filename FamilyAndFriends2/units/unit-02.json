@@ -1,0 +1,855 @@
+{
+  "id": 2,
+  "title": "They're happy now!",
+  "topic": "Cảm xúc",
+  "icon": "😊",
+  "pages": {
+    "first": 14,
+    "last": 19
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "happy",
+        "vietnamese": "vui"
+      },
+      {
+        "english": "sad",
+        "vietnamese": "buồn"
+      },
+      {
+        "english": "hungry",
+        "vietnamese": "đói"
+      },
+      {
+        "english": "thirsty",
+        "vietnamese": "khát"
+      },
+      {
+        "english": "hot",
+        "vietnamese": "nóng"
+      },
+      {
+        "english": "cold",
+        "vietnamese": "lạnh"
+      },
+      {
+        "english": "tired",
+        "vietnamese": "mệt"
+      },
+      {
+        "english": "angry",
+        "vietnamese": "tức giận"
+      },
+      {
+        "english": "scared",
+        "vietnamese": "sợ hãi"
+      },
+      {
+        "english": "brave",
+        "vietnamese": "dũng cảm"
+      },
+      {
+        "english": "nervous",
+        "vietnamese": "hồi hộp"
+      },
+      {
+        "english": "cry",
+        "vietnamese": "khóc"
+      },
+      {
+        "english": "smile",
+        "vietnamese": "mỉm cười"
+      },
+      {
+        "english": "laugh",
+        "vietnamese": "cười thành tiếng"
+      },
+      {
+        "english": "twins",
+        "vietnamese": "cặp song sinh"
+      },
+      {
+        "english": "baby",
+        "vietnamese": "em bé"
+      },
+      {
+        "english": "chair",
+        "vietnamese": "ghế"
+      },
+      {
+        "english": "teacher",
+        "vietnamese": "giáo viên"
+      },
+      {
+        "english": "shoes",
+        "vietnamese": "đôi giày"
+      },
+      {
+        "english": "fish",
+        "vietnamese": "cá"
+      },
+      {
+        "english": "thumb",
+        "vietnamese": "ngón tay cái"
+      },
+      {
+        "english": "bath",
+        "vietnamese": "bồn tắm"
+      },
+      {
+        "english": "hug",
+        "vietnamese": "ôm"
+      },
+      {
+        "english": "stamp your feet",
+        "vietnamese": "giậm chân"
+      },
+      {
+        "english": "go to sleep",
+        "vietnamese": "đi ngủ"
+      },
+      {
+        "english": "snore",
+        "vietnamese": "ngáy"
+      },
+      {
+        "english": "carry on",
+        "vietnamese": "tiếp tục"
+      },
+      {
+        "english": "sometimes",
+        "vietnamese": "đôi khi"
+      },
+      {
+        "english": "never",
+        "vietnamese": "không bao giờ"
+      },
+      {
+        "english": "bad",
+        "vietnamese": "xấu"
+      },
+      {
+        "english": "really",
+        "vietnamese": "thực sự"
+      },
+      {
+        "english": "know",
+        "vietnamese": "biết"
+      },
+      {
+        "english": "show",
+        "vietnamese": "thể hiện"
+      }
+    ],
+    "structures": [
+      {
+        "english": "We're tired.",
+        "vietnamese": "Chúng mình mệt."
+      },
+      {
+        "english": "They're happy now.",
+        "vietnamese": "Bây giờ các bạn ấy vui."
+      },
+      {
+        "english": "Are they hot?",
+        "vietnamese": "Các bạn ấy có nóng không?"
+      },
+      {
+        "english": "No, they aren't.",
+        "vietnamese": "Không, các bạn ấy không nóng."
+      },
+      {
+        "english": "Are we cold?",
+        "vietnamese": "Chúng mình có lạnh không?"
+      },
+      {
+        "english": "Yes, we are.",
+        "vietnamese": "Có, chúng mình lạnh."
+      },
+      {
+        "english": "Is he sad?",
+        "vietnamese": "Bạn ấy có buồn không?"
+      },
+      {
+        "english": "She's nervous.",
+        "vietnamese": "Bạn ấy đang hồi hộp."
+      },
+      {
+        "english": "What a good idea!",
+        "vietnamese": "Ý hay quá!"
+      },
+      {
+        "english": "Can the babies eat apples?",
+        "vietnamese": "Các em bé có thể ăn táo không?"
+      },
+      {
+        "english": "They are twins.",
+        "vietnamese": "Hai em bé là một cặp song sinh."
+      },
+      {
+        "english": "If you're tired, go to sleep.",
+        "vietnamese": "Nếu em mệt thì hãy đi ngủ."
+      },
+      {
+        "english": "Hug yourself.",
+        "vietnamese": "Hãy tự ôm mình."
+      },
+      {
+        "english": "Stamp your feet.",
+        "vietnamese": "Hãy giậm chân."
+      },
+      {
+        "english": "Sometimes I am sad.",
+        "vietnamese": "Đôi khi mình buồn."
+      },
+      {
+        "english": "I can do it.",
+        "vietnamese": "Mình làm được."
+      },
+      {
+        "english": "She's got long black hair.",
+        "vietnamese": "Cô ấy có mái tóc đen dài."
+      },
+      {
+        "english": "What has the teacher got?",
+        "vietnamese": "Cô giáo có gì?"
+      },
+      {
+        "english": "Are they crying?",
+        "vietnamese": "Các em bé đang khóc phải không?"
+      },
+      {
+        "english": "No, he isn't.",
+        "vietnamese": "Không, bạn nam ấy không buồn."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "happy",
+        "vietnamese": "vui"
+      },
+      {
+        "english": "sad",
+        "vietnamese": "buồn"
+      },
+      {
+        "english": "hungry",
+        "vietnamese": "đói"
+      },
+      {
+        "english": "thirsty",
+        "vietnamese": "khát"
+      },
+      {
+        "english": "hot",
+        "vietnamese": "nóng"
+      },
+      {
+        "english": "cold",
+        "vietnamese": "lạnh"
+      },
+      {
+        "english": "tired",
+        "vietnamese": "mệt"
+      },
+      {
+        "english": "angry",
+        "vietnamese": "tức giận"
+      },
+      {
+        "english": "scared",
+        "vietnamese": "sợ hãi"
+      },
+      {
+        "english": "brave",
+        "vietnamese": "dũng cảm"
+      },
+      {
+        "english": "nervous",
+        "vietnamese": "hồi hộp"
+      },
+      {
+        "english": "cry",
+        "vietnamese": "khóc"
+      },
+      {
+        "english": "smile",
+        "vietnamese": "mỉm cười"
+      },
+      {
+        "english": "laugh",
+        "vietnamese": "cười thành tiếng"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Vì sao hai em bé khóc?",
+        "options": [
+          "Vì đói",
+          "Vì lạnh",
+          "Vì khát",
+          "Vì sợ"
+        ],
+        "answer": "Vì đói",
+        "passage": [
+          "Two babies are crying. They are hungry. After they eat an apple, they smile."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng ch?",
+        "options": [
+          "chair",
+          "shoes",
+          "thumb",
+          "bath"
+        ],
+        "answer": "chair"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Ý hay quá!",
+          "Chúng mình mệt.",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?"
+        ],
+        "answer": "Ý hay quá!",
+        "passage": [
+          "What a good idea!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Các em bé có thể ăn táo không?",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng."
+        ],
+        "answer": "Các em bé có thể ăn táo không?",
+        "passage": [
+          "Can the babies eat apples?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hai em bé là một cặp song sinh.",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?"
+        ],
+        "answer": "Hai em bé là một cặp song sinh.",
+        "passage": [
+          "They are twins."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Nếu em mệt thì hãy đi ngủ.",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?",
+          "Có, chúng mình lạnh."
+        ],
+        "answer": "Nếu em mệt thì hãy đi ngủ.",
+        "passage": [
+          "If you're tired, go to sleep."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy tự ôm mình.",
+          "Chúng mình có lạnh không?",
+          "Có, chúng mình lạnh.",
+          "Bạn ấy có buồn không?"
+        ],
+        "answer": "Hãy tự ôm mình.",
+        "passage": [
+          "Hug yourself."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy giậm chân.",
+          "Có, chúng mình lạnh.",
+          "Bạn ấy có buồn không?",
+          "Bạn ấy đang hồi hộp."
+        ],
+        "answer": "Hãy giậm chân.",
+        "passage": [
+          "Stamp your feet."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy có mái tóc đen dài.",
+          "Chúng mình mệt.",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?"
+        ],
+        "answer": "Cô ấy có mái tóc đen dài.",
+        "passage": [
+          "She's got long black hair."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô giáo có gì?",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng."
+        ],
+        "answer": "Cô giáo có gì?",
+        "passage": [
+          "What has the teacher got?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Các em bé đang khóc phải không?",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?"
+        ],
+        "answer": "Các em bé đang khóc phải không?",
+        "passage": [
+          "Are they crying?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, bạn nam ấy không buồn.",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?",
+          "Có, chúng mình lạnh."
+        ],
+        "answer": "Không, bạn nam ấy không buồn.",
+        "passage": [
+          "No, he isn't."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "chair",
+        "answer": "chair",
+        "options": [
+          "chair",
+          "shoes",
+          "thumb",
+          "bath"
+        ]
+      },
+      {
+        "audio": "shoes",
+        "answer": "shoes",
+        "options": [
+          "shoes",
+          "thumb",
+          "bath",
+          "happy"
+        ]
+      },
+      {
+        "audio": "thumb",
+        "answer": "thumb",
+        "options": [
+          "thumb",
+          "bath",
+          "happy",
+          "sad"
+        ]
+      },
+      {
+        "audio": "bath",
+        "answer": "bath",
+        "options": [
+          "bath",
+          "happy",
+          "sad",
+          "hungry"
+        ]
+      },
+      {
+        "audio": "happy",
+        "answer": "happy",
+        "options": [
+          "happy",
+          "sad",
+          "hungry",
+          "thirsty"
+        ]
+      },
+      {
+        "audio": "sad",
+        "answer": "sad",
+        "options": [
+          "sad",
+          "hungry",
+          "thirsty",
+          "hot"
+        ]
+      },
+      {
+        "audio": "hungry",
+        "answer": "hungry",
+        "options": [
+          "hungry",
+          "thirsty",
+          "hot",
+          "cold"
+        ]
+      },
+      {
+        "audio": "thirsty",
+        "answer": "thirsty",
+        "options": [
+          "thirsty",
+          "hot",
+          "cold",
+          "chair"
+        ]
+      },
+      {
+        "audio": "hot",
+        "answer": "hot",
+        "options": [
+          "hot",
+          "cold",
+          "chair",
+          "shoes"
+        ]
+      },
+      {
+        "audio": "cold",
+        "answer": "cold",
+        "options": [
+          "cold",
+          "chair",
+          "shoes",
+          "thumb"
+        ]
+      },
+      {
+        "audio": "We're tired.",
+        "answer": "We're tired.",
+        "options": [
+          "We're tired.",
+          "They're happy now.",
+          "Are they hot?",
+          "No, they aren't."
+        ]
+      },
+      {
+        "audio": "They're happy now.",
+        "answer": "They're happy now.",
+        "options": [
+          "They're happy now.",
+          "Are they hot?",
+          "No, they aren't.",
+          "Are we cold?"
+        ]
+      },
+      {
+        "audio": "Are they hot?",
+        "answer": "Are they hot?",
+        "options": [
+          "Are they hot?",
+          "No, they aren't.",
+          "Are we cold?",
+          "Yes, we are."
+        ]
+      },
+      {
+        "audio": "No, they aren't.",
+        "answer": "No, they aren't.",
+        "options": [
+          "No, they aren't.",
+          "Are we cold?",
+          "Yes, we are.",
+          "Is he sad?"
+        ]
+      },
+      {
+        "audio": "Are we cold?",
+        "answer": "Are we cold?",
+        "options": [
+          "Are we cold?",
+          "Yes, we are.",
+          "Is he sad?",
+          "She's nervous."
+        ]
+      },
+      {
+        "audio": "Yes, we are.",
+        "answer": "Yes, we are.",
+        "options": [
+          "Yes, we are.",
+          "Is he sad?",
+          "She's nervous.",
+          "What a good idea!"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "We're tired.",
+        "hint": "Chúng mình mệt."
+      },
+      {
+        "answer": "They're happy now.",
+        "hint": "Bây giờ các bạn ấy vui."
+      },
+      {
+        "answer": "Are they hot?",
+        "hint": "Các bạn ấy có nóng không?"
+      },
+      {
+        "answer": "No, they aren't.",
+        "hint": "Không, các bạn ấy không nóng."
+      },
+      {
+        "answer": "Are we cold?",
+        "hint": "Chúng mình có lạnh không?"
+      },
+      {
+        "answer": "Yes, we are.",
+        "hint": "Có, chúng mình lạnh."
+      },
+      {
+        "answer": "Is he sad?",
+        "hint": "Bạn ấy có buồn không?"
+      },
+      {
+        "answer": "She's nervous.",
+        "hint": "Bạn ấy đang hồi hộp."
+      },
+      {
+        "answer": "What a good idea!",
+        "hint": "Ý hay quá!"
+      },
+      {
+        "answer": "Can the babies eat apples?",
+        "hint": "Các em bé có thể ăn táo không?"
+      },
+      {
+        "answer": "They are twins.",
+        "hint": "Hai em bé là một cặp song sinh."
+      },
+      {
+        "answer": "If you're tired, go to sleep.",
+        "hint": "Nếu em mệt thì hãy đi ngủ."
+      },
+      {
+        "answer": "Hug yourself.",
+        "hint": "Hãy tự ôm mình."
+      },
+      {
+        "answer": "Stamp your feet.",
+        "hint": "Hãy giậm chân."
+      },
+      {
+        "answer": "Sometimes I am sad.",
+        "hint": "Đôi khi mình buồn."
+      },
+      {
+        "answer": "I can do it.",
+        "hint": "Mình làm được."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Chúng mình mệt."
+      },
+      {
+        "prompt": "Bây giờ các bạn ấy vui."
+      },
+      {
+        "prompt": "Các bạn ấy có nóng không?"
+      },
+      {
+        "prompt": "Không, các bạn ấy không nóng."
+      },
+      {
+        "prompt": "Chúng mình có lạnh không?"
+      },
+      {
+        "prompt": "Có, chúng mình lạnh."
+      },
+      {
+        "prompt": "Bạn ấy có buồn không?"
+      },
+      {
+        "prompt": "Bạn ấy đang hồi hộp."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Vì sao hai em bé khóc?",
+        "options": [
+          "Vì đói",
+          "Vì lạnh",
+          "Vì khát",
+          "Vì sợ"
+        ],
+        "answer": "Vì đói",
+        "passage": [
+          "Two babies are crying. They are hungry. After they eat an apple, they smile."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng ch?",
+        "options": [
+          "chair",
+          "shoes",
+          "thumb",
+          "bath"
+        ],
+        "answer": "chair"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có lạnh không?",
+          "Chúng mình mệt.",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?"
+        ],
+        "answer": "Chúng mình có lạnh không?",
+        "passage": [
+          "Are we cold?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có, chúng mình lạnh.",
+          "Bây giờ các bạn ấy vui.",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng."
+        ],
+        "answer": "Có, chúng mình lạnh.",
+        "passage": [
+          "Yes, we are."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy có buồn không?",
+          "Các bạn ấy có nóng không?",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?"
+        ],
+        "answer": "Bạn ấy có buồn không?",
+        "passage": [
+          "Is he sad?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy đang hồi hộp.",
+          "Không, các bạn ấy không nóng.",
+          "Chúng mình có lạnh không?",
+          "Có, chúng mình lạnh."
+        ],
+        "answer": "Bạn ấy đang hồi hộp.",
+        "passage": [
+          "She's nervous."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "chair",
+        "answer": "chair",
+        "options": [
+          "chair",
+          "shoes",
+          "thumb",
+          "bath"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "shoes",
+        "answer": "shoes",
+        "options": [
+          "shoes",
+          "thumb",
+          "bath",
+          "happy"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "thumb",
+        "answer": "thumb",
+        "options": [
+          "thumb",
+          "bath",
+          "happy",
+          "sad"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What a good idea!",
+        "answer": "What a good idea!"
+      },
+      {
+        "type": "dictation",
+        "audio": "Can the babies eat apples?",
+        "answer": "Can the babies eat apples?"
+      },
+      {
+        "type": "dictation",
+        "audio": "They are twins.",
+        "answer": "They are twins."
+      },
+      {
+        "type": "sentence",
+        "answer": "We're tired.",
+        "hint": "Chúng mình mệt."
+      },
+      {
+        "type": "sentence",
+        "answer": "They're happy now.",
+        "hint": "Bây giờ các bạn ấy vui."
+      },
+      {
+        "type": "sentence",
+        "answer": "Are they hot?",
+        "hint": "Các bạn ấy có nóng không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Chúng mình mệt."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bây giờ các bạn ấy vui."
+      },
+      {
+        "type": "translation",
+        "prompt": "Các bạn ấy có nóng không?"
+      }
+    ]
+  }
+}

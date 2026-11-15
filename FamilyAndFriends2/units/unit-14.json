@@ -1,0 +1,846 @@
+{
+  "id": 14,
+  "title": "Look at the photos!",
+  "topic": "Kỷ niệm và dọn dẹp",
+  "icon": "📷",
+  "pages": {
+    "first": 102,
+    "last": 107
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "kind",
+        "vietnamese": "tốt bụng"
+      },
+      {
+        "english": "wet",
+        "vietnamese": "ướt"
+      },
+      {
+        "english": "naughty",
+        "vietnamese": "nghịch ngợm"
+      },
+      {
+        "english": "dry",
+        "vietnamese": "khô"
+      },
+      {
+        "english": "fridge",
+        "vietnamese": "tủ lạnh"
+      },
+      {
+        "english": "tidy",
+        "vietnamese": "gọn gàng"
+      },
+      {
+        "english": "untidy",
+        "vietnamese": "bừa bộn"
+      },
+      {
+        "english": "dirty",
+        "vietnamese": "bẩn"
+      },
+      {
+        "english": "clean",
+        "vietnamese": "sạch"
+      },
+      {
+        "english": "floor",
+        "vietnamese": "sàn nhà"
+      },
+      {
+        "english": "rubbish",
+        "vietnamese": "rác"
+      },
+      {
+        "english": "bin",
+        "vietnamese": "thùng rác"
+      },
+      {
+        "english": "photo",
+        "vietnamese": "ảnh"
+      },
+      {
+        "english": "costume",
+        "vietnamese": "trang phục biểu diễn"
+      },
+      {
+        "english": "vet",
+        "vietnamese": "bác sĩ thú y"
+      },
+      {
+        "english": "play",
+        "vietnamese": "vở kịch"
+      },
+      {
+        "english": "cub",
+        "vietnamese": "con thú non"
+      },
+      {
+        "english": "cube",
+        "vietnamese": "khối lập phương"
+      },
+      {
+        "english": "tap",
+        "vietnamese": "vòi nước"
+      },
+      {
+        "english": "tape",
+        "vietnamese": "băng dính"
+      },
+      {
+        "english": "pip",
+        "vietnamese": "hạt nhỏ"
+      },
+      {
+        "english": "pipe",
+        "vietnamese": "ống dẫn"
+      },
+      {
+        "english": "sink",
+        "vietnamese": "bồn rửa"
+      },
+      {
+        "english": "ill",
+        "vietnamese": "bị ốm"
+      },
+      {
+        "english": "proud",
+        "vietnamese": "tự hào"
+      },
+      {
+        "english": "brilliant",
+        "vietnamese": "tuyệt vời"
+      },
+      {
+        "english": "success",
+        "vietnamese": "thành công"
+      },
+      {
+        "english": "fireman",
+        "vietnamese": "lính cứu hỏa"
+      },
+      {
+        "english": "builder",
+        "vietnamese": "thợ xây"
+      },
+      {
+        "english": "policeman",
+        "vietnamese": "cảnh sát nam"
+      },
+      {
+        "english": "flat",
+        "vietnamese": "căn hộ"
+      },
+      {
+        "english": "then",
+        "vietnamese": "hồi đó"
+      },
+      {
+        "english": "in the end",
+        "vietnamese": "cuối cùng"
+      }
+    ],
+    "structures": [
+      {
+        "english": "I was naughty then.",
+        "vietnamese": "Hồi đó mình hay nghịch."
+      },
+      {
+        "english": "She was kind.",
+        "vietnamese": "Cô ấy tốt bụng."
+      },
+      {
+        "english": "Mum wasn't wet.",
+        "vietnamese": "Mẹ không bị ướt."
+      },
+      {
+        "english": "We were in the park.",
+        "vietnamese": "Lúc đó chúng mình ở công viên."
+      },
+      {
+        "english": "You were very wet.",
+        "vietnamese": "Lúc đó bạn ướt sũng."
+      },
+      {
+        "english": "They weren't sad.",
+        "vietnamese": "Lúc đó họ không buồn."
+      },
+      {
+        "english": "The house was untidy.",
+        "vietnamese": "Ngôi nhà lúc đó rất bừa bộn."
+      },
+      {
+        "english": "He was a fireman in the play.",
+        "vietnamese": "Bạn ấy đóng vai lính cứu hỏa trong vở kịch."
+      },
+      {
+        "english": "They were just hungry.",
+        "vietnamese": "Lúc đó họ chỉ đói thôi."
+      },
+      {
+        "english": "The party was fun.",
+        "vietnamese": "Bữa tiệc rất vui."
+      },
+      {
+        "english": "Cards were on the floor.",
+        "vietnamese": "Những tấm thiệp nằm trên sàn."
+      },
+      {
+        "english": "Now the house is tidy.",
+        "vietnamese": "Bây giờ nhà đã gọn gàng."
+      },
+      {
+        "english": "Come on in!",
+        "vietnamese": "Vào đi nào!"
+      },
+      {
+        "english": "I was the vet in the play.",
+        "vietnamese": "Mình đóng vai bác sĩ thú y trong vở kịch."
+      },
+      {
+        "english": "Our families were proud of us.",
+        "vietnamese": "Gia đình chúng mình rất tự hào về chúng mình."
+      },
+      {
+        "english": "I don't like dogs or cats.",
+        "vietnamese": "Mình không thích chó hay mèo."
+      },
+      {
+        "english": "I can't swim or ride a bike.",
+        "vietnamese": "Mình không biết bơi hay đi xe đạp."
+      },
+      {
+        "english": "I wasn't cold.",
+        "vietnamese": "Lúc đó mình không lạnh."
+      },
+      {
+        "english": "You weren't dry.",
+        "vietnamese": "Lúc đó bạn không khô ráo."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "kind",
+        "vietnamese": "tốt bụng"
+      },
+      {
+        "english": "wet",
+        "vietnamese": "ướt"
+      },
+      {
+        "english": "naughty",
+        "vietnamese": "nghịch ngợm"
+      },
+      {
+        "english": "dry",
+        "vietnamese": "khô"
+      },
+      {
+        "english": "fridge",
+        "vietnamese": "tủ lạnh"
+      },
+      {
+        "english": "tidy",
+        "vietnamese": "gọn gàng"
+      },
+      {
+        "english": "untidy",
+        "vietnamese": "bừa bộn"
+      },
+      {
+        "english": "dirty",
+        "vietnamese": "bẩn"
+      },
+      {
+        "english": "clean",
+        "vietnamese": "sạch"
+      },
+      {
+        "english": "floor",
+        "vietnamese": "sàn nhà"
+      },
+      {
+        "english": "rubbish",
+        "vietnamese": "rác"
+      },
+      {
+        "english": "bin",
+        "vietnamese": "thùng rác"
+      },
+      {
+        "english": "photo",
+        "vietnamese": "ảnh"
+      },
+      {
+        "english": "costume",
+        "vietnamese": "trang phục biểu diễn"
+      },
+      {
+        "english": "vet",
+        "vietnamese": "bác sĩ thú y"
+      },
+      {
+        "english": "play",
+        "vietnamese": "vở kịch"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Các bạn bỏ rác vào đâu?",
+        "options": [
+          "Thùng rác",
+          "Tủ lạnh",
+          "Ngăn kéo",
+          "Hộp đồ chơi"
+        ],
+        "answer": "Thùng rác",
+        "passage": [
+          "After the party, the floor was dirty. We put the rubbish in the bin, and now the house is tidy."
+        ]
+      },
+      {
+        "prompt": "Từ nào có nguyên âm dài như trong tape?",
+        "options": [
+          "tape",
+          "tap",
+          "pip",
+          "cub"
+        ],
+        "answer": "tape"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lúc đó họ chỉ đói thôi.",
+          "Hồi đó mình hay nghịch.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt."
+        ],
+        "answer": "Lúc đó họ chỉ đói thôi.",
+        "passage": [
+          "They were just hungry."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bữa tiệc rất vui.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên."
+        ],
+        "answer": "Bữa tiệc rất vui.",
+        "passage": [
+          "The party was fun."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Những tấm thiệp nằm trên sàn.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên.",
+          "Lúc đó bạn ướt sũng."
+        ],
+        "answer": "Những tấm thiệp nằm trên sàn.",
+        "passage": [
+          "Cards were on the floor."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ nhà đã gọn gàng.",
+          "Lúc đó chúng mình ở công viên.",
+          "Lúc đó bạn ướt sũng.",
+          "Lúc đó họ không buồn."
+        ],
+        "answer": "Bây giờ nhà đã gọn gàng.",
+        "passage": [
+          "Now the house is tidy."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Vào đi nào!",
+          "Lúc đó bạn ướt sũng.",
+          "Lúc đó họ không buồn.",
+          "Ngôi nhà lúc đó rất bừa bộn."
+        ],
+        "answer": "Vào đi nào!",
+        "passage": [
+          "Come on in!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình đóng vai bác sĩ thú y trong vở kịch.",
+          "Lúc đó họ không buồn.",
+          "Ngôi nhà lúc đó rất bừa bộn.",
+          "Bạn ấy đóng vai lính cứu hỏa trong vở kịch."
+        ],
+        "answer": "Mình đóng vai bác sĩ thú y trong vở kịch.",
+        "passage": [
+          "I was the vet in the play."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không biết bơi hay đi xe đạp.",
+          "Hồi đó mình hay nghịch.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt."
+        ],
+        "answer": "Mình không biết bơi hay đi xe đạp.",
+        "passage": [
+          "I can't swim or ride a bike."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lúc đó mình không lạnh.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên."
+        ],
+        "answer": "Lúc đó mình không lạnh.",
+        "passage": [
+          "I wasn't cold."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lúc đó bạn không khô ráo.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên.",
+          "Lúc đó bạn ướt sũng."
+        ],
+        "answer": "Lúc đó bạn không khô ráo.",
+        "passage": [
+          "You weren't dry."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "tape",
+        "answer": "tape",
+        "options": [
+          "tape",
+          "tap",
+          "pip",
+          "cub"
+        ]
+      },
+      {
+        "audio": "tap",
+        "answer": "tap",
+        "options": [
+          "tap",
+          "pip",
+          "cub",
+          "kind"
+        ]
+      },
+      {
+        "audio": "pip",
+        "answer": "pip",
+        "options": [
+          "pip",
+          "cub",
+          "kind",
+          "wet"
+        ]
+      },
+      {
+        "audio": "cub",
+        "answer": "cub",
+        "options": [
+          "cub",
+          "kind",
+          "wet",
+          "naughty"
+        ]
+      },
+      {
+        "audio": "kind",
+        "answer": "kind",
+        "options": [
+          "kind",
+          "wet",
+          "naughty",
+          "dry"
+        ]
+      },
+      {
+        "audio": "wet",
+        "answer": "wet",
+        "options": [
+          "wet",
+          "naughty",
+          "dry",
+          "fridge"
+        ]
+      },
+      {
+        "audio": "naughty",
+        "answer": "naughty",
+        "options": [
+          "naughty",
+          "dry",
+          "fridge",
+          "tidy"
+        ]
+      },
+      {
+        "audio": "dry",
+        "answer": "dry",
+        "options": [
+          "dry",
+          "fridge",
+          "tidy",
+          "tape"
+        ]
+      },
+      {
+        "audio": "fridge",
+        "answer": "fridge",
+        "options": [
+          "fridge",
+          "tidy",
+          "tape",
+          "tap"
+        ]
+      },
+      {
+        "audio": "tidy",
+        "answer": "tidy",
+        "options": [
+          "tidy",
+          "tape",
+          "tap",
+          "pip"
+        ]
+      },
+      {
+        "audio": "I was naughty then.",
+        "answer": "I was naughty then.",
+        "options": [
+          "I was naughty then.",
+          "She was kind.",
+          "Mum wasn't wet.",
+          "We were in the park."
+        ]
+      },
+      {
+        "audio": "She was kind.",
+        "answer": "She was kind.",
+        "options": [
+          "She was kind.",
+          "Mum wasn't wet.",
+          "We were in the park.",
+          "You were very wet."
+        ]
+      },
+      {
+        "audio": "Mum wasn't wet.",
+        "answer": "Mum wasn't wet.",
+        "options": [
+          "Mum wasn't wet.",
+          "We were in the park.",
+          "You were very wet.",
+          "They weren't sad."
+        ]
+      },
+      {
+        "audio": "We were in the park.",
+        "answer": "We were in the park.",
+        "options": [
+          "We were in the park.",
+          "You were very wet.",
+          "They weren't sad.",
+          "The house was untidy."
+        ]
+      },
+      {
+        "audio": "You were very wet.",
+        "answer": "You were very wet.",
+        "options": [
+          "You were very wet.",
+          "They weren't sad.",
+          "The house was untidy.",
+          "He was a fireman in the play."
+        ]
+      },
+      {
+        "audio": "They weren't sad.",
+        "answer": "They weren't sad.",
+        "options": [
+          "They weren't sad.",
+          "The house was untidy.",
+          "He was a fireman in the play.",
+          "They were just hungry."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "I was naughty then.",
+        "hint": "Hồi đó mình hay nghịch."
+      },
+      {
+        "answer": "She was kind.",
+        "hint": "Cô ấy tốt bụng."
+      },
+      {
+        "answer": "Mum wasn't wet.",
+        "hint": "Mẹ không bị ướt."
+      },
+      {
+        "answer": "We were in the park.",
+        "hint": "Lúc đó chúng mình ở công viên."
+      },
+      {
+        "answer": "You were very wet.",
+        "hint": "Lúc đó bạn ướt sũng."
+      },
+      {
+        "answer": "They weren't sad.",
+        "hint": "Lúc đó họ không buồn."
+      },
+      {
+        "answer": "The house was untidy.",
+        "hint": "Ngôi nhà lúc đó rất bừa bộn."
+      },
+      {
+        "answer": "He was a fireman in the play.",
+        "hint": "Bạn ấy đóng vai lính cứu hỏa trong vở kịch."
+      },
+      {
+        "answer": "They were just hungry.",
+        "hint": "Lúc đó họ chỉ đói thôi."
+      },
+      {
+        "answer": "The party was fun.",
+        "hint": "Bữa tiệc rất vui."
+      },
+      {
+        "answer": "Cards were on the floor.",
+        "hint": "Những tấm thiệp nằm trên sàn."
+      },
+      {
+        "answer": "Now the house is tidy.",
+        "hint": "Bây giờ nhà đã gọn gàng."
+      },
+      {
+        "answer": "Come on in!",
+        "hint": "Vào đi nào!"
+      },
+      {
+        "answer": "I was the vet in the play.",
+        "hint": "Mình đóng vai bác sĩ thú y trong vở kịch."
+      },
+      {
+        "answer": "Our families were proud of us.",
+        "hint": "Gia đình chúng mình rất tự hào về chúng mình."
+      },
+      {
+        "answer": "I don't like dogs or cats.",
+        "hint": "Mình không thích chó hay mèo."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Hồi đó mình hay nghịch."
+      },
+      {
+        "prompt": "Cô ấy tốt bụng."
+      },
+      {
+        "prompt": "Mẹ không bị ướt."
+      },
+      {
+        "prompt": "Lúc đó chúng mình ở công viên."
+      },
+      {
+        "prompt": "Lúc đó bạn ướt sũng."
+      },
+      {
+        "prompt": "Lúc đó họ không buồn."
+      },
+      {
+        "prompt": "Ngôi nhà lúc đó rất bừa bộn."
+      },
+      {
+        "prompt": "Bạn ấy đóng vai lính cứu hỏa trong vở kịch."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Các bạn bỏ rác vào đâu?",
+        "options": [
+          "Thùng rác",
+          "Tủ lạnh",
+          "Ngăn kéo",
+          "Hộp đồ chơi"
+        ],
+        "answer": "Thùng rác",
+        "passage": [
+          "After the party, the floor was dirty. We put the rubbish in the bin, and now the house is tidy."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có nguyên âm dài như trong tape?",
+        "options": [
+          "tape",
+          "tap",
+          "pip",
+          "cub"
+        ],
+        "answer": "tape"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lúc đó bạn ướt sũng.",
+          "Hồi đó mình hay nghịch.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt."
+        ],
+        "answer": "Lúc đó bạn ướt sũng.",
+        "passage": [
+          "You were very wet."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Lúc đó họ không buồn.",
+          "Cô ấy tốt bụng.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên."
+        ],
+        "answer": "Lúc đó họ không buồn.",
+        "passage": [
+          "They weren't sad."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Ngôi nhà lúc đó rất bừa bộn.",
+          "Mẹ không bị ướt.",
+          "Lúc đó chúng mình ở công viên.",
+          "Lúc đó bạn ướt sũng."
+        ],
+        "answer": "Ngôi nhà lúc đó rất bừa bộn.",
+        "passage": [
+          "The house was untidy."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy đóng vai lính cứu hỏa trong vở kịch.",
+          "Lúc đó chúng mình ở công viên.",
+          "Lúc đó bạn ướt sũng.",
+          "Lúc đó họ không buồn."
+        ],
+        "answer": "Bạn ấy đóng vai lính cứu hỏa trong vở kịch.",
+        "passage": [
+          "He was a fireman in the play."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "tape",
+        "answer": "tape",
+        "options": [
+          "tape",
+          "tap",
+          "pip",
+          "cub"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "tap",
+        "answer": "tap",
+        "options": [
+          "tap",
+          "pip",
+          "cub",
+          "kind"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "pip",
+        "answer": "pip",
+        "options": [
+          "pip",
+          "cub",
+          "kind",
+          "wet"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "They were just hungry.",
+        "answer": "They were just hungry."
+      },
+      {
+        "type": "dictation",
+        "audio": "The party was fun.",
+        "answer": "The party was fun."
+      },
+      {
+        "type": "dictation",
+        "audio": "Cards were on the floor.",
+        "answer": "Cards were on the floor."
+      },
+      {
+        "type": "sentence",
+        "answer": "I was naughty then.",
+        "hint": "Hồi đó mình hay nghịch."
+      },
+      {
+        "type": "sentence",
+        "answer": "She was kind.",
+        "hint": "Cô ấy tốt bụng."
+      },
+      {
+        "type": "sentence",
+        "answer": "Mum wasn't wet.",
+        "hint": "Mẹ không bị ướt."
+      },
+      {
+        "type": "translation",
+        "prompt": "Hồi đó mình hay nghịch."
+      },
+      {
+        "type": "translation",
+        "prompt": "Cô ấy tốt bụng."
+      },
+      {
+        "type": "translation",
+        "prompt": "Mẹ không bị ướt."
+      }
+    ]
+  }
+}

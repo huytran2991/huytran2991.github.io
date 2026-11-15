@@ -1,0 +1,841 @@
+{
+  "id": 9,
+  "title": "Where does she work?",
+  "topic": "Nơi làm việc và các địa điểm",
+  "icon": "🏥",
+  "pages": {
+    "first": 64,
+    "last": 69
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "hospital",
+        "vietnamese": "bệnh viện"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "airport",
+        "vietnamese": "sân bay"
+      },
+      {
+        "english": "police station",
+        "vietnamese": "đồn cảnh sát"
+      },
+      {
+        "english": "fire station",
+        "vietnamese": "trạm cứu hỏa"
+      },
+      {
+        "english": "shop",
+        "vietnamese": "cửa hàng"
+      },
+      {
+        "english": "cake shop",
+        "vietnamese": "cửa hàng bánh"
+      },
+      {
+        "english": "bank",
+        "vietnamese": "ngân hàng"
+      },
+      {
+        "english": "supermarket",
+        "vietnamese": "siêu thị"
+      },
+      {
+        "english": "zoo",
+        "vietnamese": "sở thú"
+      },
+      {
+        "english": "garage",
+        "vietnamese": "ga-ra"
+      },
+      {
+        "english": "station",
+        "vietnamese": "nhà ga"
+      },
+      {
+        "english": "basket",
+        "vietnamese": "giỏ"
+      },
+      {
+        "english": "look after",
+        "vietnamese": "chăm sóc"
+      },
+      {
+        "english": "feed",
+        "vietnamese": "cho ăn"
+      },
+      {
+        "english": "lake",
+        "vietnamese": "hồ"
+      },
+      {
+        "english": "face",
+        "vietnamese": "khuôn mặt"
+      },
+      {
+        "english": "gate",
+        "vietnamese": "cổng"
+      },
+      {
+        "english": "plane",
+        "vietnamese": "máy bay"
+      },
+      {
+        "english": "cake",
+        "vietnamese": "bánh ngọt"
+      },
+      {
+        "english": "shopping",
+        "vietnamese": "đồ mua sắm"
+      },
+      {
+        "english": "dark",
+        "vietnamese": "tối"
+      },
+      {
+        "english": "elephant",
+        "vietnamese": "voi"
+      },
+      {
+        "english": "giraffe",
+        "vietnamese": "hươu cao cổ"
+      },
+      {
+        "english": "lion",
+        "vietnamese": "sư tử"
+      },
+      {
+        "english": "tiger",
+        "vietnamese": "hổ"
+      },
+      {
+        "english": "parrot",
+        "vietnamese": "vẹt"
+      },
+      {
+        "english": "monkey",
+        "vietnamese": "khỉ"
+      },
+      {
+        "english": "zebra",
+        "vietnamese": "ngựa vằn"
+      },
+      {
+        "english": "meat",
+        "vietnamese": "thịt"
+      },
+      {
+        "english": "vegetables",
+        "vietnamese": "rau"
+      },
+      {
+        "english": "water",
+        "vietnamese": "nước"
+      },
+      {
+        "english": "cute",
+        "vietnamese": "đáng yêu"
+      },
+      {
+        "english": "job",
+        "vietnamese": "công việc"
+      },
+      {
+        "english": "park",
+        "vietnamese": "công viên"
+      },
+      {
+        "english": "policeman",
+        "vietnamese": "cảnh sát nam"
+      },
+      {
+        "english": "at the moment",
+        "vietnamese": "hiện tại"
+      }
+    ],
+    "structures": [
+      {
+        "english": "Where does he work?",
+        "vietnamese": "Chú ấy làm việc ở đâu?"
+      },
+      {
+        "english": "He works in a police station.",
+        "vietnamese": "Chú ấy làm việc ở đồn cảnh sát."
+      },
+      {
+        "english": "Does she work in a shop?",
+        "vietnamese": "Cô ấy làm việc trong cửa hàng phải không?"
+      },
+      {
+        "english": "Yes, she does.",
+        "vietnamese": "Đúng, cô ấy làm ở đó."
+      },
+      {
+        "english": "Does he work in a hospital?",
+        "vietnamese": "Chú ấy làm việc ở bệnh viện phải không?"
+      },
+      {
+        "english": "No, he doesn't.",
+        "vietnamese": "Không, chú ấy không làm ở đó."
+      },
+      {
+        "english": "She looks after elephants at the zoo.",
+        "vietnamese": "Cô ấy chăm sóc voi ở sở thú."
+      },
+      {
+        "english": "What are your favourite animals?",
+        "vietnamese": "Bạn thích nhất những con vật nào?"
+      },
+      {
+        "english": "Does your grandma work?",
+        "vietnamese": "Bà của bạn có đi làm không?"
+      },
+      {
+        "english": "There are lots of cakes here.",
+        "vietnamese": "Ở đây có rất nhiều bánh."
+      },
+      {
+        "english": "We put our shopping in a basket.",
+        "vietnamese": "Chúng mình bỏ đồ mua sắm vào giỏ."
+      },
+      {
+        "english": "First she feeds the lions.",
+        "vietnamese": "Đầu tiên cô ấy cho sư tử ăn."
+      },
+      {
+        "english": "They eat vegetables.",
+        "vietnamese": "Chúng ăn rau."
+      },
+      {
+        "english": "How many monkeys are there?",
+        "vietnamese": "Có bao nhiêu con khỉ?"
+      },
+      {
+        "english": "I love my job.",
+        "vietnamese": "Mình rất thích công việc của mình."
+      },
+      {
+        "english": "Open the gate.",
+        "vietnamese": "Hãy mở cổng."
+      },
+      {
+        "english": "No, she doesn't.",
+        "vietnamese": "Không, cô ấy không làm ở đó."
+      },
+      {
+        "english": "Yes, he does.",
+        "vietnamese": "Đúng, chú ấy làm ở đó."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "hospital",
+        "vietnamese": "bệnh viện"
+      },
+      {
+        "english": "school",
+        "vietnamese": "trường học"
+      },
+      {
+        "english": "airport",
+        "vietnamese": "sân bay"
+      },
+      {
+        "english": "police station",
+        "vietnamese": "đồn cảnh sát"
+      },
+      {
+        "english": "fire station",
+        "vietnamese": "trạm cứu hỏa"
+      },
+      {
+        "english": "shop",
+        "vietnamese": "cửa hàng"
+      },
+      {
+        "english": "cake shop",
+        "vietnamese": "cửa hàng bánh"
+      },
+      {
+        "english": "bank",
+        "vietnamese": "ngân hàng"
+      },
+      {
+        "english": "supermarket",
+        "vietnamese": "siêu thị"
+      },
+      {
+        "english": "zoo",
+        "vietnamese": "sở thú"
+      },
+      {
+        "english": "garage",
+        "vietnamese": "ga-ra"
+      },
+      {
+        "english": "station",
+        "vietnamese": "nhà ga"
+      },
+      {
+        "english": "basket",
+        "vietnamese": "giỏ"
+      },
+      {
+        "english": "look after",
+        "vietnamese": "chăm sóc"
+      },
+      {
+        "english": "feed",
+        "vietnamese": "cho ăn"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Molly cho con vật nào ăn trước?",
+        "options": [
+          "Sư tử",
+          "Voi",
+          "Khỉ",
+          "Hươu cao cổ"
+        ],
+        "answer": "Sư tử",
+        "passage": [
+          "Molly works at the zoo. She feeds the lions first and then gives vegetables to the elephants."
+        ]
+      },
+      {
+        "prompt": "Từ nào có âm /eɪ/ như trong cake?",
+        "options": [
+          "lake",
+          "park",
+          "shop",
+          "bank"
+        ],
+        "answer": "lake"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bà của bạn có đi làm không?",
+          "Chú ấy làm việc ở đâu?",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?"
+        ],
+        "answer": "Bà của bạn có đi làm không?",
+        "passage": [
+          "Does your grandma work?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Ở đây có rất nhiều bánh.",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?",
+          "Đúng, cô ấy làm ở đó."
+        ],
+        "answer": "Ở đây có rất nhiều bánh.",
+        "passage": [
+          "There are lots of cakes here."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình bỏ đồ mua sắm vào giỏ.",
+          "Cô ấy làm việc trong cửa hàng phải không?",
+          "Đúng, cô ấy làm ở đó.",
+          "Chú ấy làm việc ở bệnh viện phải không?"
+        ],
+        "answer": "Chúng mình bỏ đồ mua sắm vào giỏ.",
+        "passage": [
+          "We put our shopping in a basket."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đầu tiên cô ấy cho sư tử ăn.",
+          "Đúng, cô ấy làm ở đó.",
+          "Chú ấy làm việc ở bệnh viện phải không?",
+          "Không, chú ấy không làm ở đó."
+        ],
+        "answer": "Đầu tiên cô ấy cho sư tử ăn.",
+        "passage": [
+          "First she feeds the lions."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng ăn rau.",
+          "Chú ấy làm việc ở bệnh viện phải không?",
+          "Không, chú ấy không làm ở đó.",
+          "Cô ấy chăm sóc voi ở sở thú."
+        ],
+        "answer": "Chúng ăn rau.",
+        "passage": [
+          "They eat vegetables."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có bao nhiêu con khỉ?",
+          "Không, chú ấy không làm ở đó.",
+          "Cô ấy chăm sóc voi ở sở thú.",
+          "Bạn thích nhất những con vật nào?"
+        ],
+        "answer": "Có bao nhiêu con khỉ?",
+        "passage": [
+          "How many monkeys are there?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, cô ấy không làm ở đó.",
+          "Chú ấy làm việc ở đâu?",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?"
+        ],
+        "answer": "Không, cô ấy không làm ở đó.",
+        "passage": [
+          "No, she doesn't."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đúng, chú ấy làm ở đó.",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?",
+          "Đúng, cô ấy làm ở đó."
+        ],
+        "answer": "Đúng, chú ấy làm ở đó.",
+        "passage": [
+          "Yes, he does."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "lake",
+        "answer": "lake",
+        "options": [
+          "lake",
+          "park",
+          "shop",
+          "bank"
+        ]
+      },
+      {
+        "audio": "park",
+        "answer": "park",
+        "options": [
+          "park",
+          "shop",
+          "bank",
+          "hospital"
+        ]
+      },
+      {
+        "audio": "shop",
+        "answer": "shop",
+        "options": [
+          "shop",
+          "bank",
+          "hospital",
+          "school"
+        ]
+      },
+      {
+        "audio": "bank",
+        "answer": "bank",
+        "options": [
+          "bank",
+          "hospital",
+          "school",
+          "airport"
+        ]
+      },
+      {
+        "audio": "hospital",
+        "answer": "hospital",
+        "options": [
+          "hospital",
+          "school",
+          "airport",
+          "police station"
+        ]
+      },
+      {
+        "audio": "school",
+        "answer": "school",
+        "options": [
+          "school",
+          "airport",
+          "police station",
+          "fire station"
+        ]
+      },
+      {
+        "audio": "airport",
+        "answer": "airport",
+        "options": [
+          "airport",
+          "police station",
+          "fire station",
+          "cake shop"
+        ]
+      },
+      {
+        "audio": "police station",
+        "answer": "police station",
+        "options": [
+          "police station",
+          "fire station",
+          "cake shop",
+          "lake"
+        ]
+      },
+      {
+        "audio": "fire station",
+        "answer": "fire station",
+        "options": [
+          "fire station",
+          "cake shop",
+          "lake",
+          "park"
+        ]
+      },
+      {
+        "audio": "cake shop",
+        "answer": "cake shop",
+        "options": [
+          "cake shop",
+          "lake",
+          "park",
+          "shop"
+        ]
+      },
+      {
+        "audio": "Where does he work?",
+        "answer": "Where does he work?",
+        "options": [
+          "Where does he work?",
+          "He works in a police station.",
+          "Does she work in a shop?",
+          "Yes, she does."
+        ]
+      },
+      {
+        "audio": "He works in a police station.",
+        "answer": "He works in a police station.",
+        "options": [
+          "He works in a police station.",
+          "Does she work in a shop?",
+          "Yes, she does.",
+          "Does he work in a hospital?"
+        ]
+      },
+      {
+        "audio": "Does she work in a shop?",
+        "answer": "Does she work in a shop?",
+        "options": [
+          "Does she work in a shop?",
+          "Yes, she does.",
+          "Does he work in a hospital?",
+          "No, he doesn't."
+        ]
+      },
+      {
+        "audio": "Yes, she does.",
+        "answer": "Yes, she does.",
+        "options": [
+          "Yes, she does.",
+          "Does he work in a hospital?",
+          "No, he doesn't.",
+          "She looks after elephants at the zoo."
+        ]
+      },
+      {
+        "audio": "Does he work in a hospital?",
+        "answer": "Does he work in a hospital?",
+        "options": [
+          "Does he work in a hospital?",
+          "No, he doesn't.",
+          "She looks after elephants at the zoo.",
+          "What are your favourite animals?"
+        ]
+      },
+      {
+        "audio": "No, he doesn't.",
+        "answer": "No, he doesn't.",
+        "options": [
+          "No, he doesn't.",
+          "She looks after elephants at the zoo.",
+          "What are your favourite animals?",
+          "Does your grandma work?"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "Where does he work?",
+        "hint": "Chú ấy làm việc ở đâu?"
+      },
+      {
+        "answer": "He works in a police station.",
+        "hint": "Chú ấy làm việc ở đồn cảnh sát."
+      },
+      {
+        "answer": "Does she work in a shop?",
+        "hint": "Cô ấy làm việc trong cửa hàng phải không?"
+      },
+      {
+        "answer": "Yes, she does.",
+        "hint": "Đúng, cô ấy làm ở đó."
+      },
+      {
+        "answer": "Does he work in a hospital?",
+        "hint": "Chú ấy làm việc ở bệnh viện phải không?"
+      },
+      {
+        "answer": "No, he doesn't.",
+        "hint": "Không, chú ấy không làm ở đó."
+      },
+      {
+        "answer": "She looks after elephants at the zoo.",
+        "hint": "Cô ấy chăm sóc voi ở sở thú."
+      },
+      {
+        "answer": "What are your favourite animals?",
+        "hint": "Bạn thích nhất những con vật nào?"
+      },
+      {
+        "answer": "Does your grandma work?",
+        "hint": "Bà của bạn có đi làm không?"
+      },
+      {
+        "answer": "There are lots of cakes here.",
+        "hint": "Ở đây có rất nhiều bánh."
+      },
+      {
+        "answer": "We put our shopping in a basket.",
+        "hint": "Chúng mình bỏ đồ mua sắm vào giỏ."
+      },
+      {
+        "answer": "First she feeds the lions.",
+        "hint": "Đầu tiên cô ấy cho sư tử ăn."
+      },
+      {
+        "answer": "They eat vegetables.",
+        "hint": "Chúng ăn rau."
+      },
+      {
+        "answer": "How many monkeys are there?",
+        "hint": "Có bao nhiêu con khỉ?"
+      },
+      {
+        "answer": "I love my job.",
+        "hint": "Mình rất thích công việc của mình."
+      },
+      {
+        "answer": "Open the gate.",
+        "hint": "Hãy mở cổng."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Chú ấy làm việc ở đâu?"
+      },
+      {
+        "prompt": "Chú ấy làm việc ở đồn cảnh sát."
+      },
+      {
+        "prompt": "Cô ấy làm việc trong cửa hàng phải không?"
+      },
+      {
+        "prompt": "Đúng, cô ấy làm ở đó."
+      },
+      {
+        "prompt": "Chú ấy làm việc ở bệnh viện phải không?"
+      },
+      {
+        "prompt": "Không, chú ấy không làm ở đó."
+      },
+      {
+        "prompt": "Cô ấy chăm sóc voi ở sở thú."
+      },
+      {
+        "prompt": "Bạn thích nhất những con vật nào?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Molly cho con vật nào ăn trước?",
+        "options": [
+          "Sư tử",
+          "Voi",
+          "Khỉ",
+          "Hươu cao cổ"
+        ],
+        "answer": "Sư tử",
+        "passage": [
+          "Molly works at the zoo. She feeds the lions first and then gives vegetables to the elephants."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có âm /eɪ/ như trong cake?",
+        "options": [
+          "lake",
+          "park",
+          "shop",
+          "bank"
+        ],
+        "answer": "lake"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chú ấy làm việc ở bệnh viện phải không?",
+          "Chú ấy làm việc ở đâu?",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?"
+        ],
+        "answer": "Chú ấy làm việc ở bệnh viện phải không?",
+        "passage": [
+          "Does he work in a hospital?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, chú ấy không làm ở đó.",
+          "Chú ấy làm việc ở đồn cảnh sát.",
+          "Cô ấy làm việc trong cửa hàng phải không?",
+          "Đúng, cô ấy làm ở đó."
+        ],
+        "answer": "Không, chú ấy không làm ở đó.",
+        "passage": [
+          "No, he doesn't."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy chăm sóc voi ở sở thú.",
+          "Cô ấy làm việc trong cửa hàng phải không?",
+          "Đúng, cô ấy làm ở đó.",
+          "Chú ấy làm việc ở bệnh viện phải không?"
+        ],
+        "answer": "Cô ấy chăm sóc voi ở sở thú.",
+        "passage": [
+          "She looks after elephants at the zoo."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn thích nhất những con vật nào?",
+          "Đúng, cô ấy làm ở đó.",
+          "Chú ấy làm việc ở bệnh viện phải không?",
+          "Không, chú ấy không làm ở đó."
+        ],
+        "answer": "Bạn thích nhất những con vật nào?",
+        "passage": [
+          "What are your favourite animals?"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "lake",
+        "answer": "lake",
+        "options": [
+          "lake",
+          "park",
+          "shop",
+          "bank"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "park",
+        "answer": "park",
+        "options": [
+          "park",
+          "shop",
+          "bank",
+          "hospital"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "shop",
+        "answer": "shop",
+        "options": [
+          "shop",
+          "bank",
+          "hospital",
+          "school"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Does your grandma work?",
+        "answer": "Does your grandma work?"
+      },
+      {
+        "type": "dictation",
+        "audio": "There are lots of cakes here.",
+        "answer": "There are lots of cakes here."
+      },
+      {
+        "type": "dictation",
+        "audio": "We put our shopping in a basket.",
+        "answer": "We put our shopping in a basket."
+      },
+      {
+        "type": "sentence",
+        "answer": "Where does he work?",
+        "hint": "Chú ấy làm việc ở đâu?"
+      },
+      {
+        "type": "sentence",
+        "answer": "He works in a police station.",
+        "hint": "Chú ấy làm việc ở đồn cảnh sát."
+      },
+      {
+        "type": "sentence",
+        "answer": "Does she work in a shop?",
+        "hint": "Cô ấy làm việc trong cửa hàng phải không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Chú ấy làm việc ở đâu?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Chú ấy làm việc ở đồn cảnh sát."
+      },
+      {
+        "type": "translation",
+        "prompt": "Cô ấy làm việc trong cửa hàng phải không?"
+      }
+    ]
+  }
+}

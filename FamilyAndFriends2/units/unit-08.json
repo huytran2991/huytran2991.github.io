@@ -1,0 +1,796 @@
+{
+  "id": 8,
+  "title": "What's the time?",
+  "topic": "Giờ giấc và sinh hoạt hằng ngày",
+  "icon": "🕖",
+  "pages": {
+    "first": 58,
+    "last": 63
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "get up",
+        "vietnamese": "thức dậy"
+      },
+      {
+        "english": "have breakfast",
+        "vietnamese": "ăn sáng"
+      },
+      {
+        "english": "go to school",
+        "vietnamese": "đi học"
+      },
+      {
+        "english": "go home",
+        "vietnamese": "về nhà"
+      },
+      {
+        "english": "have dinner",
+        "vietnamese": "ăn tối"
+      },
+      {
+        "english": "go to bed",
+        "vietnamese": "đi ngủ"
+      },
+      {
+        "english": "have lunch",
+        "vietnamese": "ăn trưa"
+      },
+      {
+        "english": "go to work",
+        "vietnamese": "đi làm"
+      },
+      {
+        "english": "in the morning",
+        "vietnamese": "vào buổi sáng"
+      },
+      {
+        "english": "in the afternoon",
+        "vietnamese": "vào buổi chiều"
+      },
+      {
+        "english": "in the evening",
+        "vietnamese": "vào buổi tối"
+      },
+      {
+        "english": "at night",
+        "vietnamese": "vào ban đêm"
+      },
+      {
+        "english": "o'clock",
+        "vietnamese": "giờ đúng"
+      },
+      {
+        "english": "start work",
+        "vietnamese": "bắt đầu làm việc"
+      },
+      {
+        "english": "smile",
+        "vietnamese": "nụ cười"
+      },
+      {
+        "english": "small",
+        "vietnamese": "nhỏ"
+      },
+      {
+        "english": "snow",
+        "vietnamese": "tuyết"
+      },
+      {
+        "english": "snake",
+        "vietnamese": "rắn"
+      },
+      {
+        "english": "stairs",
+        "vietnamese": "cầu thang"
+      },
+      {
+        "english": "star",
+        "vietnamese": "ngôi sao"
+      },
+      {
+        "english": "sky",
+        "vietnamese": "bầu trời"
+      },
+      {
+        "english": "skates",
+        "vietnamese": "giày trượt"
+      },
+      {
+        "english": "cereal",
+        "vietnamese": "ngũ cốc"
+      },
+      {
+        "english": "bread",
+        "vietnamese": "bánh mì"
+      },
+      {
+        "english": "milk",
+        "vietnamese": "sữa"
+      },
+      {
+        "english": "coat",
+        "vietnamese": "áo khoác"
+      },
+      {
+        "english": "doctor",
+        "vietnamese": "bác sĩ"
+      },
+      {
+        "english": "headphones",
+        "vietnamese": "tai nghe"
+      },
+      {
+        "english": "asleep",
+        "vietnamese": "đang ngủ"
+      },
+      {
+        "english": "by bus",
+        "vietnamese": "bằng xe buýt"
+      },
+      {
+        "english": "cook dinner",
+        "vietnamese": "nấu bữa tối"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What's the time?",
+        "vietnamese": "Bây giờ là mấy giờ?"
+      },
+      {
+        "english": "It's seven o'clock.",
+        "vietnamese": "Bây giờ là đúng bảy giờ."
+      },
+      {
+        "english": "He gets up at six o'clock.",
+        "vietnamese": "Bạn ấy thức dậy lúc sáu giờ."
+      },
+      {
+        "english": "She goes to work in the morning.",
+        "vietnamese": "Cô ấy đi làm vào buổi sáng."
+      },
+      {
+        "english": "He has dinner at seven o'clock.",
+        "vietnamese": "Bạn ấy ăn tối lúc bảy giờ."
+      },
+      {
+        "english": "What do you do in the morning?",
+        "vietnamese": "Bạn làm gì vào buổi sáng?"
+      },
+      {
+        "english": "When do you get up?",
+        "vietnamese": "Bạn thức dậy lúc nào?"
+      },
+      {
+        "english": "Where do you go?",
+        "vietnamese": "Bạn đi đâu?"
+      },
+      {
+        "english": "My dad works at night.",
+        "vietnamese": "Bố mình làm việc vào ban đêm."
+      },
+      {
+        "english": "Can we listen to music now?",
+        "vietnamese": "Bây giờ chúng mình nghe nhạc được không?"
+      },
+      {
+        "english": "Put on these headphones.",
+        "vietnamese": "Hãy đeo tai nghe này."
+      },
+      {
+        "english": "I go to school by bus.",
+        "vietnamese": "Mình đi học bằng xe buýt."
+      },
+      {
+        "english": "She starts work at six o'clock.",
+        "vietnamese": "Cô ấy bắt đầu làm việc lúc sáu giờ."
+      },
+      {
+        "english": "I don't see her in the morning.",
+        "vietnamese": "Mình không gặp cô ấy vào buổi sáng."
+      },
+      {
+        "english": "It's time for bed.",
+        "vietnamese": "Đến giờ đi ngủ rồi."
+      },
+      {
+        "english": "When have we got maths?",
+        "vietnamese": "Khi nào chúng mình có môn toán?"
+      },
+      {
+        "english": "He goes to bed at eleven in the morning.",
+        "vietnamese": "Bố đi ngủ lúc mười một giờ sáng."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "get up",
+        "vietnamese": "thức dậy"
+      },
+      {
+        "english": "have breakfast",
+        "vietnamese": "ăn sáng"
+      },
+      {
+        "english": "go to school",
+        "vietnamese": "đi học"
+      },
+      {
+        "english": "go home",
+        "vietnamese": "về nhà"
+      },
+      {
+        "english": "have dinner",
+        "vietnamese": "ăn tối"
+      },
+      {
+        "english": "go to bed",
+        "vietnamese": "đi ngủ"
+      },
+      {
+        "english": "have lunch",
+        "vietnamese": "ăn trưa"
+      },
+      {
+        "english": "go to work",
+        "vietnamese": "đi làm"
+      },
+      {
+        "english": "in the morning",
+        "vietnamese": "vào buổi sáng"
+      },
+      {
+        "english": "in the afternoon",
+        "vietnamese": "vào buổi chiều"
+      },
+      {
+        "english": "in the evening",
+        "vietnamese": "vào buổi tối"
+      },
+      {
+        "english": "at night",
+        "vietnamese": "vào ban đêm"
+      },
+      {
+        "english": "o'clock",
+        "vietnamese": "giờ đúng"
+      },
+      {
+        "english": "start work",
+        "vietnamese": "bắt đầu làm việc"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Mẹ bắt đầu làm việc lúc nào?",
+        "options": [
+          "6 giờ",
+          "7 giờ",
+          "8 giờ",
+          "9 giờ"
+        ],
+        "answer": "6 giờ",
+        "passage": [
+          "I go to school at eight o'clock. Mum starts work at six, so I don't see her in the morning."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng sn?",
+        "options": [
+          "snake",
+          "star",
+          "small",
+          "sky"
+        ],
+        "answer": "snake"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bố mình làm việc vào ban đêm.",
+          "Bây giờ là mấy giờ?",
+          "Bây giờ là đúng bảy giờ.",
+          "Bạn ấy thức dậy lúc sáu giờ."
+        ],
+        "answer": "Bố mình làm việc vào ban đêm.",
+        "passage": [
+          "My dad works at night."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ chúng mình nghe nhạc được không?",
+          "Bây giờ là đúng bảy giờ.",
+          "Bạn ấy thức dậy lúc sáu giờ.",
+          "Cô ấy đi làm vào buổi sáng."
+        ],
+        "answer": "Bây giờ chúng mình nghe nhạc được không?",
+        "passage": [
+          "Can we listen to music now?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy đeo tai nghe này.",
+          "Bạn ấy thức dậy lúc sáu giờ.",
+          "Cô ấy đi làm vào buổi sáng.",
+          "Bạn ấy ăn tối lúc bảy giờ."
+        ],
+        "answer": "Hãy đeo tai nghe này.",
+        "passage": [
+          "Put on these headphones."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình đi học bằng xe buýt.",
+          "Cô ấy đi làm vào buổi sáng.",
+          "Bạn ấy ăn tối lúc bảy giờ.",
+          "Bạn làm gì vào buổi sáng?"
+        ],
+        "answer": "Mình đi học bằng xe buýt.",
+        "passage": [
+          "I go to school by bus."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô ấy bắt đầu làm việc lúc sáu giờ.",
+          "Bạn ấy ăn tối lúc bảy giờ.",
+          "Bạn làm gì vào buổi sáng?",
+          "Bạn thức dậy lúc nào?"
+        ],
+        "answer": "Cô ấy bắt đầu làm việc lúc sáu giờ.",
+        "passage": [
+          "She starts work at six o'clock."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không gặp cô ấy vào buổi sáng.",
+          "Bạn làm gì vào buổi sáng?",
+          "Bạn thức dậy lúc nào?",
+          "Bạn đi đâu?"
+        ],
+        "answer": "Mình không gặp cô ấy vào buổi sáng.",
+        "passage": [
+          "I don't see her in the morning."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bố đi ngủ lúc mười một giờ sáng.",
+          "Bây giờ là mấy giờ?",
+          "Bây giờ là đúng bảy giờ.",
+          "Bạn ấy thức dậy lúc sáu giờ."
+        ],
+        "answer": "Bố đi ngủ lúc mười một giờ sáng.",
+        "passage": [
+          "He goes to bed at eleven in the morning."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "snake",
+        "answer": "snake",
+        "options": [
+          "snake",
+          "star",
+          "small",
+          "sky"
+        ]
+      },
+      {
+        "audio": "star",
+        "answer": "star",
+        "options": [
+          "star",
+          "small",
+          "sky",
+          "get up"
+        ]
+      },
+      {
+        "audio": "small",
+        "answer": "small",
+        "options": [
+          "small",
+          "sky",
+          "get up",
+          "have breakfast"
+        ]
+      },
+      {
+        "audio": "sky",
+        "answer": "sky",
+        "options": [
+          "sky",
+          "get up",
+          "have breakfast",
+          "go to school"
+        ]
+      },
+      {
+        "audio": "get up",
+        "answer": "get up",
+        "options": [
+          "get up",
+          "have breakfast",
+          "go to school",
+          "go home"
+        ]
+      },
+      {
+        "audio": "have breakfast",
+        "answer": "have breakfast",
+        "options": [
+          "have breakfast",
+          "go to school",
+          "go home",
+          "have dinner"
+        ]
+      },
+      {
+        "audio": "go to school",
+        "answer": "go to school",
+        "options": [
+          "go to school",
+          "go home",
+          "have dinner",
+          "go to bed"
+        ]
+      },
+      {
+        "audio": "go home",
+        "answer": "go home",
+        "options": [
+          "go home",
+          "have dinner",
+          "go to bed",
+          "snake"
+        ]
+      },
+      {
+        "audio": "have dinner",
+        "answer": "have dinner",
+        "options": [
+          "have dinner",
+          "go to bed",
+          "snake",
+          "star"
+        ]
+      },
+      {
+        "audio": "go to bed",
+        "answer": "go to bed",
+        "options": [
+          "go to bed",
+          "snake",
+          "star",
+          "small"
+        ]
+      },
+      {
+        "audio": "What's the time?",
+        "answer": "What's the time?",
+        "options": [
+          "What's the time?",
+          "It's seven o'clock.",
+          "He gets up at six o'clock.",
+          "She goes to work in the morning."
+        ]
+      },
+      {
+        "audio": "It's seven o'clock.",
+        "answer": "It's seven o'clock.",
+        "options": [
+          "It's seven o'clock.",
+          "He gets up at six o'clock.",
+          "She goes to work in the morning.",
+          "He has dinner at seven o'clock."
+        ]
+      },
+      {
+        "audio": "He gets up at six o'clock.",
+        "answer": "He gets up at six o'clock.",
+        "options": [
+          "He gets up at six o'clock.",
+          "She goes to work in the morning.",
+          "He has dinner at seven o'clock.",
+          "What do you do in the morning?"
+        ]
+      },
+      {
+        "audio": "She goes to work in the morning.",
+        "answer": "She goes to work in the morning.",
+        "options": [
+          "She goes to work in the morning.",
+          "He has dinner at seven o'clock.",
+          "What do you do in the morning?",
+          "When do you get up?"
+        ]
+      },
+      {
+        "audio": "He has dinner at seven o'clock.",
+        "answer": "He has dinner at seven o'clock.",
+        "options": [
+          "He has dinner at seven o'clock.",
+          "What do you do in the morning?",
+          "When do you get up?",
+          "Where do you go?"
+        ]
+      },
+      {
+        "audio": "What do you do in the morning?",
+        "answer": "What do you do in the morning?",
+        "options": [
+          "What do you do in the morning?",
+          "When do you get up?",
+          "Where do you go?",
+          "My dad works at night."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What's the time?",
+        "hint": "Bây giờ là mấy giờ?"
+      },
+      {
+        "answer": "It's seven o'clock.",
+        "hint": "Bây giờ là đúng bảy giờ."
+      },
+      {
+        "answer": "He gets up at six o'clock.",
+        "hint": "Bạn ấy thức dậy lúc sáu giờ."
+      },
+      {
+        "answer": "She goes to work in the morning.",
+        "hint": "Cô ấy đi làm vào buổi sáng."
+      },
+      {
+        "answer": "He has dinner at seven o'clock.",
+        "hint": "Bạn ấy ăn tối lúc bảy giờ."
+      },
+      {
+        "answer": "What do you do in the morning?",
+        "hint": "Bạn làm gì vào buổi sáng?"
+      },
+      {
+        "answer": "When do you get up?",
+        "hint": "Bạn thức dậy lúc nào?"
+      },
+      {
+        "answer": "Where do you go?",
+        "hint": "Bạn đi đâu?"
+      },
+      {
+        "answer": "My dad works at night.",
+        "hint": "Bố mình làm việc vào ban đêm."
+      },
+      {
+        "answer": "Can we listen to music now?",
+        "hint": "Bây giờ chúng mình nghe nhạc được không?"
+      },
+      {
+        "answer": "Put on these headphones.",
+        "hint": "Hãy đeo tai nghe này."
+      },
+      {
+        "answer": "I go to school by bus.",
+        "hint": "Mình đi học bằng xe buýt."
+      },
+      {
+        "answer": "She starts work at six o'clock.",
+        "hint": "Cô ấy bắt đầu làm việc lúc sáu giờ."
+      },
+      {
+        "answer": "I don't see her in the morning.",
+        "hint": "Mình không gặp cô ấy vào buổi sáng."
+      },
+      {
+        "answer": "It's time for bed.",
+        "hint": "Đến giờ đi ngủ rồi."
+      },
+      {
+        "answer": "When have we got maths?",
+        "hint": "Khi nào chúng mình có môn toán?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bây giờ là mấy giờ?"
+      },
+      {
+        "prompt": "Bây giờ là đúng bảy giờ."
+      },
+      {
+        "prompt": "Bạn ấy thức dậy lúc sáu giờ."
+      },
+      {
+        "prompt": "Cô ấy đi làm vào buổi sáng."
+      },
+      {
+        "prompt": "Bạn ấy ăn tối lúc bảy giờ."
+      },
+      {
+        "prompt": "Bạn làm gì vào buổi sáng?"
+      },
+      {
+        "prompt": "Bạn thức dậy lúc nào?"
+      },
+      {
+        "prompt": "Bạn đi đâu?"
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Mẹ bắt đầu làm việc lúc nào?",
+        "options": [
+          "6 giờ",
+          "7 giờ",
+          "8 giờ",
+          "9 giờ"
+        ],
+        "answer": "6 giờ",
+        "passage": [
+          "I go to school at eight o'clock. Mum starts work at six, so I don't see her in the morning."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng sn?",
+        "options": [
+          "snake",
+          "star",
+          "small",
+          "sky"
+        ],
+        "answer": "snake"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy ăn tối lúc bảy giờ.",
+          "Bây giờ là mấy giờ?",
+          "Bây giờ là đúng bảy giờ.",
+          "Bạn ấy thức dậy lúc sáu giờ."
+        ],
+        "answer": "Bạn ấy ăn tối lúc bảy giờ.",
+        "passage": [
+          "He has dinner at seven o'clock."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn làm gì vào buổi sáng?",
+          "Bây giờ là đúng bảy giờ.",
+          "Bạn ấy thức dậy lúc sáu giờ.",
+          "Cô ấy đi làm vào buổi sáng."
+        ],
+        "answer": "Bạn làm gì vào buổi sáng?",
+        "passage": [
+          "What do you do in the morning?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn thức dậy lúc nào?",
+          "Bạn ấy thức dậy lúc sáu giờ.",
+          "Cô ấy đi làm vào buổi sáng.",
+          "Bạn ấy ăn tối lúc bảy giờ."
+        ],
+        "answer": "Bạn thức dậy lúc nào?",
+        "passage": [
+          "When do you get up?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn đi đâu?",
+          "Cô ấy đi làm vào buổi sáng.",
+          "Bạn ấy ăn tối lúc bảy giờ.",
+          "Bạn làm gì vào buổi sáng?"
+        ],
+        "answer": "Bạn đi đâu?",
+        "passage": [
+          "Where do you go?"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "snake",
+        "answer": "snake",
+        "options": [
+          "snake",
+          "star",
+          "small",
+          "sky"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "star",
+        "answer": "star",
+        "options": [
+          "star",
+          "small",
+          "sky",
+          "get up"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "small",
+        "answer": "small",
+        "options": [
+          "small",
+          "sky",
+          "get up",
+          "have breakfast"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "My dad works at night.",
+        "answer": "My dad works at night."
+      },
+      {
+        "type": "dictation",
+        "audio": "Can we listen to music now?",
+        "answer": "Can we listen to music now?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Put on these headphones.",
+        "answer": "Put on these headphones."
+      },
+      {
+        "type": "sentence",
+        "answer": "What's the time?",
+        "hint": "Bây giờ là mấy giờ?"
+      },
+      {
+        "type": "sentence",
+        "answer": "It's seven o'clock.",
+        "hint": "Bây giờ là đúng bảy giờ."
+      },
+      {
+        "type": "sentence",
+        "answer": "He gets up at six o'clock.",
+        "hint": "Bạn ấy thức dậy lúc sáu giờ."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bây giờ là mấy giờ?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Bây giờ là đúng bảy giờ."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn ấy thức dậy lúc sáu giờ."
+      }
+    ]
+  }
+}

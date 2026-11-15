@@ -1,0 +1,804 @@
+{
+  "id": 10,
+  "title": "It's hot today!",
+  "topic": "Thời tiết",
+  "icon": "☀️",
+  "pages": {
+    "first": 74,
+    "last": 79
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "weather",
+        "vietnamese": "thời tiết"
+      },
+      {
+        "english": "hot",
+        "vietnamese": "nóng"
+      },
+      {
+        "english": "cold",
+        "vietnamese": "lạnh"
+      },
+      {
+        "english": "sunny",
+        "vietnamese": "có nắng"
+      },
+      {
+        "english": "windy",
+        "vietnamese": "có gió"
+      },
+      {
+        "english": "raining",
+        "vietnamese": "đang mưa"
+      },
+      {
+        "english": "snowing",
+        "vietnamese": "đang có tuyết"
+      },
+      {
+        "english": "fly a kite",
+        "vietnamese": "thả diều"
+      },
+      {
+        "english": "make a snowman",
+        "vietnamese": "đắp người tuyết"
+      },
+      {
+        "english": "go outside",
+        "vietnamese": "ra ngoài"
+      },
+      {
+        "english": "go ice skating",
+        "vietnamese": "đi trượt băng"
+      },
+      {
+        "english": "umbrella",
+        "vietnamese": "ô"
+      },
+      {
+        "english": "raincoat",
+        "vietnamese": "áo mưa"
+      },
+      {
+        "english": "sun hat",
+        "vietnamese": "mũ che nắng"
+      },
+      {
+        "english": "sunglasses",
+        "vietnamese": "kính râm"
+      },
+      {
+        "english": "wear coats",
+        "vietnamese": "mặc áo khoác"
+      },
+      {
+        "english": "coat",
+        "vietnamese": "áo khoác"
+      },
+      {
+        "english": "wear",
+        "vietnamese": "mặc"
+      },
+      {
+        "english": "put on",
+        "vietnamese": "mặc vào"
+      },
+      {
+        "english": "wet",
+        "vietnamese": "ướt"
+      },
+      {
+        "english": "warm",
+        "vietnamese": "ấm"
+      },
+      {
+        "english": "key",
+        "vietnamese": "chìa khóa"
+      },
+      {
+        "english": "bike",
+        "vietnamese": "xe đạp"
+      },
+      {
+        "english": "white",
+        "vietnamese": "trắng"
+      },
+      {
+        "english": "kite",
+        "vietnamese": "diều"
+      },
+      {
+        "english": "line",
+        "vietnamese": "hàng"
+      },
+      {
+        "english": "nine",
+        "vietnamese": "chín"
+      },
+      {
+        "english": "news",
+        "vietnamese": "bản tin"
+      },
+      {
+        "english": "fly away",
+        "vietnamese": "bay mất"
+      },
+      {
+        "english": "sky",
+        "vietnamese": "bầu trời"
+      },
+      {
+        "english": "slide",
+        "vietnamese": "cầu trượt"
+      },
+      {
+        "english": "together",
+        "vietnamese": "cùng nhau"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What's the weather like?",
+        "vietnamese": "Thời tiết thế nào?"
+      },
+      {
+        "english": "It's hot today.",
+        "vietnamese": "Hôm nay trời nóng."
+      },
+      {
+        "english": "It's raining now.",
+        "vietnamese": "Bây giờ trời đang mưa."
+      },
+      {
+        "english": "Put on your sun hat, please.",
+        "vietnamese": "Hãy đội mũ che nắng nhé."
+      },
+      {
+        "english": "Don't put on your coat.",
+        "vietnamese": "Đừng mặc áo khoác vào."
+      },
+      {
+        "english": "Open the window.",
+        "vietnamese": "Hãy mở cửa sổ."
+      },
+      {
+        "english": "Don't open the door.",
+        "vietnamese": "Đừng mở cửa."
+      },
+      {
+        "english": "When it's windy, we fly our kite.",
+        "vietnamese": "Khi trời có gió, chúng mình thả diều."
+      },
+      {
+        "english": "Let's walk to the shops.",
+        "vietnamese": "Mình cùng đi bộ đến các cửa hàng nhé."
+      },
+      {
+        "english": "We haven't got our umbrellas.",
+        "vietnamese": "Chúng mình không có ô."
+      },
+      {
+        "english": "Where's the key?",
+        "vietnamese": "Chìa khóa ở đâu?"
+      },
+      {
+        "english": "Can we go outside to play?",
+        "vietnamese": "Chúng mình ra ngoài chơi được không?"
+      },
+      {
+        "english": "Wear warm coats and hats.",
+        "vietnamese": "Hãy mặc áo khoác ấm và đội mũ."
+      },
+      {
+        "english": "Don't get wet!",
+        "vietnamese": "Đừng để bị ướt!"
+      },
+      {
+        "english": "Don't forget your sunglasses.",
+        "vietnamese": "Đừng quên kính râm."
+      },
+      {
+        "english": "It's a good time to fly a kite.",
+        "vietnamese": "Đây là lúc thích hợp để thả diều."
+      },
+      {
+        "english": "It's Monday.",
+        "vietnamese": "Hôm nay là thứ Hai."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "weather",
+        "vietnamese": "thời tiết"
+      },
+      {
+        "english": "hot",
+        "vietnamese": "nóng"
+      },
+      {
+        "english": "cold",
+        "vietnamese": "lạnh"
+      },
+      {
+        "english": "sunny",
+        "vietnamese": "có nắng"
+      },
+      {
+        "english": "windy",
+        "vietnamese": "có gió"
+      },
+      {
+        "english": "raining",
+        "vietnamese": "đang mưa"
+      },
+      {
+        "english": "snowing",
+        "vietnamese": "đang có tuyết"
+      },
+      {
+        "english": "fly a kite",
+        "vietnamese": "thả diều"
+      },
+      {
+        "english": "make a snowman",
+        "vietnamese": "đắp người tuyết"
+      },
+      {
+        "english": "go outside",
+        "vietnamese": "ra ngoài"
+      },
+      {
+        "english": "go ice skating",
+        "vietnamese": "đi trượt băng"
+      },
+      {
+        "english": "umbrella",
+        "vietnamese": "ô"
+      },
+      {
+        "english": "raincoat",
+        "vietnamese": "áo mưa"
+      },
+      {
+        "english": "sun hat",
+        "vietnamese": "mũ che nắng"
+      },
+      {
+        "english": "sunglasses",
+        "vietnamese": "kính râm"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Buổi chiều có thời tiết thế nào?",
+        "options": [
+          "Nắng và nóng",
+          "Lạnh và có tuyết",
+          "Mưa to",
+          "Lạnh và có gió"
+        ],
+        "answer": "Nắng và nóng",
+        "passage": [
+          "Here is the weather for this afternoon. It is sunny and hot. Wear a sun hat if you go outside."
+        ]
+      },
+      {
+        "prompt": "Từ nào có âm /aɪ/ như trong bike?",
+        "options": [
+          "kite",
+          "coat",
+          "wet",
+          "hat"
+        ],
+        "answer": "kite"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình cùng đi bộ đến các cửa hàng nhé.",
+          "Thời tiết thế nào?",
+          "Hôm nay trời nóng.",
+          "Bây giờ trời đang mưa."
+        ],
+        "answer": "Mình cùng đi bộ đến các cửa hàng nhé.",
+        "passage": [
+          "Let's walk to the shops."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình không có ô.",
+          "Hôm nay trời nóng.",
+          "Bây giờ trời đang mưa.",
+          "Hãy đội mũ che nắng nhé."
+        ],
+        "answer": "Chúng mình không có ô.",
+        "passage": [
+          "We haven't got our umbrellas."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chìa khóa ở đâu?",
+          "Bây giờ trời đang mưa.",
+          "Hãy đội mũ che nắng nhé.",
+          "Đừng mặc áo khoác vào."
+        ],
+        "answer": "Chìa khóa ở đâu?",
+        "passage": [
+          "Where's the key?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình ra ngoài chơi được không?",
+          "Hãy đội mũ che nắng nhé.",
+          "Đừng mặc áo khoác vào.",
+          "Hãy mở cửa sổ."
+        ],
+        "answer": "Chúng mình ra ngoài chơi được không?",
+        "passage": [
+          "Can we go outside to play?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy mặc áo khoác ấm và đội mũ.",
+          "Đừng mặc áo khoác vào.",
+          "Hãy mở cửa sổ.",
+          "Đừng mở cửa."
+        ],
+        "answer": "Hãy mặc áo khoác ấm và đội mũ.",
+        "passage": [
+          "Wear warm coats and hats."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng để bị ướt!",
+          "Hãy mở cửa sổ.",
+          "Đừng mở cửa.",
+          "Khi trời có gió, chúng mình thả diều."
+        ],
+        "answer": "Đừng để bị ướt!",
+        "passage": [
+          "Don't get wet!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hôm nay là thứ Hai.",
+          "Thời tiết thế nào?",
+          "Hôm nay trời nóng.",
+          "Bây giờ trời đang mưa."
+        ],
+        "answer": "Hôm nay là thứ Hai.",
+        "passage": [
+          "It's Monday."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "kite",
+        "answer": "kite",
+        "options": [
+          "kite",
+          "coat",
+          "wet",
+          "hat"
+        ]
+      },
+      {
+        "audio": "coat",
+        "answer": "coat",
+        "options": [
+          "coat",
+          "wet",
+          "hat",
+          "weather"
+        ]
+      },
+      {
+        "audio": "wet",
+        "answer": "wet",
+        "options": [
+          "wet",
+          "hat",
+          "weather",
+          "hot"
+        ]
+      },
+      {
+        "audio": "hat",
+        "answer": "hat",
+        "options": [
+          "hat",
+          "weather",
+          "hot",
+          "cold"
+        ]
+      },
+      {
+        "audio": "weather",
+        "answer": "weather",
+        "options": [
+          "weather",
+          "hot",
+          "cold",
+          "sunny"
+        ]
+      },
+      {
+        "audio": "hot",
+        "answer": "hot",
+        "options": [
+          "hot",
+          "cold",
+          "sunny",
+          "windy"
+        ]
+      },
+      {
+        "audio": "cold",
+        "answer": "cold",
+        "options": [
+          "cold",
+          "sunny",
+          "windy",
+          "raining"
+        ]
+      },
+      {
+        "audio": "sunny",
+        "answer": "sunny",
+        "options": [
+          "sunny",
+          "windy",
+          "raining",
+          "kite"
+        ]
+      },
+      {
+        "audio": "windy",
+        "answer": "windy",
+        "options": [
+          "windy",
+          "raining",
+          "kite",
+          "coat"
+        ]
+      },
+      {
+        "audio": "raining",
+        "answer": "raining",
+        "options": [
+          "raining",
+          "kite",
+          "coat",
+          "wet"
+        ]
+      },
+      {
+        "audio": "What's the weather like?",
+        "answer": "What's the weather like?",
+        "options": [
+          "What's the weather like?",
+          "It's hot today.",
+          "It's raining now.",
+          "Put on your sun hat, please."
+        ]
+      },
+      {
+        "audio": "It's hot today.",
+        "answer": "It's hot today.",
+        "options": [
+          "It's hot today.",
+          "It's raining now.",
+          "Put on your sun hat, please.",
+          "Don't put on your coat."
+        ]
+      },
+      {
+        "audio": "It's raining now.",
+        "answer": "It's raining now.",
+        "options": [
+          "It's raining now.",
+          "Put on your sun hat, please.",
+          "Don't put on your coat.",
+          "Open the window."
+        ]
+      },
+      {
+        "audio": "Put on your sun hat, please.",
+        "answer": "Put on your sun hat, please.",
+        "options": [
+          "Put on your sun hat, please.",
+          "Don't put on your coat.",
+          "Open the window.",
+          "Don't open the door."
+        ]
+      },
+      {
+        "audio": "Don't put on your coat.",
+        "answer": "Don't put on your coat.",
+        "options": [
+          "Don't put on your coat.",
+          "Open the window.",
+          "Don't open the door.",
+          "When it's windy, we fly our kite."
+        ]
+      },
+      {
+        "audio": "Open the window.",
+        "answer": "Open the window.",
+        "options": [
+          "Open the window.",
+          "Don't open the door.",
+          "When it's windy, we fly our kite.",
+          "Let's walk to the shops."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What's the weather like?",
+        "hint": "Thời tiết thế nào?"
+      },
+      {
+        "answer": "It's hot today.",
+        "hint": "Hôm nay trời nóng."
+      },
+      {
+        "answer": "It's raining now.",
+        "hint": "Bây giờ trời đang mưa."
+      },
+      {
+        "answer": "Put on your sun hat, please.",
+        "hint": "Hãy đội mũ che nắng nhé."
+      },
+      {
+        "answer": "Don't put on your coat.",
+        "hint": "Đừng mặc áo khoác vào."
+      },
+      {
+        "answer": "Open the window.",
+        "hint": "Hãy mở cửa sổ."
+      },
+      {
+        "answer": "Don't open the door.",
+        "hint": "Đừng mở cửa."
+      },
+      {
+        "answer": "When it's windy, we fly our kite.",
+        "hint": "Khi trời có gió, chúng mình thả diều."
+      },
+      {
+        "answer": "Let's walk to the shops.",
+        "hint": "Mình cùng đi bộ đến các cửa hàng nhé."
+      },
+      {
+        "answer": "We haven't got our umbrellas.",
+        "hint": "Chúng mình không có ô."
+      },
+      {
+        "answer": "Where's the key?",
+        "hint": "Chìa khóa ở đâu?"
+      },
+      {
+        "answer": "Can we go outside to play?",
+        "hint": "Chúng mình ra ngoài chơi được không?"
+      },
+      {
+        "answer": "Wear warm coats and hats.",
+        "hint": "Hãy mặc áo khoác ấm và đội mũ."
+      },
+      {
+        "answer": "Don't get wet!",
+        "hint": "Đừng để bị ướt!"
+      },
+      {
+        "answer": "Don't forget your sunglasses.",
+        "hint": "Đừng quên kính râm."
+      },
+      {
+        "answer": "It's a good time to fly a kite.",
+        "hint": "Đây là lúc thích hợp để thả diều."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Thời tiết thế nào?"
+      },
+      {
+        "prompt": "Hôm nay trời nóng."
+      },
+      {
+        "prompt": "Bây giờ trời đang mưa."
+      },
+      {
+        "prompt": "Hãy đội mũ che nắng nhé."
+      },
+      {
+        "prompt": "Đừng mặc áo khoác vào."
+      },
+      {
+        "prompt": "Hãy mở cửa sổ."
+      },
+      {
+        "prompt": "Đừng mở cửa."
+      },
+      {
+        "prompt": "Khi trời có gió, chúng mình thả diều."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Buổi chiều có thời tiết thế nào?",
+        "options": [
+          "Nắng và nóng",
+          "Lạnh và có tuyết",
+          "Mưa to",
+          "Lạnh và có gió"
+        ],
+        "answer": "Nắng và nóng",
+        "passage": [
+          "Here is the weather for this afternoon. It is sunny and hot. Wear a sun hat if you go outside."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có âm /aɪ/ như trong bike?",
+        "options": [
+          "kite",
+          "coat",
+          "wet",
+          "hat"
+        ],
+        "answer": "kite"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng mặc áo khoác vào.",
+          "Thời tiết thế nào?",
+          "Hôm nay trời nóng.",
+          "Bây giờ trời đang mưa."
+        ],
+        "answer": "Đừng mặc áo khoác vào.",
+        "passage": [
+          "Don't put on your coat."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Hãy mở cửa sổ.",
+          "Hôm nay trời nóng.",
+          "Bây giờ trời đang mưa.",
+          "Hãy đội mũ che nắng nhé."
+        ],
+        "answer": "Hãy mở cửa sổ.",
+        "passage": [
+          "Open the window."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng mở cửa.",
+          "Bây giờ trời đang mưa.",
+          "Hãy đội mũ che nắng nhé.",
+          "Đừng mặc áo khoác vào."
+        ],
+        "answer": "Đừng mở cửa.",
+        "passage": [
+          "Don't open the door."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Khi trời có gió, chúng mình thả diều.",
+          "Hãy đội mũ che nắng nhé.",
+          "Đừng mặc áo khoác vào.",
+          "Hãy mở cửa sổ."
+        ],
+        "answer": "Khi trời có gió, chúng mình thả diều.",
+        "passage": [
+          "When it's windy, we fly our kite."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "kite",
+        "answer": "kite",
+        "options": [
+          "kite",
+          "coat",
+          "wet",
+          "hat"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "coat",
+        "answer": "coat",
+        "options": [
+          "coat",
+          "wet",
+          "hat",
+          "weather"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "wet",
+        "answer": "wet",
+        "options": [
+          "wet",
+          "hat",
+          "weather",
+          "hot"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "Let's walk to the shops.",
+        "answer": "Let's walk to the shops."
+      },
+      {
+        "type": "dictation",
+        "audio": "We haven't got our umbrellas.",
+        "answer": "We haven't got our umbrellas."
+      },
+      {
+        "type": "dictation",
+        "audio": "Where's the key?",
+        "answer": "Where's the key?"
+      },
+      {
+        "type": "sentence",
+        "answer": "What's the weather like?",
+        "hint": "Thời tiết thế nào?"
+      },
+      {
+        "type": "sentence",
+        "answer": "It's hot today.",
+        "hint": "Hôm nay trời nóng."
+      },
+      {
+        "type": "sentence",
+        "answer": "It's raining now.",
+        "hint": "Bây giờ trời đang mưa."
+      },
+      {
+        "type": "translation",
+        "prompt": "Thời tiết thế nào?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Hôm nay trời nóng."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bây giờ trời đang mưa."
+      }
+    ]
+  }
+}

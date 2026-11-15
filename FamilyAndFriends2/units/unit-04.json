@@ -1,0 +1,880 @@
+{
+  "id": 4,
+  "title": "Have you got a milkshake?",
+  "topic": "Đồ ăn và số đếm",
+  "icon": "🥤",
+  "pages": {
+    "first": 30,
+    "last": 35
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "milkshake",
+        "vietnamese": "sữa lắc"
+      },
+      {
+        "english": "cheese sandwich",
+        "vietnamese": "bánh mì kẹp phô mai"
+      },
+      {
+        "english": "salad",
+        "vietnamese": "rau trộn"
+      },
+      {
+        "english": "fries",
+        "vietnamese": "khoai tây chiên"
+      },
+      {
+        "english": "pizza",
+        "vietnamese": "bánh pizza"
+      },
+      {
+        "english": "chicken",
+        "vietnamese": "thịt gà"
+      },
+      {
+        "english": "tomato",
+        "vietnamese": "cà chua"
+      },
+      {
+        "english": "olive",
+        "vietnamese": "quả ô liu"
+      },
+      {
+        "english": "banana",
+        "vietnamese": "chuối"
+      },
+      {
+        "english": "apple",
+        "vietnamese": "táo"
+      },
+      {
+        "english": "grapes",
+        "vietnamese": "nho"
+      },
+      {
+        "english": "bread",
+        "vietnamese": "bánh mì"
+      },
+      {
+        "english": "orange",
+        "vietnamese": "cam"
+      },
+      {
+        "english": "pineapple",
+        "vietnamese": "dứa"
+      },
+      {
+        "english": "fruit",
+        "vietnamese": "trái cây"
+      },
+      {
+        "english": "fig",
+        "vietnamese": "quả sung"
+      },
+      {
+        "english": "grass",
+        "vietnamese": "cỏ"
+      },
+      {
+        "english": "brush",
+        "vietnamese": "bàn chải"
+      },
+      {
+        "english": "frog",
+        "vietnamese": "ếch"
+      },
+      {
+        "english": "frisbee",
+        "vietnamese": "đĩa ném"
+      },
+      {
+        "english": "juice",
+        "vietnamese": "nước ép"
+      },
+      {
+        "english": "glass",
+        "vietnamese": "cốc"
+      },
+      {
+        "english": "bird",
+        "vietnamese": "chim"
+      },
+      {
+        "english": "naughty",
+        "vietnamese": "nghịch ngợm"
+      },
+      {
+        "english": "twenty",
+        "vietnamese": "hai mươi"
+      },
+      {
+        "english": "thirty",
+        "vietnamese": "ba mươi"
+      },
+      {
+        "english": "forty",
+        "vietnamese": "bốn mươi"
+      },
+      {
+        "english": "fifty",
+        "vietnamese": "năm mươi"
+      },
+      {
+        "english": "sixty",
+        "vietnamese": "sáu mươi"
+      },
+      {
+        "english": "seventy",
+        "vietnamese": "bảy mươi"
+      },
+      {
+        "english": "eighty",
+        "vietnamese": "tám mươi"
+      },
+      {
+        "english": "ninety",
+        "vietnamese": "chín mươi"
+      },
+      {
+        "english": "one hundred",
+        "vietnamese": "một trăm"
+      },
+      {
+        "english": "question mark",
+        "vietnamese": "dấu hỏi"
+      },
+      {
+        "english": "full stop",
+        "vietnamese": "dấu chấm"
+      }
+    ],
+    "structures": [
+      {
+        "english": "Have you got a milkshake?",
+        "vietnamese": "Bạn có sữa lắc không?"
+      },
+      {
+        "english": "Yes, I have.",
+        "vietnamese": "Có, mình có."
+      },
+      {
+        "english": "No, I haven't.",
+        "vietnamese": "Không, mình không có."
+      },
+      {
+        "english": "Has he got a cheese sandwich?",
+        "vietnamese": "Bạn ấy có bánh mì kẹp phô mai không?"
+      },
+      {
+        "english": "Yes, he has.",
+        "vietnamese": "Có, bạn ấy có."
+      },
+      {
+        "english": "Has she got a pizza?",
+        "vietnamese": "Bạn ấy có bánh pizza không?"
+      },
+      {
+        "english": "She hasn't got any fries.",
+        "vietnamese": "Bạn ấy không có khoai tây chiên."
+      },
+      {
+        "english": "We've got lots of bananas.",
+        "vietnamese": "Chúng mình có nhiều chuối."
+      },
+      {
+        "english": "We haven't got any tomatoes.",
+        "vietnamese": "Chúng mình không có cà chua."
+      },
+      {
+        "english": "Have you got apples?",
+        "vietnamese": "Các bạn có táo không?"
+      },
+      {
+        "english": "Yes, we have.",
+        "vietnamese": "Có, chúng mình có."
+      },
+      {
+        "english": "Do you like figs?",
+        "vietnamese": "Bạn có thích quả sung không?"
+      },
+      {
+        "english": "Don't worry.",
+        "vietnamese": "Đừng lo."
+      },
+      {
+        "english": "We've got more food.",
+        "vietnamese": "Chúng mình còn đồ ăn."
+      },
+      {
+        "english": "One banana milkshake, please.",
+        "vietnamese": "Cho mình một ly sữa lắc chuối."
+      },
+      {
+        "english": "Are you sure?",
+        "vietnamese": "Bạn chắc chứ?"
+      },
+      {
+        "english": "You're too late.",
+        "vietnamese": "Bạn đến muộn quá."
+      },
+      {
+        "english": "Let's count to one hundred.",
+        "vietnamese": "Mình cùng đếm đến một trăm nhé."
+      },
+      {
+        "english": "No, he hasn't.",
+        "vietnamese": "Không, bạn nam ấy không có."
+      },
+      {
+        "english": "No, she hasn't.",
+        "vietnamese": "Không, bạn nữ ấy không có."
+      },
+      {
+        "english": "Where's Billy?",
+        "vietnamese": "Billy ở đâu?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "milkshake",
+        "vietnamese": "sữa lắc"
+      },
+      {
+        "english": "cheese sandwich",
+        "vietnamese": "bánh mì kẹp phô mai"
+      },
+      {
+        "english": "salad",
+        "vietnamese": "rau trộn"
+      },
+      {
+        "english": "fries",
+        "vietnamese": "khoai tây chiên"
+      },
+      {
+        "english": "pizza",
+        "vietnamese": "bánh pizza"
+      },
+      {
+        "english": "chicken",
+        "vietnamese": "thịt gà"
+      },
+      {
+        "english": "tomato",
+        "vietnamese": "cà chua"
+      },
+      {
+        "english": "olive",
+        "vietnamese": "quả ô liu"
+      },
+      {
+        "english": "banana",
+        "vietnamese": "chuối"
+      },
+      {
+        "english": "apple",
+        "vietnamese": "táo"
+      },
+      {
+        "english": "grapes",
+        "vietnamese": "nho"
+      },
+      {
+        "english": "bread",
+        "vietnamese": "bánh mì"
+      },
+      {
+        "english": "orange",
+        "vietnamese": "cam"
+      },
+      {
+        "english": "pineapple",
+        "vietnamese": "dứa"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Bạn nhỏ gọi món gì?",
+        "options": [
+          "Sữa lắc chuối",
+          "Bánh mì kẹp gà",
+          "Rau trộn",
+          "Nước cam"
+        ],
+        "answer": "Sữa lắc chuối",
+        "passage": [
+          "We haven't got any chicken, but we have got bananas. I ask for a banana milkshake."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng fr?",
+        "options": [
+          "frog",
+          "bread",
+          "grapes",
+          "grass"
+        ],
+        "answer": "frog"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình không có cà chua.",
+          "Bạn có sữa lắc không?",
+          "Có, mình có.",
+          "Không, mình không có."
+        ],
+        "answer": "Chúng mình không có cà chua.",
+        "passage": [
+          "We haven't got any tomatoes."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Các bạn có táo không?",
+          "Có, mình có.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?"
+        ],
+        "answer": "Các bạn có táo không?",
+        "passage": [
+          "Have you got apples?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có, chúng mình có.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có."
+        ],
+        "answer": "Có, chúng mình có.",
+        "passage": [
+          "Yes, we have."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn có thích quả sung không?",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có.",
+          "Bạn ấy có bánh pizza không?"
+        ],
+        "answer": "Bạn có thích quả sung không?",
+        "passage": [
+          "Do you like figs?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đừng lo.",
+          "Có, bạn ấy có.",
+          "Bạn ấy có bánh pizza không?",
+          "Bạn ấy không có khoai tây chiên."
+        ],
+        "answer": "Đừng lo.",
+        "passage": [
+          "Don't worry."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình còn đồ ăn.",
+          "Bạn ấy có bánh pizza không?",
+          "Bạn ấy không có khoai tây chiên.",
+          "Chúng mình có nhiều chuối."
+        ],
+        "answer": "Chúng mình còn đồ ăn.",
+        "passage": [
+          "We've got more food."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn đến muộn quá.",
+          "Bạn có sữa lắc không?",
+          "Có, mình có.",
+          "Không, mình không có."
+        ],
+        "answer": "Bạn đến muộn quá.",
+        "passage": [
+          "You're too late."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình cùng đếm đến một trăm nhé.",
+          "Có, mình có.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?"
+        ],
+        "answer": "Mình cùng đếm đến một trăm nhé.",
+        "passage": [
+          "Let's count to one hundred."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, bạn nam ấy không có.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có."
+        ],
+        "answer": "Không, bạn nam ấy không có.",
+        "passage": [
+          "No, he hasn't."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Không, bạn nữ ấy không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có.",
+          "Bạn ấy có bánh pizza không?"
+        ],
+        "answer": "Không, bạn nữ ấy không có.",
+        "passage": [
+          "No, she hasn't."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Billy ở đâu?",
+          "Có, bạn ấy có.",
+          "Bạn ấy có bánh pizza không?",
+          "Bạn ấy không có khoai tây chiên."
+        ],
+        "answer": "Billy ở đâu?",
+        "passage": [
+          "Where's Billy?"
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "frog",
+        "answer": "frog",
+        "options": [
+          "frog",
+          "bread",
+          "grapes",
+          "grass"
+        ]
+      },
+      {
+        "audio": "bread",
+        "answer": "bread",
+        "options": [
+          "bread",
+          "grapes",
+          "grass",
+          "milkshake"
+        ]
+      },
+      {
+        "audio": "grapes",
+        "answer": "grapes",
+        "options": [
+          "grapes",
+          "grass",
+          "milkshake",
+          "cheese sandwich"
+        ]
+      },
+      {
+        "audio": "grass",
+        "answer": "grass",
+        "options": [
+          "grass",
+          "milkshake",
+          "cheese sandwich",
+          "salad"
+        ]
+      },
+      {
+        "audio": "milkshake",
+        "answer": "milkshake",
+        "options": [
+          "milkshake",
+          "cheese sandwich",
+          "salad",
+          "fries"
+        ]
+      },
+      {
+        "audio": "cheese sandwich",
+        "answer": "cheese sandwich",
+        "options": [
+          "cheese sandwich",
+          "salad",
+          "fries",
+          "pizza"
+        ]
+      },
+      {
+        "audio": "salad",
+        "answer": "salad",
+        "options": [
+          "salad",
+          "fries",
+          "pizza",
+          "chicken"
+        ]
+      },
+      {
+        "audio": "fries",
+        "answer": "fries",
+        "options": [
+          "fries",
+          "pizza",
+          "chicken",
+          "frog"
+        ]
+      },
+      {
+        "audio": "pizza",
+        "answer": "pizza",
+        "options": [
+          "pizza",
+          "chicken",
+          "frog",
+          "bread"
+        ]
+      },
+      {
+        "audio": "chicken",
+        "answer": "chicken",
+        "options": [
+          "chicken",
+          "frog",
+          "bread",
+          "grapes"
+        ]
+      },
+      {
+        "audio": "Have you got a milkshake?",
+        "answer": "Have you got a milkshake?",
+        "options": [
+          "Have you got a milkshake?",
+          "Yes, I have.",
+          "No, I haven't.",
+          "Has he got a cheese sandwich?"
+        ]
+      },
+      {
+        "audio": "Yes, I have.",
+        "answer": "Yes, I have.",
+        "options": [
+          "Yes, I have.",
+          "No, I haven't.",
+          "Has he got a cheese sandwich?",
+          "Yes, he has."
+        ]
+      },
+      {
+        "audio": "No, I haven't.",
+        "answer": "No, I haven't.",
+        "options": [
+          "No, I haven't.",
+          "Has he got a cheese sandwich?",
+          "Yes, he has.",
+          "Has she got a pizza?"
+        ]
+      },
+      {
+        "audio": "Has he got a cheese sandwich?",
+        "answer": "Has he got a cheese sandwich?",
+        "options": [
+          "Has he got a cheese sandwich?",
+          "Yes, he has.",
+          "Has she got a pizza?",
+          "She hasn't got any fries."
+        ]
+      },
+      {
+        "audio": "Yes, he has.",
+        "answer": "Yes, he has.",
+        "options": [
+          "Yes, he has.",
+          "Has she got a pizza?",
+          "She hasn't got any fries.",
+          "We've got lots of bananas."
+        ]
+      },
+      {
+        "audio": "Has she got a pizza?",
+        "answer": "Has she got a pizza?",
+        "options": [
+          "Has she got a pizza?",
+          "She hasn't got any fries.",
+          "We've got lots of bananas.",
+          "We haven't got any tomatoes."
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "Have you got a milkshake?",
+        "hint": "Bạn có sữa lắc không?"
+      },
+      {
+        "answer": "Yes, I have.",
+        "hint": "Có, mình có."
+      },
+      {
+        "answer": "No, I haven't.",
+        "hint": "Không, mình không có."
+      },
+      {
+        "answer": "Has he got a cheese sandwich?",
+        "hint": "Bạn ấy có bánh mì kẹp phô mai không?"
+      },
+      {
+        "answer": "Yes, he has.",
+        "hint": "Có, bạn ấy có."
+      },
+      {
+        "answer": "Has she got a pizza?",
+        "hint": "Bạn ấy có bánh pizza không?"
+      },
+      {
+        "answer": "She hasn't got any fries.",
+        "hint": "Bạn ấy không có khoai tây chiên."
+      },
+      {
+        "answer": "We've got lots of bananas.",
+        "hint": "Chúng mình có nhiều chuối."
+      },
+      {
+        "answer": "We haven't got any tomatoes.",
+        "hint": "Chúng mình không có cà chua."
+      },
+      {
+        "answer": "Have you got apples?",
+        "hint": "Các bạn có táo không?"
+      },
+      {
+        "answer": "Yes, we have.",
+        "hint": "Có, chúng mình có."
+      },
+      {
+        "answer": "Do you like figs?",
+        "hint": "Bạn có thích quả sung không?"
+      },
+      {
+        "answer": "Don't worry.",
+        "hint": "Đừng lo."
+      },
+      {
+        "answer": "We've got more food.",
+        "hint": "Chúng mình còn đồ ăn."
+      },
+      {
+        "answer": "One banana milkshake, please.",
+        "hint": "Cho mình một ly sữa lắc chuối."
+      },
+      {
+        "answer": "Are you sure?",
+        "hint": "Bạn chắc chứ?"
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn có sữa lắc không?"
+      },
+      {
+        "prompt": "Có, mình có."
+      },
+      {
+        "prompt": "Không, mình không có."
+      },
+      {
+        "prompt": "Bạn ấy có bánh mì kẹp phô mai không?"
+      },
+      {
+        "prompt": "Có, bạn ấy có."
+      },
+      {
+        "prompt": "Bạn ấy có bánh pizza không?"
+      },
+      {
+        "prompt": "Bạn ấy không có khoai tây chiên."
+      },
+      {
+        "prompt": "Chúng mình có nhiều chuối."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Bạn nhỏ gọi món gì?",
+        "options": [
+          "Sữa lắc chuối",
+          "Bánh mì kẹp gà",
+          "Rau trộn",
+          "Nước cam"
+        ],
+        "answer": "Sữa lắc chuối",
+        "passage": [
+          "We haven't got any chicken, but we have got bananas. I ask for a banana milkshake."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng fr?",
+        "options": [
+          "frog",
+          "bread",
+          "grapes",
+          "grass"
+        ],
+        "answer": "frog"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có, bạn ấy có.",
+          "Bạn có sữa lắc không?",
+          "Có, mình có.",
+          "Không, mình không có."
+        ],
+        "answer": "Có, bạn ấy có.",
+        "passage": [
+          "Yes, he has."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy có bánh pizza không?",
+          "Có, mình có.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?"
+        ],
+        "answer": "Bạn ấy có bánh pizza không?",
+        "passage": [
+          "Has she got a pizza?"
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy không có khoai tây chiên.",
+          "Không, mình không có.",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có."
+        ],
+        "answer": "Bạn ấy không có khoai tây chiên.",
+        "passage": [
+          "She hasn't got any fries."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình có nhiều chuối.",
+          "Bạn ấy có bánh mì kẹp phô mai không?",
+          "Có, bạn ấy có.",
+          "Bạn ấy có bánh pizza không?"
+        ],
+        "answer": "Chúng mình có nhiều chuối.",
+        "passage": [
+          "We've got lots of bananas."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "frog",
+        "answer": "frog",
+        "options": [
+          "frog",
+          "bread",
+          "grapes",
+          "grass"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "bread",
+        "answer": "bread",
+        "options": [
+          "bread",
+          "grapes",
+          "grass",
+          "milkshake"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "grapes",
+        "answer": "grapes",
+        "options": [
+          "grapes",
+          "grass",
+          "milkshake",
+          "cheese sandwich"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "We haven't got any tomatoes.",
+        "answer": "We haven't got any tomatoes."
+      },
+      {
+        "type": "dictation",
+        "audio": "Have you got apples?",
+        "answer": "Have you got apples?"
+      },
+      {
+        "type": "dictation",
+        "audio": "Yes, we have.",
+        "answer": "Yes, we have."
+      },
+      {
+        "type": "sentence",
+        "answer": "Have you got a milkshake?",
+        "hint": "Bạn có sữa lắc không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "Yes, I have.",
+        "hint": "Có, mình có."
+      },
+      {
+        "type": "sentence",
+        "answer": "No, I haven't.",
+        "hint": "Không, mình không có."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn có sữa lắc không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Có, mình có."
+      },
+      {
+        "type": "translation",
+        "prompt": "Không, mình không có."
+      }
+    ]
+  }
+}

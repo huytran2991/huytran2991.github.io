@@ -1,0 +1,800 @@
+{
+  "id": 6,
+  "title": "Let's play after school!",
+  "topic": "Việc làm sau giờ học",
+  "icon": "🎵",
+  "pages": {
+    "first": 42,
+    "last": 47
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "do my homework",
+        "vietnamese": "làm bài tập về nhà"
+      },
+      {
+        "english": "visit my grandma",
+        "vietnamese": "thăm bà"
+      },
+      {
+        "english": "go swimming",
+        "vietnamese": "đi bơi"
+      },
+      {
+        "english": "have a music lesson",
+        "vietnamese": "có buổi học nhạc"
+      },
+      {
+        "english": "help my mum",
+        "vietnamese": "giúp mẹ"
+      },
+      {
+        "english": "watch TV",
+        "vietnamese": "xem ti vi"
+      },
+      {
+        "english": "listen to music",
+        "vietnamese": "nghe nhạc"
+      },
+      {
+        "english": "read a book",
+        "vietnamese": "đọc sách"
+      },
+      {
+        "english": "write an email",
+        "vietnamese": "viết email"
+      },
+      {
+        "english": "play with friends",
+        "vietnamese": "chơi cùng bạn bè"
+      },
+      {
+        "english": "go to the park",
+        "vietnamese": "đi công viên"
+      },
+      {
+        "english": "write stories",
+        "vietnamese": "viết truyện"
+      },
+      {
+        "english": "draw pictures",
+        "vietnamese": "vẽ tranh"
+      },
+      {
+        "english": "play football",
+        "vietnamese": "chơi bóng đá"
+      },
+      {
+        "english": "help to cook",
+        "vietnamese": "giúp nấu ăn"
+      },
+      {
+        "english": "flower",
+        "vietnamese": "hoa"
+      },
+      {
+        "english": "flat",
+        "vietnamese": "căn hộ"
+      },
+      {
+        "english": "plum",
+        "vietnamese": "quả mận"
+      },
+      {
+        "english": "plate",
+        "vietnamese": "đĩa"
+      },
+      {
+        "english": "blanket",
+        "vietnamese": "chăn"
+      },
+      {
+        "english": "blue",
+        "vietnamese": "xanh dương"
+      },
+      {
+        "english": "bedroom wall",
+        "vietnamese": "tường phòng ngủ"
+      },
+      {
+        "english": "CD",
+        "vietnamese": "đĩa CD"
+      },
+      {
+        "english": "on my own",
+        "vietnamese": "một mình"
+      },
+      {
+        "english": "every Monday",
+        "vietnamese": "mỗi thứ Hai"
+      },
+      {
+        "english": "ride a bike",
+        "vietnamese": "đi xe đạp"
+      },
+      {
+        "english": "ride a horse",
+        "vietnamese": "cưỡi ngựa"
+      },
+      {
+        "english": "skate",
+        "vietnamese": "trượt pa-tanh"
+      },
+      {
+        "english": "play tennis",
+        "vietnamese": "chơi quần vợt"
+      },
+      {
+        "english": "after school",
+        "vietnamese": "sau giờ học"
+      },
+      {
+        "english": "sing the songs",
+        "vietnamese": "hát các bài hát"
+      }
+    ],
+    "structures": [
+      {
+        "english": "Let's play after school this week.",
+        "vietnamese": "Tuần này mình cùng chơi sau giờ học nhé."
+      },
+      {
+        "english": "Can you play on Monday?",
+        "vietnamese": "Bạn có chơi được vào thứ Hai không?"
+      },
+      {
+        "english": "I have a music lesson every Monday.",
+        "vietnamese": "Mình có buổi học nhạc mỗi thứ Hai."
+      },
+      {
+        "english": "I visit my grandma every Tuesday.",
+        "vietnamese": "Mình thăm bà mỗi thứ Ba."
+      },
+      {
+        "english": "I don't have a music lesson on Wednesday.",
+        "vietnamese": "Mình không có buổi học nhạc vào thứ Tư."
+      },
+      {
+        "english": "I go swimming every Thursday.",
+        "vietnamese": "Mình đi bơi mỗi thứ Năm."
+      },
+      {
+        "english": "I read a book after school.",
+        "vietnamese": "Mình đọc sách sau giờ học."
+      },
+      {
+        "english": "I don't ride a bike after school.",
+        "vietnamese": "Mình không đi xe đạp sau giờ học."
+      },
+      {
+        "english": "How about Tuesday?",
+        "vietnamese": "Thứ Ba thì sao?"
+      },
+      {
+        "english": "I help my mum.",
+        "vietnamese": "Mình giúp mẹ."
+      },
+      {
+        "english": "Then I write stories.",
+        "vietnamese": "Sau đó mình viết truyện."
+      },
+      {
+        "english": "I put my pictures on the wall.",
+        "vietnamese": "Mình treo các bức tranh lên tường."
+      },
+      {
+        "english": "There's a flower on the blanket.",
+        "vietnamese": "Có một bông hoa trên chăn."
+      },
+      {
+        "english": "I like sport.",
+        "vietnamese": "Mình thích thể thao."
+      },
+      {
+        "english": "I play tennis with my brother.",
+        "vietnamese": "Mình chơi quần vợt với anh trai."
+      },
+      {
+        "english": "There's a lot to do.",
+        "vietnamese": "Có nhiều việc phải làm."
+      },
+      {
+        "english": "I don't go swimming on Monday.",
+        "vietnamese": "Mình không đi bơi vào thứ Hai."
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "do my homework",
+        "vietnamese": "làm bài tập về nhà"
+      },
+      {
+        "english": "visit my grandma",
+        "vietnamese": "thăm bà"
+      },
+      {
+        "english": "go swimming",
+        "vietnamese": "đi bơi"
+      },
+      {
+        "english": "have a music lesson",
+        "vietnamese": "có buổi học nhạc"
+      },
+      {
+        "english": "help my mum",
+        "vietnamese": "giúp mẹ"
+      },
+      {
+        "english": "watch TV",
+        "vietnamese": "xem ti vi"
+      },
+      {
+        "english": "listen to music",
+        "vietnamese": "nghe nhạc"
+      },
+      {
+        "english": "read a book",
+        "vietnamese": "đọc sách"
+      },
+      {
+        "english": "write an email",
+        "vietnamese": "viết email"
+      },
+      {
+        "english": "play with friends",
+        "vietnamese": "chơi cùng bạn bè"
+      },
+      {
+        "english": "go to the park",
+        "vietnamese": "đi công viên"
+      },
+      {
+        "english": "write stories",
+        "vietnamese": "viết truyện"
+      },
+      {
+        "english": "draw pictures",
+        "vietnamese": "vẽ tranh"
+      },
+      {
+        "english": "play football",
+        "vietnamese": "chơi bóng đá"
+      },
+      {
+        "english": "help to cook",
+        "vietnamese": "giúp nấu ăn"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Bạn nhỏ làm gì trước khi ra công viên?",
+        "options": [
+          "Làm bài tập",
+          "Đọc sách",
+          "Học nhạc",
+          "Thăm bà"
+        ],
+        "answer": "Làm bài tập",
+        "passage": [
+          "I finish my homework after school. Then I go to the park to play football with my friends."
+        ]
+      },
+      {
+        "prompt": "Từ nào bắt đầu bằng bl?",
+        "options": [
+          "blanket",
+          "flower",
+          "plate",
+          "plum"
+        ],
+        "answer": "blanket"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Thứ Ba thì sao?",
+          "Tuần này mình cùng chơi sau giờ học nhé.",
+          "Bạn có chơi được vào thứ Hai không?",
+          "Mình có buổi học nhạc mỗi thứ Hai."
+        ],
+        "answer": "Thứ Ba thì sao?",
+        "passage": [
+          "How about Tuesday?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình giúp mẹ.",
+          "Bạn có chơi được vào thứ Hai không?",
+          "Mình có buổi học nhạc mỗi thứ Hai.",
+          "Mình thăm bà mỗi thứ Ba."
+        ],
+        "answer": "Mình giúp mẹ.",
+        "passage": [
+          "I help my mum."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Sau đó mình viết truyện.",
+          "Mình có buổi học nhạc mỗi thứ Hai.",
+          "Mình thăm bà mỗi thứ Ba.",
+          "Mình không có buổi học nhạc vào thứ Tư."
+        ],
+        "answer": "Sau đó mình viết truyện.",
+        "passage": [
+          "Then I write stories."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình treo các bức tranh lên tường.",
+          "Mình thăm bà mỗi thứ Ba.",
+          "Mình không có buổi học nhạc vào thứ Tư.",
+          "Mình đi bơi mỗi thứ Năm."
+        ],
+        "answer": "Mình treo các bức tranh lên tường.",
+        "passage": [
+          "I put my pictures on the wall."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có một bông hoa trên chăn.",
+          "Mình không có buổi học nhạc vào thứ Tư.",
+          "Mình đi bơi mỗi thứ Năm.",
+          "Mình đọc sách sau giờ học."
+        ],
+        "answer": "Có một bông hoa trên chăn.",
+        "passage": [
+          "There's a flower on the blanket."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình thích thể thao.",
+          "Mình đi bơi mỗi thứ Năm.",
+          "Mình đọc sách sau giờ học.",
+          "Mình không đi xe đạp sau giờ học."
+        ],
+        "answer": "Mình thích thể thao.",
+        "passage": [
+          "I like sport."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không đi bơi vào thứ Hai.",
+          "Tuần này mình cùng chơi sau giờ học nhé.",
+          "Bạn có chơi được vào thứ Hai không?",
+          "Mình có buổi học nhạc mỗi thứ Hai."
+        ],
+        "answer": "Mình không đi bơi vào thứ Hai.",
+        "passage": [
+          "I don't go swimming on Monday."
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "blanket",
+        "answer": "blanket",
+        "options": [
+          "blanket",
+          "flower",
+          "plate",
+          "plum"
+        ]
+      },
+      {
+        "audio": "flower",
+        "answer": "flower",
+        "options": [
+          "flower",
+          "plate",
+          "plum",
+          "do my homework"
+        ]
+      },
+      {
+        "audio": "plate",
+        "answer": "plate",
+        "options": [
+          "plate",
+          "plum",
+          "do my homework",
+          "visit my grandma"
+        ]
+      },
+      {
+        "audio": "plum",
+        "answer": "plum",
+        "options": [
+          "plum",
+          "do my homework",
+          "visit my grandma",
+          "go swimming"
+        ]
+      },
+      {
+        "audio": "do my homework",
+        "answer": "do my homework",
+        "options": [
+          "do my homework",
+          "visit my grandma",
+          "go swimming",
+          "have a music lesson"
+        ]
+      },
+      {
+        "audio": "visit my grandma",
+        "answer": "visit my grandma",
+        "options": [
+          "visit my grandma",
+          "go swimming",
+          "have a music lesson",
+          "help my mum"
+        ]
+      },
+      {
+        "audio": "go swimming",
+        "answer": "go swimming",
+        "options": [
+          "go swimming",
+          "have a music lesson",
+          "help my mum",
+          "watch TV"
+        ]
+      },
+      {
+        "audio": "have a music lesson",
+        "answer": "have a music lesson",
+        "options": [
+          "have a music lesson",
+          "help my mum",
+          "watch TV",
+          "blanket"
+        ]
+      },
+      {
+        "audio": "help my mum",
+        "answer": "help my mum",
+        "options": [
+          "help my mum",
+          "watch TV",
+          "blanket",
+          "flower"
+        ]
+      },
+      {
+        "audio": "watch TV",
+        "answer": "watch TV",
+        "options": [
+          "watch TV",
+          "blanket",
+          "flower",
+          "plate"
+        ]
+      },
+      {
+        "audio": "Let's play after school this week.",
+        "answer": "Let's play after school this week.",
+        "options": [
+          "Let's play after school this week.",
+          "Can you play on Monday?",
+          "I have a music lesson every Monday.",
+          "I visit my grandma every Tuesday."
+        ]
+      },
+      {
+        "audio": "Can you play on Monday?",
+        "answer": "Can you play on Monday?",
+        "options": [
+          "Can you play on Monday?",
+          "I have a music lesson every Monday.",
+          "I visit my grandma every Tuesday.",
+          "I don't have a music lesson on Wednesday."
+        ]
+      },
+      {
+        "audio": "I have a music lesson every Monday.",
+        "answer": "I have a music lesson every Monday.",
+        "options": [
+          "I have a music lesson every Monday.",
+          "I visit my grandma every Tuesday.",
+          "I don't have a music lesson on Wednesday.",
+          "I go swimming every Thursday."
+        ]
+      },
+      {
+        "audio": "I visit my grandma every Tuesday.",
+        "answer": "I visit my grandma every Tuesday.",
+        "options": [
+          "I visit my grandma every Tuesday.",
+          "I don't have a music lesson on Wednesday.",
+          "I go swimming every Thursday.",
+          "I read a book after school."
+        ]
+      },
+      {
+        "audio": "I don't have a music lesson on Wednesday.",
+        "answer": "I don't have a music lesson on Wednesday.",
+        "options": [
+          "I don't have a music lesson on Wednesday.",
+          "I go swimming every Thursday.",
+          "I read a book after school.",
+          "I don't ride a bike after school."
+        ]
+      },
+      {
+        "audio": "I go swimming every Thursday.",
+        "answer": "I go swimming every Thursday.",
+        "options": [
+          "I go swimming every Thursday.",
+          "I read a book after school.",
+          "I don't ride a bike after school.",
+          "How about Tuesday?"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "Let's play after school this week.",
+        "hint": "Tuần này mình cùng chơi sau giờ học nhé."
+      },
+      {
+        "answer": "Can you play on Monday?",
+        "hint": "Bạn có chơi được vào thứ Hai không?"
+      },
+      {
+        "answer": "I have a music lesson every Monday.",
+        "hint": "Mình có buổi học nhạc mỗi thứ Hai."
+      },
+      {
+        "answer": "I visit my grandma every Tuesday.",
+        "hint": "Mình thăm bà mỗi thứ Ba."
+      },
+      {
+        "answer": "I don't have a music lesson on Wednesday.",
+        "hint": "Mình không có buổi học nhạc vào thứ Tư."
+      },
+      {
+        "answer": "I go swimming every Thursday.",
+        "hint": "Mình đi bơi mỗi thứ Năm."
+      },
+      {
+        "answer": "I read a book after school.",
+        "hint": "Mình đọc sách sau giờ học."
+      },
+      {
+        "answer": "I don't ride a bike after school.",
+        "hint": "Mình không đi xe đạp sau giờ học."
+      },
+      {
+        "answer": "How about Tuesday?",
+        "hint": "Thứ Ba thì sao?"
+      },
+      {
+        "answer": "I help my mum.",
+        "hint": "Mình giúp mẹ."
+      },
+      {
+        "answer": "Then I write stories.",
+        "hint": "Sau đó mình viết truyện."
+      },
+      {
+        "answer": "I put my pictures on the wall.",
+        "hint": "Mình treo các bức tranh lên tường."
+      },
+      {
+        "answer": "There's a flower on the blanket.",
+        "hint": "Có một bông hoa trên chăn."
+      },
+      {
+        "answer": "I like sport.",
+        "hint": "Mình thích thể thao."
+      },
+      {
+        "answer": "I play tennis with my brother.",
+        "hint": "Mình chơi quần vợt với anh trai."
+      },
+      {
+        "answer": "There's a lot to do.",
+        "hint": "Có nhiều việc phải làm."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Tuần này mình cùng chơi sau giờ học nhé."
+      },
+      {
+        "prompt": "Bạn có chơi được vào thứ Hai không?"
+      },
+      {
+        "prompt": "Mình có buổi học nhạc mỗi thứ Hai."
+      },
+      {
+        "prompt": "Mình thăm bà mỗi thứ Ba."
+      },
+      {
+        "prompt": "Mình không có buổi học nhạc vào thứ Tư."
+      },
+      {
+        "prompt": "Mình đi bơi mỗi thứ Năm."
+      },
+      {
+        "prompt": "Mình đọc sách sau giờ học."
+      },
+      {
+        "prompt": "Mình không đi xe đạp sau giờ học."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Bạn nhỏ làm gì trước khi ra công viên?",
+        "options": [
+          "Làm bài tập",
+          "Đọc sách",
+          "Học nhạc",
+          "Thăm bà"
+        ],
+        "answer": "Làm bài tập",
+        "passage": [
+          "I finish my homework after school. Then I go to the park to play football with my friends."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào bắt đầu bằng bl?",
+        "options": [
+          "blanket",
+          "flower",
+          "plate",
+          "plum"
+        ],
+        "answer": "blanket"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không có buổi học nhạc vào thứ Tư.",
+          "Tuần này mình cùng chơi sau giờ học nhé.",
+          "Bạn có chơi được vào thứ Hai không?",
+          "Mình có buổi học nhạc mỗi thứ Hai."
+        ],
+        "answer": "Mình không có buổi học nhạc vào thứ Tư.",
+        "passage": [
+          "I don't have a music lesson on Wednesday."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình đi bơi mỗi thứ Năm.",
+          "Bạn có chơi được vào thứ Hai không?",
+          "Mình có buổi học nhạc mỗi thứ Hai.",
+          "Mình thăm bà mỗi thứ Ba."
+        ],
+        "answer": "Mình đi bơi mỗi thứ Năm.",
+        "passage": [
+          "I go swimming every Thursday."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình đọc sách sau giờ học.",
+          "Mình có buổi học nhạc mỗi thứ Hai.",
+          "Mình thăm bà mỗi thứ Ba.",
+          "Mình không có buổi học nhạc vào thứ Tư."
+        ],
+        "answer": "Mình đọc sách sau giờ học.",
+        "passage": [
+          "I read a book after school."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Mình không đi xe đạp sau giờ học.",
+          "Mình thăm bà mỗi thứ Ba.",
+          "Mình không có buổi học nhạc vào thứ Tư.",
+          "Mình đi bơi mỗi thứ Năm."
+        ],
+        "answer": "Mình không đi xe đạp sau giờ học.",
+        "passage": [
+          "I don't ride a bike after school."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "blanket",
+        "answer": "blanket",
+        "options": [
+          "blanket",
+          "flower",
+          "plate",
+          "plum"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "flower",
+        "answer": "flower",
+        "options": [
+          "flower",
+          "plate",
+          "plum",
+          "do my homework"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "plate",
+        "answer": "plate",
+        "options": [
+          "plate",
+          "plum",
+          "do my homework",
+          "visit my grandma"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "How about Tuesday?",
+        "answer": "How about Tuesday?"
+      },
+      {
+        "type": "dictation",
+        "audio": "I help my mum.",
+        "answer": "I help my mum."
+      },
+      {
+        "type": "dictation",
+        "audio": "Then I write stories.",
+        "answer": "Then I write stories."
+      },
+      {
+        "type": "sentence",
+        "answer": "Let's play after school this week.",
+        "hint": "Tuần này mình cùng chơi sau giờ học nhé."
+      },
+      {
+        "type": "sentence",
+        "answer": "Can you play on Monday?",
+        "hint": "Bạn có chơi được vào thứ Hai không?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I have a music lesson every Monday.",
+        "hint": "Mình có buổi học nhạc mỗi thứ Hai."
+      },
+      {
+        "type": "translation",
+        "prompt": "Tuần này mình cùng chơi sau giờ học nhé."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn có chơi được vào thứ Hai không?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình có buổi học nhạc mỗi thứ Hai."
+      }
+    ]
+  }
+}

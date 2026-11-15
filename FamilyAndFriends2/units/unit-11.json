@@ -1,0 +1,838 @@
+{
+  "id": 11,
+  "title": "What are you wearing?",
+  "topic": "Quần áo và giờ",
+  "icon": "👕",
+  "pages": {
+    "first": 80,
+    "last": 85
+  },
+  "reference": {
+    "vocabulary": [
+      {
+        "english": "skirt",
+        "vietnamese": "chân váy"
+      },
+      {
+        "english": "scarf",
+        "vietnamese": "khăn quàng"
+      },
+      {
+        "english": "jeans",
+        "vietnamese": "quần bò"
+      },
+      {
+        "english": "shirt",
+        "vietnamese": "áo sơ mi"
+      },
+      {
+        "english": "trousers",
+        "vietnamese": "quần dài"
+      },
+      {
+        "english": "boots",
+        "vietnamese": "bốt"
+      },
+      {
+        "english": "gloves",
+        "vietnamese": "găng tay"
+      },
+      {
+        "english": "socks",
+        "vietnamese": "tất"
+      },
+      {
+        "english": "coat",
+        "vietnamese": "áo khoác"
+      },
+      {
+        "english": "platform",
+        "vietnamese": "sân ga"
+      },
+      {
+        "english": "train",
+        "vietnamese": "tàu hỏa"
+      },
+      {
+        "english": "quarter past",
+        "vietnamese": "hơn mười lăm phút"
+      },
+      {
+        "english": "half past",
+        "vietnamese": "hơn ba mươi phút"
+      },
+      {
+        "english": "quarter to",
+        "vietnamese": "kém mười lăm phút"
+      },
+      {
+        "english": "airport",
+        "vietnamese": "sân bay"
+      },
+      {
+        "english": "arrivals",
+        "vietnamese": "khu đến"
+      },
+      {
+        "english": "adult",
+        "vietnamese": "người lớn"
+      },
+      {
+        "english": "people",
+        "vietnamese": "mọi người"
+      },
+      {
+        "english": "plane",
+        "vietnamese": "máy bay"
+      },
+      {
+        "english": "nose",
+        "vietnamese": "mũi"
+      },
+      {
+        "english": "bone",
+        "vietnamese": "xương"
+      },
+      {
+        "english": "rope",
+        "vietnamese": "dây thừng"
+      },
+      {
+        "english": "home",
+        "vietnamese": "nhà"
+      },
+      {
+        "english": "stone",
+        "vietnamese": "hòn đá"
+      },
+      {
+        "english": "count",
+        "vietnamese": "đếm"
+      },
+      {
+        "english": "turn around",
+        "vietnamese": "quay lại"
+      },
+      {
+        "english": "hurry up",
+        "vietnamese": "nhanh lên"
+      },
+      {
+        "english": "long",
+        "vietnamese": "dài"
+      },
+      {
+        "english": "short",
+        "vietnamese": "ngắn"
+      },
+      {
+        "english": "tall",
+        "vietnamese": "cao"
+      },
+      {
+        "english": "fast",
+        "vietnamese": "nhanh"
+      },
+      {
+        "english": "grey",
+        "vietnamese": "xám"
+      },
+      {
+        "english": "o'clock",
+        "vietnamese": "giờ đúng"
+      }
+    ],
+    "structures": [
+      {
+        "english": "What are you wearing?",
+        "vietnamese": "Bạn đang mặc gì?"
+      },
+      {
+        "english": "I'm wearing a blue skirt.",
+        "vietnamese": "Mình đang mặc chân váy xanh dương."
+      },
+      {
+        "english": "What's he wearing?",
+        "vietnamese": "Bạn nam ấy đang mặc gì?"
+      },
+      {
+        "english": "He's wearing jeans and a yellow shirt.",
+        "vietnamese": "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+      },
+      {
+        "english": "She's wearing red trousers and black boots.",
+        "vietnamese": "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+      },
+      {
+        "english": "It's quarter past three.",
+        "vietnamese": "Bây giờ là ba giờ mười lăm."
+      },
+      {
+        "english": "It's half past three.",
+        "vietnamese": "Bây giờ là ba giờ rưỡi."
+      },
+      {
+        "english": "It's quarter to four.",
+        "vietnamese": "Bây giờ là bốn giờ kém mười lăm."
+      },
+      {
+        "english": "What time is it?",
+        "vietnamese": "Bây giờ là mấy giờ?"
+      },
+      {
+        "english": "There are lots of people.",
+        "vietnamese": "Có rất nhiều người."
+      },
+      {
+        "english": "Where are my aunt and cousins?",
+        "vietnamese": "Cô và các anh chị em họ của mình ở đâu?"
+      },
+      {
+        "english": "We can't see you.",
+        "vietnamese": "Chúng mình không nhìn thấy bạn."
+      },
+      {
+        "english": "Here comes the train!",
+        "vietnamese": "Tàu đến rồi!"
+      },
+      {
+        "english": "It doesn't stop.",
+        "vietnamese": "Tàu không dừng."
+      },
+      {
+        "english": "Where are they going?",
+        "vietnamese": "Họ đang đi đâu?"
+      },
+      {
+        "english": "I want to go home.",
+        "vietnamese": "Mình muốn về nhà."
+      },
+      {
+        "english": "Hurry up!",
+        "vietnamese": "Nhanh lên!"
+      },
+      {
+        "english": "What's she wearing?",
+        "vietnamese": "Bạn nữ ấy đang mặc gì?"
+      },
+      {
+        "english": "Who is it?",
+        "vietnamese": "Đó là ai?"
+      }
+    ]
+  },
+  "exercises": {
+    "matching": [
+      {
+        "english": "skirt",
+        "vietnamese": "chân váy"
+      },
+      {
+        "english": "scarf",
+        "vietnamese": "khăn quàng"
+      },
+      {
+        "english": "jeans",
+        "vietnamese": "quần bò"
+      },
+      {
+        "english": "shirt",
+        "vietnamese": "áo sơ mi"
+      },
+      {
+        "english": "trousers",
+        "vietnamese": "quần dài"
+      },
+      {
+        "english": "boots",
+        "vietnamese": "bốt"
+      },
+      {
+        "english": "gloves",
+        "vietnamese": "găng tay"
+      },
+      {
+        "english": "socks",
+        "vietnamese": "tất"
+      },
+      {
+        "english": "coat",
+        "vietnamese": "áo khoác"
+      },
+      {
+        "english": "platform",
+        "vietnamese": "sân ga"
+      },
+      {
+        "english": "train",
+        "vietnamese": "tàu hỏa"
+      },
+      {
+        "english": "quarter past",
+        "vietnamese": "hơn mười lăm phút"
+      },
+      {
+        "english": "half past",
+        "vietnamese": "hơn ba mươi phút"
+      },
+      {
+        "english": "quarter to",
+        "vietnamese": "kém mười lăm phút"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Cô đang quàng khăn màu gì?",
+        "options": [
+          "Trắng",
+          "Đỏ",
+          "Đen",
+          "Xanh dương"
+        ],
+        "answer": "Trắng",
+        "passage": [
+          "It's half past two. My aunt is at the airport. She's wearing a blue skirt and a white scarf."
+        ]
+      },
+      {
+        "prompt": "Từ nào có âm /əʊ/ như trong home?",
+        "options": [
+          "rope",
+          "shirt",
+          "scarf",
+          "gloves"
+        ],
+        "answer": "rope"
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ là mấy giờ?",
+          "Bạn đang mặc gì?",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?"
+        ],
+        "answer": "Bây giờ là mấy giờ?",
+        "passage": [
+          "What time is it?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Có rất nhiều người.",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+        ],
+        "answer": "Có rất nhiều người.",
+        "passage": [
+          "There are lots of people."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Cô và các anh chị em họ của mình ở đâu?",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng.",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+        ],
+        "answer": "Cô và các anh chị em họ của mình ở đâu?",
+        "passage": [
+          "Where are my aunt and cousins?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Chúng mình không nhìn thấy bạn.",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng.",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen.",
+          "Bây giờ là ba giờ mười lăm."
+        ],
+        "answer": "Chúng mình không nhìn thấy bạn.",
+        "passage": [
+          "We can't see you."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Tàu đến rồi!",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen.",
+          "Bây giờ là ba giờ mười lăm.",
+          "Bây giờ là ba giờ rưỡi."
+        ],
+        "answer": "Tàu đến rồi!",
+        "passage": [
+          "Here comes the train!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Tàu không dừng.",
+          "Bây giờ là ba giờ mười lăm.",
+          "Bây giờ là ba giờ rưỡi.",
+          "Bây giờ là bốn giờ kém mười lăm."
+        ],
+        "answer": "Tàu không dừng.",
+        "passage": [
+          "It doesn't stop."
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Nhanh lên!",
+          "Bạn đang mặc gì?",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?"
+        ],
+        "answer": "Nhanh lên!",
+        "passage": [
+          "Hurry up!"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn nữ ấy đang mặc gì?",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+        ],
+        "answer": "Bạn nữ ấy đang mặc gì?",
+        "passage": [
+          "What's she wearing?"
+        ]
+      },
+      {
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Đó là ai?",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng.",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+        ],
+        "answer": "Đó là ai?",
+        "passage": [
+          "Who is it?"
+        ]
+      }
+    ],
+    "listening": [
+      {
+        "audio": "rope",
+        "answer": "rope",
+        "options": [
+          "rope",
+          "shirt",
+          "scarf",
+          "gloves"
+        ]
+      },
+      {
+        "audio": "shirt",
+        "answer": "shirt",
+        "options": [
+          "shirt",
+          "scarf",
+          "gloves",
+          "skirt"
+        ]
+      },
+      {
+        "audio": "scarf",
+        "answer": "scarf",
+        "options": [
+          "scarf",
+          "gloves",
+          "skirt",
+          "jeans"
+        ]
+      },
+      {
+        "audio": "gloves",
+        "answer": "gloves",
+        "options": [
+          "gloves",
+          "skirt",
+          "jeans",
+          "trousers"
+        ]
+      },
+      {
+        "audio": "skirt",
+        "answer": "skirt",
+        "options": [
+          "skirt",
+          "jeans",
+          "trousers",
+          "boots"
+        ]
+      },
+      {
+        "audio": "jeans",
+        "answer": "jeans",
+        "options": [
+          "jeans",
+          "trousers",
+          "boots",
+          "socks"
+        ]
+      },
+      {
+        "audio": "trousers",
+        "answer": "trousers",
+        "options": [
+          "trousers",
+          "boots",
+          "socks",
+          "coat"
+        ]
+      },
+      {
+        "audio": "boots",
+        "answer": "boots",
+        "options": [
+          "boots",
+          "socks",
+          "coat",
+          "rope"
+        ]
+      },
+      {
+        "audio": "socks",
+        "answer": "socks",
+        "options": [
+          "socks",
+          "coat",
+          "rope",
+          "shirt"
+        ]
+      },
+      {
+        "audio": "coat",
+        "answer": "coat",
+        "options": [
+          "coat",
+          "rope",
+          "shirt",
+          "scarf"
+        ]
+      },
+      {
+        "audio": "What are you wearing?",
+        "answer": "What are you wearing?",
+        "options": [
+          "What are you wearing?",
+          "I'm wearing a blue skirt.",
+          "What's he wearing?",
+          "He's wearing jeans and a yellow shirt."
+        ]
+      },
+      {
+        "audio": "I'm wearing a blue skirt.",
+        "answer": "I'm wearing a blue skirt.",
+        "options": [
+          "I'm wearing a blue skirt.",
+          "What's he wearing?",
+          "He's wearing jeans and a yellow shirt.",
+          "She's wearing red trousers and black boots."
+        ]
+      },
+      {
+        "audio": "What's he wearing?",
+        "answer": "What's he wearing?",
+        "options": [
+          "What's he wearing?",
+          "He's wearing jeans and a yellow shirt.",
+          "She's wearing red trousers and black boots.",
+          "It's quarter past three."
+        ]
+      },
+      {
+        "audio": "He's wearing jeans and a yellow shirt.",
+        "answer": "He's wearing jeans and a yellow shirt.",
+        "options": [
+          "He's wearing jeans and a yellow shirt.",
+          "She's wearing red trousers and black boots.",
+          "It's quarter past three.",
+          "It's half past three."
+        ]
+      },
+      {
+        "audio": "She's wearing red trousers and black boots.",
+        "answer": "She's wearing red trousers and black boots.",
+        "options": [
+          "She's wearing red trousers and black boots.",
+          "It's quarter past three.",
+          "It's half past three.",
+          "It's quarter to four."
+        ]
+      },
+      {
+        "audio": "It's quarter past three.",
+        "answer": "It's quarter past three.",
+        "options": [
+          "It's quarter past three.",
+          "It's half past three.",
+          "It's quarter to four.",
+          "What time is it?"
+        ]
+      }
+    ],
+    "sentences": [
+      {
+        "answer": "What are you wearing?",
+        "hint": "Bạn đang mặc gì?"
+      },
+      {
+        "answer": "I'm wearing a blue skirt.",
+        "hint": "Mình đang mặc chân váy xanh dương."
+      },
+      {
+        "answer": "What's he wearing?",
+        "hint": "Bạn nam ấy đang mặc gì?"
+      },
+      {
+        "answer": "He's wearing jeans and a yellow shirt.",
+        "hint": "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+      },
+      {
+        "answer": "She's wearing red trousers and black boots.",
+        "hint": "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+      },
+      {
+        "answer": "It's quarter past three.",
+        "hint": "Bây giờ là ba giờ mười lăm."
+      },
+      {
+        "answer": "It's half past three.",
+        "hint": "Bây giờ là ba giờ rưỡi."
+      },
+      {
+        "answer": "It's quarter to four.",
+        "hint": "Bây giờ là bốn giờ kém mười lăm."
+      },
+      {
+        "answer": "What time is it?",
+        "hint": "Bây giờ là mấy giờ?"
+      },
+      {
+        "answer": "There are lots of people.",
+        "hint": "Có rất nhiều người."
+      },
+      {
+        "answer": "Where are my aunt and cousins?",
+        "hint": "Cô và các anh chị em họ của mình ở đâu?"
+      },
+      {
+        "answer": "We can't see you.",
+        "hint": "Chúng mình không nhìn thấy bạn."
+      },
+      {
+        "answer": "Here comes the train!",
+        "hint": "Tàu đến rồi!"
+      },
+      {
+        "answer": "It doesn't stop.",
+        "hint": "Tàu không dừng."
+      },
+      {
+        "answer": "Where are they going?",
+        "hint": "Họ đang đi đâu?"
+      },
+      {
+        "answer": "I want to go home.",
+        "hint": "Mình muốn về nhà."
+      }
+    ],
+    "translation": [
+      {
+        "prompt": "Bạn đang mặc gì?"
+      },
+      {
+        "prompt": "Mình đang mặc chân váy xanh dương."
+      },
+      {
+        "prompt": "Bạn nam ấy đang mặc gì?"
+      },
+      {
+        "prompt": "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+      },
+      {
+        "prompt": "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+      },
+      {
+        "prompt": "Bây giờ là ba giờ mười lăm."
+      },
+      {
+        "prompt": "Bây giờ là ba giờ rưỡi."
+      },
+      {
+        "prompt": "Bây giờ là bốn giờ kém mười lăm."
+      }
+    ],
+    "mixed": [
+      {
+        "type": "choice",
+        "prompt": "Cô đang quàng khăn màu gì?",
+        "options": [
+          "Trắng",
+          "Đỏ",
+          "Đen",
+          "Xanh dương"
+        ],
+        "answer": "Trắng",
+        "passage": [
+          "It's half past two. My aunt is at the airport. She's wearing a blue skirt and a white scarf."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Từ nào có âm /əʊ/ như trong home?",
+        "options": [
+          "rope",
+          "shirt",
+          "scarf",
+          "gloves"
+        ],
+        "answer": "rope"
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen.",
+          "Bạn đang mặc gì?",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?"
+        ],
+        "answer": "Bạn ấy đang mặc quần dài đỏ và đi bốt đen.",
+        "passage": [
+          "She's wearing red trousers and black boots."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ là ba giờ mười lăm.",
+          "Mình đang mặc chân váy xanh dương.",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng."
+        ],
+        "answer": "Bây giờ là ba giờ mười lăm.",
+        "passage": [
+          "It's quarter past three."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ là ba giờ rưỡi.",
+          "Bạn nam ấy đang mặc gì?",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng.",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen."
+        ],
+        "answer": "Bây giờ là ba giờ rưỡi.",
+        "passage": [
+          "It's half past three."
+        ]
+      },
+      {
+        "type": "choice",
+        "prompt": "Câu này có nghĩa là gì?",
+        "options": [
+          "Bây giờ là bốn giờ kém mười lăm.",
+          "Bạn ấy đang mặc quần bò và áo sơ mi vàng.",
+          "Bạn ấy đang mặc quần dài đỏ và đi bốt đen.",
+          "Bây giờ là ba giờ mười lăm."
+        ],
+        "answer": "Bây giờ là bốn giờ kém mười lăm.",
+        "passage": [
+          "It's quarter to four."
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "rope",
+        "answer": "rope",
+        "options": [
+          "rope",
+          "shirt",
+          "scarf",
+          "gloves"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "shirt",
+        "answer": "shirt",
+        "options": [
+          "shirt",
+          "scarf",
+          "gloves",
+          "skirt"
+        ]
+      },
+      {
+        "type": "listening",
+        "audio": "scarf",
+        "answer": "scarf",
+        "options": [
+          "scarf",
+          "gloves",
+          "skirt",
+          "jeans"
+        ]
+      },
+      {
+        "type": "dictation",
+        "audio": "What time is it?",
+        "answer": "What time is it?"
+      },
+      {
+        "type": "dictation",
+        "audio": "There are lots of people.",
+        "answer": "There are lots of people."
+      },
+      {
+        "type": "dictation",
+        "audio": "Where are my aunt and cousins?",
+        "answer": "Where are my aunt and cousins?"
+      },
+      {
+        "type": "sentence",
+        "answer": "What are you wearing?",
+        "hint": "Bạn đang mặc gì?"
+      },
+      {
+        "type": "sentence",
+        "answer": "I'm wearing a blue skirt.",
+        "hint": "Mình đang mặc chân váy xanh dương."
+      },
+      {
+        "type": "sentence",
+        "answer": "What's he wearing?",
+        "hint": "Bạn nam ấy đang mặc gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn đang mặc gì?"
+      },
+      {
+        "type": "translation",
+        "prompt": "Mình đang mặc chân váy xanh dương."
+      },
+      {
+        "type": "translation",
+        "prompt": "Bạn nam ấy đang mặc gì?"
+      }
+    ]
+  }
+}
